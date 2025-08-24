@@ -1,0 +1,14 @@
+C:\COMPARTIDO\1. PROYECTOS\PROY-24740\20160517-2\SISACT_CONSUMER\Claro.Base\bin\x64\Debug\Claro.Base.dll
+C:\COMPARTIDO\1. PROYECTOS\PROY-24740\20160517-2\SISACT_CONSUMER\Claro.Base\bin\x64\Debug\Claro.Base.pdb
+C:\COMPARTIDO\1. PROYECTOS\PROY-24740\20160517-2\SISACT_CONSUMER\Claro.Base\bin\x64\Debug\Claro.Seguridad.Criptografia.dll
+C:\COMPARTIDO\1. PROYECTOS\PROY-24740\20160517-2\SISACT_CONSUMER\Claro.Base\bin\x64\Debug\Claro.Seguridad.Criptografia.pdb
+C:\COMPARTIDO\1. PROYECTOS\PROY-24740\20160517-2\SISACT_CONSUMER\Claro.Base\obj\x64\Debug\Claro.Base.csprojResolveAssemblyReference.cache
+C:\COMPARTIDO\1. PROYECTOS\PROY-24740\20160517-2\SISACT_CONSUMER\Claro.Base\obj\x64\Debug\Claro.Base.dll
+C:\COMPARTIDO\1. PROYECTOS\PROY-24740\20160517-2\SISACT_CONSUMER\Claro.Base\obj\x64\Debug\Claro.Base.pdb
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.Base\bin\x64\Debug\Claro.Base.dll
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.Base\bin\x64\Debug\Claro.Base.pdb
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.Base\bin\x64\Debug\Claro.Seguridad.Criptografia.dll
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.Base\bin\x64\Debug\Claro.Seguridad.Criptografia.pdb
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.Base\obj\x64\Debug\Claro.Base.csprojResolveAssemblyReference.cache
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.Base\obj\x64\Debug\Claro.Base.dll
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.Base\obj\x64\Debug\Claro.Base.pdb

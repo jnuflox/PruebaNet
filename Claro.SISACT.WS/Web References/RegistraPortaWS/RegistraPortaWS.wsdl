@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://claro.com.pe/eai/ws/ventas/registraportaws" xmlns:types="http://claro.com.pe/eai/ws/ventas/registraportaws/types" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" name="RegistraPortaWS" targetNamespace="http://claro.com.pe/eai/ws/ventas/registraportaws" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/ws/ventas/registraportaws" />
+    <xsd:schema>
+      <xsd:import schemaLocation="http://limdeseaiv19.tim.com.pe:8909/RegistraPortaWS/ebsRegistraPortaSB11?xsd=2" namespace="http://claro.com.pe/eai/ws/ventas/registraportaws/types" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="realizarConsultaPreviaRequestMsg">
+    <wsdl:part name="request" element="types:realizarConsultaPreviaRequest" />
+  </wsdl:message>
+  <wsdl:message name="realizarConsultaPreviaResponseMsg">
+    <wsdl:part name="response" element="types:realizarConsultaPreviaResponse" />
+  </wsdl:message>
+  <wsdl:message name="actualizarSolicitudCPRequestMsg">
+    <wsdl:part name="request" element="types:actualizarSolicitudCPRequest" />
+  </wsdl:message>
+  <wsdl:message name="actualizarSolicitudCPResponseMsg">
+    <wsdl:part name="response" element="types:actualizarSolicitudCPResponse" />
+  </wsdl:message>
+  <wsdl:portType name="RegistraPortaWSPortType">
+    <wsdl:operation name="realizarConsultaPrevia">
+      <wsdl:input message="tns:realizarConsultaPreviaRequestMsg" />
+      <wsdl:output message="tns:realizarConsultaPreviaResponseMsg" />
+    </wsdl:operation>
+    <wsdl:operation name="actualizarSolicitudCP">
+      <wsdl:input message="tns:actualizarSolicitudCPRequestMsg" />
+      <wsdl:output message="tns:actualizarSolicitudCPResponseMsg" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RegistraPortaWSPortTypeSOAP11Binding" type="tns:RegistraPortaWSPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="realizarConsultaPrevia">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/ventas/registraportaws/realizarConsultaPrevia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarSolicitudCP">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/ventas/registraportaws/actualizarSolicitudCP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="RegistraPortaWSPortTypeSOAP12Binding" type="tns:RegistraPortaWSPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="realizarConsultaPrevia">
+      <soap12:operation soapAction="http://claro.com.pe/eai/ws/ventas/registraportaws/realizarConsultaPrevia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarSolicitudCP">
+      <soap12:operation soapAction="http://claro.com.pe/eai/ws/ventas/registraportaws/actualizarSolicitudCP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RegistraPortaWSService">
+    <wsdl:port name="ebsRegistraPortaSB11" binding="tns:RegistraPortaWSPortTypeSOAP11Binding">
+      <soap:address location="http://limdeseaiv19.tim.com.pe:8909/RegistraPortaWS/ebsRegistraPortaSB11" />
+    </wsdl:port>
+    <wsdl:port name="ebsRegistraPortaSB12" binding="tns:RegistraPortaWSPortTypeSOAP12Binding">
+      <soap12:address location="http://limdeseaiv19.tim.com.pe:8909/RegistraPortaWS/ebsRegistraPortaSB12" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

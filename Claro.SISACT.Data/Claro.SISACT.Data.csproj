@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{842E0105-F7B2-4F94-8CC6-E39237348862}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Claro.SISACT.Data</RootNamespace>
+    <AssemblyName>Claro.SISACT.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseDatos.cs" />
+    <Compile Include="BDCLARIFY.cs" />
+    <Compile Include="BDCLAROCLUB.cs" />
+    <Compile Include="BDConexion.cs" />
+    <Compile Include="BDODS.cs" />
+    <Compile Include="BDPEL.cs" />
+    <Compile Include="BDPuntosCC.cs" />
+    <Compile Include="BDSincronizaSap.cs" />
+    <Compile Include="BDSISACT.cs" />
+    <Compile Include="BDSISCAD.cs" />
+    <Compile Include="BDPEL2.cs" />
+    <Compile Include="BDSIAC.cs" />
+    <Compile Include="BDBSCS.cs" />
+    <Compile Include="BDSGA.cs" />
+    <Compile Include="BDDWH.cs" />
+    <Compile Include="Conexion.cs" />
+    <Compile Include="DACartaPoder.cs" />
+    <Compile Include="DACasoEspecial.cs" />
+    <Compile Include="DAFormLead.cs" />
+    <Compile Include="DAProteccionMovil.cs" />
+    <Compile Include="DAConsultaClaroClub.cs" />
+    <Compile Include="DAGeneralII.cs" />
+    <Compile Include="DAPrepago.cs" />
+    <Compile Include="DAConsumer.cs" />
+    <Compile Include="DADataCredito.cs" />
+    <Compile Include="DAEvaluacion.cs" />
+    <Compile Include="DAGeneral.cs" />
+    <Compile Include="DAGeneral_II.cs" />
+    <Compile Include="DAIntegracionDTHDatos.cs" />
+    <Compile Include="DAMaestro.cs" />
+    <Compile Include="DASincronizaSap.cs" />
+    <Compile Include="DASolicitud.cs" />
+    <Compile Include="DASolicitudDatos.cs" />
+    <Compile Include="DataUtil.cs" />
+    <Compile Include="DAPortabilidad.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Claro.SISACT.Common\Claro.SISACT.Common.csproj">
+      <Project>{64D5394B-C4A5-482A-8908-B1C84974AB9F}</Project>
+      <Name>Claro.SISACT.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Claro.SISACT.Configuracion\Claro.SISACT.Configuracion.csproj">
+      <Project>{87EC7497-AB32-428A-BD9D-D0605DEAF907}</Project>
+      <Name>Claro.SISACT.Configuracion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Claro.SISACT.Entity\Claro.SISACT.Entity.csproj">
+      <Project>{3CC469F9-CD4B-45D2-AC0E-3E3536BC6BD6}</Project>
+      <Name>Claro.SISACT.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Claro.SISACT.IData\Claro.SISACT.IData.csproj">
+      <Project>{CDE2BF05-ED35-42E4-A80D-8605C904519E}</Project>
+      <Name>Claro.SISACT.IData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Claro.SISACT.Common.dll" />
+    <Content Include="bin\Debug\Claro.SISACT.Common.pdb" />
+    <Content Include="bin\Debug\Claro.SISACT.Configuracion.dll" />
+    <Content Include="bin\Debug\Claro.SISACT.Configuracion.pdb" />
+    <Content Include="bin\Debug\Claro.SISACT.Data.dll" />
+    <Content Include="bin\Debug\Claro.SISACT.Data.pdb" />
+    <Content Include="bin\Debug\Claro.SISACT.Entity.dll" />
+    <Content Include="bin\Debug\Claro.SISACT.Entity.pdb" />
+    <Content Include="bin\Debug\Claro.SISACT.IData.dll" />
+    <Content Include="bin\Debug\Claro.SISACT.IData.pdb" />
+    <Content Include="bin\Release\Claro.SISACT.Common.dll" />
+    <Content Include="bin\Release\Claro.SISACT.Common.pdb" />
+    <Content Include="bin\Release\Claro.SISACT.Configuracion.dll" />
+    <Content Include="bin\Release\Claro.SISACT.Configuracion.pdb" />
+    <Content Include="bin\Release\Claro.SISACT.Data.dll" />
+    <Content Include="bin\Release\Claro.SISACT.Data.pdb" />
+    <Content Include="bin\Release\Claro.SISACT.Entity.dll" />
+    <Content Include="bin\Release\Claro.SISACT.Entity.pdb" />
+    <Content Include="bin\Release\Claro.SISACT.IData.dll" />
+    <Content Include="bin\Release\Claro.SISACT.IData.pdb" />
+    <Content Include="obj\Debug\Claro.SISACT.Data.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Claro.SISACT.Data.dll" />
+    <Content Include="obj\Debug\Claro.SISACT.Data.pdb" />
+    <Content Include="obj\Release\Claro.SISACT.Data.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\Claro.SISACT.Data.dll" />
+    <Content Include="obj\Release\Claro.SISACT.Data.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\Claro.SISACT.Data.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\ResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

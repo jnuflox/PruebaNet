@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://claro.com.pe/eai/ebs/operaciones/consultaclaves" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://claro.com.pe/eai/ebs/operaciones/consultaclaves" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/ebs/operaciones/consultaclaves">
+      <xsd:element name="desencriptarRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="idTransaccion" type="xsd:string" />
+            <xsd:element name="ipAplicacion" type="xsd:string" />
+            <xsd:element name="ipTransicion" type="xsd:string" />
+            <xsd:element name="usrAplicacion" type="xsd:string" />
+            <xsd:element name="idAplicacion" type="xsd:string" />
+            <xsd:element name="codigoAplicacion" type="xsd:string" />
+            <xsd:element name="usuarioAplicacionEncriptado" type="xsd:string" />
+            <xsd:element name="claveEncriptado" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="desencriptarResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="idTransaccion" type="xsd:string" />
+            <xsd:element name="codigoResultado" type="xsd:string" />
+            <xsd:element name="mensajeResultado" type="xsd:string" />
+            <xsd:element name="usuarioAplicacion" type="xsd:string" />
+            <xsd:element name="clave" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </types>
+  <message name="desencriptarRequestMsg">
+    <part name="parameters" element="tns:desencriptarRequest" />
+  </message>
+  <message name="desencriptarResponseMsg">
+    <part name="parameters" element="tns:desencriptarResponse" />
+  </message>
+  <portType name="ebsConsultaClavesPortType">
+    <operation name="desencriptar">
+      <input message="tns:desencriptarRequestMsg" />
+      <output message="tns:desencriptarResponseMsg" />
+    </operation>
+  </portType>
+  <binding name="ebsConsultaClavesPortTypeSOAP11Binding" type="tns:ebsConsultaClavesPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="desencriptar">
+      <soap:operation soapAction="http://claro.com.pe/eai/ebs/operaciones/consultaclaves/desencriptar" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="ebsConsultaClavesPortTypeSOAP12Binding" type="tns:ebsConsultaClavesPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="desencriptar">
+      <soap12:operation soapAction="http://claro.com.pe/eai/ebs/operaciones/consultaclaves/desencriptar" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ebsConsultaClavesService">
+    <port name="ebsConsultaClavesSB11" binding="tns:ebsConsultaClavesPortTypeSOAP11Binding">
+      <soap:address location="http://limdeseaiv30.tim.com.pe:8909/ConsultaClavesWS/ebsConsultaClavesSB11" />
+    </port>
+    <port name="ebsConsultaClavesSB12" binding="tns:ebsConsultaClavesPortTypeSOAP12Binding">
+      <soap12:address location="http://limdeseaiv30.tim.com.pe:8909/ConsultaClavesWS/ebsConsultaClavesSB12" />
+    </port>
+  </service>
+</definitions>

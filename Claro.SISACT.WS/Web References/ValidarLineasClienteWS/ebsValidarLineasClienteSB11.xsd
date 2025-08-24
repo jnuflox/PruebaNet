@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns="http://claro.com.pe/eai/ValidarLineasCliente/ws/types" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/ValidarLineasCliente/ws/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="contarLineasRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditRequest" type="AuditRequest" />
+        <xsd:element name="numeroDocumento" type="xsd:string" />
+        <xsd:element minOccurs="0" name="listaCamposAdicionales" type="ListaCamposAdicionalesType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="contarLineasResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditResponse" type="AuditResponse" />
+        <xsd:element minOccurs="0" name="listaCamposAdicionales" type="ListaCamposAdicionalesType" />
+        <xsd:element name="cantidadLineasActivas" type="xsd:string" />
+        <xsd:element minOccurs="0" name="listaLineasConsolidadasType" type="ListaLineasConsolidadasType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:complexType name="AuditRequest">
+    <xsd:sequence>
+      <xsd:element name="idTransaccion" type="xsd:string" />
+      <xsd:element name="ipAplicacion" type="xsd:string" />
+      <xsd:element name="nombreAplicacion" type="xsd:string" />
+      <xsd:element name="usuarioAplicacion" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="AuditResponse">
+    <xsd:sequence>
+      <xsd:element name="idTransaccion" type="xsd:string" />
+      <xsd:element name="codRespuesta" type="xsd:string" />
+      <xsd:element name="msjRespuesta" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ListaLineasConsolidadasType">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="unbounded" name="lineaConsolidada">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="msisdn" type="xsd:string" />
+            <xsd:element name="segmento" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ListaCamposAdicionalesType">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="unbounded" name="campoAdicional">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="nombreCampo" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="valor" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

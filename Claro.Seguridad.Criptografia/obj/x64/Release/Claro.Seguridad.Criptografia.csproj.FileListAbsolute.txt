@@ -1,0 +1,12 @@
+C:\Users\lchumbes\Desktop\SISACT\SISACT_CONSUMER\Claro.Seguridad.Criptografia\bin\x64\Release\Claro.Seguridad.Criptografia.dll
+C:\Users\lchumbes\Desktop\SISACT\SISACT_CONSUMER\Claro.Seguridad.Criptografia\bin\x64\Release\Claro.Seguridad.Criptografia.pdb
+C:\Users\lchumbes\Desktop\SISACT\SISACT_CONSUMER\Claro.Seguridad.Criptografia\obj\x64\Release\Claro.Seguridad.Criptografia.dll
+C:\Users\lchumbes\Desktop\SISACT\SISACT_CONSUMER\Claro.Seguridad.Criptografia\obj\x64\Release\Claro.Seguridad.Criptografia.pdb
+C:\Users\lchumbes\Desktop\Mejoras Arquitectura Fase 1_Final\3. Errores de Compilacion - WARNINGS\Fuentes_2010\SISACT_CONSUMER\Claro.Seguridad.Criptografia\bin\x64\Release\Claro.Seguridad.Criptografia.dll
+C:\Users\lchumbes\Desktop\Mejoras Arquitectura Fase 1_Final\3. Errores de Compilacion - WARNINGS\Fuentes_2010\SISACT_CONSUMER\Claro.Seguridad.Criptografia\bin\x64\Release\Claro.Seguridad.Criptografia.pdb
+C:\Users\lchumbes\Desktop\Mejoras Arquitectura Fase 1_Final\3. Errores de Compilacion - WARNINGS\Fuentes_2010\SISACT_CONSUMER\Claro.Seguridad.Criptografia\obj\x64\Release\Claro.Seguridad.Criptografia.dll
+C:\Users\lchumbes\Desktop\Mejoras Arquitectura Fase 1_Final\3. Errores de Compilacion - WARNINGS\Fuentes_2010\SISACT_CONSUMER\Claro.Seguridad.Criptografia\obj\x64\Release\Claro.Seguridad.Criptografia.pdb
+C:\Users\lchumbes\Desktop\Final\3. Errores de Compilacion - WARNINGS\Fuentes_2010\SISACT_CONSUMER\Claro.Seguridad.Criptografia\bin\x64\Release\Claro.Seguridad.Criptografia.dll
+C:\Users\lchumbes\Desktop\Final\3. Errores de Compilacion - WARNINGS\Fuentes_2010\SISACT_CONSUMER\Claro.Seguridad.Criptografia\bin\x64\Release\Claro.Seguridad.Criptografia.pdb
+C:\Users\lchumbes\Desktop\Final\3. Errores de Compilacion - WARNINGS\Fuentes_2010\SISACT_CONSUMER\Claro.Seguridad.Criptografia\obj\x64\Release\Claro.Seguridad.Criptografia.dll
+C:\Users\lchumbes\Desktop\Final\3. Errores de Compilacion - WARNINGS\Fuentes_2010\SISACT_CONSUMER\Claro.Seguridad.Criptografia\obj\x64\Release\Claro.Seguridad.Criptografia.pdb

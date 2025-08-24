@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://claro.com.pe/esb/data/venta/responseDataConsultaDeuda/v1/" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/esb/data/venta/responseDataConsultaDeuda/v1/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="responseDataConsultaDeuda" type="tns:ResponseDataConsultaDeuda">
+    <xsd:annotation>
+      <xsd:documentation>Esta estructura tiene por objetivo informar los datos de respuesta propios del servicio
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:complexType name="ResponseDataConsultaDeuda">
+    <xsd:sequence>
+      <xsd:element name="resultado" type="xsd:string" />
+      <xsd:element name="listaDeuda" type="tns:ListaDeudaDetalleType" />
+      <xsd:element name="listaResponseOpcional" type="tns:ListaResponseOpcional" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ListaDeudaDetalleType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="deudaDetalle" type="tns:DeudaType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DeudaType">
+    <xsd:sequence>
+      <xsd:element name="fechaVencDeuda" type="xsd:string" />
+      <xsd:element name="codigoCuentaDeuda" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ListaResponseOpcional">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="unbounded" name="objetoResponseOpcional">
+        <xsd:complexType>
+          <xsd:attribute name="clave" type="xsd:string" />
+          <xsd:attribute name="valor" type="xsd:string" />
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

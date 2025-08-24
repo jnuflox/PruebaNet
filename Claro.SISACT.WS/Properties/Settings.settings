@@ -1,0 +1,95 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Claro.SISACT.WS.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Claro_SISACT_WS_AuditoriaWS_EbsAuditoriaService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.19.73.62:8909/AuditoriaWS/EbsAuditoria</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_WSLogin_EbsDatosEmpleadoService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.19.74.66:8909/DatosEmpleadoWS/EbsDatosEmpleado</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_WSOAC_ConsultaDeudaCuenta" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://limdesosbv05.tim.com.pe:8909/OAC_Services/Inquiry/ConsultaDeudaCuenta</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_WSLineasDesactivas_ebsConsultaLineasDesactivasWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.19.74.68:8909/ConsultaLineasWS/ebsConsultaLineasDesactivasSB11</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_WSBuroCrediticio_ebsBuroCrediticioService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://limdesosbv05.tim.com.pe:8909/BuroCrediticioApp/ebsBuroCrediticioSB11</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_WSPortabilidad_EbsValidacionService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.19.74.68:8909/ValidacionWS/EbsValidacion</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_WSOperador_EbsIdentificaOperadorService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://limdeseaiv22.tim.com.pe:8909/IdentificaOperadorWS/EbsIdentificaOperador</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_WSMetricaEvaluacion_RegistroMetricasVentasWSService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://limcltocsv02.tim.com.pe:8909/RegistroMetricaVentaWS/RegistroMetricasVentasPortSB12</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_WSPuntosClaroClub_ebsGestionarPuntosService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.19.74.94:8909/ClaroClub_Services/Transaction/PuntosClaroClub</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_ConsultarPuntosWS_ebsConsultaPuntosClaroClubService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://limdeseaiv15.tim.com.pe:8901/ClaroClub_Services/Inquiry/ConsultaPuntos</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_WSDatosClienteService_ebsDatosClienteService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://limdeseaiv22.tim.com.pe:8909/DatosClienteWS/ebsDatosCliente</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_WSPrepago_EbsDatosPrepagoService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://limdeseaiv22.tim.com.pe:8909/ConsultaDatosPrepagoWS/EbsDatosPrepago</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_WSEnvioPorta_EnvioPortaWSService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://limdeseaiv28.tim.com.pe:8909/EnvioPortaWS/ebsEnvioPortaSB11</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_ConsultaMigraCampanaWS_ConsultaMigraCampanaWSService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://limdeseaiv28.tim.com.pe:8909/ConsultaMigraCampanaWS/ebsConsultaMigraCampanaSB11</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_ConsultaClienteUnificadoWS_ConsultaClienteUnificadoWSService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://limdeseaiv28.tim.com.pe:8909/ConsultaClienteUnificadoWS/ebsConsultaClienteUnificadoSB11</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_WSEnvioCorreo_envioCorreoWSService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://limdeseaiv28.tim.com.pe:8909/EnvioCorreoWS/envioCorreoWSPortSB11</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_WSClienteProteccionMovil_ClienteProteccionMovilWSService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://limdeseaiv28.tim.com.pe:8909/ClienteProteccionMovilWS/ClienteProteccionMovilWSSB11</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_WSGestionaProteccionMovil_GestionaProteccionMovilWSService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://limdeseaiv28.tim.com.pe:8909/GestionaProteccionMovilWS/GestionaProteccionMovilWSSB11</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_WSReglasCrediticia_ClaroEvalClientesReglasDecisionService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.19.74.231/DecisionService/ws/ClaroEvalClienteApp/ClaroEvalClientesReglas/1.0/v75</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_RegistraPortaWS_RegistraPortaWSService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://limdeseaiv19.tim.com.pe:8909/RegistraPortaWS/ebsRegistraPortaSB11</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_EbsCreditosWS_EbsCreditosWSService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.19.74.189:7903/EbsCreditosWS/ebsCreditosSB11</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_ValidarLineasClienteWS_ebsValidarLineasClienteService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.17.26.37:20000/ValidarLineasClienteWS/ebsValidarLineasClienteSB11</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_ConsultaNacionalidadWS_DAT_ConsultaNacionalidad_v1" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://127.0.0.1:7001/DAT_ConsultaNacionalidad/DAT_ConsultaNacionalidadSB12</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_WSConsultaClaves_ebsConsultaClavesService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://limdeseaiv30.tim.com.pe:8909/ConsultaClavesWS/ebsConsultaClavesSB11</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_FlexibilizaDeudaWS_BSS_FlexibilizaDeudaSOAP11BindingQSService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.17.26.51:21000/BSS_FlexibilizaDeuda/SRV_FlexibilizaDeuda/Service/Mediation/MED_FlexibilizaDeudaPipeline</Value>
+<Setting Name="Claro_SISACT_WS_WebReferenceEvaluarReglas_BSS_EvaluaReglasSOAP11BindingQSService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.17.26.51:21000/BSS_EvaluaReglas/SRV_EvaluaReglas/Service/Composition/COM_EvaluaReglasProxyService</Value>
+    </Setting>
+     <Setting Name="Claro_SISACT_WS_WSConsultaCuotaCliente_ConsultaCuotaCliente" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.19.74.141:8901/OAC_Services/Inquiry/ConsultaCuotaCliente/</Value>
+    </Setting>
+   <Setting Name="Claro_SISACT_WS_ConfiguracionTopeConsumoWS_ConfiguracionTopeConsumoWSService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.19.74.189:7903/ConfiguracionTopeConsumoWS/configuracionTopeConsumoSB11</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_WSLineasTecnologiaCliente_MED_LineasTecnologiaCliente" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.17.26.51:21000/BSS_LineasTecnologiaCliente/SRV_LineasTecnologiaCliente/Service/Mediation/MED_LineasTecnologiaCliente</Value>
+    </Setting>
+    <Setting Name="Claro_SISACT_WS_WSConsultaPostPago_SIACPostpagoConsultasWSService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://limdeseaiv22.tim.com.pe:8909/SIACPostpagoWS/SIACPostpagoConsultasWS</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

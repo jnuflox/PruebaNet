@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://claro.com.pe/eai/ws/ventas/configuraciontopeconsumows" xmlns:types="http://claro.com.pe/eai/ws/ventas/configuraciontopeconsumows/types" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" name="ConfiguracionTopeConsumoWS" targetNamespace="http://claro.com.pe/eai/ws/ventas/configuraciontopeconsumows" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/ws/ventas/configuraciontopeconsumows" />
+    <xsd:schema>
+      <xsd:import schemaLocation="http://172.19.74.189:7903/ConfiguracionTopeConsumoWS/configuracionTopeConsumoSB11?xsd=2" namespace="http://claro.com.pe/eai/ws/ventas/configuraciontopeconsumows/types" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="listarConfiguracionTopeConsumoRequestMsg">
+    <wsdl:part name="request" element="types:listarConfiguracionTopeConsumoRequest" />
+  </wsdl:message>
+  <wsdl:message name="listarConfiguracionTopeConsumoResponseMsg">
+    <wsdl:part name="response" element="types:listarConfiguracionTopeConsumoResponse" />
+  </wsdl:message>
+  <wsdl:message name="listarConfiguracionTopeConsumoSIACRequestMsg">
+    <wsdl:part name="request" element="types:listarConfiguracionTopeConsumoSIACRequest" />
+  </wsdl:message>
+  <wsdl:message name="listarConfiguracionTopeConsumoSIACResponseMsg">
+    <wsdl:part name="response" element="types:listarConfiguracionTopeConsumoSIACResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ConfiguracionTopeConsumoWSPortType">
+    <wsdl:operation name="listarConfiguracionTopeConsumo">
+      <wsdl:input message="tns:listarConfiguracionTopeConsumoRequestMsg" />
+      <wsdl:output message="tns:listarConfiguracionTopeConsumoResponseMsg" />
+    </wsdl:operation>
+    <wsdl:operation name="listarConfiguracionTopeConsumoSIAC">
+      <wsdl:input message="tns:listarConfiguracionTopeConsumoSIACRequestMsg" />
+      <wsdl:output message="tns:listarConfiguracionTopeConsumoSIACResponseMsg" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ConfiguracionTopeConsumoWSPortTypeSOAP11Binding" type="tns:ConfiguracionTopeConsumoWSPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="listarConfiguracionTopeConsumo">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/ventas/configuraciontopeconsumows/listarConfiguracionTopeConsumo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listarConfiguracionTopeConsumoSIAC">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/ventas/configuraciontopeconsumows/listarConfiguracionTopeConsumoSIAC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ConfiguracionTopeConsumoWSPortTypeSOAP12Binding" type="tns:ConfiguracionTopeConsumoWSPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="listarConfiguracionTopeConsumo">
+      <soap12:operation soapAction="http://claro.com.pe/eai/ws/ventas/configuraciontopeconsumows/listarConfiguracionTopeConsumo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listarConfiguracionTopeConsumoSIAC">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/ventas/configuraciontopeconsumows/listarConfiguracionTopeConsumoSIAC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ConfiguracionTopeConsumoWSService">
+    <wsdl:port name="configuracionTopeConsumoSB11" binding="tns:ConfiguracionTopeConsumoWSPortTypeSOAP11Binding">
+      <soap:address location="http://172.19.74.189:7903/ConfiguracionTopeConsumoWS/configuracionTopeConsumoSB11" />
+    </wsdl:port>
+    <wsdl:port name="configuracionTopeConsumoSB12" binding="tns:ConfiguracionTopeConsumoWSPortTypeSOAP12Binding">
+      <soap12:address location="http://172.19.74.189:7903/ConfiguracionTopeConsumoWS/configuracionTopeConsumoSB12" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

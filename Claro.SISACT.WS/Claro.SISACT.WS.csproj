@@ -1,0 +1,1422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EBDA30BB-29ED-4FEB-B2F8-C860626B0198}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Claro.SISACT.WS</RootNamespace>
+    <AssemblyName>Claro.SISACT.WS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.Services2, Version=2.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.Web.Services2.2.0.3.0\lib\net11\Microsoft.Web.Services2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLBeneficioFullClaro.cs" />
+    <Compile Include="BLConsultaLineasTecnologia.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BLConsultaPostPago.cs" />
+    <Compile Include="BLDataCredito.cs" />
+    <Compile Include="BLDataCreditoCorp.cs" />
+    <Compile Include="BLDatosCBIO.cs" />
+    <Compile Include="BLDatosCliente.cs" />
+    <Compile Include="BLEvaluaReglas.cs" />
+    <Compile Include="BLIntico.cs" />
+    <Compile Include="BLPortabilidadWS.cs" />
+    <Compile Include="BLReglaCrediticia.cs" />
+    <Compile Include="BWActualizarHistoricoProactiva.cs" />
+    <Compile Include="BWAuditoria.cs" />
+    <Compile Include="BWBeneficioFullClaro.cs" />
+    <Compile Include="BWBuroCrediticio.cs" />
+    <Compile Include="BWClaroClub_Services.cs" />
+    <Compile Include="BWClienteProteccionMovil.cs" />
+    <Compile Include="BWConsultaClaves.cs" />
+    <Compile Include="BWConsultaClienteUnificado.cs" />
+    <Compile Include="BWConsultaDatosBRMSOAC.cs" />
+    <Compile Include="BWConsultaDeudaCliente.cs" />
+    <Compile Include="BWConsultaCuotaCliente.cs" />
+    <Compile Include="BWConsultaNacionalidad.cs" />
+    <Compile Include="BWConsultarVentasContigencia.cs" />
+    <Compile Include="BWConsultaSEC.cs" />
+    <Compile Include="BWConsultaSECPlanPorta.cs" />
+    <Compile Include="BWConsultaSeguridad.cs" />
+    <Compile Include="BWDataCredito.cs" />
+    <Compile Include="BWDataCreditoCorp.cs" />
+    <Compile Include="BWDatosClienteService.cs" />
+    <Compile Include="BWEnvioCorreo.cs" />
+    <Compile Include="BWEnvioPorta.cs" />
+ <Compile Include="BWEvaluaReglas.cs" />
+    <Compile Include="BWFlexibilizacionDeudaWS.cs" />
+    <Compile Include="BWGestionaProteccionMovil.cs" />
+    <Compile Include="BWHistorialBrms.cs" />
+    <Compile Include="BWMigraCampana.cs" />
+    <Compile Include="BWNuevaReglasCreditica.cs" />
+    <Compile Include="BWOperacionesContingencia.cs" />
+    <Compile Include="BWOperador.cs" />
+    <Compile Include="BWLogin.cs" />
+    <Compile Include="BWOAC.cs" />
+    <Compile Include="BWPortabilidad.cs" />
+    <Compile Include="BWPrepago.cs" />
+    <Compile Include="BWRegistrarPorta.cs" />
+    <Compile Include="BWReglasCreditica.cs" />
+    <Compile Include="BWLineaDesactiva.cs" />
+    <Compile Include="BWMetricaEvaluacion.cs" />
+    <Compile Include="BLCreditoWS.cs" />
+    <Compile Include="BWCreditoWS.cs" />
+    <Compile Include="BWServicesCBIO\BWComportamientoClienteCBIO.cs" />
+    <Compile Include="BWServicesCBIO\BWConsultaclienteCBIO.cs" />
+    <Compile Include="BWServicesCBIO\BWCuParticipanteCBIO.cs" />
+    <Compile Include="BWServicesCBIO\BWFullClaroCBIO.cs" />
+    <Compile Include="BWTopeConsumo.cs" />
+    <Compile Include="BWValidarCampana.cs" />
+    <Compile Include="BWValidarLinea.cs" />
+    <Compile Include="BWConsultaDatosOACWS.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+<Compile Include="BWServicesNegocio.cs" />
+<Compile Include="RestReferences\GetInvoqueDP.cs" />
+    <Compile Include="RestReferences\RestActualizarHistoricoProactiva.cs" />
+    <Compile Include="RestReferences\RestAfiliacionDEAUDebito.cs" />
+    <Compile Include="RestReferences\RestAfiliaciónDEAUAsistidosWS.cs" />
+<Compile Include="RestReferences\RestActualizarEvaluacionBRMS.cs" />
+    <Compile Include="RestReferences\RestMotorPromociones.cs" />
+    <Compile Include="RestReferences\RestOperacionesContingencia.cs" />
+	<Compile Include="RestReferences\RestReferencesConsultaHist.cs" />
+    <Compile Include="RestReferences\RestBeneficioFullClaro.cs" />
+    <Compile Include="RestReferences\RestConsultarPedidosTienda.cs" />
+<Compile Include="RestReferences\RestConsultarVentasContingencia.cs" />
+<Compile Include="RestReferences\RestRegistrarEvaluacionBRMS.cs" />
+    <Compile Include="RestReferences\RestValidarCobertura.cs" />
+    <Compile Include="RestReferences\RestVentasCuotas.cs" />
+<Compile Include="RestServices\RestServiceActualizarEvaluacionBRMS.cs" />
+	<Compile Include="RestServices\RestServiceConsultaHist.cs" />
+    <Compile Include="RestServices\RestServiceActualizarHistoricoProactiva.cs" />
+    <Compile Include="RestServices\RestServiceBeneficioFullClaro.cs" />
+<Compile Include="RestServices\RestServiceConsultarVentasContingencia.cs" />
+<Compile Include="RestServices\RestServiceRegistrarEvaluacionBRMS.cs" />
+<Compile Include="RestReferences\RestValidarCampana.cs" />
+    <Compile Include="RestServices\RestServiceValidarCampana.cs" />
+    <Compile Include="RestReferences\RestConsultarClientesFullClaro.cs" />
+    <Compile Include="RestReferences\RestIteracionCliente.cs" />
+    <Compile Include="RestReferences\RestRegistraCandidatoFC.cs" />
+    <Compile Include="RestReferences\RestRegistrarEvaMejoraPortabilidad.cs" />
+    <Compile Include="RestReferences\RestRegistrarOmisionPIN.cs" />
+    <Compile Include="RestReferences\RestRegistrarSMSPortabilidades.cs" />
+    <Compile Include="RestReferences\RestServiceGeneric.cs" />
+    <Compile Include="RestReferences\RestValidarServiciosExcluyentes.cs" />
+    <Compile Include="RestReferences\RestValidarCantidadCampanias.cs" />
+    <Compile Include="RestReferences\RestValidarProductosFC.cs" />
+    <Compile Include="RestReferences\RestValidarSMSPortabilidades.cs" />
+    <Compile Include="RestReferences\GetHeadersDP.cs" />
+    <Compile Include="RestReferences\PostInvoqueDP.cs" />
+    <Compile Include="RestServices\RestServiceDP.cs" />
+    <Compile Include="RestServices\RestServiceConsultaFC.cs" />
+    <Compile Include="RestServices\RestServiceDPGeneral.cs" />
+    <Compile Include="RestServices\RestServiceRegistraCandidatoFC.cs" />
+    <Compile Include="RestServices\RestServiceRegistrarEvaluacion.cs" />
+    <Compile Include="RestServices\RestServiceValidServExcluyentes.cs" />
+    <Compile Include="RestServices\RestServiceSMSPorta.cs" />
+    <Compile Include="RestServices\RestServiceValidaFC.cs" />
+    <Compile Include="Web References\ConfiguracionTopeConsumoWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ConsultaClienteUnificadoWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ConsultaDeudaClienteWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ConsultaMigraCampanaWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ConsultaNacionalidadWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ConsultarPuntosWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ConsultaSeguridad\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\EbsCreditosWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FlexibilizaDeudaWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MASServiceServiceWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\RegistraPortaWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ValidarLineasClienteWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+<Compile Include="Web References\WebReferenceEvaluarReglas\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSBuroCrediticio\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSClienteProteccionMovil\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSConsultaClaves\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSConsultaDatosOAC\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSConsultaCuotaCliente\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSConsultaPlanAprobPorta\Reference.cs" />
+    <Compile Include="Web References\WSConsultaPostPago\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSConsultarDeudaCuentaBRMS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSConsultarPlanPorta\Reference.cs" />
+    <Compile Include="Web References\WSDataCreditoCorp\Reference.cs" />
+    <Compile Include="Web References\WSDataCredito\Reference.cs" />
+    <Compile Include="Web References\WSAuditoria\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSDatosClienteService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSEnvioCorreo\Reference.cs" />
+    <Compile Include="Web References\WSEnvioPorta\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSGestionaProteccionMovil\Reference.cs" />
+    <Compile Include="Web References\WSLineaDesactiva\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSLineasTecnologiaCliente\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSLogin\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSMetricaEvaluacion\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSOAC\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSOperador\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSPortabilidad\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSPrepago\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSPuntosClaroClub\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSReglasCrediticia\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSValidacionDeudaRules\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="bin\Debug\Claro.SISACT.WS.dll.config" />
+    <None Include="bin\Release\Claro.SISACT.WS.dll.config" />
+    <None Include="obj\Debug\Claro.SISACT.WS.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\ResolveAssemblyReference.cache" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ConfiguracionTopeConsumoWS\configuracionTopeConsumoSB11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ConfiguracionTopeConsumoWS\configuracionTopeConsumoSB110.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ConfiguracionTopeConsumoWS\ConfiguracionTopeConsumoWS.wsdl" />
+    <None Include="Web References\ConfiguracionTopeConsumoWS\listarConfiguracionTopeConsumoResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConfiguracionTopeConsumoWS\listarConfiguracionTopeConsumoSIACResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConfiguracionTopeConsumoWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ConsultaClienteUnificadoWS\ConsultaClienteUnificadoWS.wsdl" />
+    <None Include="Web References\ConsultaClienteUnificadoWS\ConsultarClienteUnificadoResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsultaClienteUnificadoWS\ebsConsultaClienteUnificadoSB11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ConsultaClienteUnificadoWS\ebsConsultaClienteUnificadoSB110.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ConsultaClienteUnificadoWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ConsultaClienteUnificadoWS\RegistrarPersonaResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsultaDeudaClienteWS\ConsultaDeudaClienteWS.wsdl" />
+    <None Include="Web References\ConsultaDeudaClienteWS\consultaDeudaFecVencResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsultaDeudaClienteWS\consultaDeudaResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsultaDeudaClienteWS\ebsConsultaDeudaClienteSB11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ConsultaDeudaClienteWS\ebsConsultaDeudaClienteSB110.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ConsultaDeudaClienteWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ConsultaMigraCampanaWS\ConsultaMigraCampanaWS.wsdl" />
+    <None Include="Web References\ConsultaMigraCampanaWS\ebsConsultaMigraCampanaSB11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ConsultaMigraCampanaWS\ebsConsultaMigraCampanaSB110.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ConsultaMigraCampanaWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ConsultaMigraCampanaWS\validarPagoFacturaResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsultaNacionalidadWS\consultarNacionalidadResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsultaNacionalidadWS\DAT_ConsultaNacionalidad_v1.wsdl" />
+    <None Include="Web References\ConsultaNacionalidadWS\mockDAT_ConsultaNacionalidadSOAP11Binding.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ConsultaNacionalidadWS\mockDAT_ConsultaNacionalidadSOAP11Binding0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ConsultaNacionalidadWS\mockDAT_ConsultaNacionalidadSOAP11Binding1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ConsultaNacionalidadWS\mockDAT_ConsultaNacionalidadSOAP11Binding2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ConsultaNacionalidadWS\mockDAT_ConsultaNacionalidadSOAP11Binding3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ConsultaNacionalidadWS\mockDAT_ConsultaNacionalidadSOAP11Binding4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ConsultaNacionalidadWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ConsultarPuntosWS\Audit.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ConsultarPuntosWS\ConsultaPuntos.wsdl" />
+    <None Include="Web References\ConsultarPuntosWS\consultarPuntosResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsultarPuntosWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ConsultaSeguridad\ConsultaSeguridad.wsdl" />
+    <None Include="Web References\ConsultaSeguridad\menuType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ConsultaSeguridad\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ConsultaSeguridad\seguridadType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EbsCreditosWS\ConsultarDatosDCResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EbsCreditosWS\ebsCreditosSB12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\EbsCreditosWS\EbsCreditosWS.wsdl" />
+    <None Include="Web References\EbsCreditosWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\FlexibilizaDeudaWS\BSS_FlexibilizaDeuda.wsdl" />
+    <None Include="Web References\FlexibilizaDeudaWS\claroFault_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\FlexibilizaDeudaWS\ConsultaDeudaResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FlexibilizaDeudaWS\ConsultaDeuda_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\FlexibilizaDeudaWS\headers_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\FlexibilizaDeudaWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\FlexibilizaDeudaWS\responseDataConsultaDeuda_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\MASServiceServiceWS\Push.wsdl" />
+    <None Include="Web References\MASServiceServiceWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\RegistraPortaWS\actualizarSolicitudCPResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\RegistraPortaWS\ebsRegistraPortaSB11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\RegistraPortaWS\ebsRegistraPortaSB110.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\RegistraPortaWS\realizarConsultaPreviaResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\RegistraPortaWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\RegistraPortaWS\RegistraPortaWS.wsdl" />
+    <None Include="Web References\ValidarLineasClienteWS\contarLineasResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ValidarLineasClienteWS\ebsValidarLineasClienteSB11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ValidarLineasClienteWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ValidarLineasClienteWS\ValidarLineasClienteWS.wsdl" />
+    <None Include="Web References\WSBuroCrediticio\ebsBuroCrediticioSB11.wsdl" />
+    <None Include="Web References\WSBuroCrediticio\objEvaluarCreditoResp.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  <None Include="Web References\WebReferenceEvaluarReglas\BSS_EvaluaReglas_v1.wsdl" />
+    <None Include="Web References\WebReferenceEvaluarReglas\ClaroFault_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WebReferenceEvaluarReglas\ClaroGenericHeaders_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+<None Include="Web References\WebReferenceEvaluarReglas\consultarDatosPlanResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WebReferenceEvaluarReglas\consultarDatosPlan_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WebReferenceEvaluarReglas\consultarServiciosPlanResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WebReferenceEvaluarReglas\consultarServiciosPlan_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WebReferenceEvaluarReglas\obtenerControlesDeConsumoResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WebReferenceEvaluarReglas\obtenerControlesDeConsumo_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WebReferenceEvaluarReglas\obtenerCostoXMaterialResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WebReferenceEvaluarReglas\obtenerCostoXMaterial_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WebReferenceEvaluarReglas\obtenerEvaluacionProactivaResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WebReferenceEvaluarReglas\obtenerEvaluacionProactiva_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WebReferenceEvaluarReglas\Opcionales_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WebReferenceEvaluarReglas\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WebReferenceEvaluarReglas\ResponseStatus_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSBuroCrediticio\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSBuroCrediticio\ResponseOpcionalComplexType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSClienteProteccionMovil\ClienteProteccionMovilWS.wsdl" />
+    <None Include="Web References\WSClienteProteccionMovil\ClienteProteccionMovilWSSB11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSClienteProteccionMovil\ClienteProteccionMovilWSSB110.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSClienteProteccionMovil\consultarPrimaResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSClienteProteccionMovil\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSConsultaClaves\ebsConsultaClavesSB11.wsdl" />
+    <None Include="Web References\WSConsultaClaves\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+
+      <None Include="Web References\WSConsultaCuotaCliente\AuditTypeResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSConsultaCuotaCliente\consultaCuotaCliente.wsdl" />
+    <None Include="Web References\WSConsultaCuotaCliente\ListaResponseOpcional.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSConsultaCuotaCliente\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+ 
+    <None Include="Web References\WSConsultaPlanAprobPorta\BSS_ConsultasSEC_v1.wsdl" />
+    <None Include="Web References\WSConsultaPlanAprobPorta\ConsultarPlanAprobadoResponse.datasource" />
+    <None Include="Web References\WSConsultaPlanAprobPorta\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSConsultaPlanAprobPorta\item0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSConsultaPlanAprobPorta\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSConsultaPlanAprobPorta\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSConsultaPlanAprobPorta\item3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSConsultaPlanAprobPorta\item4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSConsultaPlanAprobPorta\Reference.map" />
+    <None Include="Web References\WSConsultaPostPago\compromisoPago.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSConsultaPostPago\ConsultaTriados.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSConsultaPostPago\contrato.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSConsultaPostPago\datosClienteResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSConsultaPostPago\HistCambioSIMLinea.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSConsultaPostPago\HistEstadosLinea.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSConsultaPostPago\historicoAcciones.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSConsultaPostPago\HistPlanLinea.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSConsultaPostPago\ListaFechaFactura.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSConsultaPostPago\ListaServicios.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSConsultaPostPago\obtenerDatosBscsExtResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSConsultaPostPago\penalidad_response.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSConsultaPostPago\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSConsultaPostPago\ServiciosLinea.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSConsultaPostPago\SIACPostpagoConsultasWSServiceDefinitions.wsdl" />
+    <None Include="Web References\WSConsultarDeudaCuentaBRMS\ClaroFault_v2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSConsultarDeudaCuentaBRMS\ClaroGenericHeaders_v2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSConsultarDeudaCuentaBRMS\ConsultarDeudaCuentaBRMS_dbResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSConsultarDeudaCuentaBRMS\Consultar_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSConsultarDeudaCuentaBRMS\MED_DAT_ConsultarDatosBRMSOACPipelineProxyService.wsdl" />
+    <None Include="Web References\WSConsultarDeudaCuentaBRMS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSConsultarDeudaCuentaBRMS\ResponseStatus_v2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSConsultarPlanPorta\BSS_ConsultasSEC_v1.wsdl" />
+    <None Include="Web References\WSConsultarPlanPorta\ConsultarPlanResponse.datasource" />
+    <None Include="Web References\WSConsultarPlanPorta\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSConsultarPlanPorta\item0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSConsultarPlanPorta\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSConsultarPlanPorta\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSConsultarPlanPorta\item3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSConsultarPlanPorta\item4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSConsultarPlanPorta\Reference.map" />
+    <None Include="Web References\WSDataCreditoCorp\Reference.map" />
+    <None Include="Web References\WSDataCreditoCorp\ServicioClaroCorporativo.wsdl" />
+    <None Include="Web References\WSDataCredito\ClaroService.wsdl" />
+    <None Include="Web References\WSDataCredito\Reference.map" />
+    <None Include="Web References\WSAuditoria\AccesoResponse1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSAuditoria\AplicativoResponse1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSAuditoria\DireccionResponse1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSAuditoria\EbsAuditoriaServiceDefinitions.wsdl" />
+    <None Include="Web References\WSAuditoria\EmpleadoResponse1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSAuditoria\JerarquiaResponse1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSAuditoria\ModalidadResponse1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSAuditoria\OpcionesUsuarioAppResponse1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSAuditoria\OpcionesUsuarioResponse1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSAuditoria\PaginaOpcionesUsuarioResponse1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSAuditoria\PerfilResponse1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSAuditoria\RangosHLRResponse1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSAuditoria\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSAuditoria\RegistroResponse1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSAuditoria\UsuariosAppPerfilResponse1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSDatosClienteService\DatosClientexIMSIResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSDatosClienteService\DatosClientexMSISDNResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSDatosClienteService\DatosPostPagoResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSDatosClienteService\ebsDatosClienteServiceDefinitions.wsdl" />
+    <None Include="Web References\WSDatosClienteService\INDatosPrepagoResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSDatosClienteService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSEnvioCorreo\AuditTypeResponse.datasource" />
+    <None Include="Web References\WSEnvioCorreo\envioCorreoWSPortSB11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSEnvioCorreo\envioCorreoWSService.wsdl" />
+    <None Include="Web References\WSEnvioCorreo\ParametroOpcionalComplexType.datasource" />
+    <None Include="Web References\WSEnvioCorreo\Reference.map" />
+    <None Include="Web References\WSEnvioPorta\ebsEnvioPortaSB11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSEnvioPorta\ebsEnvioPortaSB110.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSEnvioPorta\EnvioPortaWS.wsdl" />
+    <None Include="Web References\WSEnvioPorta\realizarConsultaPreviaResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSEnvioPorta\realizarSolicitudPortabilidadResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSEnvioPorta\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSGestionaProteccionMovil\buscarPrimaResponse.datasource" />
+    <None Include="Web References\WSGestionaProteccionMovil\eliminarPrimaResponse.datasource" />
+    <None Include="Web References\WSGestionaProteccionMovil\GestionaProteccionMovilWS.wsdl" />
+    <None Include="Web References\WSGestionaProteccionMovil\GestionaProteccionMovilWSSB11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSGestionaProteccionMovil\GestionaProteccionMovilWSSB110.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSGestionaProteccionMovil\guardarInscripcionResponse.datasource" />
+    <None Include="Web References\WSGestionaProteccionMovil\guardarPreInscripcionResponse.datasource" />
+    <None Include="Web References\WSGestionaProteccionMovil\guardarPrimaResponse.datasource" />
+    <None Include="Web References\WSGestionaProteccionMovil\procesarPagoPMResponse.datasource" />
+    <None Include="Web References\WSGestionaProteccionMovil\Reference.map" />
+    <None Include="Web References\WSGestionaProteccionMovil\renovarProteccionMovilResponse.datasource" />
+    <None Include="Web References\WSGestionaProteccionMovil\validarExistenciaProteccionMovilResponse.datasource" />
+    <None Include="Web References\WSLineaDesactiva\AdicionalResponseComplexType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSLineaDesactiva\ebsConsultaLineasDesactivasSB11.wsdl" />
+    <None Include="Web References\WSLineaDesactiva\LineasDesactivasBSCSComplexType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSLineaDesactiva\LineasDesactivasSGAComplexType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSLineaDesactiva\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSLineasTecnologiaCliente\ClaroFault_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSLineasTecnologiaCliente\ClaroGenericHeaders_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSLineasTecnologiaCliente\consultarLineasPrePostResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSLineasTecnologiaCliente\consultarLineasPrePost_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSLineasTecnologiaCliente\LineasTecnologiaCliente.wsdl" />
+    <None Include="Web References\WSLineasTecnologiaCliente\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSLineasTecnologiaCliente\responseDataConsultarLineasPrePost_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSLogin\DatosEmpleadoResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSLogin\EbsDatosEmpleadoServiceDefinitions.wsdl" />
+    <None Include="Web References\WSLogin\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSMetricaEvaluacion\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSMetricaEvaluacion\RegistroMetricasVentaWS.wsdl" />
+    <None Include="Web References\WSOAC\Audit.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSOAC\AuditType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSOAC\ConsultaDeudaCuenta.wsdl" />
+    <None Include="Web References\WSOAC\DetalleClienteType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSOAC\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSOperador\EbsIdentificaOperadorServiceDefinitions.wsdl" />
+    <None Include="Web References\WSOperador\linea.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSOperador\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSPortabilidad\EbsValidacionServiceDefinitions.wsdl" />
+    <None Include="Web References\WSPortabilidad\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSPortabilidad\ValidacionResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSPrepago\EbsDatosPrepagoServiceDefinitions.wsdl" />
+    <None Include="Web References\WSPrepago\EstadoSuscripcionResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSPrepago\INDatosLineaResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSPrepago\INDatosPrepagoResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSPrepago\INSaldosBolsasResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSPrepago\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSPuntosClaroClub\Audit.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WSPuntosClaroClub\bloquearPuntosResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSPuntosClaroClub\liberarPuntosResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSPuntosClaroClub\PuntosClaroClub.wsdl" />
+    <None Include="Web References\WSPuntosClaroClub\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSReglasCrediticia\ClaroEvalClientesReglasDecisionService.wsdl" />
+    <None Include="Web References\WSReglasCrediticia\ClaroEvalClientesReglasResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSReglasCrediticia\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSValidacionDeudaRules\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSValidacionDeudaRules\ValidacionDeudaRulesDecisionService.wsdl" />
+    <None Include="Web References\WSValidacionDeudaRules\ValidacionDeudaRulesResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://172.17.26.51:21000/BSS_FlexibilizaDeuda/SRV_FlexibilizaDeuda/Service/Mediation/MED_FlexibilizaDeudaPipeline%3fwsdl ">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FlexibilizaDeudaWS\</RelPath>
+      <UpdateFromURL>http://172.17.26.51:21000/BSS_FlexibilizaDeuda/SRV_FlexibilizaDeuda/Service/Mediation/MED_FlexibilizaDeudaPipeline%3fwsdl </UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_FlexibilizaDeudaWS_BSS_FlexibilizaDeudaSOAP11BindingQSService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.17.26.37:20000/ValidarLineasClienteWS/ebsValidarLineasClienteSB11%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ValidarLineasClienteWS\</RelPath>
+      <UpdateFromURL>http://172.17.26.37:20000/ValidarLineasClienteWS/ebsValidarLineasClienteSB11%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_ValidarLineasClienteWS_ebsValidarLineasClienteService</CachedSettingsPropName>
+    </WebReferenceUrl>
+<WebReferenceUrl Include="http://172.17.26.51:21000/BSS_EvaluaReglas/SRV_EvaluaReglas/Service/Composition/COM_EvaluaReglasProxyService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WebReferenceEvaluarReglas\</RelPath>
+      <UpdateFromURL>http://172.17.26.51:21000/BSS_EvaluaReglas/SRV_EvaluaReglas/Service/Composition/COM_EvaluaReglasProxyService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.17.26.51:21000/BSS_LineasTecnologiaCliente/SRV_LineasTecnologiaCliente/Service/Mediation/MED_LineasTecnologiaCliente%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSLineasTecnologiaCliente\</RelPath>
+      <UpdateFromURL>http://172.17.26.51:21000/BSS_LineasTecnologiaCliente/SRV_LineasTecnologiaCliente/Service/Mediation/MED_LineasTecnologiaCliente%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_WSLineasTecnologiaCliente_MED_LineasTecnologiaCliente</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.72.43:8080/axis/services/Push%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MASServiceServiceWS\</RelPath>
+      <UpdateFromURL>http://172.19.72.43:8080/axis/services/Push%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+
+    <WebReferenceUrl Include="http://172.17.26.54:21000/DAT_ConsultaDatosBRMSOAC/SRV_Consulta/Service/Mediation/MED_DAT_ConsultarDatosBRMSOACPipelineProxyService%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSConsultarDeudaCuentaBRMS\</RelPath>
+      <UpdateFromURL>http://172.17.26.54:21000/DAT_ConsultaDatosBRMSOAC/SRV_Consulta/Service/Mediation/MED_DAT_ConsultarDatosBRMSOACPipelineProxyService%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.73.62:8909/AuditoriaWS/EbsAuditoria%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSAuditoria\</RelPath>
+      <UpdateFromURL>http://172.19.73.62:8909/AuditoriaWS/EbsAuditoria%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_AuditoriaWS_EbsAuditoriaService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.119:8903/RegistroMetricaVentaWS/RegistroMetricasVentasPortSB11%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSMetricaEvaluacion\</RelPath>
+      <UpdateFromURL>http://172.19.74.119:8903/RegistroMetricaVentaWS/RegistroMetricasVentasPortSB11%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_WSMetricaEvaluacion_RegistroMetricasVentasWSService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.138:8903/BuroCrediticioApp/ebsBuroCrediticioSB11%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSBuroCrediticio\</RelPath>
+      <UpdateFromURL>http://172.19.74.138:8903/BuroCrediticioApp/ebsBuroCrediticioSB11%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_WSBuroCrediticio_ebsBuroCrediticioService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.139:8909/OAC_Services/Inquiry/ConsultaDeudaCuenta%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSOAC\</RelPath>
+      <UpdateFromURL>http://172.19.74.139:8909/OAC_Services/Inquiry/ConsultaDeudaCuenta%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_WSOAC_ConsultaDeudaCuenta</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.141:8901/ClaroClub_Services/Inquiry/ConsultaPuntos%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ConsultarPuntosWS\</RelPath>
+      <UpdateFromURL>http://172.19.74.141:8901/ClaroClub_Services/Inquiry/ConsultaPuntos%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_ConsultarPuntosWS_ebsConsultaPuntosClaroClubService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.141:8901/OAC_Services/Inquiry/ConsultaCuotaCliente%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSConsultaCuotaCliente\</RelPath>
+      <UpdateFromURL>http://172.19.74.141:8901/OAC_Services/Inquiry/ConsultaCuotaCliente%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_WSConsultaCuotaCliente_ConsultaCuotaCliente</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.189:7903/ConfiguracionTopeConsumoWS/configuracionTopeConsumoSB11%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ConfiguracionTopeConsumoWS\</RelPath>
+      <UpdateFromURL>http://172.19.74.189:7903/ConfiguracionTopeConsumoWS/configuracionTopeConsumoSB11%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_ConfiguracionTopeConsumoWS_ConfiguracionTopeConsumoWSService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.201:8903/DatosClienteWS/ebsDatosCliente%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSDatosClienteService\</RelPath>
+      <UpdateFromURL>http://172.19.74.201:8903/DatosClienteWS/ebsDatosCliente%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_WSDatosClienteService_ebsDatosClienteService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.202:8903/IdentificaOperadorWS/EbsIdentificaOperador%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSOperador\</RelPath>
+      <UpdateFromURL>http://172.19.74.202:8903/IdentificaOperadorWS/EbsIdentificaOperador%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_WSOperador_EbsIdentificaOperadorService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.202:8909/ConsultaDatosPrepagoWS/EbsDatosPrepago%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSPrepago\</RelPath>
+      <UpdateFromURL>http://172.19.74.202:8909/ConsultaDatosPrepagoWS/EbsDatosPrepago%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_WSPrepago_EbsDatosPrepagoService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.202:8909/SIACPostpagoWS/SIACPostpagoConsultasWS%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSConsultaPostPago\</RelPath>
+      <UpdateFromURL>http://172.19.74.202:8909/SIACPostpagoWS/SIACPostpagoConsultasWS%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_WSConsultaPostPago_SIACPostpagoConsultasWSService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.205:8903/ConsultaDeudaClienteWS/ebsConsultaDeudaClienteSB11%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ConsultaDeudaClienteWS\</RelPath>
+      <UpdateFromURL>http://172.19.74.205:8903/ConsultaDeudaClienteWS/ebsConsultaDeudaClienteSB11%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.222:8903/ClienteProteccionMovilWS/ClienteProteccionMovilWSSB11%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSClienteProteccionMovil\</RelPath>
+      <UpdateFromURL>http://172.19.74.222:8903/ClienteProteccionMovilWS/ClienteProteccionMovilWSSB11%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_WSClienteProteccionMovil_ClienteProteccionMovilWSService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.222:8903/EnvioPortaWS/ebsEnvioPortaSB11%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSEnvioPorta\</RelPath>
+      <UpdateFromURL>http://172.19.74.222:8903/EnvioPortaWS/ebsEnvioPortaSB11%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_WSEnvioPorta_EnvioPortaWSService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.223:8909/ConsultaMigraCampanaWS/ebsConsultaMigraCampanaSB11%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ConsultaMigraCampanaWS\</RelPath>
+      <UpdateFromURL>http://172.19.74.223:8909/ConsultaMigraCampanaWS/ebsConsultaMigraCampanaSB11%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_ConsultaMigraCampanaWS_ConsultaMigraCampanaWSService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.231/DecisionService/ws/ClaroEvalClienteApp/ClaroEvalClientesReglas%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSReglasCrediticia\</RelPath>
+      <UpdateFromURL>http://172.19.74.231/DecisionService/ws/ClaroEvalClienteApp/ClaroEvalClientesReglas%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_WSReglasCrediticia_ClaroEvalClientesReglasDecisionService</CachedSettingsPropName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.231/DecisionService/ws/ValidacionDeudaRuleApp/ValidacionDeudaRules%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSValidacionDeudaRules\</RelPath>
+      <UpdateFromURL>http://172.19.74.231/DecisionService/ws/ValidacionDeudaRuleApp/ValidacionDeudaRules%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.66:8909/DatosEmpleadoWS/EbsDatosEmpleado%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSLogin\</RelPath>
+      <UpdateFromURL>http://172.19.74.66:8909/DatosEmpleadoWS/EbsDatosEmpleado%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_WSLogin_EbsDatosEmpleadoService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.68:8909/ConsultaLineasWS/ebsConsultaLineasDesactivasSB11%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSLineaDesactiva\</RelPath>
+      <UpdateFromURL>http://172.19.74.68:8909/ConsultaLineasWS/ebsConsultaLineasDesactivasSB11%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_WSLineasDesactivas_ebsConsultaLineasDesactivasWS</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.68:8909/ValidacionWS/EbsValidacion%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSPortabilidad\</RelPath>
+      <UpdateFromURL>http://172.19.74.68:8909/ValidacionWS/EbsValidacion%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_WSPortabilidad_EbsValidacionService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.89:8909/RegistraPortaWS/ebsRegistraPortaSB11%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RegistraPortaWS\</RelPath>
+      <UpdateFromURL>http://172.19.74.89:8909/RegistraPortaWS/ebsRegistraPortaSB11%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_RegistraPortaWS_RegistraPortaWSService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.94:8909/ClaroClub_Services/Transaction/PuntosClaroClub%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSPuntosClaroClub\</RelPath>
+      <UpdateFromURL>http://172.19.74.94:8909/ClaroClub_Services/Transaction/PuntosClaroClub%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_WSPuntosClaroClub_ebsGestionarPuntosService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://limdeseaiv28.tim.com.pe:8909/ConsultaClienteUnificadoWS/ebsConsultaClienteUnificadoSB11%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ConsultaClienteUnificadoWS\</RelPath>
+      <UpdateFromURL>http://limdeseaiv28.tim.com.pe:8909/ConsultaClienteUnificadoWS/ebsConsultaClienteUnificadoSB11%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_ConsultaClienteUnificadoWS_ConsultaClienteUnificadoWSService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.19.74.225:8909/ConsultaClavesWS/ebsConsultaClavesSB11%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSConsultaClaves\</RelPath>
+      <UpdateFromURL>http://172.19.74.225:8909/ConsultaClavesWS/ebsConsultaClavesSB11%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_WSConsultaClaves_ebsConsultaClavesService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:8088/mockDAT_ConsultaNacionalidadSOAP11Binding%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ConsultaNacionalidadWS\</RelPath>
+      <UpdateFromURL>http://localhost:8088/mockDAT_ConsultaNacionalidadSOAP11Binding%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Claro_SISACT_WS_ConsultaNacionalidadWS_DAT_ConsultaNacionalidad_v1</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Claro.SISACT.Business\Claro.SISACT.Business.csproj">
+      <Project>{0338FD95-CADF-4264-AA41-A47C6CEDD638}</Project>
+      <Name>Claro.SISACT.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Claro.SISACT.Common\Claro.SISACT.Common.csproj">
+      <Project>{64D5394B-C4A5-482A-8908-B1C84974AB9F}</Project>
+      <Name>Claro.SISACT.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Claro.SISACT.Configuracion\Claro.SISACT.Configuracion.csproj">
+      <Project>{87EC7497-AB32-428A-BD9D-D0605DEAF907}</Project>
+      <Name>Claro.SISACT.Configuracion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Claro.SISACT.Entity\Claro.SISACT.Entity.csproj">
+      <Project>{3CC469F9-CD4B-45D2-AC0E-3E3536BC6BD6}</Project>
+      <Name>Claro.SISACT.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Claro.SISACT.Business.dll" />
+    <Content Include="bin\Debug\Claro.SISACT.Business.pdb" />
+    <Content Include="bin\Debug\Claro.SISACT.Common.dll" />
+    <Content Include="bin\Debug\Claro.SISACT.Common.pdb" />
+    <Content Include="bin\Debug\Claro.SISACT.Configuracion.dll" />
+    <Content Include="bin\Debug\Claro.SISACT.Configuracion.pdb" />
+    <Content Include="bin\Debug\Claro.SISACT.Data.dll" />
+    <Content Include="bin\Debug\Claro.SISACT.Data.pdb" />
+    <Content Include="bin\Debug\Claro.SISACT.Entity.dll" />
+    <Content Include="bin\Debug\Claro.SISACT.Entity.pdb" />
+    <Content Include="bin\Debug\Claro.SISACT.IData.dll" />
+    <Content Include="bin\Debug\Claro.SISACT.IData.pdb" />
+    <Content Include="bin\Debug\Claro.SISACT.SapAccess.dll" />
+    <Content Include="bin\Debug\Claro.SISACT.SapAccess.pdb" />
+    <Content Include="bin\Debug\Claro.SISACT.SapGeneral.dll" />
+    <Content Include="bin\Debug\Claro.SISACT.WS.dll" />
+    <Content Include="bin\Debug\Claro.SISACT.WS.pdb" />
+    <Content Include="bin\Debug\SAP.Connector.dll" />
+    <Content Include="bin\Release\Claro.SISACT.Business.dll" />
+    <Content Include="bin\Release\Claro.SISACT.Business.pdb" />
+    <Content Include="bin\Release\Claro.SISACT.Common.dll" />
+    <Content Include="bin\Release\Claro.SISACT.Common.pdb" />
+    <Content Include="bin\Release\Claro.SISACT.Configuracion.dll" />
+    <Content Include="bin\Release\Claro.SISACT.Configuracion.pdb" />
+    <Content Include="bin\Release\Claro.SISACT.Data.dll" />
+    <Content Include="bin\Release\Claro.SISACT.Data.pdb" />
+    <Content Include="bin\Release\Claro.SISACT.Entity.dll" />
+    <Content Include="bin\Release\Claro.SISACT.Entity.pdb" />
+    <Content Include="bin\Release\Claro.SISACT.IData.dll" />
+    <Content Include="bin\Release\Claro.SISACT.IData.pdb" />
+    <Content Include="bin\Release\Claro.SISACT.SapAccess.dll" />
+    <Content Include="bin\Release\Claro.SISACT.SapAccess.pdb" />
+    <Content Include="bin\Release\Claro.SISACT.SapGeneral.dll" />
+    <Content Include="bin\Release\Claro.SISACT.WS.dll" />
+    <Content Include="bin\Release\Claro.SISACT.WS.pdb" />
+    <Content Include="bin\Release\Claro.SISACT.WS.XmlSerializers.dll" />
+    <Content Include="bin\Release\SAP.Connector.dll" />
+    <Content Include="obj\Debug\Claro.SISACT.WS.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Claro.SISACT.WS.dll" />
+    <Content Include="obj\Debug\Claro.SISACT.WS.pdb" />
+    <Content Include="obj\Debug\TempPE\Service References.AuditoriaWS.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Service References.ServiceReference1.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Web References.WSAuditoria.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Web References.WSBuroCrediticio.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Web References.WSLineaDesactiva.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Web References.WSLogin.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Web References.WSMetricaEvaluacion.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Web References.WSNuevoPEL.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Web References.WSOAC.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Web References.WSOperador.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Web References.WSPortabilidad.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Web References.WSPrepago.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Web References.WSReglasCrediticia.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Web References.WSValidarEmail.Reference.cs.dll" />
+    <Content Include="obj\Release\Claro.SISACT.WS.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\Claro.SISACT.WS.dll" />
+    <Content Include="obj\Release\Claro.SISACT.WS.pdb" />
+    <Content Include="obj\Release\Claro.SISACT.WS.XmlSerializers.dll" />
+    <Content Include="obj\Release\TempPE\Service References.WSOAC.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Web References.WSAuditoria.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Web References.WSBuroCrediticio.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Web References.WSClarify.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Web References.WSLineaDesactiva.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Web References.WSLogin.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Web References.WSMetricaEvaluacion.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Web References.WSOAC.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Web References.WSOperador.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Web References.WSPortabilidad.Reference.cs.dll" />
+    <Content Include="obj\Release\TempPE\Web References.WSReglasCrediticia.Reference.cs.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

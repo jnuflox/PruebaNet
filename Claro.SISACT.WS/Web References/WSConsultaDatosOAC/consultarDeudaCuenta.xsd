@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:data="http://claro.com.pe/esb/data/generico/responseDataConsultarDeudaCuenta/v1/" xmlns:tns="http://claro.com.pe/esb/message/ConsultaDatosOACWS/consultarDeudaCuenta/v1/" xmlns:base="http://claro.com.pe/esb/data/generico/baseschema/v1/" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/esb/message/ConsultaDatosOACWS/consultarDeudaCuenta/v1/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://172.17.26.51:21000/DAT_ConsultaDatosOACWS/SRV_ConsultaDatosOACWS/Resources/WSDL/DAT_ConsultaDatosOACWS?SCHEMA%2FDAT_ConsultaDatosOACWS%2FSRV_ConsultaDatosOACWS%2FResources%2FXSD%2FbaseSchema_v1" namespace="http://claro.com.pe/esb/data/generico/baseschema/v1/" />
+  <xs:import schemaLocation="http://172.17.26.51:21000/DAT_ConsultaDatosOACWS/SRV_ConsultaDatosOACWS/Resources/WSDL/DAT_ConsultaDatosOACWS?SCHEMA%2FDAT_ConsultaDatosOACWS%2FSRV_ConsultaDatosOACWS%2FResources%2FXSD%2FresponseDataConsultarDeudaCuenta" namespace="http://claro.com.pe/esb/data/generico/responseDataConsultarDeudaCuenta/v1/" />
+  <xs:element name="consultarDeudaCuentaRequest" type="tns:consultarDeudaCuentaRequestType" />
+  <xs:element name="consultarDeudaCuentaResponse" type="tns:consultarDeudaCuentaResponseType" />
+  <xs:complexType name="consultarDeudaCuentaRequestType">
+    <xs:sequence>
+      <xs:element name="tipoDocumento" type="xs:string" />
+      <xs:element name="numDocumento" type="xs:string" />
+      <xs:element name="nroMesesDisputa" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="listaAdicionalRequest" type="base:RequestOpcionalType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="consultarDeudaCuentaResponseType">
+    <xs:sequence>
+      <xs:element name="responseStatus" type="base:responseStatus" />
+      <xs:element name="responseDataConsultarDeudaCuenta" type="data:ResponseDataConsultarDeudaCuenta" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

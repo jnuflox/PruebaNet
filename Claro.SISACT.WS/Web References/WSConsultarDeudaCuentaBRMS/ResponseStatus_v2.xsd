@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:entressta="http://claro.com.pe/esb/data/commonBusinessEntities/responseStatus/v2/" targetNamespace="http://claro.com.pe/esb/data/commonBusinessEntities/responseStatus/v2/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="responseStatus" type="entressta:ResponseStatus" />
+  <xsd:complexType name="errorDetailType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="errorCode" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="errorDescription" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ResponseStatus">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="status" type="xsd:int" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="codeResponse" type="xsd:string" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="descriptionResponse" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="errorLocation" type="xsd:string" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="date" type="xsd:dateTime" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="origin" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="errorDetails" type="entressta:errorDetailType" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

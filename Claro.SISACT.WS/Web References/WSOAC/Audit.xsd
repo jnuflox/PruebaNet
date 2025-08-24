@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:aud="http://claro.com.pe/eai/servicecommons/" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/servicecommons/" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="AuditType">
+    <sequence>
+      <element name="txId" type="string" />
+      <element name="errorCode" type="string" />
+      <element name="errorMsg" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="AutenticacionType">
+    <annotation>
+      <documentation>Datos requeridos para la autenticacion de la aplicacion que solicita el servicio</documentation>
+    </annotation>
+    <sequence>
+      <element minOccurs="0" name="ipCliente" type="string" />
+      <element minOccurs="0" name="usuario" type="string" />
+      <element minOccurs="0" name="clave" type="string" />
+      <element minOccurs="0" name="codigoServicioEAI" type="string" />
+      <element minOccurs="0" name="capacidadServicioEAI" type="string" />
+    </sequence>
+  </complexType>
+</schema>

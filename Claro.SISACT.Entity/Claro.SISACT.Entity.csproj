@@ -1,0 +1,635 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3CC469F9-CD4B-45D2-AC0E-3E3536BC6BD6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Claro.SISACT.Entity</RootNamespace>
+    <AssemblyName>Claro.SISACT.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActualizarEvaluacionBRMSDP\Request\ActualizarEvaluacionBrmsBodyRequest.cs" />
+    <Compile Include="ActualizarEvaluacionBRMSDP\Request\ActualizarEvaluacionBrmsDPRequest.cs" />
+    <Compile Include="ActualizarEvaluacionBRMSDP\Request\ActualizarEvaluacionBrmsMsgRequest.cs" />
+    <Compile Include="ActualizarEvaluacionBRMSDP\Request\ActualizarEvaluacionBrmsRequest.cs" />
+    <Compile Include="ActualizarEvaluacionBRMSDP\Response\ActualizarBRMSResponse.cs" />
+    <Compile Include="ActualizarEvaluacionBRMSDP\Response\ActualizarEvaluacionBrmsBodyResponse.cs" />
+    <Compile Include="ActualizarEvaluacionBRMSDP\Response\ActualizarEvaluacionBrmsDPResponse.cs" />
+    <Compile Include="ActualizarEvaluacionBRMSDP\Response\ActualizarEvaluacionBrmsMsgResponse.cs" />
+    <Compile Include="ActualizarEvaluacionBRMSDP\Response\ClaroFault.cs" />
+    <Compile Include="ActualizarEvaluacionBRMSDP\Response\ResponseStatus.cs" />
+    <Compile Include="ActualizarHistoricoProactiva\Request\ActualizarHistoricoBodyRequest.cs" />
+    <Compile Include="ActualizarHistoricoProactiva\Request\ActualizarHistoricoMessageRequest.cs" />
+    <Compile Include="ActualizarHistoricoProactiva\Request\ActualizarHistoricoProactivaRequest.cs" />
+    <Compile Include="ActualizarHistoricoProactiva\Request\ActualizarHistoricoRequest.cs" />
+    <Compile Include="ActualizarHistoricoProactiva\Response\ActualizarHistoricoBodyResponse.cs" />
+    <Compile Include="ActualizarHistoricoProactiva\Response\ActualizarHistoricoMessageResponse.cs" />
+    <Compile Include="ActualizarHistoricoProactiva\Response\ActualizarHistoricoProactivaResponse.cs" />
+    <Compile Include="ActualizarHistoricoProactiva\Response\ActualizarHistoricoResponse.cs" />
+    <Compile Include="ActualizarHistoricoProactiva\Response\ActualizarHistoricoResponseStatus.cs" />
+    <Compile Include="AfiliacionDEAUDebito\ConsultarAfiliacion\BEDatosAfiliacionDebito.cs" />
+    <Compile Include="AfiliacionDEAUDebito\ConsultarAfiliacion\BEListaConsultarAfiliacionDebito.cs" />
+    <Compile Include="AfiliacionDEAUDebito\ConsultarAfiliacion\BEListaNotificacionDebito.cs" />
+    <Compile Include="AfiliacionDEAUDebito\ConsultarAfiliacion\BodyRequestConsultarAfiliacionDEAUDebito.cs" />
+    <Compile Include="AfiliacionDEAUDebito\ConsultarAfiliacion\BodyResponseConsultarAfiliacionDEAUDebito.cs" />
+    <Compile Include="AfiliacionDEAUDebito\ConsultarAfiliacion\MessageRequestConsultarAfiliacionDEAUDebito.cs" />
+    <Compile Include="AfiliacionDEAUDebito\ConsultarAfiliacion\MessageResponseConsultarAfiliacionDEAUDebito.cs" />
+    <Compile Include="AfiliacionDEAUDebito\ConsultarAfiliacion\RequestConsultarAfiliacionDebitoDEAU.cs" />
+    <Compile Include="AfiliacionDEAUDebito\ConsultarAfiliacion\ResponseConsultarAfiliacionDEAUDebito.cs" />
+    <Compile Include="AfiliaciónDEAUAsistidosWSRest\ConsultarAfiliacion\BEListaConsultarAfiliacion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AfiliaciónDEAUAsistidosWSRest\ConsultarAfiliacion\BodyRequestConsultarAfiliacionDEAU.cs" />
+    <Compile Include="AfiliaciónDEAUAsistidosWSRest\ConsultarAfiliacion\BodyResponseConsultarAfiliacionDEAU.cs" />
+    <Compile Include="AfiliaciónDEAUAsistidosWSRest\ConsultarAfiliacion\MessageRequestConsultarAfiliacionDEAU.cs" />
+    <Compile Include="AfiliaciónDEAUAsistidosWSRest\ConsultarAfiliacion\MessageResponseConsultarAfiliacionDEAU.cs" />
+    <Compile Include="AfiliaciónDEAUAsistidosWSRest\ConsultarAfiliacion\RequestConsultarAfiliacionDEAU.cs" />
+    <Compile Include="AfiliaciónDEAUAsistidosWSRest\ConsultarAfiliacion\ResponseConsultarAfiliacionDEAU.cs" />
+    <Compile Include="AfiliaciónDEAUAsistidosWSRest\EnviaLink\BodyResponseEnviaLinkDEAU.cs" />
+    <Compile Include="AfiliaciónDEAUAsistidosWSRest\EnviaLink\MessageResponseEnviaLinkDEAU.cs" />
+    <Compile Include="AfiliaciónDEAUAsistidosWSRest\EnviaLink\RequestEnviaLinkDEAU.cs" />
+    <Compile Include="AfiliaciónDEAUAsistidosWSRest\EnviaLink\ResponseEnviaLinkDEAU.cs" />
+    <Compile Include="AfiliaciónDEAUAsistidosWSRest\RegistraEnvio\BodyRequestRegistraEnvioDEAU.cs" />
+    <Compile Include="AfiliaciónDEAUAsistidosWSRest\RegistraEnvio\BodyResponseRegistraEnvioDEAU.cs" />
+    <Compile Include="AfiliaciónDEAUAsistidosWSRest\RegistraEnvio\MessageRequestRegistraEnvioDEAU.cs" />
+    <Compile Include="AfiliaciónDEAUAsistidosWSRest\RegistraEnvio\MessageResponseRegistraEnvioDEAU.cs" />
+    <Compile Include="AfiliaciónDEAUAsistidosWSRest\RegistraEnvio\ResponseRegistaEnvioDEAU.cs" />
+    <Compile Include="AfiliaciónDEAUAsistidosWSRest\RegistraEnvio\RequestRegistaEnvioDEAU.cs" />
+    <Compile Include="BEAccion.cs" />
+    <Compile Include="BEAcuerdo.cs" />
+    <Compile Include="BEAcuerdoDetalle.cs" />
+    <Compile Include="BEAcuerdoServicio.cs" />
+    <Compile Include="BEAgendamiento.cs" />
+    <Compile Include="BEApCampana.cs" />
+    <Compile Include="BEAprobacionExcepcionPrecios.cs" />
+    <Compile Include="BEArchivo.cs" />
+    <Compile Include="BEAuditoriaRequest.cs" />
+    <Compile Include="BEBolsa.cs" />
+    <Compile Include="BECabeceraValidaSuperv.cs" />
+    <Compile Include="BECanal.cs" />
+    <Compile Include="BECartaPoder.cs" />
+    <Compile Include="BECasoEspecial.cs" />
+    <Compile Include="BECentroPoblado.cs" />
+    <Compile Include="BECliente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BEClienteBRMS.cs" />
+    <Compile Include="BEClienteBSCS.cs" />
+    <Compile Include="BEClienteSAP.cs" />
+    <Compile Include="BEComentario.cs" />
+    <Compile Include="BEconfiguracionCanal.cs" />
+    <Compile Include="BEconfiguracionGeneral.cs" />
+    <Compile Include="BEconfiguracionOperacion.cs" />
+    <Compile Include="BEconfiguracionProducto.cs" />
+    <Compile Include="BEconfiguracionPuntoVenta.cs" />
+    <Compile Include="BEconfiguracionVenta.cs" />
+    <Compile Include="BEConsultaDatosOficina.cs" />
+    <Compile Include="BEConsultaListaPrecios.cs" />
+    <Compile Include="BEConsultaMaterialesXPlanes.cs" />
+    <Compile Include="BeConsultaPrevia.cs" />
+    <Compile Include="BEconsultarConfiguracion.cs" />
+    <Compile Include="BEConsultarMaterialXCampania.cs" />
+    <Compile Include="BEConsultarPrecioBase.cs" />
+    <Compile Include="BEConsultaSeguridad.cs" />
+    <Compile Include="BEConsultaSolicitud.cs" />
+    <Compile Include="BEConsultaStock.cs" />
+    <Compile Include="BECuota.cs" />
+    <Compile Include="BEDataCreditoCorpIN.cs" />
+    <Compile Include="BEDataCreditoCorpOUT.cs" />
+    <Compile Include="BEDataCreditoHistorico.cs" />
+    <Compile Include="BEDataCreditoIN.cs" />
+    <Compile Include="BEDataCreditoINOUT.cs" />
+    <Compile Include="BEDataCreditoOUT.cs" />
+    <Compile Include="BEDatoPersonaClarify.cs" />
+    <Compile Include="BEDatosClienteBrms.cs" />
+    <Compile Include="BEDatosClienteFC.cs" />
+    <Compile Include="BEDatosCreditos.cs" />
+    <Compile Include="BEDebitoAutomatico.cs" />
+    <Compile Include="BEDepartamento.cs" />
+    <Compile Include="BEDescuento.cs" />
+    <Compile Include="BEDetalleLinea_CBIO.cs" />
+    <Compile Include="BEDetalleSot.cs" />
+    <Compile Include="BEDetalleValidaSuper.cs" />
+    <Compile Include="BEDireccionCliente.cs" />
+    <Compile Include="BEDireccionPlano.cs" />
+    <Compile Include="BEDistrito.cs" />
+    <Compile Include="BEDocumento.cs" />
+    <Compile Include="BEDocumentoEvaluacion.cs" />
+    <Compile Include="BEEmpresaCategoria.cs" />
+    <Compile Include="BEEmpresaExperto.cs" />
+    <Compile Include="BEEquipo.cs" />
+    <Compile Include="BEEvaluacion.cs" />
+    <Compile Include="BEFormEvaluacion.cs" />
+    <Compile Include="BEFormLead.cs" />
+    <Compile Include="BEFullClaroBeneficio.cs" />
+    <Compile Include="BEGarantia.cs" />
+    <Compile Include="BEGlobal.cs" />
+    <Compile Include="BEItemGenericoLG.cs" />
+    <Compile Include="BEItemGetInvoque.cs" />
+    <Compile Include="BEItemMensaje.cs" />
+    <Compile Include="BEKit_AP.cs" />
+    <Compile Include="BEMotivoObservacion.cs" />
+    <Compile Include="BEMultipunto.cs" />
+    <Compile Include="BeneficioFullClaro\registrarClienteFCDsctoCargoFijo\Request\BodyRequestRegistrarClienteFCDsctCF.cs" />
+    <Compile Include="BeneficioFullClaro\registrarClienteFCDsctoCargoFijo\Request\listaRequestOpcional.cs" />
+    <Compile Include="BeneficioFullClaro\registrarClienteFCDsctoCargoFijo\Request\MessageRequestRegistrarClienteFCDsctCF.cs" />
+    <Compile Include="BeneficioFullClaro\registrarClienteFCDsctoCargoFijo\Request\RegistrarClienteFCDsctCFRequest.cs" />
+    <Compile Include="BeneficioFullClaro\registrarClienteFCDsctoCargoFijo\Request\responseOpcional.cs" />
+    <Compile Include="BeneficioFullClaro\registrarClienteFCDsctoCargoFijo\Response\BodyResponseRegistrarClienteFCDsctCF.cs" />
+    <Compile Include="BeneficioFullClaro\registrarClienteFCDsctoCargoFijo\Response\MessageResponseRegistrarClienteFCDsctCF.cs" />
+    <Compile Include="BeneficioFullClaro\registrarClienteFCDsctoCargoFijo\Response\RegistrarClienteFCDsctCFResponse.cs" />
+    <Compile Include="BeneficioFullClaro\validarAplicaDsctoCargoFijo\Request\BodyRequestValidarAplicaDsctoCF.cs" />
+    <Compile Include="BeneficioFullClaro\validarAplicaDsctoCargoFijo\Request\listaRequestOpcional.cs" />
+    <Compile Include="BeneficioFullClaro\validarAplicaDsctoCargoFijo\Request\MessageRequestValidarAplicaDsctoCF.cs" />
+    <Compile Include="BeneficioFullClaro\validarAplicaDsctoCargoFijo\Request\responseOpcional.cs" />
+    <Compile Include="BeneficioFullClaro\validarAplicaDsctoCargoFijo\Request\ValidarAplicaDsctoCFRequest.cs" />
+    <Compile Include="BeneficioFullClaro\validarAplicaDsctoCargoFijo\Response\BodyResponseValidarAplicaDsctoCF.cs" />
+    <Compile Include="BeneficioFullClaro\validarAplicaDsctoCargoFijo\Response\MessageResponseValidarAplicaDsctoCF.cs" />
+    <Compile Include="BeneficioFullClaro\validarAplicaDsctoCargoFijo\Response\PO_CURSOR.cs" />
+    <Compile Include="BeneficioFullClaro\validarAplicaDsctoCargoFijo\Response\PO_CURSOR_Row.cs" />
+    <Compile Include="BeneficioFullClaro\validarAplicaDsctoCargoFijo\Response\ValidarAplicaDsctoCFResponse.cs" />
+    <Compile Include="BEPaquete_AP.cs" />
+    <Compile Include="BEParametroPortabilidad.cs" />
+    <Compile Include="BEParametrosMSSAP.cs" />
+    <Compile Include="BEPlanBSSEval.cs" />
+    <Compile Include="BEPlanDetalleHFC.cs" />
+    <Compile Include="BEPlanEquipoHFC.cs" />
+    <Compile Include="BENuevosProductosFC.cs" />
+    <Compile Include="BEPlanProactivo.cs" />
+    <Compile Include="BEPlanPromocionHFC.cs" />
+    <Compile Include="BEPlan_AP.cs" />
+    <Compile Include="BEPlan_CBIO.cs" />
+    <Compile Include="BEPorttConfiguracion.cs" />
+    <Compile Include="BEPorttSolicitud.cs" />
+    <Compile Include="BEPromocion.cs" />
+    <Compile Include="BEPromocionCombinacion.cs" />
+    <Compile Include="BEProvincia.cs" />
+    <Compile Include="BEReciboDeposito.cs" />
+    <Compile Include="BERegistro.cs" />
+    <Compile Include="BERegistroSmsPorta.cs" />
+    <Compile Include="BERepresentanteLegal.cs" />
+    <Compile Include="BERepresentanteLegalDC.cs" />
+    <Compile Include="BESecKit_AP.cs" />
+    <Compile Include="BESecPlan_AP.cs" />
+    <Compile Include="BESeguridad.cs" />
+    <Compile Include="BEEstado.cs" />
+    <Compile Include="BEItemGenerico.cs" />
+    <Compile Include="BEParametro.cs" />
+    <Compile Include="BEPlan.cs" />
+    <Compile Include="BEPlanDetalleConsumer.cs" />
+    <Compile Include="BEPuntoVenta.cs" />
+    <Compile Include="BEResponseWebMethod.cs" />
+    <Compile Include="BEServicio.cs" />
+    <Compile Include="BEServicioFC.cs" />
+    <Compile Include="BEServicioHFC.cs" />
+    <Compile Include="BESolicitud.cs" />
+    <Compile Include="BESolicitudEmpresa.cs" />
+    <Compile Include="BESolicitudExcepPrecio.cs" />
+    <Compile Include="BESolicitudPersona.cs" />
+    <Compile Include="BETipoDocOficina.cs" />
+    <Compile Include="BETipoDocumentoE.cs" />
+    <Compile Include="BETopeConsumo.cs" />
+    <Compile Include="BEUsuario.cs" />
+    <Compile Include="BEUsuarioSession.cs" />
+    <Compile Include="BEValidarConfiguracion.cs" />
+    <Compile Include="BEValidacionLineaClaroResponse.cs" />
+    <Compile Include="BEValidarLinea.cs" />
+    <Compile Include="BEValidarMultipunto.cs" />
+    <Compile Include="BEVendedor.cs" />
+    <Compile Include="BEOfrecimiento.cs" />
+    <Compile Include="BEClienteCuenta.cs" />
+    <Compile Include="BEBilletera.cs" />
+    <Compile Include="BEPlanBilletera.cs" />
+    <Compile Include="BEEquipoBRMS.cs" />
+    <Compile Include="BEOfertaBRMS.cs" />
+    <Compile Include="BEVentaDetalleDTH.cs" />
+    <Compile Include="BEVentaDTH.cs" />
+    <Compile Include="BEVistaEvaluacion.cs" />
+    <Compile Include="BEPlanDetalleVenta.cs" />
+    <Compile Include="BEPlanSolicitudDTH.cs" />
+    <Compile Include="BEPlanSolicitudHFC.cs" />
+    <Compile Include="BEVistaSolicitud.cs" />
+    <Compile Include="BELineaAbonado.cs" />
+    <Compile Include="BENumeroPortabilidad.cs" />
+    <Compile Include="BEPrima.cs" />
+    <Compile Include="BEEvaluacionItem.cs" />
+    <Compile Include="claroventacobertura\validarcobertura\BodyRequestValidarCobertura.cs" />
+    <Compile Include="claroventacobertura\validarcobertura\BodyResponseValidarCobertura.cs" />
+    <Compile Include="claroventacobertura\validarcobertura\ClienteCobertura.cs" />
+    <Compile Include="claroventacobertura\validarcobertura\detalleError.cs" />
+    <Compile Include="claroventacobertura\validarcobertura\DireccionCobertura.cs" />
+    <Compile Include="claroventacobertura\validarcobertura\MessageRequestValidarCobertura.cs" />
+    <Compile Include="claroventacobertura\validarcobertura\MessageResponseValidarCobertura.cs" />
+    <Compile Include="claroventacobertura\validarcobertura\RequestValidarCobertura.cs" />
+    <Compile Include="claroventacobertura\validarcobertura\ResponseData.cs" />
+    <Compile Include="claroventacobertura\validarcobertura\ResponseStatus.cs" />
+    <Compile Include="claroventacobertura\validarcobertura\ResponseValidarCobertura.cs" />
+    <Compile Include="claroventacobertura\validarcobertura\SolicitudCobertura.cs" />
+    <Compile Include="claroventacobertura\validarcobertura\ListaTecnologiasDisponibles.cs" />
+    <Compile Include="claroventacobertura\validarcobertura\ValidarCoberturaRequest.cs" />
+    <Compile Include="claroventacobertura\validarcobertura\ValidarCoberturaResponse.cs" />
+    <Compile Include="claro-vent-ventascontingencia\BEOpcional.cs" />
+    <Compile Include="claro-vent-ventascontingencia\BEVenta.cs" />
+    <Compile Include="claro-vent-ventascontingencia\BEVentasContingencia.cs" />
+    <Compile Include="claro-vent-ventascontingencia\ConsultarVentasContingencia.cs" />
+    <Compile Include="claro-vent-ventascontingencia\ConsultarVentasContingenciaResponse.cs" />
+    <Compile Include="claro-vent-ventascontingencia\BodyConsultarVentasContingencia.cs" />
+    <Compile Include="claro-vent-ventascontingencia\MessageResponseVentasContingencia.cs" />
+    <Compile Include="claro_inte_cuparticipante\consultarParticipante\BuscarCuParticipanteRequest.cs" />
+    <Compile Include="claro_inte_cuparticipante\consultarParticipante\BuscarCuParticipanteResponse.cs" />
+    <Compile Include="claro_inte_cuparticipante\consultarParticipante\ClaroFault.cs" />
+    <Compile Include="claro_inte_cuparticipante\consultarParticipante\HeaderRequest.cs" />
+    <Compile Include="claro_inte_cuparticipante\consultarParticipante\ListaDetalleSegmento.cs" />
+    <Compile Include="claro_inte_cuparticipante\consultarParticipante\Participante.cs" />
+    <Compile Include="claro_int_consultacliente\consultarDatos\BodyRequestConsultarCliente.cs" />
+    <Compile Include="claro_int_consultacliente\consultarDatos\BodyResponseContrato.cs" />
+    <Compile Include="claro_int_consultacliente\consultarDatos\BodyResponseCustomer.cs" />
+    <Compile Include="claro_int_consultacliente\consultarDatos\BodyResponseData.cs" />
+    <Compile Include="claro_int_consultacliente\consultarDatos\BodyResponseProductos.cs" />
+    <Compile Include="claro_int_consultacliente\consultarDatos\BodyResponseTicklers.cs" />
+    <Compile Include="claro_int_consultacliente\consultarDatos\consultarDatosResponse.cs" />
+    <Compile Include="claro_int_consultacliente\consultarDatos\MessageRequestConsultarCliente.cs" />
+    <Compile Include="claro_int_consultacliente\consultarDatos\MessageResponseConsultarCliente.cs" />
+    <Compile Include="claro_ope_comportamientoCliente\consultarComportamientoPago\BodyRequestComportamientoCliente.cs" />
+    <Compile Include="claro_ope_comportamientoCliente\consultarComportamientoPago\BodyResponseAudit.cs" />
+    <Compile Include="claro_ope_comportamientoCliente\consultarComportamientoPago\BodyResponseComportamientoCliente.cs" />
+    <Compile Include="claro_ope_comportamientoCliente\consultarComportamientoPago\BodyResponseData.cs" />
+    <Compile Include="claro_ope_comportamientoCliente\consultarComportamientoPago\ConsultarRequestComportamientoCliente.cs" />
+    <Compile Include="claro_ope_comportamientoCliente\consultarComportamientoPago\ConsultarResponseComportamientoCliente.cs" />
+    <Compile Include="claro_ope_comportamientoCliente\consultarComportamientoPago\ListaOpcional.cs" />
+    <Compile Include="claro_ope_comportamientoCliente\consultarComportamientoPago\PromedioFacturado.cs" />
+    <Compile Include="claro_vent_fullclaroCBIO\consultarActivosCBIO\ConsultarActivosCBIORequest.cs" />
+    <Compile Include="claro_vent_fullclaroCBIO\consultarActivosCBIO\ConsultarActivosCBIOResponse.cs" />
+    <Compile Include="claro_vent_fullclaroCBIO\consultarActivosCBIO\CursorCliente.cs" />
+    <Compile Include="claro_vent_fullclaroCBIO\consultarActivosCBIO\CursorClienteFC.cs" />
+    <Compile Include="claro_vent_fullclaroCBIO\consultarActivosCBIO\Request.cs" />
+    <Compile Include="claro_vent_fullclaroCBIO\consultarActivosCBIO\ResponseDataConsultarActivosCBIO.cs" />
+    <Compile Include="claro_vent_fullclaroCBIO\consultarPendientesActivasCBIO\ConsultarPendientesActivasCBIORequest.cs" />
+    <Compile Include="claro_vent_fullclaroCBIO\consultarPendientesActivasCBIO\ConsultarPendientesActivasCBIOResponse.cs" />
+    <Compile Include="claro_vent_fullclaroCBIO\consultarPendientesActivasCBIO\ListaCandidatos.cs" />
+    <Compile Include="claro_vent_fullclaroCBIO\consultarPendientesActivasCBIO\ListaOnHold.cs" />
+    <Compile Include="claro_vent_fullclaroCBIO\consultarPendientesActivasCBIO\RequestConsultarPendientesActivasCBIO.cs" />
+    <Compile Include="claro_vent_fullclaroCBIO\consultarPendientesActivasCBIO\ResponseDataConPendActivaCBIO.cs" />
+    <Compile Include="claro_vent_operacionescontingencia\consultarconfiguracion\BodyResponseConsultarConfiguracion.cs" />
+    <Compile Include="claro_vent_operacionescontingencia\consultarconfiguracion\ConsultarConfiguracionResponse.cs" />
+    <Compile Include="claro_vent_operacionescontingencia\consultarconfiguracion\MessageResponseConsultarConfiguracion.cs" />
+    <Compile Include="claro_vent_operacionescontingencia\consultarconfiguracion\ResponseConsultarConfiguracion.cs" />
+    <Compile Include="claro_vent_operacionescontingencia\desactivarContingencia\BodyResponseDesactivarContingencia.cs" />
+    <Compile Include="claro_vent_operacionescontingencia\desactivarContingencia\DesactivarContingenciaResponse.cs" />
+    <Compile Include="claro_vent_operacionescontingencia\desactivarContingencia\MessageResponseDesactivarContingencia.cs" />
+    <Compile Include="claro_vent_operacionescontingencia\desactivarContingencia\ResponseDesactivarContingencia.cs" />
+    <Compile Include="claro_vent_pedidostienda\Request\RegistrarSolicitudRequest.cs" />
+    <Compile Include="claro_vent_pedidostienda\Request\RegistrarSolicitudRequestBody.cs" />
+    <Compile Include="claro_vent_pedidostienda\Response\SolicitudExcepcionPrecioResponse.cs" />
+    <Compile Include="claro_vent_pedidostienda\Response\SolicitudExcepcionPrecioResponseBody.cs" />
+	<Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ActualizaPA\ActualizaPABody.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ActualizaPA\ActualizaPAErrorResponse.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ActualizaPA\ActualizaPAGenericRequest.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ActualizaPA\ActualizaPAGenericResponse.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ActualizaPA\ActualizaPAMessageRequest.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ActualizaPA\ActualizaPAMessageResponse.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ActualizaPA\ActualizaPARequest.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ActualizaPA\ActualizaPARequestType.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ActualizaPA\ActualizaPAResponseBody.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ActualizaPA\ActualizaPAResponseData.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ActualizaPA\ActualizaPAResponseStatus.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ActualizaPA\ActualizaPAResponseType.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaHistorico\Request\ConsultaHistBodyRequest.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaHistorico\Request\ConsultaHistGenericRequest.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaHistorico\Request\ConsultaHistMessageRequest.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaHistorico\Request\ConsultaHistRequest.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaHistorico\Response\ConsultaHistBodyResponse.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaHistorico\Response\ConsultaHistConsultaHistoral.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaHistorico\Response\ConsultaHistGenericResponse.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaHistorico\Response\ConsultaHistMessageResponse.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaHistorico\Response\ConsultaHistResponse.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaHistorico\Response\ConsultaHistResponseData.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaHistorico\Response\ConsultaHistResponseStatus.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaPABody.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaPAGenericRequest.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaPAGenericResponse.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaPAHeader.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaPAHeaderResponse.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaPAMessageResponse.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaPARequest.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaPAResponseBody.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaPAResponseData.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaPAResponseHeader.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaPAResponseType.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaPAHeaderRequest.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaPAMessageRequest.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\ConsultaPAStatus.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\RegistraHistorial\RegistraHistorialBody.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\RegistraHistorial\RegistraHistorialBodyResponse.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\RegistraHistorial\RegistraHistorialGenericRequest.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\RegistraHistorial\RegistraHistorialGenericResponse.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\RegistraHistorial\RegistraHistorialMessageRequest.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\RegistraHistorial\RegistraHistorialMessageResponse.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\RegistraHistorial\RegistraHistorialRequest.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\RegistraHistorial\RegistraHistorialResponseBody.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\RegistraHistorial\RegistraHistorialResponseStatus.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\RegistraHistorial\RegistraHistorialResponseType.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\RegistroPA\RegistroPABody.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\RegistroPA\RegistroPABodyResponse.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\RegistroPA\RegistroPAGenericRequest.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\RegistroPA\RegistroPAGenericResponse.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\RegistroPA\RegistroPAMessageRequest.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\RegistroPA\RegistroPAMessageResponse.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\RegistroPA\RegistroPARequest.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\RegistroPA\RegistroPAResponseBody.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\RegistroPA\RegistroPAResponseStatus.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\DataPower\RegistroPA\RegistroPAResponseType.cs" />
+    <Compile Include="ClientePagoAnticipadoFijaRest\PagoAnticipado.cs" />
+    <Compile Include="ConsultarCantidadCampaniaRest\BEAuditRequest.cs" />
+    <Compile Include="ConsultarCantidadCampaniaRest\BEAuditResponse.cs" />
+    <Compile Include="ConsultarCantidadCampaniaRest\BodyRequestValidCantCampania.cs" />
+    <Compile Include="ConsultarCantidadCampaniaRest\BodyResponseValidCantCampania.cs" />
+    <Compile Include="ConsultarCantidadCampaniaRest\ConsultarCursor.cs" />
+    <Compile Include="ConsultarCantidadCampaniaRest\Cursor.cs" />
+    <Compile Include="ConsultarCantidadCampaniaRest\MessageRequestValidCantCampania.cs" />
+    <Compile Include="ConsultarCantidadCampaniaRest\MessageResponseValidCantCampania.cs" />
+    <Compile Include="ConsultarCantidadCampaniaRest\ValidarCantidadCampaniaRequest.cs" />
+    <Compile Include="ConsultarCantidadCampaniaRest\ValidarCantidadCampaniaResponse.cs" />
+    <Compile Include="ConsultarCantidadCampaniaRest\ValidarCantidadCampaniasRequest.cs" />
+    <Compile Include="ConsultarCantidadCampaniaRest\ValidarCantidadCampaniasResponse.cs" />
+    <Compile Include="ConsultarClienteFullClaroRest\BodyResponseConsClienteFC.cs" />
+    <Compile Include="ConsultarClienteFullClaroRest\ConsultarClienteFullClaroRequest.cs" />
+    <Compile Include="ConsultarClienteFullClaroRest\ConsultarClientesFullClaroRequest.cs" />
+    <Compile Include="ConsultarClienteFullClaroRest\ConsultarClientesFullClaroResponse.cs" />
+    <Compile Include="ConsultarClienteFullClaroRest\DataConsResponse.cs" />
+    <Compile Include="ConsultarClienteFullClaroRest\MessageResponseConsClienteFC.cs" />
+    <Compile Include="ConsultarClienteFullClaroRest\MessageResquestConsClienteFC.cs" />
+    <Compile Include="ConsultaSOT\Request\GetDataConsultaSotBodyRequest.cs" />
+    <Compile Include="ConsultaSOT\Request\GetDataConsultaSotMessageRequest.cs" />
+    <Compile Include="ConsultaSOT\Request\GetDataConsultaSotRequest.cs" />
+    <Compile Include="ConsultaSOT\Response\GetDataConsultaSotBodyResponse.cs" />
+    <Compile Include="ConsultaSOT\Response\GetDataConsultaSotMessageResponse.cs" />
+    <Compile Include="ConsultaSOT\Response\GetDataConsultaSotResponse.cs" />
+    <Compile Include="ConsultaSOT\Response\GetDataConsultaSotTypeResponse.cs" />
+    <Compile Include="DataPowerRest\CredencialesDPRest.cs" />
+    <Compile Include="DataPowerRest\Generic\AuditResponse.cs" />
+    <Compile Include="DataPowerRest\Generic\GenericRequest.cs" />
+    <Compile Include="DataPowerRest\Generic\GenericResponse.cs" />
+    <Compile Include="DataPowerRest\Generic\HeaderRequest.cs" />
+    <Compile Include="DataPowerRest\Generic\HeaderResponse.cs" />
+    <Compile Include="DataPowerRest\Generic\HeadersRequest.cs" />
+    <Compile Include="DataPowerRest\Generic\HeadersResponse.cs" />
+    <Compile Include="DataPowerRest\Generic\IBodyRequest.cs" />
+    <Compile Include="DataPowerRest\Generic\IBodyResponse.cs" />
+    <Compile Include="DataPowerRest\Generic\MessageRequest.cs" />
+    <Compile Include="DataPowerRest\Generic\MessageResponse.cs" />
+    <Compile Include="DataPowerRest\Generic\Status.cs" />
+    <Compile Include="DataPowerRest\HeaderRequest.cs" />
+    <Compile Include="DataPowerRest\HeaderResponse.cs" />
+    <Compile Include="DataPowerRest\HeadersRequest.cs" />
+    <Compile Include="DataPowerRest\HeadersResponse.cs" />
+    <Compile Include="DataPowerRest\Status.cs" />
+    <Compile Include="DatosLineaRest\AuditoriaRest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatosLineaRest\BodyRequestDatosLinea.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatosLineaRest\BodyResponseDatosLinea.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatosLineaRest\ListaOpcional.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatosLineaRest\RequestDatosLinea.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatosLineaRest\ResponseData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatosLineaRest\ResponseDataCliente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatosLineaRest\ResponseDataProductos.cs" />
+    <Compile Include="DatosLineaRest\ResponseDataTicklers.cs" />
+    <Compile Include="DatosLineaRest\ResponseDatosLinea.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AfiliaciónDEAUAsistidosWSRest\EnviaLink\BodyRequestEnviaLinkDEAU.cs" />
+    <Compile Include="AfiliaciónDEAUAsistidosWSRest\EnviaLink\MessageRequestEnviaLinkDEAU.cs" />
+    <Compile Include="GenericRequestResponse\BEAuditRequest.cs" />
+    <Compile Include="GenericRequestResponse\BEAuditResponse.cs" />
+    <Compile Include="GenericRequestResponse\BEListaOpcional.cs" />
+    <Compile Include="Intico\GeneraTokenResponse.cs" />
+    <Compile Include="Intico\RemueveTokenResponse.cs" />
+    <Compile Include="IteracionCliente\Response\BEDatosDetalle.cs" />
+    <Compile Include="IteracionCliente\Response\ConsultarEvaluacionResponse.cs" />
+    <Compile Include="IteracionCliente\Response\ConsultarEvaluacionResponseBody.cs" />
+    <Compile Include="IteracionCliente\Response\ConsultarEvaluacionResponseType.cs" />
+    <Compile Include="IteracionCliente\Response\BEDatosCabecera.cs" />
+    <Compile Include="claro_vent_pedidostienda\Request\BodyRequestAprobarPT.cs" />
+    <Compile Include="claro_vent_pedidostienda\Request\MessageRequestPT.cs" />
+    <Compile Include="claro_vent_pedidostienda\Request\MessageResponsePT.cs" />
+    <Compile Include="claro_vent_pedidostienda\Response\BEDataResponse.cs" />
+    <Compile Include="claro_vent_pedidostienda\Response\BEDatosPTDetalle.cs" />
+    <Compile Include="claro_vent_pedidostienda\Response\PedidosTiendaResponse.cs" />
+    <Compile Include="claro_vent_pedidostienda\Response\PedidosTiendaResponseBody.cs" />
+    <Compile Include="claro_vent_pedidostienda\Response\PedidosTiendaResponseType.cs" />
+    <Compile Include="MotorPromociones\GetBonos\BodyRequestGetBonos.cs" />
+    <Compile Include="MotorPromociones\GetBonos\BodyResponseGetBonos.cs" />
+    <Compile Include="MotorPromociones\GetBonos\GetBonosRequest.cs" />
+    <Compile Include="MotorPromociones\GetBonos\GetBonosResponse.cs" />
+    <Compile Include="MotorPromociones\GetBonos\ListBonosResponse.cs" />
+    <Compile Include="MotorPromociones\GetBonos\ListResultResponse.cs" />
+    <Compile Include="MotorPromociones\GetBonos\MessageRequestGetBonos.cs" />
+    <Compile Include="MotorPromociones\GetBonos\MessageResponseGetBonos.cs" />
+    <Compile Include="MotorPromociones\GetMultilineaInfo\BodyRequestGetMultilineaInfo.cs" />
+    <Compile Include="MotorPromociones\GetMultilineaInfo\BodyResponseGetMultilineaInfo.cs" />
+    <Compile Include="MotorPromociones\GetMultilineaInfo\GetMultilineaInfoRequest.cs" />
+    <Compile Include="MotorPromociones\GetMultilineaInfo\GetMultilineaInfoResponse.cs" />
+    <Compile Include="MotorPromociones\GetMultilineaInfo\ListResultResponseG.cs" />
+    <Compile Include="MotorPromociones\GetMultilineaInfo\MessageRequestGetMultilineaInfo.cs" />
+    <Compile Include="MotorPromociones\GetMultilineaInfo\MessageResponseGetMultilineaInfo.cs" />
+    <Compile Include="MotorPromociones\ResponseAudit.cs" />
+    <Compile Include="MotorPromociones\SimulacionMultilineas\BodyRequestSimulacionMultilineas.cs" />
+    <Compile Include="MotorPromociones\SimulacionMultilineas\BodyResponseSimulacionMultilineas.cs" />
+    <Compile Include="MotorPromociones\SimulacionMultilineas\ListContractResponse.cs" />
+    <Compile Include="MotorPromociones\SimulacionMultilineas\ListNewContractRequest.cs" />
+    <Compile Include="MotorPromociones\SimulacionMultilineas\MessageRequestSimulacionMultilineas.cs" />
+    <Compile Include="MotorPromociones\SimulacionMultilineas\MessageResponseSimulacionMultilineas.cs" />
+    <Compile Include="MotorPromociones\SimulacionMultilineas\ResultResponse.cs" />
+    <Compile Include="MotorPromociones\SimulacionMultilineas\SimulacionMultilineasRequest.cs" />
+    <Compile Include="MotorPromociones\SimulacionMultilineas\SimulacionMultilineasResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BETipoGarantia.cs" />
+    <Compile Include="BESecServicio_AP.cs" />
+    <Compile Include="BEServicio_AP.cs" />
+    <Compile Include="BETipoDocumento.cs" />
+    <Compile Include="RegistrarEvaluacionMejPortaRest\BodyRegistrarEvaluacionMejPor.cs" />
+    <Compile Include="RegistrarEvaluacionMejPortaRest\BodyRegistrarEvaluacionResponse.cs" />
+    <Compile Include="RegistrarEvaluacionMejPortaRest\RegistrarEvaluacionMejoraPortaRequest.cs" />
+    <Compile Include="RegistrarEvaluacionMejPortaRest\RegistrarEvaluacionMejoraPortaResponse.cs" />
+    <Compile Include="RegistrarEvaluacionMejPortaRest\RegistrarEvaluacionMejPorMessageRequest.cs" />
+    <Compile Include="RegistrarEvaluacionMejPortaRest\RegistrarEvaluacionMejPorMessageResponse.cs" />
+    <Compile Include="RegistrarEvaluacionMejPortaRest\RegistrarEvaluacionRequest.cs" />
+    <Compile Include="RegistrarEvaluacionMejPortaRest\RegistrarEvaluacionResponse.cs" />
+    <Compile Include="RegistrarEvaluacionBRMSDP\Request\RegistrarEvaluacionBRMSDPBodyRequest.cs" />
+    <Compile Include="RegistrarEvaluacionBRMSDP\Request\RegistrarEvaluacionBRMSDPMessageRequest.cs" />
+    <Compile Include="RegistrarEvaluacionBRMSDP\Request\RegistrarEvaluacionBRMSDPRequest.cs" />
+    <Compile Include="RegistrarEvaluacionBRMSDP\Request\RegistrarEvaluacionBrmsRequest.cs" />
+    <Compile Include="RegistrarEvaluacionBRMSDP\Response\ClaroFault.cs" />
+    <Compile Include="RegistrarEvaluacionBRMSDP\Response\RegistrarEvaluacionBRMSDPBodyResponse.cs" />
+    <Compile Include="RegistrarEvaluacionBRMSDP\Response\RegistrarEvaluacionBRMSDPMessageResponse.cs" />
+    <Compile Include="RegistrarEvaluacionBRMSDP\Response\RegistrarEvaluacionBRMSDPResponse.cs" />
+    <Compile Include="RegistrarEvaluacionBRMSDP\Response\RegistrarEvaluacionBRMSResponse.cs" />
+    <Compile Include="RegistrarEvaluacionBRMSDP\Response\ResponseStatus.cs" />
+    <Compile Include="RegistrarOmisionPINRest\BEResponseAudit.cs" />
+    <Compile Include="RegistrarServExcluyentesRest\RegistrarServiciosExcluyentesRequest.cs" />
+    <Compile Include="RegistrarServExcluyentesRest\RegistrarServiciosExcluyentesResponse.cs" />
+    <Compile Include="BECabeceraFC.cs" />
+    <Compile Include="BEDetalleFC.cs" />
+    <Compile Include="RegistraCandidatoFullClaroRest\BodyResponseRegCandidatoFC.cs" />
+    <Compile Include="RegistraCandidatoFullClaroRest\MessageResponseRegCandidatoFC.cs" />
+    <Compile Include="RegistraCandidatoFullClaroRest\RegistraCandidatosFullClaroResponse.cs" />
+    <Compile Include="RegistraCandidatoFullClaroRest\MessageRequestRegCandidatoFC.cs" />
+    <Compile Include="RegistraCandidatoFullClaroRest\RegistraCandidatoFullClaroRequest.cs" />
+    <Compile Include="RegistraCandidatoFullClaroRest\RegistraCandidatosFullClaroRequest.cs" />
+    <Compile Include="RegistrarOmisionPINRest\BECabeceraOmisionPIN.cs" />
+    <Compile Include="RegistrarOmisionPINRest\BEDetalleOmisionPIN.cs" />
+    <Compile Include="RegistrarOmisionPINRest\BodyRequestRegistrarOmisionPIN.cs" />
+    <Compile Include="RegistrarOmisionPINRest\BodyResponseRegistrarOmisionPIN.cs" />
+    <Compile Include="RegistrarOmisionPINRest\MessageRequestRegistrarOmisionPIN.cs" />
+    <Compile Include="RegistrarOmisionPINRest\MessageResponseRegistrarOmisionPIN.cs" />
+    <Compile Include="RegistrarOmisionPINRest\RequestRegistrarOmisionPIN.cs" />
+    <Compile Include="RegistrarOmisionPINRest\ResponseRegistrarOmisionPIN.cs" />
+    <Compile Include="RegistrarSMSPortabilidadRest\BodyResponseRegSMSPorta.cs" />
+    <Compile Include="RegistrarSMSPortabilidadRest\MessageRequestRegSMSPorta.cs" />
+    <Compile Include="RegistrarSMSPortabilidadRest\MessageResponseRegSMSPorta.cs" />
+    <Compile Include="RegistrarSMSPortabilidadRest\RegistrarSMSPortabilidadRequest.cs" />
+    <Compile Include="RegistrarSMSPortabilidadRest\DataRegResponse.cs" />
+    <Compile Include="RegistrarSMSPortabilidadRest\RegistrarSMSPortabilidadesRequest.cs" />
+    <Compile Include="RegistrarSMSPortabilidadRest\RegistrarSMSPortabilidadesResponse.cs" />
+    <Compile Include="ValidarCampanaRest\Request\ValidarCampanaBodyRequest.cs" />
+    <Compile Include="ValidarCampanaRest\Request\ValidarCampanaDtpRequest.cs" />
+    <Compile Include="ValidarCampanaRest\Request\ValidarCampanaMessageRequest.cs" />
+    <Compile Include="ValidarCampanaRest\Request\ValidarCampanaRequest.cs" />
+    <Compile Include="ValidarCampanaRest\Response\ValidarCampanaBodyResponse.cs" />
+    <Compile Include="ValidarCampanaRest\Response\ValidarCampanaDataResponse.cs" />
+    <Compile Include="ValidarCampanaRest\Response\ValidarCampanaDtpResponse.cs" />
+    <Compile Include="ValidarCampanaRest\Response\ValidarCampanaListaLineasResponse.cs" />
+    <Compile Include="ValidarCampanaRest\Response\ValidarCampanaMessageResponse.cs" />
+    <Compile Include="ValidarCampanaRest\Response\ValidarCampanaResponse.cs" />
+    <Compile Include="ValidarCampanaRest\Response\ValidarCampanaStatusResponse.cs" />
+    <Compile Include="ValidarServExcluyentesRest\ValidarServiciosExcluyentesRequest.cs" />
+    <Compile Include="ValidarServExcluyentesRest\ValidarServiciosExcluyentesResponse.cs" />
+    <Compile Include="ValidarProductosFCRest\BodyResponseValidaProductosFC.cs" />
+    <Compile Include="ValidarProductosFCRest\MessageResponseValidarProductosFC.cs" />
+    <Compile Include="ValidarProductosFCRest\MessageResquestValidarProductosFC.cs" />
+    <Compile Include="ValidarProductosFCRest\ValidarProductosFCRequest.cs" />
+    <Compile Include="ValidarProductosFCRest\ProductosFCRestRequest.cs" />
+    <Compile Include="ValidarProductosFCRest\ValidarProductosFCResponse.cs" />
+    <Compile Include="ValidarSMSPortabilidadRest\BodyResponseValidSMSPorta.cs" />
+    <Compile Include="ValidarSMSPortabilidadRest\MessageRequestValidSMSPorta.cs" />
+    <Compile Include="ValidarSMSPortabilidadRest\MessageResponseValidSMSPorta.cs" />
+    <Compile Include="ValidarSMSPortabilidadRest\ValidarSMSPortabilidadesRequest.cs" />
+    <Compile Include="ValidarSMSPortabilidadRest\ValidarSMSPortabilidadRequest.cs" />
+    <Compile Include="ValidarSMSPortabilidadRest\ValidarSMSPortabilidadesResponse.cs" />
+    <Compile Include="VentasCuotas\ObtenerDatosPedidosAccCuotas\Response\BEObtenerDatosPedidoAccCuotas.cs" />
+    <Compile Include="VentasCuotas\ObtenerDatosPedidosAccCuotas\Response\ObtenerDatosPedidoAccCuotasBodyResponse.cs" />
+    <Compile Include="VentasCuotas\ObtenerDatosPedidosAccCuotas\Response\ObtenerDatosPedidoAccCuotasMessageResponse.cs" />
+    <Compile Include="VentasCuotas\ObtenerDatosPedidosAccCuotas\Response\ObtenerDatosPedidoAccCuotasResponse.cs" />
+    <Compile Include="VentasCuotas\ObtenerDatosPedidosAccCuotas\Response\ObtenerDatosPedidoAccCuotasTypeResponse.cs" />
+    <Compile Include="VentasCuotas\ObtenerVariablesBRMS\Response\BEObtenerVariablesBRMS.cs" />
+    <Compile Include="VentasCuotas\ObtenerVariablesBRMS\Response\ObtenerVariablesBRMSBodyResponse.cs" />
+    <Compile Include="VentasCuotas\ObtenerVariablesBRMS\Response\ObtenerVariablesBRMSMessageResponse.cs" />
+    <Compile Include="VentasCuotas\ObtenerVariablesBRMS\Response\ObtenerVariablesBRMSResponse.cs" />
+    <Compile Include="VentasCuotas\ObtenerVariablesBRMS\Response\ObtenerVariablesBRMSTypeResponse.cs" />
+    <Compile Include="VentasCuotas\RegistrarVariablesBRMS\Request\RegistrarVariablesBodyRequest.cs" />
+    <Compile Include="VentasCuotas\RegistrarVariablesBRMS\Request\RegistrarVariablesMessageRequest.cs" />
+    <Compile Include="VentasCuotas\RegistrarVariablesBRMS\Request\RegistrarVariablesRequest.cs" />
+    <Compile Include="VentasCuotas\RegistrarVariablesBRMS\Request\RegistrarVariablesTypeRequest.cs" />
+    <Compile Include="VentasCuotas\RegistrarVariablesBRMS\Response\RegistrarVariablesBodyResponse.cs" />
+    <Compile Include="VentasCuotas\RegistrarVariablesBRMS\Response\RegistrarVariablesMessageResponse.cs" />
+    <Compile Include="VentasCuotas\RegistrarVariablesBRMS\Response\RegistrarVariablesResponse.cs" />
+    <Compile Include="VentasCuotas\RegistrarVariablesBRMS\Response\RegistrarVariablesTypeResponse.cs" />
+    <Compile Include="VentasCuotas\RegistrarVtaAccCuotas\Request\RegistrarVentaAccCuotasBodyRequest.cs" />
+    <Compile Include="VentasCuotas\RegistrarVtaAccCuotas\Request\RegistrarVentaAccCuotasMessageRequest.cs" />
+    <Compile Include="VentasCuotas\RegistrarVtaAccCuotas\Request\RegistrarVentaAccCuotasRequest.cs" />
+    <Compile Include="VentasCuotas\RegistrarVtaAccCuotas\Request\RegistrarVentaAccCuotasTypeRequest.cs" />
+    <Compile Include="VentasCuotas\RegistrarVtaAccCuotas\Response\RegistrarVentaAccCuotasBodyResponse.cs" />
+    <Compile Include="VentasCuotas\RegistrarVtaAccCuotas\Response\RegistrarVentaAccCuotasMessageResponse.cs" />
+    <Compile Include="VentasCuotas\RegistrarVtaAccCuotas\Response\RegistrarVentaAccCuotasResponse.cs" />
+    <Compile Include="VentasCuotas\RegistrarVtaAccCuotas\Response\RegistrarVentaAccCuotasTypeResponse.cs" />
+    <Compile Include="VentasCuotas\ValidarCuoAccPendXLinea\Request\ValdCuoAccPendXLineaBodyRequest.cs" />
+    <Compile Include="VentasCuotas\ValidarCuoAccPendXLinea\Request\ValdCuoAccPendXLineaMessageRequest.cs" />
+    <Compile Include="VentasCuotas\ValidarCuoAccPendXLinea\Request\ValdCuoAccPendXLineaRequest.cs" />
+    <Compile Include="VentasCuotas\ValidarCuoAccPendXLinea\Request\ValdCuoAccPendXLineaTypeRequest.cs" />
+    <Compile Include="VentasCuotas\ValidarCuoAccPendXLinea\Response\ValdCuoAccPendXLineaBodyResponse.cs" />
+    <Compile Include="VentasCuotas\ValidarCuoAccPendXLinea\Response\ValdCuoAccPendXLineaMessageResponse.cs" />
+    <Compile Include="VentasCuotas\ValidarCuoAccPendXLinea\Response\ValdCuoAccPendXLineaResponse.cs" />
+    <Compile Include="VentasCuotas\ValidarCuoAccPendXLinea\Response\ValdCuoAccPendXLineaTypeResponse.cs" />
+    <Compile Include="VentasCuotas\ValidarMaterialAccCuota\Response\BEValidarMaterialAccCuota.cs" />
+    <Compile Include="VentasCuotas\ValidarMaterialAccCuota\Response\ValidarMaterialAccCuotaBodyResponse.cs" />
+    <Compile Include="VentasCuotas\ValidarMaterialAccCuota\Response\ValidarMaterialAccCuotaMessageResponse.cs" />
+    <Compile Include="VentasCuotas\ValidarMaterialAccCuota\Response\ValidarMaterialAccCuotaResponse.cs" />
+    <Compile Include="VentasCuotas\ValidarMaterialAccCuota\Response\ValidarMaterialAccCuotaTypeResponse.cs" />
+    <Compile Include="Vista_SolicitudDC_Reporte.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Claro.SISACT.Entity.dll" />
+    <Content Include="bin\Debug\Claro.SISACT.Entity.pdb" />
+    <Content Include="bin\Release\Claro.SISACT.Entity.dll" />
+    <Content Include="bin\Release\Claro.SISACT.Entity.pdb" />
+    <Content Include="obj\Debug\Claro.SISACT.Entity.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Claro.SISACT.Entity.dll" />
+    <Content Include="obj\Debug\Claro.SISACT.Entity.pdb" />
+    <Content Include="obj\Release\Claro.SISACT.Entity.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\Claro.SISACT.Entity.dll" />
+    <Content Include="obj\Release\Claro.SISACT.Entity.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\Claro.SISACT.Entity.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

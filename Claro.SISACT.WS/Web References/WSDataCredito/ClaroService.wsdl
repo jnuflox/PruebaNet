@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://172.24.14.206:8080/claroWs2.demo/services/ClaroService" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://172.24.14.206:8080/claroWs2.demo/services/ClaroService" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types />
+  <message name="ejecutarConsultaClaroResponse">
+    <part name="ejecutarConsultaClaroReturn" type="soapenc:string" />
+  </message>
+  <message name="ejecutarConsultaClaroRequest">
+    <part name="istrSecuencia" type="soapenc:string" />
+    <part name="istrTipoDocumento" type="soapenc:string" />
+    <part name="istrNumeroDocumento" type="soapenc:string" />
+    <part name="istrAPELLIDOPATERNO" type="soapenc:string" />
+    <part name="istrAPELLIDOMATERNO" type="soapenc:string" />
+    <part name="istrNOMBRES" type="soapenc:string" />
+    <part name="istrDatoEntrada" type="s:int" />
+    <part name="istrDatoComplemento" type="soapenc:string" />
+    <part name="istrTIPOPRODUCTO" type="soapenc:string" />
+    <part name="istrTIPOCLIENTE" type="soapenc:string" />
+    <part name="istrEDAD" type="soapenc:string" />
+    <part name="istrIngresoOLineaCredito" type="soapenc:string" />
+    <part name="istrTIPOTARJETA" type="soapenc:string" />
+    <part name="istrRUC" type="soapenc:string" />
+    <part name="istrANTIGUEDADLABORAL" type="soapenc:string" />
+    <part name="istrNumOperaPVU" type="soapenc:string" />
+    <part name="istrRegion" type="soapenc:string" />
+    <part name="istrArea" type="soapenc:string" />
+    <part name="istrCanal" type="soapenc:string" />
+    <part name="istrPuntoVenta" type="soapenc:string" />
+    <part name="istrIDCanal" type="soapenc:string" />
+    <part name="istrIDTerminal" type="soapenc:string" />
+    <part name="istrUsuarioACC" type="soapenc:string" />
+    <part name="ostrNumOperaEFT" type="soapenc:string" />
+    <part name="IstrNUMCUENTAS" type="soapenc:string" />
+    <part name="strEstadoCivil" type="soapenc:string" />
+  </message>
+  <portType name="ClaroService">
+    <operation name="ejecutarConsultaClaro" parameterOrder="istrSecuencia istrTipoDocumento istrNumeroDocumento istrAPELLIDOPATERNO istrAPELLIDOMATERNO istrNOMBRES istrDatoEntrada istrDatoComplemento istrTIPOPRODUCTO istrTIPOCLIENTE istrEDAD istrIngresoOLineaCredito istrTIPOTARJETA istrRUC istrANTIGUEDADLABORAL istrNumOperaPVU istrRegion istrArea istrCanal istrPuntoVenta istrIDCanal istrIDTerminal istrUsuarioACC ostrNumOperaEFT IstrNUMCUENTAS strEstadoCivil">
+      <input name="ejecutarConsultaClaroRequest" message="tns:ejecutarConsultaClaroRequest" />
+      <output name="ejecutarConsultaClaroResponse" message="tns:ejecutarConsultaClaroResponse" />
+    </operation>
+  </portType>
+  <binding name="ClaroServiceSoapBinding" type="tns:ClaroService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <operation name="ejecutarConsultaClaro">
+      <soap:operation soapAction="" />
+      <input name="ejecutarConsultaClaroRequest">
+        <soap:body use="encoded" namespace="http://impl.ws.interschemes.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output name="ejecutarConsultaClaroResponse">
+        <soap:body use="encoded" namespace="http://172.24.14.206:8080/claroWs2.demo/services/ClaroService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ClaroServiceService">
+    <port name="ClaroService" binding="tns:ClaroServiceSoapBinding">
+      <soap:address location="http://172.24.14.206:8080/claroWs2.demo/services/ClaroService" />
+    </port>
+  </service>
+</definitions>

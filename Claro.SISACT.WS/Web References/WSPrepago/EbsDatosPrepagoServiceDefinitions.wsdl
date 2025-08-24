@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s0:definitions xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s1="http://pe/com/claro/esb/services/consultaPrepago/ws" xmlns="" name="EbsDatosPrepagoServiceDefinitions" targetNamespace="http://pe/com/claro/esb/services/consultaPrepago/ws" xmlns:s0="http://schemas.xmlsoap.org/wsdl/">
+  <s0:types>
+    <schema xmlns:tns="http://pe/com/claro/esb/services/schemas/EstadoSuscripcion" elementFormDefault="qualified" targetNamespace="http://pe/com/claro/esb/services/schemas/EstadoSuscripcion" xmlns="http://www.w3.org/2001/XMLSchema">
+      <element name="EstadoSuscripcionRequest">
+        <complexType>
+          <sequence>
+            <element name="telefono" type="string" />
+            <element name="promocion" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EstadoSuscripcionResponse">
+        <complexType>
+          <sequence>
+            <element name="resultado" type="string" />
+            <element name="mensaje" type="string" />
+            <element name="transaccion" type="string" />
+            <element name="status" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+    </schema>
+    <schema xmlns:tns="http://pe/com/claro/esb/services/schemas/InSaldoBolsas" elementFormDefault="qualified" targetNamespace="http://pe/com/claro/esb/services/schemas/InSaldoBolsas" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="SaldosBolsas">
+        <sequence>
+          <element name="isFirstCalled" type="string" />
+          <element name="isLocked" type="string" />
+          <element name="expiryDate" type="string" />
+          <element name="deletionDate" type="string" />
+          <element name="onPeakAccountIdBalance" type="string" />
+          <element name="onPeakAccountIdExpiryDate" type="string" />
+          <element name="smsPromoAccountIdBalance" type="string" />
+          <element name="smsPromoAccountIdExpiryDate" type="string" />
+          <element name="voice1PromoAccountIdBalance" type="string" />
+          <element name="voice1PromoAccountIdExpiryDate" type="string" />
+          <element name="voice2PromoAccountIdBalance" type="string" />
+          <element name="voice2PromoAccountIdExpiryDate" type="string" />
+          <element name="gprsPromoAccountIdBalance" type="string" />
+          <element name="gprsPromoAccountIdExpiryDate" type="string" />
+          <element name="mmsPromoAccountIdBalance" type="string" />
+          <element name="mmsPromoAccountIdExpiryDate" type="string" />
+          <element name="bonusPromoAccountIdBalance" type="string" />
+          <element name="bonusPromoAccountIdExpiryDate" type="string" />
+          <element name="smsLoyaltyAccountIdBalance" type="string" />
+          <element name="smsLoyaltyAccountIdExpiryDate" type="string" />
+          <element name="voiceLoyaltyAccountIdBalance" type="string" />
+          <element name="voiceLoyaltyAccountIdExpiryDate" type="string" />
+          <element name="gprsLoyaltyAccountIdBalance" type="string" />
+          <element name="gprsLoyaltyAccountIdExpiryDate" type="string" />
+          <element name="mmsLoyaltyAccountIdBalance" type="string" />
+          <element name="mmsLoyaltyAccountIdExpiryDate" type="string" />
+          <element name="bonusCounter_Account52Balance" type="string" />
+          <element name="bonusCounter_Account52ExpiryDate" type="string" />
+          <element name="bonusCounter_Account54Balance" type="string" />
+          <element name="bonusCounter_Account54ExpiryDate" type="string" />
+          <element name="bonusCounter_Account57Balance" type="string" />
+          <element name="bonusCounter_Account57ExpiryDate" type="string" />
+          <element name="bonusCounter_Account58Balance" type="string" />
+          <element name="bonusCounter_Account58ExpiryDate" type="string" />
+          <element name="isSelect" type="string" />
+        </sequence>
+      </complexType>
+      <element name="INSaldosBolsasRequest">
+        <annotation>
+          <documentation>Datos requeridos para leer los datos del telefono en la IN</documentation>
+        </annotation>
+        <complexType>
+          <sequence>
+            <element name="telefono" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="INSaldosBolsasResponse">
+        <annotation>
+          <documentation>Datos de salida de los rangos IN por telefono</documentation>
+        </annotation>
+        <complexType>
+          <sequence>
+            <element name="descripcion" type="string" />
+            <element name="resultado" type="string" />
+            <element name="transaccion" type="string" />
+            <element name="saldosBolsas" type="tns:SaldosBolsas" />
+          </sequence>
+        </complexType>
+      </element>
+    </schema>
+    <schema xmlns:tns="http://pe/com/claro/esb/services/schemas/InDatosPrepago" elementFormDefault="qualified" targetNamespace="http://pe/com/claro/esb/services/schemas/InDatosPrepago" xmlns="http://www.w3.org/2001/XMLSchema">
+      <complexType name="DatosPrepago">
+        <sequence>
+          <element name="customerID" type="string" />
+          <element name="cgpa" type="string" />
+          <element name="providerID" type="string" />
+          <element name="useTestEnvironment" type="string" />
+          <element name="activeFnFOption" type="string" />
+          <element name="isLocked" type="string" />
+          <element name="isLockedForPeriodicRecharge" type="string" />
+          <element name="planGroupID" type="string" />
+          <element name="isFirstCallPassed" type="string" />
+          <element name="subscriberLifeCycleStatus" type="string" />
+          <element name="firstCallDate" type="string" />
+          <element name="rechargingPeriod" type="string" />
+          <element name="expiryDate" type="string" />
+          <element name="deletionDate" type="string" />
+          <element name="isFnFPossible" type="string" />
+          <element name="userGroup0" type="string" />
+          <element name="userGroup1" type="string" />
+          <element name="fnFNumber0" type="string" />
+          <element name="fnFNumber1" type="string" />
+          <element name="fnFNumber2" type="string" />
+          <element name="fnFNumber3" type="string" />
+          <element name="fnFNumber4" type="string" />
+          <element name="fnFNumber5" type="string" />
+          <element name="fnFNumber6" type="string" />
+          <element name="fnFNumber7" type="string" />
+          <element name="fnFNumber8" type="string" />
+          <element name="tariffModelNumber" type="string" />
+          <element name="postpaid" type="string" />
+          <element name="subscriberStatus" type="string" />
+          <element name="subscriberLastStatus" type="string" />
+          <element name="statusChangeDate" type="string" />
+          <element name="onPeakAccountIDBalance" type="string" />
+          <element name="onPeakAccountIDExpiryDate" type="string" />
+          <element name="sMSLoyaltyAccountIDBalance" type="string" />
+          <element name="sMSLoyaltyAccountIDExpiryDate" type="string" />
+          <element name="voiceLoyaltyAccountIDBalance" type="string" />
+          <element name="voiceLoyaltyAccountIDExpiryDate" type="string" />
+          <element name="gPRSLoyaltyAccountIDBalance" type="string" />
+          <element name="gPRSLoyaltyAccountIDExpiryDate" type="string" />
+          <element name="sMSPromoAccountIDBalance" type="string" />
+          <element name="sMSPromoAccountIDExpiryDate" type="string" />
+          <element name="voice1PromoAccountIDBalance" type="string" />
+          <element name="voice1PromoAccountIDExpiryDate" type="string" />
+          <element name="voice2PromoAccountIDBalance" type="string" />
+          <element name="voice2PromoAccountIDExpiryDate" type="string" />
+          <element name="gPRSPromoAccountIDBalance" type="string" />
+          <element name="gPRSPromoAccountIDExpiryDate" type="string" />
+          <element name="bonusPromoAccountIDBalance" type="string" />
+          <element name="bonusPromoAccountIDExpiryDate" type="string" />
+          <element name="mMSLoyaltyAccountIDBalance" type="string" />
+          <element name="mMSLoyaltyAccountIDExpiryDate" type="string" />
+          <element name="mMSPromoAccountIDBalance" type="string" />
+          <element name="mMSPromoAccountIDExpiryDate" type="string" />
+          <element name="bonusCounter_Account52Balance" type="string" />
+          <element name="bonusCounter_Account52ExpiryDate" type="string" />
+          <element name="bonusCounter_Account54Balance" type="string" />
+          <element name="bonusCounter_Account54ExpiryDate" type="string" />
+          <element name="bonusCounter_Account57Balance" type="string" />
+          <element name="bonusCounter_Account57ExpiryDate" type="string" />
+          <element name="bonusCounter_Account58Balance" type="string" />
+          <element name="bonusCounter_Account58ExpiryDate" type="string" />
+          <element name="voucherRchFraudCounter" type="string" />
+          <element name="counterChangeFnFnoForFree" type="string" />
+          <element name="counterChangeFAnoForFree" type="string" />
+          <element name="counterChangeHZInoForFree" type="string" />
+          <element name="counterSubscribeFAForFree" type="string" />
+          <element name="counterSubscribeFnFForFree" type="string" />
+          <element name="counterSubscribeHZIForFree" type="string" />
+          <element name="counterSubscribeMLCForFree" type="string" />
+          <element name="counterChangeTariffForFree" type="string" />
+          <element name="cNTNumber" type="string" />
+          <element name="isCNTPossible" type="string" />
+          <element name="imsi" type="string" />
+          <element name="isSelect" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="DatosLinea">
+        <sequence>
+          <element name="providerID" type="string" />
+          <element name="isFirstCallPassed" type="string" />
+          <element name="isLocked" type="string" />
+          <element name="subscriberLifeCycleStatus" type="string" />
+          <element name="subscriberStatus" type="string" />
+          <element name="expiryDate" type="string" />
+          <element name="deletionDate" type="string" />
+          <element name="isSelect" type="string" />
+        </sequence>
+      </complexType>
+      <element name="INDatosPrepagoRequest">
+        <annotation>
+          <documentation>
+				Datos requeridos para leer los datos del telefono en la IN
+			</documentation>
+        </annotation>
+        <complexType>
+          <sequence>
+            <element name="telefono" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="INDatosPrepagoResponse">
+        <annotation>
+          <documentation>
+				Datos de salida de los rangos IN por telefono
+			</documentation>
+        </annotation>
+        <complexType>
+          <sequence>
+            <element name="descripcion" type="string" />
+            <element name="resultado" type="string" />
+            <element name="transaccion" type="string" />
+            <element name="datosPrePago" type="tns:DatosPrepago" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="INDatosLineaRequest">
+        <annotation>
+          <documentation>
+				Datos requeridos para leer los datos del telefono en la IN
+			</documentation>
+        </annotation>
+        <complexType>
+          <sequence>
+            <element name="telefono" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="INDatosLineaResponse">
+        <annotation>
+          <documentation>
+				Validacion de datos para lineas activas
+			</documentation>
+        </annotation>
+        <complexType>
+          <sequence>
+            <element name="mensaje" type="string" />
+            <element name="resultado" type="string" />
+            <element name="transaccion" type="string" />
+            <element name="datosLinea" type="tns:DatosLinea" />
+          </sequence>
+        </complexType>
+      </element>
+    </schema>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://pe/com/claro/esb/services/consultaPrepago/ws" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://pe/com/claro/esb/services/schemas/InSaldoBolsas" />
+      <xs:import namespace="http://pe/com/claro/esb/services/schemas/EstadoSuscripcion" />
+      <xs:import namespace="http://pe/com/claro/esb/services/schemas/InDatosPrepago" />
+      <xs:element name="leerDatosPrepago">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:ind="http://pe/com/claro/esb/services/schemas/InDatosPrepago" ref="ind:INDatosPrepagoRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="leerDatosPrepagoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:ind="http://pe/com/claro/esb/services/schemas/InDatosPrepago" ref="ind:INDatosPrepagoResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaEstadoSuscripcion">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:est="http://pe/com/claro/esb/services/schemas/EstadoSuscripcion" ref="est:EstadoSuscripcionRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaEstadoSuscripcionResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:est="http://pe/com/claro/esb/services/schemas/EstadoSuscripcion" ref="est:EstadoSuscripcionResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="leerEstado">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:ind="http://pe/com/claro/esb/services/schemas/InDatosPrepago" ref="ind:INDatosLineaRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="leerEstadoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:ind="http://pe/com/claro/esb/services/schemas/InDatosPrepago" ref="ind:INDatosLineaResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="leerSaldosBolsas">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:ins="http://pe/com/claro/esb/services/schemas/InSaldoBolsas" ref="ins:INSaldosBolsasRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="leerSaldosBolsasResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:ins="http://pe/com/claro/esb/services/schemas/InSaldoBolsas" ref="ins:INSaldosBolsasResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </s0:types>
+  <s0:message name="leerDatosPrepago">
+    <s0:part name="parameters" element="s1:leerDatosPrepago" />
+  </s0:message>
+  <s0:message name="leerDatosPrepagoResponse">
+    <s0:part name="parameters" element="s1:leerDatosPrepagoResponse" />
+  </s0:message>
+  <s0:message name="consultaEstadoSuscripcion">
+    <s0:part name="parameters" element="s1:consultaEstadoSuscripcion" />
+  </s0:message>
+  <s0:message name="consultaEstadoSuscripcionResponse">
+    <s0:part name="parameters" element="s1:consultaEstadoSuscripcionResponse" />
+  </s0:message>
+  <s0:message name="leerEstado">
+    <s0:part name="parameters" element="s1:leerEstado" />
+  </s0:message>
+  <s0:message name="leerEstadoResponse">
+    <s0:part name="parameters" element="s1:leerEstadoResponse" />
+  </s0:message>
+  <s0:message name="leerSaldosBolsas">
+    <s0:part name="parameters" element="s1:leerSaldosBolsas" />
+  </s0:message>
+  <s0:message name="leerSaldosBolsasResponse">
+    <s0:part name="parameters" element="s1:leerSaldosBolsasResponse" />
+  </s0:message>
+  <s0:portType name="EbsDatosPrepago">
+    <s0:operation name="leerDatosPrepago" parameterOrder="parameters">
+      <s0:input message="s1:leerDatosPrepago" />
+      <s0:output message="s1:leerDatosPrepagoResponse" />
+    </s0:operation>
+    <s0:operation name="consultaEstadoSuscripcion" parameterOrder="parameters">
+      <s0:input message="s1:consultaEstadoSuscripcion" />
+      <s0:output message="s1:consultaEstadoSuscripcionResponse" />
+    </s0:operation>
+    <s0:operation name="leerEstado" parameterOrder="parameters">
+      <s0:input message="s1:leerEstado" />
+      <s0:output message="s1:leerEstadoResponse" />
+    </s0:operation>
+    <s0:operation name="leerSaldosBolsas" parameterOrder="parameters">
+      <s0:input message="s1:leerSaldosBolsas" />
+      <s0:output message="s1:leerSaldosBolsasResponse" />
+    </s0:operation>
+  </s0:portType>
+  <s0:binding name="EbsDatosPrepagoServiceSoapBinding" type="s1:EbsDatosPrepago">
+    <s2:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <s0:operation name="leerDatosPrepago">
+      <s2:operation soapAction="" style="document" />
+      <s0:input>
+        <s2:body use="literal" parts="parameters" />
+      </s0:input>
+      <s0:output>
+        <s2:body use="literal" parts="parameters" />
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="consultaEstadoSuscripcion">
+      <s2:operation soapAction="" style="document" />
+      <s0:input>
+        <s2:body use="literal" parts="parameters" />
+      </s0:input>
+      <s0:output>
+        <s2:body use="literal" parts="parameters" />
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="leerEstado">
+      <s2:operation soapAction="" style="document" />
+      <s0:input>
+        <s2:body use="literal" parts="parameters" />
+      </s0:input>
+      <s0:output>
+        <s2:body use="literal" parts="parameters" />
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="leerSaldosBolsas">
+      <s2:operation soapAction="" style="document" />
+      <s0:input>
+        <s2:body use="literal" parts="parameters" />
+      </s0:input>
+      <s0:output>
+        <s2:body use="literal" parts="parameters" />
+      </s0:output>
+    </s0:operation>
+  </s0:binding>
+  <s0:service name="EbsDatosPrepagoService">
+    <s0:port name="EbsDatosPrepagoSoapPort" binding="s1:EbsDatosPrepagoServiceSoapBinding">
+      <s2:address location="http://limdeseaiv22.tim.com.pe:8909/ConsultaDatosPrepagoWS/EbsDatosPrepago" />
+    </s0:port>
+  </s0:service>
+</s0:definitions>

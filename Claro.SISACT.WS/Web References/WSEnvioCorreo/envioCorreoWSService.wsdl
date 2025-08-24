@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://claro.com.pe/eai/util/enviocorreo" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="envioCorreoWSService" targetNamespace="http://claro.com.pe/eai/util/enviocorreo" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://limdeseaiv28.tim.com.pe:8909/EnvioCorreoWS/envioCorreoWSPortSB11?xsd=1" namespace="http://claro.com.pe/eai/util/enviocorreo" />
+    </xsd:schema>
+  </types>
+  <message name="enviarCorreo">
+    <part name="parameters" element="tns:enviarCorreoRequest" />
+  </message>
+  <message name="enviarCorreoResponse">
+    <part name="parameters" element="tns:enviarCorreoResponse" />
+  </message>
+  <portType name="envioCorreoWSPortType">
+    <operation name="enviarCorreo">
+      <input wsam:Action="http://claro.com.pe/eai/util/enviocorreo/enviarCorreo" message="tns:enviarCorreo" />
+      <output wsam:Action="http://claro.com.pe/eai/util/enviocorreo/envioCorreoWSPortType/enviarCorreoResponse" message="tns:enviarCorreoResponse" />
+    </operation>
+  </portType>
+  <binding name="envioCorreoWSPortSB11Binding" type="tns:envioCorreoWSPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="enviarCorreo">
+      <soap:operation soapAction="http://claro.com.pe/eai/util/enviocorreo/enviarCorreo" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="envioCorreoWSService">
+    <port name="envioCorreoWSPortSB11" binding="tns:envioCorreoWSPortSB11Binding">
+      <soap:address location="http://limdeseaiv28.tim.com.pe:8909/EnvioCorreoWS/envioCorreoWSPortSB11" />
+    </port>
+  </service>
+</definitions>

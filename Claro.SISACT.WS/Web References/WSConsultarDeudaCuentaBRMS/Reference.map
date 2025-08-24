@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.17.26.54:21000/DAT_ConsultaDatosBRMSOAC/SRV_Consulta/Service/Mediation/MED_DAT_ConsultarDatosBRMSOACPipelineProxyService?SCHEMA/DAT_ConsultaDatosBRMSOAC/SRV_Consulta/Resources/XSD/ClaroFault_v2" filename="ClaroFault_v2.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://172.17.26.54:21000/DAT_ConsultaDatosBRMSOAC/SRV_Consulta/Service/Mediation/MED_DAT_ConsultarDatosBRMSOACPipelineProxyService?WSDL" filename="MED_DAT_ConsultarDatosBRMSOACPipelineProxyService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.17.26.54:21000/DAT_ConsultaDatosBRMSOAC/SRV_Consulta/Service/Mediation/MED_DAT_ConsultarDatosBRMSOACPipelineProxyService?SCHEMA/DAT_ConsultaDatosBRMSOAC/SRV_Consulta/Resources/XSD/Consultar_v1" filename="Consultar_v1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.17.26.54:21000/DAT_ConsultaDatosBRMSOAC/SRV_Consulta/Service/Mediation/MED_DAT_ConsultarDatosBRMSOACPipelineProxyService?SCHEMA/DAT_ConsultaDatosBRMSOAC/SRV_Consulta/Resources/XSD/ResponseStatus_v2" filename="ResponseStatus_v2.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.17.26.54:21000/DAT_ConsultaDatosBRMSOAC/SRV_Consulta/Service/Mediation/MED_DAT_ConsultarDatosBRMSOACPipelineProxyService?SCHEMA/DAT_ConsultaDatosBRMSOAC/SRV_Consulta/Resources/XSD/ClaroGenericHeaders_v2" filename="ClaroGenericHeaders_v2.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

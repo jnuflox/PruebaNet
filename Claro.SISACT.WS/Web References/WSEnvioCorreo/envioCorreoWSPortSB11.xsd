@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:ns0="http://claro.com.pe/eai/util/enviocorreo" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/util/enviocorreo" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="AuditTypeResponse">
+    <xsd:sequence>
+      <xsd:element name="idTransaccion" type="xsd:string" />
+      <xsd:element name="codigoRespuesta" type="xsd:string" />
+      <xsd:element name="mensajeRespuesta" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ParametrosOpcionalesType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="ParametroComplexType" type="ns0:ParametroOpcionalComplexType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ParametroOpcionalComplexType">
+    <xsd:sequence>
+      <xsd:element name="clave" type="xsd:string" />
+      <xsd:element name="valor" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="AuditTypeRequest">
+    <xsd:sequence>
+      <xsd:element name="idTransaccion" type="xsd:string" />
+      <xsd:element name="codigoAplicacion" type="xsd:string" />
+      <xsd:element name="ipAplicacion" type="xsd:string" />
+      <xsd:element name="usrAplicacion" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="enviarCorreoResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditResponse" type="ns0:AuditTypeResponse" />
+        <xsd:element name="parametrosOpcionalesResponse" type="ns0:ParametrosOpcionalesType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="enviarCorreoRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditRequest" type="ns0:AuditTypeRequest" />
+        <xsd:element name="remitente" type="xsd:string" />
+        <xsd:element name="destinatario" type="xsd:string" />
+        <xsd:element name="asunto" type="xsd:string" />
+        <xsd:element name="mensaje" type="xsd:string" />
+        <xsd:element name="htmlFlag" type="xsd:string" />
+        <xsd:element name="parametrosOpcionalesRequest" type="ns0:ParametrosOpcionalesType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

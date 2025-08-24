@@ -1,0 +1,42 @@
+C:\Users\lchumbes\Desktop\Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\bin\Release\Claro.Base.dll
+C:\Users\lchumbes\Desktop\Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\bin\Release\Claro.Base.pdb
+C:\Users\lchumbes\Desktop\Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\bin\Release\Claro.Seguridad.Criptografia.dll
+C:\Users\lchumbes\Desktop\Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\bin\Release\Claro.Seguridad.Criptografia.pdb
+C:\Users\lchumbes\Desktop\Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\obj\Release\Claro.Base.csprojResolveAssemblyReference.cache
+C:\Users\lchumbes\Desktop\Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\obj\Release\Claro.Base.dll
+C:\Users\lchumbes\Desktop\Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\obj\Release\Claro.Base.pdb
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\bin\Release\Claro.Base.dll
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\bin\Release\Claro.Base.pdb
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\bin\Release\Claro.Seguridad.Criptografia.dll
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\bin\Release\Claro.Seguridad.Criptografia.pdb
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\obj\Release\Claro.Base.csprojResolveAssemblyReference.cache
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\obj\Release\Claro.Base.dll
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\obj\Release\Claro.Base.pdb
+C:\Users\mttitora\Desktop\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\bin\Release\Claro.Base.dll
+C:\Users\mttitora\Desktop\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\bin\Release\Claro.Base.pdb
+C:\Users\mttitora\Desktop\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\bin\Release\Claro.Seguridad.Criptografia.dll
+C:\Users\mttitora\Desktop\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\bin\Release\Claro.Seguridad.Criptografia.pdb
+C:\Users\mttitora\Desktop\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\obj\Release\Claro.Base.csprojResolveAssemblyReference.cache
+C:\Users\mttitora\Desktop\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\obj\Release\Claro.Base.dll
+C:\Users\mttitora\Desktop\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\obj\Release\Claro.Base.pdb
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\bin\Release\Claro.Base.dll
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\bin\Release\Claro.Base.pdb
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\bin\Release\Claro.Seguridad.Criptografia.dll
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\bin\Release\Claro.Seguridad.Criptografia.pdb
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\obj\Release\Claro.Base.csprojResolveAssemblyReference.cache
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\obj\Release\Claro.Base.dll
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTO\Claro.Base\obj\Release\Claro.Base.pdb
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTOv1\Claro.Base\bin\Release\Claro.Base.dll
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTOv1\Claro.Base\bin\Release\Claro.Base.pdb
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTOv1\Claro.Base\bin\Release\Claro.Seguridad.Criptografia.dll
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTOv1\Claro.Base\bin\Release\Claro.Seguridad.Criptografia.pdb
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTOv1\Claro.Base\obj\Release\Claro.Base.csprojResolveAssemblyReference.cache
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTOv1\Claro.Base\obj\Release\Claro.Base.dll
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTOv1\Claro.Base\obj\Release\Claro.Base.pdb
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTOv1.2\Claro.Base\bin\Release\Claro.Base.dll
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTOv1.2\Claro.Base\bin\Release\Claro.Base.pdb
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTOv1.2\Claro.Base\bin\Release\Claro.Seguridad.Criptografia.dll
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTOv1.2\Claro.Base\bin\Release\Claro.Seguridad.Criptografia.pdb
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTOv1.2\Claro.Base\obj\Release\Claro.Base.csprojResolveAssemblyReference.cache
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTOv1.2\Claro.Base\obj\Release\Claro.Base.dll
+C:\Users\mttitora\Desktop\PROYECTOS\PROY-140743\PILOTO\SISACT_CONSUMER_LB811_PILOTOv1.2\Claro.Base\obj\Release\Claro.Base.pdb

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:data="http://claro.com.pe/esb/data/generico/responseDataConsultarLineasPrePost/v1/" xmlns:status="http://claro.com.pe/esb/data/generico/responseStatus/v1/" xmlns:base="http://claro.com.pe/esb/message/lineastecnologiacliente/consultarLineasPrePost/v1/" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/esb/message/lineastecnologiacliente/consultarLineasPrePost/v1/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://172.17.26.51:21000/BSS_LineasTecnologiaCliente/SRV_LineasTecnologiaCliente/Service/Mediation/MED_LineasTecnologiaCliente?SCHEMA%2FBSS_LineasTecnologiaCliente%2FSRV_LineasTecnologiaCliente%2FResources%2FXSD%2FresponseDataConsultarLineasPrePost_v1" namespace="http://claro.com.pe/esb/data/generico/responseDataConsultarLineasPrePost/v1/" />
+  <xs:element name="consultarLineasPrePostRequest" type="base:consultarLineasPrePostRequestType" />
+  <xs:element name="consultarLineasPrePostResponse" type="base:consultarLineasPrePostResponseType" />
+  <xs:complexType name="consultarLineasPrePostRequestType">
+    <xs:sequence>
+      <xs:element name="tipoDocumento" type="xs:string" />
+      <xs:element name="numeroDocumento" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="listaRequestOpcional" type="base:ParametrosType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ParametrosType">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="objetoOpcional">
+        <xs:complexType>
+          <xs:attribute name="clave" type="xs:string" />
+          <xs:attribute name="valor" type="xs:string" />
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="consultarLineasPrePostResponseType">
+    <xs:sequence>
+      <xs:element name="responseStatus" type="base:ResponseStatus" />
+      <xs:element name="responseDataConsultarLineasPrePost" type="data:responseDataConsultarLineasPrePostType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="listaResponseOpcional" type="base:ParametrosType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ResponseStatus">
+    <xs:sequence>
+      <xs:element name="estado" type="xs:int" />
+      <xs:element name="codigoRespuesta" type="xs:string" />
+      <xs:element name="descripcionRespuesta" type="xs:string" />
+      <xs:element minOccurs="0" name="ubicacionError" type="xs:string" />
+      <xs:element name="fecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="origen" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

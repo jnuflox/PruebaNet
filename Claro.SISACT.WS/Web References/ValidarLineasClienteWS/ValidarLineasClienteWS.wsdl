@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://claro.com.pe/eai/ValidarLineasCliente/ws" xmlns:types="http://claro.com.pe/eai/ValidarLineasCliente/ws/types" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" name="ValidarLineasClienteWS" targetNamespace="http://claro.com.pe/eai/ValidarLineasCliente/ws" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://172.17.26.37:20000/ValidarLineasClienteWS/ebsValidarLineasClienteSB11?xsd=1" namespace="http://claro.com.pe/eai/ValidarLineasCliente/ws/types" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="contarLineasInput">
+    <wsdl:part name="contarLineasInput" element="types:contarLineasRequest" />
+  </wsdl:message>
+  <wsdl:message name="contarLineasOutput">
+    <wsdl:part name="contarLineasOutput" element="types:contarLineasResponse" />
+  </wsdl:message>
+  <wsdl:portType name="validarLineasClientePortType">
+    <wsdl:operation name="contarLineas">
+      <wsdl:input message="tns:contarLineasInput" />
+      <wsdl:output message="tns:contarLineasOutput" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ebsValidarLineasClienteBindingSOAP11" type="tns:validarLineasClientePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="contarLineas">
+      <soap:operation soapAction="http://claro.com.pe/eai/ValidarLineasCliente/ws/contarLineas" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ebsValidarLineasClienteBindingSOAP12" type="tns:validarLineasClientePortType">
+    <soap12:binding transport="http://www.w3.org/2003/05/soap/bindings/HTTP/" />
+    <wsdl:operation name="contarLineas">
+      <soap12:operation soapAction="http://claro.com.pe/eai/ValidarLineasCliente/ws/contarLineas" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ebsValidarLineasClienteService">
+    <wsdl:port name="ebsValidarLineasClienteSB11" binding="tns:ebsValidarLineasClienteBindingSOAP11">
+      <soap:address location="http://172.17.26.37:20000/ValidarLineasClienteWS/ebsValidarLineasClienteSB11" />
+    </wsdl:port>
+    <wsdl:port name="ebsValidarLineasClienteSB12" binding="tns:ebsValidarLineasClienteBindingSOAP12">
+      <soap12:address location="http://172.17.26.37:20000/ValidarLineasClienteWS/ebsValidarLineasClienteSB12" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

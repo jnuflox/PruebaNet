@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://claro.com.pe/eai/venta/ConsultaLineasDesactivas" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://claro.com.pe/eai/venta/ConsultaLineasDesactivas" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/venta/ConsultaLineasDesactivas">
+      <xsd:complexType name="ListaAdicionalRequest">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="AdicionalRequest" type="tns:AdicionalRequestComplexType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ListaAdicionalResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="AdicionalResponse" type="tns:AdicionalResponseComplexType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ListaLineasDesactivasBSCS">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="LineasDesactivasBSCS" type="tns:LineasDesactivasBSCSComplexType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ListaLineasDesactivasSGA">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="LineasDesactivasSGA" type="tns:LineasDesactivasSGAComplexType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="AdicionalRequestComplexType">
+        <xsd:sequence>
+          <xsd:element name="nombreCampo" type="xsd:string" />
+          <xsd:element name="valor" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="AdicionalResponseComplexType">
+        <xsd:sequence>
+          <xsd:element name="nombreCampo" type="xsd:string" />
+          <xsd:element name="valor" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LineasDesactivasBSCSComplexType">
+        <xsd:sequence>
+          <xsd:element name="numeroLinea" type="xsd:string" />
+          <xsd:element name="tipoProducto" type="xsd:string" />
+          <xsd:element name="estadoLinea" type="xsd:string" />
+          <xsd:element name="codigoMotivoDesactivacion" type="xsd:string" />
+          <xsd:element name="motivoDesactivacion" type="xsd:string" />
+          <xsd:element name="fechaActivacion" type="xsd:string" />
+          <xsd:element name="fechaDesactivacion" type="xsd:string" />
+          <xsd:element name="vigenciaApadece" type="xsd:string" />
+          <xsd:element name="recomendacion" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LineasDesactivasSGAComplexType">
+        <xsd:sequence>
+          <xsd:element name="numeroLinea" type="xsd:string" />
+          <xsd:element name="tipoServicio" type="xsd:string" />
+          <xsd:element name="agrupacionPaquete" type="xsd:string" />
+          <xsd:element name="estadoServicioLinea" type="xsd:string" />
+          <xsd:element name="codigoMotivoDesactivacion" type="xsd:string" />
+          <xsd:element name="motivoDesactivacion" type="xsd:string" />
+          <xsd:element name="fechaActivacion" type="xsd:string" />
+          <xsd:element name="fechaDesactivacion" type="xsd:string" />
+          <xsd:element name="recomendacion" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="consultarLineasDesactivasRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="idTransaccion" type="xsd:string" />
+            <xsd:element name="ipAplicacion" type="xsd:string" />
+            <xsd:element name="nombreAplicacion" type="xsd:string" />
+            <xsd:element name="usuarioAplicacion" type="xsd:string" />
+            <xsd:element name="tipoDocumento" type="xsd:string" />
+            <xsd:element name="numeroDocumento" type="xsd:string" />
+            <xsd:element name="listaAdicionalRequest" type="tns:ListaAdicionalRequest" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="consultarLineasDesactivasResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="idTransaccion" type="xsd:string" />
+            <xsd:element name="codigoRespuesta" type="xsd:string" />
+            <xsd:element name="mensajeRespuesta" type="xsd:string" />
+            <xsd:element name="listaLineasDesactivasBSCS" type="tns:ListaLineasDesactivasBSCS" />
+            <xsd:element name="listaLineasDesactivasSGA" type="tns:ListaLineasDesactivasSGA" />
+            <xsd:element name="listaAdicionalResponse" type="tns:ListaAdicionalResponse" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </types>
+  <message name="consultarLineasDesactivasRequestMsg">
+    <part name="parameters" element="tns:consultarLineasDesactivasRequest" />
+  </message>
+  <message name="consultarLineasDesactivasResponseMsg">
+    <part name="parameters" element="tns:consultarLineasDesactivasResponse" />
+  </message>
+  <portType name="ebsConsultaLineasDesactivasWSPortType">
+    <operation name="consultarLineasDesactivas">
+      <input message="tns:consultarLineasDesactivasRequestMsg" />
+      <output message="tns:consultarLineasDesactivasResponseMsg" />
+    </operation>
+  </portType>
+  <binding name="ebsConsultaLineasDesactivasWSPortTypeSOAP11Binding" type="tns:ebsConsultaLineasDesactivasWSPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="consultarLineasDesactivas">
+      <soap:operation soapAction="http://claro.com.pe/eai/venta/ConsultaLineasDesactivas" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="ebsConsultaLineasDesactivasWSPortTypeSOAP12Binding" type="tns:ebsConsultaLineasDesactivasWSPortType">
+    <soap12:binding transport="http://www.w3.org/2003/05/soap/bindings/HTTP/" />
+    <operation name="consultarLineasDesactivas">
+      <soap12:operation soapAction="http://claro.com.pe/eai/venta/ConsultaLineasDesactivas" style="document" />
+      <input>
+        <soap12:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap12:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ebsConsultaLineasDesactivasWS">
+    <port name="ebsConsultaLineasDesactivasSB11" binding="tns:ebsConsultaLineasDesactivasWSPortTypeSOAP11Binding">
+      <soap:address location="http://172.19.74.68:8909/ConsultaLineasWS/ebsConsultaLineasDesactivasSB11" />
+    </port>
+    <port name="ebsConsultaLineasDesactivasSB12" binding="tns:ebsConsultaLineasDesactivasWSPortTypeSOAP12Binding">
+      <soap12:address location="http://172.19.74.68:8909/ConsultaLineasWS/ebsConsultaLineasDesactivasSB12" />
+    </port>
+  </service>
+</definitions>

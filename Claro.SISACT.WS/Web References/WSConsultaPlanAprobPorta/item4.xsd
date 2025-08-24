@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd2="http://claro.com.pe/esb/data/generico/claroGenericHeader/v1/" xmlns:tns="http://claro.com.pe/esb/data/ventas/consultas/sec/v1/consultarPlanAprobado/" xmlns:xsd5="http://claro.com.pe/esb/data/generico/opcionales/v1/" xmlns:xsd3="http://claro.com.pe/esb/data/commonBusinessEntities/responseStatus/v2/" xmlns:xsd4="http://claro.com.pe/esb/data/generico/claroFault/v1/" xmlns="http://claro.com.pe/esb/data/ventas/consultas/sec/v1/consultarPlanAprobado/" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/esb/data/ventas/consultas/sec/v1/consultarPlanAprobado/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="?WSDL&amp;interface=BSS_ConsultasSECSOAP11Binding&amp;part=ResponseStatus_v2.xsd" namespace="http://claro.com.pe/esb/data/commonBusinessEntities/responseStatus/v2/" />
+  <xsd:import schemaLocation="?WSDL&amp;interface=BSS_ConsultasSECSOAP11Binding&amp;part=opcionales_v1.xsd" namespace="http://claro.com.pe/esb/data/generico/opcionales/v1/" />
+  <xsd:element name="ConsultarPlanAprobadoRequest" type="tns:ConsultarPlanAprobadoRequest" />
+  <xsd:complexType name="ConsultarPlanAprobadoRequest">
+    <xsd:sequence>
+      <xsd:element name="tDoccCodigo" type="xsd:string" />
+      <xsd:element name="cliecNumDoc" type="xsd:string" />
+      <xsd:element name="listaTelefono" type="xsd:string" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="listaResquestOpcional" type="xsd5:RequestOpcionalType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="ConsultarPlanAprobadoResponse" type="tns:ConsultarPlanAprobadoResponse" />
+  <xsd:complexType name="ConsultarPlanAprobadoResponse">
+    <xsd:sequence>
+      <xsd:sequence>
+        <xsd:element name="responseStatus" type="xsd3:ResponseStatus" />
+        <xsd:element name="responseData" type="tns:ResponseData" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaResponseOpcional" type="xsd5:ResponseOpcionalType" />
+      </xsd:sequence>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ResponseData">
+    <xsd:sequence>
+      <xsd:sequence>
+        <xsd:element minOccurs="1" maxOccurs="1" name="cursorCab" type="tns:CursorCabType" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="cursorDet" type="tns:CursorDetType" />
+      </xsd:sequence>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CursorCabType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="CursorCabType">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="customerId" type="xsd:string" />
+            <xsd:element name="estado" type="xsd:string" />
+            <xsd:element name="bloqueo" type="xsd:string" />
+            <xsd:element name="suspension" type="xsd:string" />
+            <xsd:element name="deudaVencida" type="xsd:string" />
+            <xsd:element name="deudaCastiga" type="xsd:string" />
+            <xsd:element name="razonSocial" type="xsd:string" />
+            <xsd:element name="nombre" type="xsd:string" />
+            <xsd:element name="apellidoPat" type="xsd:string" />
+            <xsd:element name="apellidoMat" type="xsd:string" />
+            <xsd:element name="diasDeuda" type="xsd:string" />
+            <xsd:element name="promFact" type="xsd:string" />
+            <xsd:element name="cantServicio" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CursorDetType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="CursorDetType">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="cuenta" type="xsd:string" />
+            <xsd:element name="plan" type="xsd:string" />
+            <xsd:element name="planSisact" type="xsd:string" />
+            <xsd:element name="telefono" type="xsd:string" />
+            <xsd:element name="servicio" type="xsd:string" />
+            <xsd:element name="cargoFijo" type="xsd:string" />
+            <xsd:element name="solinSumCarCon" type="xsd:string" />
+            <xsd:element name="fechaActivacion" type="xsd:string" />
+            <xsd:element name="fechaEstado" type="xsd:string" />
+            <xsd:element name="estado" type="xsd:string" />
+            <xsd:element name="motivoBloqueo" type="xsd:string" />
+            <xsd:element name="motivoSuspension" type="xsd:string" />
+            <xsd:element name="campana" type="xsd:string" />
+            <xsd:element name="planBscs" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

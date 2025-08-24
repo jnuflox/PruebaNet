@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:he="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/" xmlns:client="http://claro.com.pe/esb/ventas/BSS_ConsultasSEC/v1/" xmlns:fault="http://claro.com.pe/esb/data/commonBusinessEntities/claroFault/v2/" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:he1="http://claro.com.pe/generic/messageFormat/v1.0/" xmlns:ns1="http://claro.com.pe/esb/data/ventas/consultas/sec/v1/" xmlns:ns3="http://claro.com.pe/esb/data/ventas/consultas/sec/v1/consultarPlan/" name="BSS_ConsultasSEC_v1" targetNamespace="http://claro.com.pe/esb/ventas/BSS_ConsultasSEC/v1/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <plnk:partnerLinkType name="BSS_ConsultasSECPort_PLT">
+    <plnk:role name="BSS_ConsultasSECPort_Role" portType="ns1:BSS_ConsultasSECPort" />
+  </plnk:partnerLinkType>
+  <wsdl:types>
+    <xsd:schema xmlns:client="http://claro.com.pe/esb/ventas/MED_ConsultaAnulacion/v1/" xmlns:ns1="http://claro.com.pe/esb/data/ventas/consulta/anulacion/v1/">
+      <xsd:import schemaLocation="?WSDL&amp;interface=BSS_ConsultasSECSOAP11Binding&amp;part=consultarPlan.xsd" namespace="http://claro.com.pe/esb/data/ventas/consultas/sec/v1/consultarPlan/" />
+      <xsd:import schemaLocation="?WSDL&amp;interface=BSS_ConsultasSECSOAP11Binding&amp;part=ClaroGenericHeaders_v2.xsd" namespace="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/" />
+      <xsd:import schemaLocation="?WSDL&amp;interface=BSS_ConsultasSECSOAP11Binding&amp;part=ClaroFault_v2.xsd" namespace="http://claro.com.pe/esb/data/commonBusinessEntities/claroFault/v2/" />
+    </xsd:schema>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema">
+      <xsd:import schemaLocation="?WSDL&amp;interface=BSS_ConsultasSECSOAP11Binding&amp;part=HeaderGeneric_v1.0.xsd" namespace="http://claro.com.pe/generic/messageFormat/v1.0/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="claroFault">
+    <wsdl:part name="claroFault" element="fault:claroFault" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarPlanRequestMessage">
+    <wsdl:part name="consultarPlanReq" element="ns3:ConsultarPlanRequest" />
+  </wsdl:message>
+  <wsdl:message name="headerResponse">
+    <wsdl:part name="headerDataPower" element="he1:HeaderResponse" />
+    <wsdl:part name="headerResponse" element="he:headerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarPlanResponseMessage">
+    <wsdl:part name="consultarPlanRes" element="ns3:ConsultarPlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="headerRequest">
+    <wsdl:part name="headerDataPower" element="he1:HeaderRequest" />
+    <wsdl:part name="headerRequest" element="he:headerRequest" />
+  </wsdl:message>
+  <wsdl:portType name="BSS_ConsultasSECPort">
+    <wsdl:operation name="consultarPlan">
+      <wsdl:input message="client:ConsultarPlanRequestMessage" />
+      <wsdl:output message="client:ConsultarPlanResponseMessage" />
+      <wsdl:fault name="claroFault" message="client:claroFault" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BSS_ConsultasSECSOAP11Binding" type="client:BSS_ConsultasSECPort">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="consultarPlan">
+      <soap:operation soapAction="http://claro.com.pe/esb/ventas/BSS_ConsultasSEC/v1/consultarPlan" style="document" />
+      <wsdl:input>
+        <soap:header message="client:headerRequest" part="headerRequest" use="literal" />
+        <soap:header message="client:headerRequest" part="headerDataPower" use="literal" />
+        <soap:body use="literal" parts="consultarPlanReq" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:header message="client:headerResponse" part="headerResponse" use="literal" />
+        <soap:header message="client:headerResponse" part="headerDataPower" use="literal" />
+        <soap:body use="literal" parts="consultarPlanRes" />
+      </wsdl:output>
+      <wsdl:fault name="claroFault">
+        <soap:fault use="literal" name="claroFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BSS_ConsultasSEC_v1">
+    <wsdl:port name="BSS_ConsultasSECSB11" binding="client:BSS_ConsultasSECSOAP11Binding">
+      <soap:address location="http://localhost:8086/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

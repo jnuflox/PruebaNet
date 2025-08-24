@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.17.26.51:21000/BSS_FlexibilizaDeuda/SRV_FlexibilizaDeuda/Service/Mediation/MED_FlexibilizaDeudaPipeline?SCHEMA/BSS_FlexibilizaDeuda/SRV_FlexibilizaDeuda/Resources/XSD/headers_v1" filename="headers_v1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.17.26.51:21000/BSS_FlexibilizaDeuda/SRV_FlexibilizaDeuda/Service/Mediation/MED_FlexibilizaDeudaPipeline?SCHEMA/BSS_FlexibilizaDeuda/SRV_FlexibilizaDeuda/Resources/XSD/responseDataConsultaDeuda_v1" filename="responseDataConsultaDeuda_v1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.17.26.51:21000/BSS_FlexibilizaDeuda/SRV_FlexibilizaDeuda/Service/Mediation/MED_FlexibilizaDeudaPipeline?SCHEMA/BSS_FlexibilizaDeuda/SRV_FlexibilizaDeuda/Resources/XSD/claroFault_v1" filename="claroFault_v1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.17.26.51:21000/BSS_FlexibilizaDeuda/SRV_FlexibilizaDeuda/Service/Mediation/MED_FlexibilizaDeudaPipeline?SCHEMA/BSS_FlexibilizaDeuda/SRV_FlexibilizaDeuda/Resources/XSD/ConsultaDeuda_v1" filename="ConsultaDeuda_v1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://172.17.26.51:21000/BSS_FlexibilizaDeuda/SRV_FlexibilizaDeuda/Service/Mediation/MED_FlexibilizaDeudaPipeline?wsdl" filename="BSS_FlexibilizaDeuda.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

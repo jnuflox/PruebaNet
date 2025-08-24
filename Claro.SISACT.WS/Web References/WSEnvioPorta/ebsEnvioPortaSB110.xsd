@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns="http://claro.com.pe/eai/ws/ventas/envioportaws/types" xmlns:base="http://claro.com.pe/eai/ws/baseschema" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/ws/ventas/envioportaws/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="http://limdeseaiv28.tim.com.pe:8909/EnvioPortaWS/ebsEnvioPortaSB11?xsd=1" namespace="http://claro.com.pe/eai/ws/baseschema" />
+  <xsd:element name="realizarConsultaPreviaRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditRequest" type="base:auditRequestType" />
+        <xsd:element name="numeroSec" type="xsd:string" />
+        <xsd:element name="flagCP" type="xsd:string" />
+        <xsd:element name="observaciones" type="xsd:string" />
+        <xsd:element name="id" type="xsd:string" />
+        <xsd:element name="tipoPort" type="xsd:string" />
+        <xsd:element name="nombreHost" type="xsd:string" />
+        <xsd:element name="nombreServidor" type="xsd:string" />
+        <xsd:element name="ipServidor" type="xsd:string" />
+        <xsd:element name="codigoAplicacion" type="xsd:string" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaRequestOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="realizarConsultaPreviaResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditResponse" type="base:auditResponseType" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaResponseOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="realizarSolicitudPortabilidadRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditRequest" type="base:auditRequestType" />
+        <xsd:element name="numeroSec" type="xsd:string" />
+        <xsd:element name="flagSP" type="xsd:string" />
+        <xsd:element name="observaciones" type="xsd:string" />
+        <xsd:element name="id" type="xsd:string" />
+        <xsd:element name="tipoPort" type="xsd:string" />
+        <xsd:element name="nombreHost" type="xsd:string" />
+        <xsd:element name="nombreServidor" type="xsd:string" />
+        <xsd:element name="ipServidor" type="xsd:string" />
+        <xsd:element name="codigoAplicacion" type="xsd:string" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaRequestOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="realizarSolicitudPortabilidadResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditResponse" type="base:auditResponseType" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaResponseOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

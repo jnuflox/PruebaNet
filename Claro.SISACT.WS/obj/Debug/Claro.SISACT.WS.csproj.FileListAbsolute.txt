@@ -1,0 +1,417 @@
+D:\CLARO\erick\PROYECTOS\SISACT_POSTVENTA\3-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT\Claro.SISACT.WS\obj\Debug\ResolveAssemblyReference.cache
+D:\CLARO\erick\PROYECTOS\SISACT_POSTVENTA\3-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+D:\CLARO\erick\PROYECTOS\SISACT_POSTVENTA\3-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+D:\CLARO\erick\PROYECTOS\SISACT_POSTVENTA\3-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+D:\CLARO\erick\PROYECTOS\SISACT_POSTVENTA\3-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+D:\CLARO\erick\PROYECTOS\SISACT_POSTVENTA\3-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+D:\CLARO\erick\PROYECTOS\SISACT_POSTVENTA\3-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+D:\CLARO\erick\PROYECTOS\SISACT_POSTVENTA\3-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+D:\CLARO\erick\PROYECTOS\SISACT_POSTVENTA\3-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT_MASTER\SISACT\Claro.SISACT.WS\obj\Debug\ResolveAssemblyReference.cache
+D:\CLARO\erick\PROYECTOS\SISACT_POSTVENTA\3-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT_MASTER\SISACT\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+D:\CLARO\erick\PROYECTOS\SISACT_POSTVENTA\3-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT_MASTER\SISACT\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+D:\CLARO\erick\PROYECTOS\SISACT_POSTVENTA\3-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT_MASTER\SISACT\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+D:\CLARO\erick\PROYECTOS\SISACT_POSTVENTA\3-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT_MASTER\SISACT\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+D:\CLARO\erick\PROYECTOS\SISACT_POSTVENTA\3-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT_MASTER\SISACT\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+D:\CLARO\erick\PROYECTOS\SISACT_POSTVENTA\3-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT_MASTER\SISACT\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+D:\CLARO\erick\PROYECTOS\SISACT_POSTVENTA\3-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT_MASTER\SISACT\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+D:\_Eduardo\Compartido\Plantilla\erick\SISACT\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+D:\_Eduardo\Compartido\Plantilla\erick\SISACT\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+D:\_Eduardo\Compartido\Plantilla\erick\SISACT\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+D:\_Eduardo\Compartido\Plantilla\erick\SISACT\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+D:\_Eduardo\Compartido\Plantilla\erick\SISACT\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+D:\_Eduardo\Compartido\Plantilla\erick\SISACT\Claro.SISACT.WS\obj\Debug\ResolveAssemblyReference.cache
+D:\_Eduardo\Compartido\Plantilla\erick\SISACT\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+D:\_Eduardo\Compartido\Plantilla\erick\SISACT\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+D:\CLARO\erick\PROYECTOS\SISACT_PREPAGO\1-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+D:\CLARO\erick\PROYECTOS\SISACT_PREPAGO\1-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+D:\CLARO\erick\PROYECTOS\SISACT_PREPAGO\1-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+D:\CLARO\erick\PROYECTOS\SISACT_PREPAGO\1-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+D:\CLARO\erick\PROYECTOS\SISACT_PREPAGO\1-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+D:\CLARO\erick\PROYECTOS\SISACT_PREPAGO\1-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\ResolveAssemblyReference.cache
+D:\CLARO\erick\PROYECTOS\SISACT_PREPAGO\1-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+D:\CLARO\erick\PROYECTOS\SISACT_PREPAGO\1-REPOSICION PACK PREPAGO DAC\SOLUCION\LOCAL\FUENTES\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+D:\_Eduardo\Compartido\sisact 040313\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\ResolveAssemblyReference.cache
+D:\_Eduardo\Compartido\sisact 040313\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+D:\_Eduardo\Compartido\sisact 040313\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+D:\_Eduardo\Compartido\sisact 040313\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+D:\_Eduardo\Compartido\sisact 040313\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+D:\_Eduardo\Compartido\sisact 040313\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.dll
+D:\_Eduardo\Compartido\sisact 040313\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+D:\_Eduardo\Compartido\sisact 040313\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.pdb
+D:\_Eduardo\Compartido\sisact 040313\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+D:\_Eduardo\Compartido\sisact 040313\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.dll
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.dll
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.SapAccess.dll
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.dll
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SisAct.SapGeneral.dll
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\SAP.Connector.dll
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.dll
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.dll
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.pdb
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.pdb
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.SapAccess.pdb
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.pdb
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.pdb
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.pdb
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\ResolveAssemblyReference.cache
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+D:\Proyectos\franco\09032013\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.dll
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.dll
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.SapAccess.dll
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.dll
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SisAct.SapGeneral.dll
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\SAP.Connector.dll
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.dll
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.dll
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.pdb
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.pdb
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.SapAccess.pdb
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.pdb
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.pdb
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.pdb
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\ResolveAssemblyReference.cache
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+D:\erick\PROY\1-REPOSICION_PACK_PREPAGO\SOL\FUENTES\LOCAL\v3\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.dll
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.dll
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.SapAccess.dll
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.dll
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SisAct.SapGeneral.dll
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\SAP.Connector.dll
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.dll
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.dll
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.pdb
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.pdb
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.SapAccess.pdb
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.pdb
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.pdb
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.pdb
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\ResolveAssemblyReference.cache
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+D:\_Eduardo\Plantilla\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+D:\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+D:\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+D:\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+D:\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.dll
+D:\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.dll
+D:\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+D:\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.SapAccess.dll
+D:\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.dll
+D:\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.SapGeneral.dll
+D:\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\SAP.Connector.dll
+D:\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.dll
+D:\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.dll
+D:\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.pdb
+D:\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.pdb
+D:\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+D:\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.SapAccess.pdb
+D:\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.pdb
+D:\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.pdb
+D:\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.pdb
+D:\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\ResolveAssemblyReference.cache
+D:\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+D:\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.dll
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.dll
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.SapAccess.dll
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.dll
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.SapGeneral.dll
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\SAP.Connector.dll
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.dll
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.dll
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.pdb
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.pdb
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.SapAccess.pdb
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.pdb
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.pdb
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.pdb
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\ResolveAssemblyReference.cache
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+E:\actualizacion pase reposicion pack prepago\HARVEST\SISACT_PREPAGO\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\ResolveAssemblyReference.cache
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-09]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-09]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-09]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-09]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-09]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-09]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-09]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-09]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-09]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-09]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-09]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-09]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-09]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-09]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-09]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-09]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\ResolveAssemblyReference.cache
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-09]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-09]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-11]\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-11]\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-11]\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-11]\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-11]\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-11]\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-11]\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-11]\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-11]\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-11]\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-11]\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-11]\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-11]\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-11]\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-11]\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-11]\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\ResolveAssemblyReference.cache
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-11]\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-11]\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-14]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-14]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-14]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-14]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-14]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-14]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-14]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-14]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-14]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-14]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-14]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-14]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-14]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-14]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-14]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-14]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\ResolveAssemblyReference.cache
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-14]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-14]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-16]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-16]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-16]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-16]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-16]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-16]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-16]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-16]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-16]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-16]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-16]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-16]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-16]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-16]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-16]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.pdb
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-16]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\ResolveAssemblyReference.cache
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-16]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+D:\+[Proyectos]+\[2014-12-04]-Convergente-Cambios\[2014-12-16]\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.dll
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.dll
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.dll
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.dll
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.dll
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.pdb
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.pdb
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.pdb
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.pdb
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.pdb
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\ResolveAssemblyReference.cache
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\PASE-URGENCIA\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\PASE-URGENCIA\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\PASE-URGENCIA\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\PASE-URGENCIA\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.dll
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\PASE-URGENCIA\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.dll
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\PASE-URGENCIA\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\PASE-URGENCIA\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.dll
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\PASE-URGENCIA\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.dll
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\PASE-URGENCIA\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.dll
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\PASE-URGENCIA\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.pdb
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\PASE-URGENCIA\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.pdb
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\PASE-URGENCIA\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\PASE-URGENCIA\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.pdb
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\PASE-URGENCIA\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.pdb
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\PASE-URGENCIA\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.pdb
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\PASE-URGENCIA\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\ResolveAssemblyReference.cache
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\PASE-URGENCIA\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+D:\+[Proyectos]+\[2014-12-15]-Venta-Cuotas\PASE-URGENCIA\Fuentes\Convergente\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+D:\+[Proyectos]+\[2015-02-12]-Sinergia-6.0\ALINEADO\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\ResolveAssemblyReference.cache
+D:\+[Proyectos]+\[2015-02-12]-Sinergia-6.0\ALINEADO\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+D:\+[Proyectos]+\[2015-02-12]-Sinergia-6.0\ALINEADO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+D:\+[Proyectos]+\[2015-02-12]-Sinergia-6.0\ALINEADO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+D:\+[Proyectos]+\[2015-02-12]-Sinergia-6.0\ALINEADO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+D:\+[Proyectos]+\[2015-02-12]-Sinergia-6.0\ALINEADO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.dll
+D:\+[Proyectos]+\[2015-02-12]-Sinergia-6.0\ALINEADO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.dll
+D:\+[Proyectos]+\[2015-02-12]-Sinergia-6.0\ALINEADO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+D:\+[Proyectos]+\[2015-02-12]-Sinergia-6.0\ALINEADO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.dll
+D:\+[Proyectos]+\[2015-02-12]-Sinergia-6.0\ALINEADO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.dll
+D:\+[Proyectos]+\[2015-02-12]-Sinergia-6.0\ALINEADO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.dll
+D:\+[Proyectos]+\[2015-02-12]-Sinergia-6.0\ALINEADO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.pdb
+D:\+[Proyectos]+\[2015-02-12]-Sinergia-6.0\ALINEADO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.pdb
+D:\+[Proyectos]+\[2015-02-12]-Sinergia-6.0\ALINEADO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+D:\+[Proyectos]+\[2015-02-12]-Sinergia-6.0\ALINEADO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.pdb
+D:\+[Proyectos]+\[2015-02-12]-Sinergia-6.0\ALINEADO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.pdb
+D:\+[Proyectos]+\[2015-02-12]-Sinergia-6.0\ALINEADO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.pdb
+D:\+[Proyectos]+\[2015-02-12]-Sinergia-6.0\ALINEADO\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+E:\FUENTES CONVERGENTE\FUENTES 6.0\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+E:\FUENTES CONVERGENTE\FUENTES 6.0\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+E:\FUENTES CONVERGENTE\FUENTES 6.0\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+E:\FUENTES CONVERGENTE\FUENTES 6.0\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.dll
+E:\FUENTES CONVERGENTE\FUENTES 6.0\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.dll
+E:\FUENTES CONVERGENTE\FUENTES 6.0\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+E:\FUENTES CONVERGENTE\FUENTES 6.0\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.dll
+E:\FUENTES CONVERGENTE\FUENTES 6.0\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.dll
+E:\FUENTES CONVERGENTE\FUENTES 6.0\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.dll
+E:\FUENTES CONVERGENTE\FUENTES 6.0\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.pdb
+E:\FUENTES CONVERGENTE\FUENTES 6.0\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.pdb
+E:\FUENTES CONVERGENTE\FUENTES 6.0\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+E:\FUENTES CONVERGENTE\FUENTES 6.0\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.pdb
+E:\FUENTES CONVERGENTE\FUENTES 6.0\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.pdb
+E:\FUENTES CONVERGENTE\FUENTES 6.0\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.pdb
+E:\FUENTES CONVERGENTE\FUENTES 6.0\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.csprojResolveAssemblyReference.cache
+E:\FUENTES CONVERGENTE\FUENTES 6.0\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+E:\FUENTES CONVERGENTE\FUENTES 6.0\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+C:\Users\everis\Desktop\ñuflo\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+C:\Users\everis\Desktop\ñuflo\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+C:\Users\everis\Desktop\ñuflo\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+C:\Users\everis\Desktop\ñuflo\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.dll
+C:\Users\everis\Desktop\ñuflo\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.dll
+C:\Users\everis\Desktop\ñuflo\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+C:\Users\everis\Desktop\ñuflo\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.dll
+C:\Users\everis\Desktop\ñuflo\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.dll
+C:\Users\everis\Desktop\ñuflo\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.dll
+C:\Users\everis\Desktop\ñuflo\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.pdb
+C:\Users\everis\Desktop\ñuflo\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.pdb
+C:\Users\everis\Desktop\ñuflo\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+C:\Users\everis\Desktop\ñuflo\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.pdb
+C:\Users\everis\Desktop\ñuflo\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.pdb
+C:\Users\everis\Desktop\ñuflo\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.pdb
+C:\Users\everis\Desktop\ñuflo\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.csprojResolveAssemblyReference.cache
+C:\Users\everis\Desktop\ñuflo\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+C:\Users\everis\Desktop\ñuflo\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+C:\Harvest\POSTPAGO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+C:\Harvest\POSTPAGO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+C:\Harvest\POSTPAGO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+C:\Harvest\POSTPAGO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.dll
+C:\Harvest\POSTPAGO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.dll
+C:\Harvest\POSTPAGO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+C:\Harvest\POSTPAGO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.dll
+C:\Harvest\POSTPAGO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.dll
+C:\Harvest\POSTPAGO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.dll
+C:\Harvest\POSTPAGO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.pdb
+C:\Harvest\POSTPAGO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.pdb
+C:\Harvest\POSTPAGO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+C:\Harvest\POSTPAGO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.pdb
+C:\Harvest\POSTPAGO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.pdb
+C:\Harvest\POSTPAGO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.pdb
+C:\Harvest\POSTPAGO\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.csprojResolveAssemblyReference.cache
+C:\Harvest\POSTPAGO\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+C:\Harvest\POSTPAGO\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+C:\Johan\###___SVN\12.SISACT_CONSUMER\DESARROLLO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+C:\Johan\###___SVN\12.SISACT_CONSUMER\DESARROLLO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+C:\Johan\###___SVN\12.SISACT_CONSUMER\DESARROLLO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+C:\Johan\###___SVN\12.SISACT_CONSUMER\DESARROLLO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.dll
+C:\Johan\###___SVN\12.SISACT_CONSUMER\DESARROLLO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.dll
+C:\Johan\###___SVN\12.SISACT_CONSUMER\DESARROLLO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+C:\Johan\###___SVN\12.SISACT_CONSUMER\DESARROLLO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.dll
+C:\Johan\###___SVN\12.SISACT_CONSUMER\DESARROLLO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.dll
+C:\Johan\###___SVN\12.SISACT_CONSUMER\DESARROLLO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.dll
+C:\Johan\###___SVN\12.SISACT_CONSUMER\DESARROLLO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.pdb
+C:\Johan\###___SVN\12.SISACT_CONSUMER\DESARROLLO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.pdb
+C:\Johan\###___SVN\12.SISACT_CONSUMER\DESARROLLO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+C:\Johan\###___SVN\12.SISACT_CONSUMER\DESARROLLO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.pdb
+C:\Johan\###___SVN\12.SISACT_CONSUMER\DESARROLLO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.pdb
+C:\Johan\###___SVN\12.SISACT_CONSUMER\DESARROLLO\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.pdb
+C:\Johan\###___SVN\12.SISACT_CONSUMER\DESARROLLO\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.csprojResolveAssemblyReference.cache
+C:\Johan\###___SVN\12.SISACT_CONSUMER\DESARROLLO\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+C:\Johan\###___SVN\12.SISACT_CONSUMER\DESARROLLO\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.dll
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.dll
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.dll
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.dll
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.Base.dll
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.dll
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.Seguridad.Criptografia.dll
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.pdb
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.pdb
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.pdb
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.pdb
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.Base.pdb
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.pdb
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\bin\Debug\Claro.Seguridad.Criptografia.pdb
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.csprojResolveAssemblyReference.cache
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll.config
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.dll
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Claro.SISACT.WS.pdb
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.dll
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.dll
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.dll
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.dll
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Microsoft.Web.Services2.dll
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.dll
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\log4net.dll
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Claro.Base.dll
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.dll
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Claro.Seguridad.Criptografia.dll
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Business.pdb
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Common.pdb
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Configuracion.pdb
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Entity.pdb
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Claro.SISACT.Data.pdb
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Claro.Base.pdb
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Claro.SISACT.IData.pdb
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\bin\Debug\Claro.Seguridad.Criptografia.pdb
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.csprojResolveAssemblyReference.cache
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.dll
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.SISACT.WS\obj\Debug\Claro.SISACT.WS.pdb

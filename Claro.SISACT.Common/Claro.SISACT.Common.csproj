@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{64D5394B-C4A5-482A-8908-B1C84974AB9F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Claro.SISACT.Common</RootNamespace>
+    <AssemblyName>Claro.SISACT.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Log4Net\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Comunes.cs" />
+    <Compile Include="Constantes.cs" />
+    <Compile Include="Funciones.cs" />
+    <Compile Include="GeneradorLog.cs" />
+    <Compile Include="GeneradorLog_Generico.cs" />
+    <Compile Include="HelperLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadKeySettings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Claro.SISACT.Entity\Claro.SISACT.Entity.csproj">
+      <Project>{3CC469F9-CD4B-45D2-AC0E-3E3536BC6BD6}</Project>
+      <Name>Claro.SISACT.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Claro.SISACT.Common.dll" />
+    <Content Include="bin\Debug\Claro.SISACT.Common.pdb" />
+    <Content Include="bin\Debug\Claro.SISACT.Entity.dll" />
+    <Content Include="bin\Debug\Claro.SISACT.Entity.pdb" />
+    <Content Include="bin\Release\Claro.SISACT.Common.dll" />
+    <Content Include="bin\Release\Claro.SISACT.Common.pdb" />
+    <Content Include="bin\Release\Claro.SISACT.Entity.dll" />
+    <Content Include="bin\Release\Claro.SISACT.Entity.pdb" />
+    <Content Include="Log4Net\log4net.dll" />
+    <Content Include="obj\Debug\Claro.SISACT.Common.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Claro.SISACT.Common.dll" />
+    <Content Include="obj\Debug\Claro.SISACT.Common.pdb" />
+    <Content Include="obj\Debug\Claro.SISACT.Util.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Claro.SISACT.Util.dll" />
+    <Content Include="obj\Debug\Claro.SISACT.Util.pdb" />
+    <Content Include="obj\Debug\TempPE\ConstantesRec.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Properties.ConstantesRec.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Properties.UtilConstantes.Designer.cs.dll" />
+    <Content Include="obj\Release\Claro.SISACT.Common.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\Claro.SISACT.Common.dll" />
+    <Content Include="obj\Release\Claro.SISACT.Common.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\Claro.SISACT.Common.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\ResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

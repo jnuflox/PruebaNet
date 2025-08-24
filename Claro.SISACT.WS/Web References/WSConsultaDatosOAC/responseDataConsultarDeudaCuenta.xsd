@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://claro.com.pe/esb/data/generico/responseDataConsultarDeudaCuenta/v1/" xmlns:base="http://claro.com.pe/esb/data/generico/baseschema/v1/" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/esb/data/generico/responseDataConsultarDeudaCuenta/v1/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="http://172.17.26.51:21000/DAT_ConsultaDatosOACWS/SRV_ConsultaDatosOACWS/Resources/WSDL/DAT_ConsultaDatosOACWS?SCHEMA%2FDAT_ConsultaDatosOACWS%2FSRV_ConsultaDatosOACWS%2FResources%2FXSD%2FbaseSchema_v1" namespace="http://claro.com.pe/esb/data/generico/baseschema/v1/" />
+  <xsd:element name="responseDataConsultarDeudaCuenta" type="tns:ResponseDataConsultarDeudaCuenta">
+    <xsd:annotation>
+      <xsd:documentation>Esta estructura tiene por objetivo informar los datos de respuesta propios del servicio</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:complexType name="ResponseDataConsultarDeudaCuenta">
+    <xsd:sequence>
+      <xsd:element name="listaDeudaCuenta" type="tns:listaDeudaCuentaType" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="listaAdicionalResponse" type="base:ResponseOpcionalType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="listaDeudaCuentaType">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="unbounded" name="deudaCuenta" type="tns:deudaCuentaType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="deudaCuentaType">
+    <xsd:sequence>
+      <xsd:element name="deudaCantidadDocumentos" type="xsd:string" />
+      <xsd:element name="disputaAntiguedad" type="xsd:string" />
+      <xsd:element name="disputaCantidad" type="xsd:string" />
+      <xsd:element name="disputaMonto" type="xsd:string" />
+      <xsd:element name="pagoTotalMonto" type="xsd:string" />
+      <xsd:element name="promedioFacturadoSoles" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

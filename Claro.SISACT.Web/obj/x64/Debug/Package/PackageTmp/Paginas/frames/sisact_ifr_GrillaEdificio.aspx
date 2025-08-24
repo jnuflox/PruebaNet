@@ -1,0 +1,72 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="sisact_ifr_GrillaEdificio.aspx.cs"
+    Inherits="Claro.SISACT.Web.Paginas.frames.sisact_ifr_GrillaEdificio" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../../Estilos/general.css" type="text/css" rel="stylesheet" />
+    <script language="javascript" type="text/javascript">
+        function inicio() {
+            if (window.parent)
+                window.parent.validarCargaGrillaEdificio(getValue('hidResponse'), getValue('hidResponse'), getValue('hidNroFilas'));
+        }
+
+        function itemSeleccionado(it) {
+            window.parent.asignarValorEdificio(it, '');
+        }
+    </script>
+</head>
+<body onload="inicio();" style="margin: 0px;">
+    <form id="frmPrincipal" runat="server">
+    <table align="center">
+        <tr>
+            <td>
+                <asp:DataGrid ID="dgPDV" runat="server" Width="800px" AllowPaging="True" CellSpacing="1"
+                    CellPadding="0" BorderColor="#95B7F3" AutoGenerateColumns="False" DataKeyField="edifv_codigo"
+                    PageSize="10" onpageindexchanged="dgPDV_PageIndexChanged">
+                    <ItemStyle CssClass="ClsArial09" HorizontalAlign="Center"></ItemStyle>
+                    <HeaderStyle Wrap="False" HorizontalAlign="Center" CssClass="TablaTitulos"></HeaderStyle>
+                    <Columns>
+                        <asp:TemplateColumn>
+                            <ItemStyle HorizontalAlign="Center" Width="12px"></ItemStyle>
+                            <HeaderTemplate>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <input class="clsArial10" id="rbEdificio" type="radio" value='<%# DataBinder.Eval(Container,"DataItem.edifv_codigo") %>'
+                                    onclick="itemSeleccionado('<%# DataBinder.Eval(Container,"DataItem.edifv_descripcion") %>');"
+                                    name="rbEdificio">
+                            </ItemTemplate>
+                        </asp:TemplateColumn>
+                        <asp:BoundColumn DataField="edifv_codigo" HeaderText="Item"></asp:BoundColumn>
+                        <asp:BoundColumn DataField="depav_descripcion" HeaderText="Departamento"></asp:BoundColumn>
+                        <asp:BoundColumn DataField="provv_descripcion" HeaderText="Provincia"></asp:BoundColumn>
+                        <asp:BoundColumn DataField="distv_descripcion" HeaderText="Distrito"></asp:BoundColumn>
+                        <asp:BoundColumn DataField="edifv_direccion" HeaderText="Dirección"></asp:BoundColumn>
+                        <asp:BoundColumn DataField="edifv_nodo" HeaderText="Plano"></asp:BoundColumn>
+                        <asp:BoundColumn DataField="edifv_descripcion" HeaderText="Edificio"></asp:BoundColumn>
+                    </Columns>
+                    <PagerStyle CssClass="clsArial10" Mode="NumericPages"></PagerStyle>
+                </asp:DataGrid>
+            </td>
+        </tr>
+        <tr style="display: none">
+            <td>
+                <input id="hidCodSerie" type="hidden" name="hidCodImei" runat="server" style="width: 16px;
+                    height: 22px" size="1" />
+                <input id="hidDatosRetorno" type="hidden" name="hidDatosRetorno" runat="server" style="width: 16px;
+                    height: 22px" size="1" />
+                <input id="hidMsg" type="hidden" name="hidMsg" runat="server" style="width: 16px;
+                    height: 22px" size="1" />
+                <input id="hidRequest" type="hidden" name="hidRequest" runat="server" style="width: 16px;
+                    height: 22px" size="1" />
+                <input id="hidResponse" type="hidden" name="hidResponse" runat="server" style="width: 16px;
+                    height: 22px" size="1" />
+                <input id="hidNroFilas" type="hidden" name="hidNroFilas" runat="server" style="width: 16px;
+                    height: 22px" size="1" />
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://claro.com.pe/eai/ws/gestionaproteccionmovilws" xmlns:types="http://claro.com.pe/eai/ws/gestionaproteccionmovilws/types" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" name="GestionaProteccionMovilWS" targetNamespace="http://claro.com.pe/eai/ws/gestionaproteccionmovilws" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/ws/gestionaproteccionmovilws" />
+    <xsd:schema>
+      <xsd:import schemaLocation="http://limdeseaiv28.tim.com.pe:8909/GestionaProteccionMovilWS/GestionaProteccionMovilWSSB11?xsd=2" namespace="http://claro.com.pe/eai/ws/gestionaproteccionmovilws/types" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="guardarPrimaRequestMsg">
+    <wsdl:part name="request" element="types:guardarPrimaRequest" />
+  </wsdl:message>
+  <wsdl:message name="guardarPrimaResponseMsg">
+    <wsdl:part name="response" element="types:guardarPrimaResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscarPrimaRequestMsg">
+    <wsdl:part name="request" element="types:buscarPrimaRequest" />
+  </wsdl:message>
+  <wsdl:message name="buscarPrimaResponseMsg">
+    <wsdl:part name="response" element="types:buscarPrimaResponse" />
+  </wsdl:message>
+  <wsdl:message name="eliminarPrimaRequestMsg">
+    <wsdl:part name="request" element="types:eliminarPrimaRequest" />
+  </wsdl:message>
+  <wsdl:message name="eliminarPrimaResponseMsg">
+    <wsdl:part name="response" element="types:eliminarPrimaResponse" />
+  </wsdl:message>
+  <wsdl:message name="guardarPreInscripcionRequestMsg">
+    <wsdl:part name="request" element="types:guardarPreInscripcionRequest" />
+  </wsdl:message>
+  <wsdl:message name="guardarPreInscripcionResponseMsg">
+    <wsdl:part name="response" element="types:guardarPreInscripcionResponse" />
+  </wsdl:message>
+  <wsdl:message name="guardarInscripcionRequestMsg">
+    <wsdl:part name="request" element="types:guardarInscripcionRequest" />
+  </wsdl:message>
+  <wsdl:message name="guardarInscripcionResponseMsg">
+    <wsdl:part name="response" element="types:guardarInscripcionResponse" />
+  </wsdl:message>
+  <wsdl:message name="renovarProteccionMovilRequestMsg">
+    <wsdl:part name="request" element="types:renovarProteccionMovilRequest" />
+  </wsdl:message>
+  <wsdl:message name="renovarProteccionMovilResponseMsg">
+    <wsdl:part name="response" element="types:renovarProteccionMovilResponse" />
+  </wsdl:message>
+  <wsdl:message name="validarExistenciaProteccionMovilRequestMsg">
+    <wsdl:part name="request" element="types:validarExistenciaProteccionMovilRequest" />
+  </wsdl:message>
+  <wsdl:message name="validarExistenciaProteccionMovilResponseMsg">
+    <wsdl:part name="response" element="types:validarExistenciaProteccionMovilResponse" />
+  </wsdl:message>
+  <wsdl:message name="procesarPagoPMRequestMsg">
+    <wsdl:part name="request" element="types:procesarPagoPMRequest" />
+  </wsdl:message>
+  <wsdl:message name="procesarPagoPMResponseMsg">
+    <wsdl:part name="response" element="types:procesarPagoPMResponse" />
+  </wsdl:message>
+  <wsdl:portType name="GestionaProteccionMovilWSPortType">
+    <wsdl:operation name="guardarPrima">
+      <wsdl:input message="tns:guardarPrimaRequestMsg" />
+      <wsdl:output message="tns:guardarPrimaResponseMsg" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarPrima">
+      <wsdl:input message="tns:buscarPrimaRequestMsg" />
+      <wsdl:output message="tns:buscarPrimaResponseMsg" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarPrima">
+      <wsdl:input message="tns:eliminarPrimaRequestMsg" />
+      <wsdl:output message="tns:eliminarPrimaResponseMsg" />
+    </wsdl:operation>
+    <wsdl:operation name="guardarPreInscripcion">
+      <wsdl:input message="tns:guardarPreInscripcionRequestMsg" />
+      <wsdl:output message="tns:guardarPreInscripcionResponseMsg" />
+    </wsdl:operation>
+    <wsdl:operation name="guardarInscripcion">
+      <wsdl:input message="tns:guardarInscripcionRequestMsg" />
+      <wsdl:output message="tns:guardarInscripcionResponseMsg" />
+    </wsdl:operation>
+    <wsdl:operation name="renovarProteccionMovil">
+      <wsdl:input message="tns:renovarProteccionMovilRequestMsg" />
+      <wsdl:output message="tns:renovarProteccionMovilResponseMsg" />
+    </wsdl:operation>
+    <wsdl:operation name="validarExistenciaProteccionMovil">
+      <wsdl:input message="tns:validarExistenciaProteccionMovilRequestMsg" />
+      <wsdl:output message="tns:validarExistenciaProteccionMovilResponseMsg" />
+    </wsdl:operation>
+    <wsdl:operation name="procesarPagoPM">
+      <wsdl:input message="tns:procesarPagoPMRequestMsg" />
+      <wsdl:output message="tns:procesarPagoPMResponseMsg" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GestionaProteccionMovilWSPortTypeSOAP11Binding" type="tns:GestionaProteccionMovilWSPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="guardarPrima">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/gestionaproteccionmovilws/guardarPrima" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarPrima">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/gestionaproteccionmovilws/buscarPrima" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarPrima">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/gestionaproteccionmovilws/eliminarPrima" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardarPreInscripcion">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/gestionaproteccionmovilws/guardarPreInscripcion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardarInscripcion">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/gestionaproteccionmovilws/guardarInscripcion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="renovarProteccionMovil">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/gestionaproteccionmovilws/renovarProteccionMovil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validarExistenciaProteccionMovil">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/gestionaproteccionmovilws/validarExistenciaProteccionMovil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="procesarPagoPM">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/gestionaproteccionmovilws/procesarPagoPM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GestionaProteccionMovilWSPortTypeSOAP12Binding" type="tns:GestionaProteccionMovilWSPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="guardarPrima">
+      <soap12:operation soapAction="http://claro.com.pe/eai/ws/gestionaproteccionmovilws/guardarPrima" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarPrima">
+      <soap12:operation soapAction="http://claro.com.pe/eai/ws/gestionaproteccionmovilws/buscarPrima" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarPrima">
+      <soap12:operation soapAction="http://claro.com.pe/eai/ws/gestionaproteccionmovilws/eliminarPrima" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardarPreInscripcion">
+      <soap12:operation soapAction="http://claro.com.pe/eai/ws/gestionaproteccionmovilws/guardarPreInscripcion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardarInscripcion">
+      <soap12:operation soapAction="http://claro.com.pe/eai/ws/gestionaproteccionmovilws/guardarInscripcion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="renovarProteccionMovil">
+      <soap12:operation soapAction="http://claro.com.pe/eai/ws/gestionaproteccionmovilws/renovarProteccionMovil" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validarExistenciaProteccionMovil">
+      <soap12:operation soapAction="http://claro.com.pe/eai/ws/gestionaproteccionmovilws/validarExistenciaProteccionMovil" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="procesarPagoPM">
+      <soap12:operation soapAction="http://claro.com.pe/eai/ws/gestionaproteccionmovilws/procesarPagoPM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GestionaProteccionMovilWSService">
+    <wsdl:port name="GestionaProteccionMovilWSSB11" binding="tns:GestionaProteccionMovilWSPortTypeSOAP11Binding">
+      <soap:address location="http://limdeseaiv28.tim.com.pe:8909/GestionaProteccionMovilWS/GestionaProteccionMovilWSSB11" />
+    </wsdl:port>
+    <wsdl:port name="GestionaProteccionMovilWSSB12" binding="tns:GestionaProteccionMovilWSPortTypeSOAP12Binding">
+      <soap12:address location="http://limdeseaiv28.tim.com.pe:8909/GestionaProteccionMovilWS/GestionaProteccionMovilWSSB12" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

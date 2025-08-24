@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://claro.com.pe/esb/data/generico/responseDataConsultarLineasPrePost/v1/" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/esb/data/generico/responseDataConsultarLineasPrePost/v1/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="responseDataConsultarLineasPrePost" type="tns:responseDataConsultarLineasPrePostType">
+    <xsd:annotation>
+      <xsd:documentation>Esta estructura tiene por objetivo informar los datos de respuesta propios del servicio
+		  </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:complexType name="responseDataConsultarLineasPrePostType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="listaLineasType" type="tns:ListaLineaType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="auditResponseType">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="xsd:string" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="codigoRespuesta" type="xsd:string" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="mensajeRespuesta" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ListaLineaType">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="unbounded" name="listaLineas">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="linea" type="xsd:string" />
+            <xsd:element name="planLinea" type="xsd:string" />
+            <xsd:element name="estadoLinea" type="xsd:string" />
+            <xsd:element name="tipoBloqueo" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

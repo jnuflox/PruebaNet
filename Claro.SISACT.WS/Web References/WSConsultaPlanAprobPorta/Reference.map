@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:8087/?WSDL&amp;interface=BSS_ConsultasSECSOAP11Binding&amp;part=ClaroGenericHeaders_v2.xsd" filename="item.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:8087/?WSDL&amp;interface=BSS_ConsultasSECSOAP11Binding&amp;part=ResponseStatus_v2.xsd" filename="item0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:8087/?WSDL&amp;interface=BSS_ConsultasSECSOAP11Binding&amp;part=ClaroFault_v2.xsd" filename="item1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:8087/?WSDL&amp;interface=BSS_ConsultasSECSOAP11Binding&amp;part=opcionales_v1.xsd" filename="item2.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:8087/?WSDL&amp;interface=BSS_ConsultasSECSOAP11Binding&amp;part=HeaderGeneric_v1.0.xsd" filename="item3.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:8087/?WSDL&amp;interface=BSS_ConsultasSECSOAP11Binding&amp;part=consultarPlanAprobado.xsd" filename="item4.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://localhost:8087/?WSDL" filename="BSS_ConsultasSEC_v1.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

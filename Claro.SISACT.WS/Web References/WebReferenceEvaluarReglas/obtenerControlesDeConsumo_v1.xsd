@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:opc="http://claro.com.pe/esb/data/generico/opcionales/v1/" xmlns:tns="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/obtenerControlesDeConsumo/" xmlns:base="http://claro.com.pe/esb/data/generico/responseStatus/v1/" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/obtenerControlesDeConsumo/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="http://172.17.26.51:21000/BSS_EvaluaReglas/SRV_EvaluaReglas/Service/Composition/COM_EvaluaReglasProxyService?SCHEMA%2FBSS_EvaluaReglas%2FSRV_EvaluaReglas%2FResources%2FXSD%2FResponseStatus_v1" namespace="http://claro.com.pe/esb/data/generico/responseStatus/v1/" />
+  <xsd:import schemaLocation="http://172.17.26.51:21000/BSS_EvaluaReglas/SRV_EvaluaReglas/Service/Composition/COM_EvaluaReglasProxyService?SCHEMA%2FBSS_EvaluaReglas%2FSRV_EvaluaReglas%2FResources%2FXSD%2FOpcionales_v1" namespace="http://claro.com.pe/esb/data/generico/opcionales/v1/" />
+  <xsd:element name="obtenerControlesDeConsumoRequest" type="tns:obtenerControlesDeConsumoRequestType" />
+  <xsd:element name="obtenerControlesDeConsumoResponse" type="tns:obtenerControlesDeConsumoResponseType" />
+  <xsd:complexType name="obtenerControlesDeConsumoRequestType">
+    <xsd:sequence>
+      <xsd:element name="grupo" type="xsd:integer" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="listaResquestOpcional" type="opc:RequestOpcionalType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="obtenerControlesDeConsumoResponseType">
+    <xsd:sequence>
+      <xsd:element name="responseStatus" type="base:ResponseStatus" />
+      <xsd:element name="responseData" type="tns:ResponseDataObtenerControlesDeConsumo" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ResponseDataObtenerControlesDeConsumo">
+    <xsd:sequence>
+      <xsd:element name="listaControlConsumo" type="tns:DatosControlConsumoType" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="listaResponseOpcional" type="opc:ResponseOpcionalType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DatosControlConsumoType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="detalleControlConsumo" type="tns:DetalleControlConsumoType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DetalleControlConsumoType">
+    <xsd:sequence>
+      <xsd:element name="codigo" type="xsd:integer" />
+      <xsd:element name="descripcion" type="xsd:string" />
+      <xsd:element name="valor" type="xsd:string" />
+      <xsd:element name="valor1" type="xsd:string" />
+      <xsd:element name="flagSistema" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

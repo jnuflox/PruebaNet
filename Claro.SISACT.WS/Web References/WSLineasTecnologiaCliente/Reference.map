@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.17.26.51:21000/BSS_LineasTecnologiaCliente/SRV_LineasTecnologiaCliente/Service/Mediation/MED_LineasTecnologiaCliente?SCHEMA/BSS_LineasTecnologiaCliente/SRV_LineasTecnologiaCliente/Resources/XSD/consultarLineasPrePost_v1" filename="consultarLineasPrePost_v1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.17.26.51:21000/BSS_LineasTecnologiaCliente/SRV_LineasTecnologiaCliente/Service/Mediation/MED_LineasTecnologiaCliente?SCHEMA/BSS_LineasTecnologiaCliente/SRV_LineasTecnologiaCliente/Resources/XSD/responseDataConsultarLineasPrePost_v1" filename="responseDataConsultarLineasPrePost_v1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.17.26.51:21000/BSS_LineasTecnologiaCliente/SRV_LineasTecnologiaCliente/Service/Mediation/MED_LineasTecnologiaCliente?SCHEMA/BSS_LineasTecnologiaCliente/SRV_LineasTecnologiaCliente/Resources/XSD/ClaroFault_v1" filename="ClaroFault_v1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://172.17.26.51:21000/BSS_LineasTecnologiaCliente/SRV_LineasTecnologiaCliente/Service/Mediation/MED_LineasTecnologiaCliente?wsdl" filename="LineasTecnologiaCliente.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.17.26.51:21000/BSS_LineasTecnologiaCliente/SRV_LineasTecnologiaCliente/Service/Mediation/MED_LineasTecnologiaCliente?SCHEMA/BSS_LineasTecnologiaCliente/SRV_LineasTecnologiaCliente/Resources/XSD/ClaroGenericHeaders_v1" filename="ClaroGenericHeaders_v1.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

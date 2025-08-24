@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:opc="http://claro.com.pe/esb/data/generico/opcionales/v1/" xmlns:tns="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/consultarServiciosPlan/" xmlns:base="http://claro.com.pe/esb/data/generico/responseStatus/v1/" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/consultarServiciosPlan/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="http://172.17.26.51:21000/BSS_EvaluaReglas/SRV_EvaluaReglas/Service/Composition/COM_EvaluaReglasProxyService?SCHEMA%2FBSS_EvaluaReglas%2FSRV_EvaluaReglas%2FResources%2FXSD%2FResponseStatus_v1" namespace="http://claro.com.pe/esb/data/generico/responseStatus/v1/" />
+  <xsd:import schemaLocation="http://172.17.26.51:21000/BSS_EvaluaReglas/SRV_EvaluaReglas/Service/Composition/COM_EvaluaReglasProxyService?SCHEMA%2FBSS_EvaluaReglas%2FSRV_EvaluaReglas%2FResources%2FXSD%2FOpcionales_v1" namespace="http://claro.com.pe/esb/data/generico/opcionales/v1/" />
+  <xsd:element name="consultarServiciosPlanRequest" type="tns:consultarServiciosPlanRequestType" />
+  <xsd:element name="consultarServiciosPlanResponse" type="tns:consultarServiciosPlanResponseType" />
+  <xsd:complexType name="consultarServiciosPlanRequestType">
+    <xsd:sequence>
+      <xsd:element name="serv_codigo" type="xsd:string" />
+      <xsd:element name="plan_codigo" type="xsd:string" />
+      <xsd:element name="tipo_operacion" type="xsd:string" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="listaResquestOpcional" type="opc:RequestOpcionalType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="consultarServiciosPlanResponseType">
+    <xsd:sequence>
+      <xsd:element name="responseStatus" type="base:ResponseStatus" />
+      <xsd:element name="responseData" type="tns:ResponseDataConsultarServiciosPlanes" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ResponseDataConsultarServiciosPlanes">
+    <xsd:sequence>
+      <xsd:element name="listaServiciosXPlan" type="tns:ServiciosXPlanType" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="listaResponseOpcional" type="opc:ResponseOpcionalType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ServiciosXPlanType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="detalleServicios" type="tns:DetalleServicios" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DetalleServicios">
+    <xsd:sequence>
+      <xsd:element name="plan_codigo" type="xsd:string" />
+      <xsd:element name="serv_codigo" type="xsd:string" />
+      <xsd:element name="srvn_cargo_fijo" type="xsd:decimal" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

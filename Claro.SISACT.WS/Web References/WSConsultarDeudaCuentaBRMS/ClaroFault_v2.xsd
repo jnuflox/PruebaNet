@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:entclafau="http://claro.com.pe/esb/data/commonBusinessEntities/claroFault/v2/" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/esb/data/commonBusinessEntities/claroFault/v2/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="claroFault" type="entclafau:ClaroFault" />
+  <xs:complexType name="ClaroFault">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="idAudit" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="codeError" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="descriptionError" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="locationError" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="date" type="xs:dateTime" />
+      <xs:element minOccurs="0" maxOccurs="1" name="originError" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

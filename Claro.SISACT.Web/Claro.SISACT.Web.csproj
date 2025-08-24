@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61954943-A0A5-49AB-A6BC-FBA6422C4982}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Claro.SISACT.Web</RootNamespace>
+    <AssemblyName>Claro.SISACT.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>True</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\Apuntes\Enviar\SGS_Web\SGS_Web\SGS_Web\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="Estilos\calendar-blue.css" />
+    <Content Include="Estilos\Estilo_General.css" />
+    <Content Include="Estilos\general.css" />
+    <Content Include="Estilos\Map\bootstrap.min.css" />
+    <Content Include="Estilos\Map\leaflet.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Imagenes\abrir.gif" />
+    <Content Include="Imagenes\aceptar.gif" />
+    <Content Include="Imagenes\activar.gif" />
+    <Content Include="Imagenes\ajax-loader.gif" />
+    <Content Include="Imagenes\anular.gif" />
+    <Content Include="Imagenes\arrow.gif" />
+    <Content Include="Imagenes\bg.gif" />
+    <Content Include="Imagenes\Bg_Menu1.jpg" />
+    <Content Include="Imagenes\botones\btn_Anterior.gif" />
+    <Content Include="Imagenes\botones\btn_Calendario.gif" />
+    <Content Include="Imagenes\botones\btn_examinar.gif" />
+    <Content Include="Imagenes\botones\btn_Grabar.gif" />
+    <Content Include="Imagenes\botones\btn_VerArchivo.gif" />
+    <Content Include="Imagenes\btn_Calendario.gif" />
+    <Content Include="Imagenes\btn_regresar_a.gif" />
+    <Content Include="Imagenes\btn_seleccionar.gif" />
+    <Content Include="Imagenes\calendario.gif" />
+    <Content Include="Imagenes\calendario\calendario.gif" />
+    <Content Include="Imagenes\calendario\cal_1.gif" />
+    <Content Include="Imagenes\calendario\cal_2.gif" />
+    <Content Include="Imagenes\calendario\cal_3.gif" />
+    <Content Include="Imagenes\calendario\cal_4.gif" />
+    <Content Include="Imagenes\calendario\cal_Avanzar1.gif" />
+    <Content Include="Imagenes\calendario\cal_Avanzar2.gif" />
+    <Content Include="Imagenes\calendario\cal_retroceder1.gif" />
+    <Content Include="Imagenes\calendario\cal_retroceder2.gif" />
+    <Content Include="Imagenes\cargando3.gif" />
+    <Content Include="Imagenes\carrito.jpg" />
+    <Content Include="Imagenes\close.gif" />
+    <Content Include="Imagenes\cmb.gif" />
+    <Content Include="Imagenes\Cmb1.gif" />
+    <Content Include="Imagenes\Cmb2.gif" />
+    <Content Include="Imagenes\editar.gif" />
+    <Content Include="Imagenes\error.gif" />
+    <Content Include="Imagenes\error\btn_regresar_a.gif" />
+    <Content Include="Imagenes\error\graf_ico_error.gif" />
+    <Content Include="Imagenes\error\img_marca.jpg" />
+    <Content Include="Imagenes\error\sq_pie01.gif" />
+    <Content Include="Imagenes\error\sq_pie02.gif" />
+    <Content Include="Imagenes\error\sq_top01.gif" />
+    <Content Include="Imagenes\error\sq_top02.gif" />
+    <Content Include="Imagenes\fondoTab.jpg" />
+    <Content Include="Imagenes\graf_ico_error.gif" />
+    <Content Include="Imagenes\gray.png" />
+    <Content Include="Imagenes\History.gif" />
+    <Content Include="Imagenes\honey.png" />
+    <Content Include="Imagenes\ico_Eliminar.gif" />
+    <Content Include="Imagenes\ico_lupa.gif" />
+    <Content Include="Imagenes\imgColorAmarillo.gif" />
+    <Content Include="Imagenes\imgColorRojo.gif" />
+    <Content Include="Imagenes\imgColorVerde.gif" />
+    <Content Include="Imagenes\imgPagador0.gif" />
+    <Content Include="Imagenes\imgPagador1.gif" />
+    <Content Include="Imagenes\imgPagador2.gif" />
+    <Content Include="Imagenes\imgPagador3.gif" />
+    <Content Include="Imagenes\imgPagador4.gif" />
+    <Content Include="Imagenes\imgPagador5.gif" />
+    <Content Include="Imagenes\img_marca.jpg" />
+    <Content Include="Imagenes\LogoAM.gif" />
+    <Content Include="Imagenes\logoClaroBlanco.gif" />
+    <Content Include="Imagenes\LogoClaroNegro.gif" />
+    <Content Include="Imagenes\mnu_cuadrado.gif" />
+    <Content Include="Imagenes\mnu_flecha_abajo.gif" />
+    <Content Include="Imagenes\mnu_flecha_azul.gif" />
+    <Content Include="Imagenes\next.gif" />
+    <Content Include="Imagenes\rechazar.gif" />
+    <Content Include="Imagenes\spacer.gif" />
+    <Content Include="Imagenes\SpinnerCarga.gif" />
+    <Content Include="Imagenes\sq_pie01.gif" />
+    <Content Include="Imagenes\sq_pie02.gif" />
+    <Content Include="Imagenes\sq_top01.gif" />
+    <Content Include="Imagenes\sq_top02.gif" />
+    <Content Include="Imagenes\titulo.gif" />
+    <Content Include="Imagenes\toolgrad.gif" />
+    <Content Include="Imagenes\toolgrad_largo.gif" />
+    <Content Include="obj\Release\Claro.SISACT.Web.dll" />
+    <Content Include="obj\Release\Claro.SISACT.Web.pdb" />
+    <Content Include="Paginas\consultas\sisact_consulta_evaluacion_noconcretada.aspx" />
+    <Content Include="Paginas\consultas\sisact_pop_consulta_campnavidad_brms.aspx" />
+    <Content Include="Paginas\consultas\sisact_pop_consulta_validacion_cliente_brms.aspx" />
+    <Content Include="Paginas\consultas\sisact_consulta_detalle_plan.aspx" />
+    <Content Include="Paginas\consultas\sisact_pop_comentario.aspx" />
+    <Content Include="Paginas\consultas\sisact_pop_consulta_brms.aspx" />
+    <Content Include="Paginas\consultas\sisact_pop_debito_automatico.aspx" />
+    <Content Include="Paginas\consultas\sisact_pop_detalle_garantia.aspx" />
+    <Content Include="Paginas\consultas\sisact_pop_plan_combo.aspx" />
+    <Content Include="Paginas\consultas\sisact_pop_sms_portabilidad.aspx" />
+    <Content Include="Paginas\consultas\sisact_pop_validar_supervisor.aspx" />
+    <Content Include="Paginas\documentos\sisact_declaracion_conocimiento.aspx" />
+    <Content Include="Paginas\documentos\sisact_pop_sustento_ingreso.aspx" />
+    <Content Include="Paginas\documentos\sisact_pop_upload_consumer.aspx" />
+    <Content Include="Paginas\evaluacion_cons\sisact_edicion_garantia.aspx" />
+    <Content Include="Paginas\evaluacion_cons\sisact_pool_aprob_excepcion_precio.aspx" />
+    <Content Include="Paginas\evaluacion_cons\sisact_popup_evaluacion_proactiva.aspx" />
+    <Content Include="Paginas\evaluacion_cons\sisact_pop_claropuntos.aspx" />
+    <Content Include="Paginas\evaluacion_cons\sisact_pop_consulta3g.aspx" />
+    <Content Include="Paginas\evaluacion_cons\sisact_pop_seguros.aspx" />
+    <Content Include="Paginas\evaluacion_cons\sisact_reporte_evaluacion_persona.aspx" />
+    <Content Include="Paginas\consultas\sisact_pop_detalle_oferta.aspx" />
+    <Content Include="Paginas\consultas\sisact_pop_equipo_3play.aspx" />
+    <Content Include="Paginas\consultas\sisact_direccion.aspx" />
+    <Content Include="Paginas\evaluacion_cons\sisact_evaluacion_unificada.aspx" />
+    <Content Include="Paginas\evaluacion_cons\sisact_reporte_evaluacion_empresa.aspx" />
+    <Content Include="Paginas\evaluacion_cons\sisact_reporte_solicitud_corporativo_Pdv_Renovacion.aspx" />
+    <Content Include="Paginas\frames\sisact_ifr_CentroPoblado.aspx" />
+    <Content Include="Paginas\frames\sisact_ifr_condiciones_venta.aspx" />
+    <Content Include="Paginas\frames\sisact_ifr_consulta_unificada.aspx" />
+    <Content Include="Paginas\frames\sisact_ifr_GrillaCentroPoblado.aspx" />
+    <Content Include="Paginas\frames\sisact_ifr_GrillaEdificio.aspx" />
+    <Content Include="Paginas\frames\sisact_ifr_portabilidad.aspx" />
+    <Content Include="Paginas\frames\sisact_ifr_representante_legal.aspx" />
+    <Content Include="Paginas\consultas\sisact_pop_consulta_sec.aspx" />
+    <Content Include="Paginas\consultas\sisact_pop_detalle_linea.aspx" />
+    <Content Include="Paginas\consultas\sisact_pop_detalle_linea_prepago.aspx" />
+    <Content Include="Paginas\consultas\sisact_pop_envio_creditos.aspx" />
+    <Content Include="Paginas\consultas\sisact_pop_lineas_desactivas.aspx" />
+    <Content Include="Paginas\consultas\sisact_pop_motivo_evaluar_consumer.aspx" />
+    <Content Include="Paginas\evaluacion_cons\sisact_pool_evaluador_consumer.aspx" />
+    <Content Include="Paginas\documentos\sisact_pop_upload_portabilidad.aspx" />
+    <Content Include="Paginas\documentos\sisact_pop_ver_documento.aspx" />
+    <Content Include="Paginas\Map\geodir.png" />
+    <Content Include="Paginas\Map\sisact_mapa_cobertura.aspx" />
+    <Content Include="Scripts\AWUtil.js" />
+    <Content Include="Scripts\calendar\calendar.js" />
+    <Content Include="Scripts\calendar\calendario_call.js" />
+    <Content Include="Scripts\calendar\calendar_es.js" />
+    <Content Include="Scripts\calendar\calendar_setup.js" />
+    <Content Include="Scripts\calendar\skins\aqua\active-bg.gif" />
+    <Content Include="Scripts\calendar\skins\aqua\dark-bg.gif" />
+    <Content Include="Scripts\calendar\skins\aqua\hover-bg.gif" />
+    <Content Include="Scripts\calendar\skins\aqua\menuarrow.gif" />
+    <Content Include="Scripts\calendar\skins\aqua\normal-bg.gif" />
+    <Content Include="Scripts\calendar\skins\aqua\rowhover-bg.gif" />
+    <Content Include="Scripts\calendar\skins\aqua\status-bg.gif" />
+    <Content Include="Scripts\calendar\skins\aqua\theme.css" />
+    <Content Include="Scripts\calendar\skins\aqua\title-bg.gif" />
+    <Content Include="Scripts\calendar\skins\aqua\today-bg.gif" />
+    <Content Include="Scripts\funciones_creditos.js" />
+    <Content Include="Scripts\funciones_direccion.js" />
+    <Content Include="Scripts\funciones_evaluacion.js" />
+    <Content Include="Scripts\funciones_generales.js" />
+    <Content Include="Scripts\funciones_sec.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\json2.js" />
+    <Content Include="Scripts\JSUtil.js" />
+    <Content Include="Scripts\KeySettings\KeySettings.js" />
+    <Content Include="Scripts\Lib_FuncValidacion.js" />
+    <Content Include="Scripts\Paginas\consultas\sisact_consulta_evaluacion_noconcretada.js" />
+    <Content Include="Scripts\Paginas\consultas\sisact_pop_consulta_sec.js" />
+    <Content Include="Scripts\Paginas\consultas\sisact_pop_sms_portabilidad.js" />
+    <Content Include="Scripts\Paginas\documentos\sisact_declaracion_conocimiento.js" />
+    <Content Include="Scripts\Paginas\evaluacion_cons\sisact_evaluacion_unificada.js" />
+    <Content Include="Scripts\Paginas\evaluacion_cons\sisact_pool_aprob_excepcion_precio.js" />
+    <Content Include="Scripts\Paginas\evaluacion_cons\sisact_popup_evaluacion_proactiva.js" />
+    <Content Include="Scripts\Paginas\evaluacion_cons\sisact_pop_claropuntos.js" />
+    <Content Include="Scripts\Paginas\evaluacion_cons\sisact_reporte_evaluacion_empresa.js" />
+    <Content Include="Scripts\Paginas\evaluacion_cons\sisact_reporte_evaluacion_persona.js" />
+    <Content Include="Scripts\Paginas\evaluacion_cons\sisact_reporte_solicitud_corporativo_Pdv_Renovacion.js" />
+    <Content Include="Scripts\Paginas\frames\sisact_ifr_condiciones_venta.js" />
+    <Content Include="Scripts\Paginas\frames\sisact_ifr_consulta_unificada.js" />
+    <Content Include="Scripts\Paginas\frames\sisact_ifr_representante_legal.js" />
+    <Content Include="Scripts\Paginas\Map\Control.FullScreen.js" />
+    <Content Include="Scripts\Paginas\Map\leaflet.js" />
+    <Content Include="Scripts\Paginas\Map\sisact_mapa_cobertura.js" />
+    <Content Include="Scripts\runtime\lang\cn.js" />
+    <Content Include="Scripts\runtime\lang\de.js" />
+    <Content Include="Scripts\runtime\lang\es.js" />
+    <Content Include="Scripts\runtime\lang\fr.js" />
+    <Content Include="Scripts\runtime\lang\it.js" />
+    <Content Include="Scripts\runtime\lang\nl.js" />
+    <Content Include="Scripts\runtime\lang\pt.js" />
+    <Content Include="Scripts\runtime\lang\ru.js" />
+    <Content Include="Scripts\runtime\lib\aw.js" />
+    <Content Include="Scripts\runtime\lib\grid.js" />
+    <Content Include="Scripts\runtime\styles\vista\aw.css" />
+    <Content Include="Scripts\runtime\styles\vista\button.png" />
+    <Content Include="Scripts\runtime\styles\vista\checkbox.png" />
+    <Content Include="Scripts\runtime\styles\vista\combo.png" />
+    <Content Include="Scripts\runtime\styles\vista\g1.png" />
+    <Content Include="Scripts\runtime\styles\vista\g2.png" />
+    <Content Include="Scripts\runtime\styles\vista\g3.png" />
+    <Content Include="Scripts\runtime\styles\vista\g4.png" />
+    <Content Include="Scripts\runtime\styles\vista\grid.png" />
+    <Content Include="Scripts\runtime\styles\vista\icons.png" />
+    <Content Include="Scripts\runtime\styles\vista\radio.png" />
+    <Content Include="Scripts\runtime\styles\vista\tabs1.png" />
+    <Content Include="Scripts\runtime\styles\vista\tabs2.png" />
+    <Content Include="Scripts\runtime\styles\vista\tree.png" />
+    <Content Include="Scripts\runtime\styles\vista\_button.png" />
+    <Content Include="Scripts\runtime\styles\vista\_checkbox.png" />
+    <Content Include="Scripts\runtime\styles\vista\_icons.png" />
+    <Content Include="Scripts\runtime\styles\vista\_radio.png" />
+    <Content Include="Scripts\runtime\styles\vista\_tree.png" />
+    <Content Include="Scripts\validaciones.js" />
+    <Content Include="Scripts\validar.js" />
+    <Content Include="Scripts\wz_tooltip.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Comun\AppSettings.cs" />
+    <Compile Include="Comun\sisact_SMS.cs" />
+    <Compile Include="Comun\TestWebMsgApp.cs" />
+    <Compile Include="Comun\WebComunes.cs" />
+    <Compile Include="Base\AccesoUsuario.cs" />
+    <Compile Include="Base\Sisact Webbase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_consulta_evaluacion_noconcretada.aspx.cs">
+      <DependentUpon>sisact_consulta_evaluacion_noconcretada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_consulta_evaluacion_noconcretada.aspx.designer.cs">
+      <DependentUpon>sisact_consulta_evaluacion_noconcretada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_consulta_campnavidad_brms.aspx.cs">
+      <DependentUpon>sisact_pop_consulta_campnavidad_brms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_consulta_campnavidad_brms.aspx.designer.cs">
+      <DependentUpon>sisact_pop_consulta_campnavidad_brms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_consulta_validacion_cliente_brms.aspx.cs">
+      <DependentUpon>sisact_pop_consulta_validacion_cliente_brms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_consulta_validacion_cliente_brms.aspx.designer.cs">
+      <DependentUpon>sisact_pop_consulta_validacion_cliente_brms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_consulta_detalle_plan.aspx.cs">
+      <DependentUpon>sisact_consulta_detalle_plan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_consulta_detalle_plan.aspx.designer.cs">
+      <DependentUpon>sisact_consulta_detalle_plan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_comentario.aspx.cs">
+      <DependentUpon>sisact_pop_comentario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_comentario.aspx.designer.cs">
+      <DependentUpon>sisact_pop_comentario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_consulta_brms.aspx.cs">
+      <DependentUpon>sisact_pop_consulta_brms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_consulta_brms.aspx.designer.cs">
+      <DependentUpon>sisact_pop_consulta_brms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_debito_automatico.aspx.cs">
+      <DependentUpon>sisact_pop_debito_automatico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_debito_automatico.aspx.designer.cs">
+      <DependentUpon>sisact_pop_debito_automatico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_detalle_garantia.aspx.cs">
+      <DependentUpon>sisact_pop_detalle_garantia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_detalle_garantia.aspx.designer.cs">
+      <DependentUpon>sisact_pop_detalle_garantia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_plan_combo.aspx.cs">
+      <DependentUpon>sisact_pop_plan_combo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_plan_combo.aspx.designer.cs">
+      <DependentUpon>sisact_pop_plan_combo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_sms_portabilidad.aspx.cs">
+      <DependentUpon>sisact_pop_sms_portabilidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_sms_portabilidad.aspx.designer.cs">
+      <DependentUpon>sisact_pop_sms_portabilidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_validar_supervisor.aspx.cs">
+      <DependentUpon>sisact_pop_validar_supervisor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_validar_supervisor.aspx.designer.cs">
+      <DependentUpon>sisact_pop_validar_supervisor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\documentos\sisact_declaracion_conocimiento.aspx.cs">
+      <DependentUpon>sisact_declaracion_conocimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\documentos\sisact_declaracion_conocimiento.aspx.designer.cs">
+      <DependentUpon>sisact_declaracion_conocimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\documentos\sisact_pop_sustento_ingreso.aspx.cs">
+      <DependentUpon>sisact_pop_sustento_ingreso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\documentos\sisact_pop_sustento_ingreso.aspx.designer.cs">
+      <DependentUpon>sisact_pop_sustento_ingreso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\documentos\sisact_pop_upload_consumer.aspx.cs">
+      <DependentUpon>sisact_pop_upload_consumer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\documentos\sisact_pop_upload_consumer.aspx.designer.cs">
+      <DependentUpon>sisact_pop_upload_consumer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_edicion_garantia.aspx.cs">
+      <DependentUpon>sisact_edicion_garantia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_edicion_garantia.aspx.designer.cs">
+      <DependentUpon>sisact_edicion_garantia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_pool_aprob_excepcion_precio.aspx.cs">
+      <DependentUpon>sisact_pool_aprob_excepcion_precio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_pool_aprob_excepcion_precio.aspx.designer.cs">
+      <DependentUpon>sisact_pool_aprob_excepcion_precio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_popup_evaluacion_proactiva.aspx.cs">
+      <DependentUpon>sisact_popup_evaluacion_proactiva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_popup_evaluacion_proactiva.aspx.designer.cs">
+      <DependentUpon>sisact_popup_evaluacion_proactiva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_pop_claropuntos.aspx.cs">
+      <DependentUpon>sisact_pop_claropuntos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_pop_claropuntos.aspx.designer.cs">
+      <DependentUpon>sisact_pop_claropuntos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_pop_consulta3g.aspx.cs">
+      <DependentUpon>sisact_pop_consulta3g.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_pop_consulta3g.aspx.designer.cs">
+      <DependentUpon>sisact_pop_consulta3g.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_pop_seguros.aspx.cs">
+      <DependentUpon>sisact_pop_seguros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_pop_seguros.aspx.designer.cs">
+      <DependentUpon>sisact_pop_seguros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_reporte_evaluacion_persona.aspx.cs">
+      <DependentUpon>sisact_reporte_evaluacion_persona.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_reporte_evaluacion_persona.aspx.designer.cs">
+      <DependentUpon>sisact_reporte_evaluacion_persona.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_detalle_oferta.aspx.cs">
+      <DependentUpon>sisact_pop_detalle_oferta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_detalle_oferta.aspx.designer.cs">
+      <DependentUpon>sisact_pop_detalle_oferta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_equipo_3play.aspx.cs">
+      <DependentUpon>sisact_pop_equipo_3play.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_equipo_3play.aspx.designer.cs">
+      <DependentUpon>sisact_pop_equipo_3play.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_direccion.aspx.cs">
+      <DependentUpon>sisact_direccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_direccion.aspx.designer.cs">
+      <DependentUpon>sisact_direccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_evaluacion_unificada.aspx.cs">
+      <DependentUpon>sisact_evaluacion_unificada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_evaluacion_unificada.aspx.designer.cs">
+      <DependentUpon>sisact_evaluacion_unificada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_reporte_evaluacion_empresa.aspx.cs">
+      <DependentUpon>sisact_reporte_evaluacion_empresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_reporte_evaluacion_empresa.aspx.designer.cs">
+      <DependentUpon>sisact_reporte_evaluacion_empresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_reporte_solicitud_corporativo_Pdv_Renovacion.aspx.cs">
+      <DependentUpon>sisact_reporte_solicitud_corporativo_Pdv_Renovacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_reporte_solicitud_corporativo_Pdv_Renovacion.aspx.designer.cs">
+      <DependentUpon>sisact_reporte_solicitud_corporativo_Pdv_Renovacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\frames\sisact_ifr_CentroPoblado.aspx.cs">
+      <DependentUpon>sisact_ifr_CentroPoblado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\frames\sisact_ifr_CentroPoblado.aspx.designer.cs">
+      <DependentUpon>sisact_ifr_CentroPoblado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\frames\sisact_ifr_condiciones_venta.aspx.cs">
+      <DependentUpon>sisact_ifr_condiciones_venta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\frames\sisact_ifr_condiciones_venta.aspx.designer.cs">
+      <DependentUpon>sisact_ifr_condiciones_venta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\frames\sisact_ifr_consulta_unificada.aspx.cs">
+      <DependentUpon>sisact_ifr_consulta_unificada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\frames\sisact_ifr_consulta_unificada.aspx.designer.cs">
+      <DependentUpon>sisact_ifr_consulta_unificada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\frames\sisact_ifr_GrillaCentroPoblado.aspx.cs">
+      <DependentUpon>sisact_ifr_GrillaCentroPoblado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\frames\sisact_ifr_GrillaCentroPoblado.aspx.designer.cs">
+      <DependentUpon>sisact_ifr_GrillaCentroPoblado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\frames\sisact_ifr_GrillaEdificio.aspx.cs">
+      <DependentUpon>sisact_ifr_GrillaEdificio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\frames\sisact_ifr_GrillaEdificio.aspx.designer.cs">
+      <DependentUpon>sisact_ifr_GrillaEdificio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\frames\sisact_ifr_portabilidad.aspx.cs">
+      <DependentUpon>sisact_ifr_portabilidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\frames\sisact_ifr_portabilidad.aspx.designer.cs">
+      <DependentUpon>sisact_ifr_portabilidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\frames\sisact_ifr_representante_legal.aspx.cs">
+      <DependentUpon>sisact_ifr_representante_legal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\frames\sisact_ifr_representante_legal.aspx.designer.cs">
+      <DependentUpon>sisact_ifr_representante_legal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_consulta_sec.aspx.cs">
+      <DependentUpon>sisact_pop_consulta_sec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_consulta_sec.aspx.designer.cs">
+      <DependentUpon>sisact_pop_consulta_sec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_detalle_linea.aspx.cs">
+      <DependentUpon>sisact_pop_detalle_linea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_detalle_linea.aspx.designer.cs">
+      <DependentUpon>sisact_pop_detalle_linea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_detalle_linea_prepago.aspx.cs">
+      <DependentUpon>sisact_pop_detalle_linea_prepago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_detalle_linea_prepago.aspx.designer.cs">
+      <DependentUpon>sisact_pop_detalle_linea_prepago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_envio_creditos.aspx.cs">
+      <DependentUpon>sisact_pop_envio_creditos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_envio_creditos.aspx.designer.cs">
+      <DependentUpon>sisact_pop_envio_creditos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_lineas_desactivas.aspx.cs">
+      <DependentUpon>sisact_pop_lineas_desactivas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_lineas_desactivas.aspx.designer.cs">
+      <DependentUpon>sisact_pop_lineas_desactivas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_motivo_evaluar_consumer.aspx.cs">
+      <DependentUpon>sisact_pop_motivo_evaluar_consumer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\consultas\sisact_pop_motivo_evaluar_consumer.aspx.designer.cs">
+      <DependentUpon>sisact_pop_motivo_evaluar_consumer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_pool_evaluador_consumer.aspx.cs">
+      <DependentUpon>sisact_pool_evaluador_consumer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\evaluacion_cons\sisact_pool_evaluador_consumer.aspx.designer.cs">
+      <DependentUpon>sisact_pool_evaluador_consumer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\documentos\sisact_pop_upload_portabilidad.aspx.cs">
+      <DependentUpon>sisact_pop_upload_portabilidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\documentos\sisact_pop_upload_portabilidad.aspx.designer.cs">
+      <DependentUpon>sisact_pop_upload_portabilidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\documentos\sisact_pop_ver_documento.aspx.cs">
+      <DependentUpon>sisact_pop_ver_documento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\documentos\sisact_pop_ver_documento.aspx.designer.cs">
+      <DependentUpon>sisact_pop_ver_documento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Map\sisact_mapa_cobertura.aspx.cs">
+      <DependentUpon>sisact_mapa_cobertura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Map\sisact_mapa_cobertura.aspx.designer.cs">
+      <DependentUpon>sisact_mapa_cobertura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Claro.SISACT.Business\Claro.SISACT.Business.csproj">
+      <Project>{0338FD95-CADF-4264-AA41-A47C6CEDD638}</Project>
+      <Name>Claro.SISACT.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Claro.SISACT.Common\Claro.SISACT.Common.csproj">
+      <Project>{64D5394B-C4A5-482A-8908-B1C84974AB9F}</Project>
+      <Name>Claro.SISACT.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Claro.SISACT.Configuracion\Claro.SISACT.Configuracion.csproj">
+      <Project>{87EC7497-AB32-428A-BD9D-D0605DEAF907}</Project>
+      <Name>Claro.SISACT.Configuracion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Claro.SISACT.Entity\Claro.SISACT.Entity.csproj">
+      <Project>{3CC469F9-CD4B-45D2-AC0E-3E3536BC6BD6}</Project>
+      <Name>Claro.SISACT.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Claro.SISACT.WS\Claro.SISACT.WS.csproj">
+      <Project>{EBDA30BB-29ED-4FEB-B2F8-C860626B0198}</Project>
+      <Name>Claro.SISACT.WS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Log4Net.config" />
+    <None Include="Scripts\runtime\styles\vista\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1244</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/sisact_consumer</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

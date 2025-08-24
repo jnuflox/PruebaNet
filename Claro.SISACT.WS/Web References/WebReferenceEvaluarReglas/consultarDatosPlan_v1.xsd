@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:opc="http://claro.com.pe/esb/data/generico/opcionales/v1/" xmlns:tns="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/consultarDatosPlan/" xmlns:base="http://claro.com.pe/esb/data/generico/responseStatus/v1/" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/consultarDatosPlan/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="consultarDatosPlanRequest" type="tns:consultarDatosPlanRequestType" />
+  <xsd:element name="consultarDatosPlanResponse" type="tns:consultarDatosPlanResponseType" />
+  <xsd:complexType name="consultarDatosPlanRequestType">
+    <xsd:sequence>
+      <xsd:element name="modalidad_venta" type="xsd:string" />
+      <xsd:element name="plan_desc" type="xsd:string" />
+      <xsd:element name="tipo_flujo" type="xsd:string" />
+      <xsd:element name="tipo_documento" type="xsd:string" />
+      <xsd:element name="tipo_oferta" type="xsd:string" />
+      <xsd:element name="tipo_operacion" type="xsd:integer" />
+      <xsd:element name="tipo_producto" type="xsd:string" />
+      <xsd:element name="codigoEspecial" type="xsd:string" />
+      <xsd:element name="campana" type="xsd:string" />
+      <xsd:element name="codigoplazo" type="xsd:string" />
+      <xsd:element name="combo" type="xsd:string" />
+      <xsd:element name="familia" type="xsd:string" />
+      <xsd:element name="tipo_venta" type="xsd:string" />
+      <xsd:element name="oficina" type="xsd:string" />
+      <xsd:element name="codigoMaterial" type="xsd:string" />
+      <xsd:element name="codigoOperacion" type="xsd:decimal" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="listaResquestOpcional" type="tns:RequestOpcionalType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="consultarDatosPlanResponseType">
+    <xsd:sequence>
+      <xsd:element name="responseStatus" type="tns:ResponseStatus" />
+      <xsd:element name="responseData" type="tns:ResponseDataConsultarDatosPlanes" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ResponseStatus">
+    <xsd:sequence>
+      <xsd:element name="estado" type="xsd:int" />
+      <xsd:element name="codigoRespuesta" type="xsd:string" />
+      <xsd:element name="descripcionRespuesta" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ubicacionError" type="xsd:string" />
+      <xsd:element name="fecha" type="xsd:dateTime" />
+      <xsd:element minOccurs="0" name="origen" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ResponseDataConsultarDatosPlanes">
+    <xsd:sequence>
+      <xsd:element name="numeroPlanes" type="xsd:integer" />
+      <xsd:element name="datosPlanesPrecio" type="tns:DatosPlanesPrecioType" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="listaResponseOpcional" type="tns:ResponseOpcionalType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DatosPlanesPrecioType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="detallePrecios" type="tns:DetallePrecios" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DetallePrecios">
+    <xsd:sequence>
+      <xsd:element name="descripcionPlan" type="xsd:string" />
+      <xsd:element name="cargoFijo" type="xsd:double" />
+      <xsd:element name="codigoPlan" type="xsd:string" />
+      <xsd:element name="codigoMaterial" type="xsd:string" />
+      <xsd:element name="codigoProducto" type="xsd:string" />
+      <xsd:element name="descripcionPrecio" type="xsd:string" />
+      <xsd:element name="precio" type="xsd:decimal" />
+      <xsd:element name="descuentoSeguro" type="xsd:string" />
+      <xsd:element name="fecha" type="xsd:dateTime" />
+      <xsd:element name="cuotaInicial" type="xsd:integer" />
+      <xsd:element name="montoCuota" type="xsd:double" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="RequestOpcionalType">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="unbounded" name="requestOpcional">
+        <xsd:complexType>
+          <xsd:attribute name="campo" type="xsd:string" />
+          <xsd:attribute name="valor" type="xsd:string" />
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ResponseOpcionalType">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="unbounded" name="responseOpcional">
+        <xsd:complexType>
+          <xsd:attribute name="campo" type="xsd:string" />
+          <xsd:attribute name="valor" type="xsd:string" />
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

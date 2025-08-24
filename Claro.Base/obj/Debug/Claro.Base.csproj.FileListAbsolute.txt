@@ -1,0 +1,63 @@
+C:\Users\lchumbes\Desktop\SIACTVS_2013\Fuentes\Claro.Base\bin\Debug\Claro.Base.dll
+C:\Users\lchumbes\Desktop\SIACTVS_2013\Fuentes\Claro.Base\bin\Debug\Claro.Base.pdb
+C:\Users\lchumbes\Desktop\SIACTVS_2013\Fuentes\Claro.Base\bin\Debug\Claro.Seguridad.Criptografia.dll
+C:\Users\lchumbes\Desktop\SIACTVS_2013\Fuentes\Claro.Base\bin\Debug\Claro.Seguridad.Criptografia.pdb
+C:\Users\lchumbes\Desktop\SIACTVS_2013\Fuentes\Claro.Base\obj\Debug\Claro.Base.csprojResolveAssemblyReference.cache
+C:\Users\lchumbes\Desktop\SIACTVS_2013\Fuentes\Claro.Base\obj\Debug\Claro.Base.dll
+C:\Users\lchumbes\Desktop\SIACTVS_2013\Fuentes\Claro.Base\obj\Debug\Claro.Base.pdb
+C:\Users\lchumbes\Desktop\Fuentes\Fuentes\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Base.dll
+C:\Users\lchumbes\Desktop\Fuentes\Fuentes\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Base.pdb
+C:\Users\lchumbes\Desktop\Fuentes\Fuentes\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Seguridad.Criptografia.dll
+C:\Users\lchumbes\Desktop\Fuentes\Fuentes\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Seguridad.Criptografia.pdb
+C:\Users\lchumbes\Desktop\Fuentes\Fuentes\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.csprojResolveAssemblyReference.cache
+C:\Users\lchumbes\Desktop\Fuentes\Fuentes\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.dll
+C:\Users\lchumbes\Desktop\Fuentes\Fuentes\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.pdb
+C:\Users\lchumbes\Desktop\Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Base.dll
+C:\Users\lchumbes\Desktop\Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Base.pdb
+C:\Users\lchumbes\Desktop\Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Seguridad.Criptografia.dll
+C:\Users\lchumbes\Desktop\Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Seguridad.Criptografia.pdb
+C:\Users\lchumbes\Desktop\Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.csprojResolveAssemblyReference.cache
+C:\Users\lchumbes\Desktop\Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.dll
+C:\Users\lchumbes\Desktop\Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.pdb
+C:\Users\lchumbes\Desktop\Mejoras Arquitectura Fase1\1.Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Base.dll
+C:\Users\lchumbes\Desktop\Mejoras Arquitectura Fase1\1.Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Base.pdb
+C:\Users\lchumbes\Desktop\Mejoras Arquitectura Fase1\1.Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Seguridad.Criptografia.dll
+C:\Users\lchumbes\Desktop\Mejoras Arquitectura Fase1\1.Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Seguridad.Criptografia.pdb
+C:\Users\lchumbes\Desktop\Mejoras Arquitectura Fase1\1.Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.csprojResolveAssemblyReference.cache
+C:\Users\lchumbes\Desktop\Mejoras Arquitectura Fase1\1.Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.dll
+C:\Users\lchumbes\Desktop\Mejoras Arquitectura Fase1\1.Fuentes SISACT vs 2013\Fuentes2010\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.pdb
+C:\Users\lchumbes\Desktop\Mejoras Arquitectura Fase1\1. Reemplazar Componentes COM+\Fuentes2010\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Base.dll
+C:\Users\lchumbes\Desktop\Mejoras Arquitectura Fase1\1. Reemplazar Componentes COM+\Fuentes2010\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Base.pdb
+C:\Users\lchumbes\Desktop\Mejoras Arquitectura Fase1\1. Reemplazar Componentes COM+\Fuentes2010\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Seguridad.Criptografia.dll
+C:\Users\lchumbes\Desktop\Mejoras Arquitectura Fase1\1. Reemplazar Componentes COM+\Fuentes2010\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Seguridad.Criptografia.pdb
+C:\Users\lchumbes\Desktop\Mejoras Arquitectura Fase1\1. Reemplazar Componentes COM+\Fuentes2010\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.csprojResolveAssemblyReference.cache
+C:\Users\lchumbes\Desktop\Mejoras Arquitectura Fase1\1. Reemplazar Componentes COM+\Fuentes2010\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.dll
+C:\Users\lchumbes\Desktop\Mejoras Arquitectura Fase1\1. Reemplazar Componentes COM+\Fuentes2010\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.pdb
+C:\COMPARTIDO\1. PROYECTOS\PROY-24740\20160517-2\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Base.dll
+C:\COMPARTIDO\1. PROYECTOS\PROY-24740\20160517-2\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Base.pdb
+C:\COMPARTIDO\1. PROYECTOS\PROY-24740\20160517-2\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Seguridad.Criptografia.dll
+C:\COMPARTIDO\1. PROYECTOS\PROY-24740\20160517-2\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Seguridad.Criptografia.pdb
+C:\COMPARTIDO\1. PROYECTOS\PROY-24740\20160517-2\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.csprojResolveAssemblyReference.cache
+C:\COMPARTIDO\1. PROYECTOS\PROY-24740\20160517-2\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.dll
+C:\COMPARTIDO\1. PROYECTOS\PROY-24740\20160517-2\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.pdb
+C:\PROY\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Base.dll
+C:\PROY\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Base.pdb
+C:\PROY\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Seguridad.Criptografia.dll
+C:\PROY\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Seguridad.Criptografia.pdb
+C:\PROY\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.csprojResolveAssemblyReference.cache
+C:\PROY\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.dll
+C:\PROY\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.pdb
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Base.dll
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Base.pdb
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Seguridad.Criptografia.dll
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.Base\bin\Debug\Claro.Seguridad.Criptografia.pdb
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.csprojResolveAssemblyReference.cache
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.dll
+C:\1. PROYECTOS\Arquitectura Sinergia\FINALIZADO_20160616\Fuentes\SISACT_CONSUMER\Claro.Base\obj\Debug\Claro.Base.pdb
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.Base\bin\Debug\Claro.Base.dll
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.Base\bin\Debug\Claro.Base.pdb
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.Base\bin\Debug\Claro.Seguridad.Criptografia.dll
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.Base\bin\Debug\Claro.Seguridad.Criptografia.pdb
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.Base\obj\Debug\Claro.Base.csprojResolveAssemblyReference.cache
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.Base\obj\Debug\Claro.Base.dll
+C:\Users\mttitora\Desktop\FUENTES\SISACT_CONSUMER_LB811_LIMPIA\Claro.Base\obj\Debug\Claro.Base.pdb

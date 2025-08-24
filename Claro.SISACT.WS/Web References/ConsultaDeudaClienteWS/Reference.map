@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://172.19.74.205:8903/ConsultaDeudaClienteWS/ebsConsultaDeudaClienteSB11?WSDL" filename="ConsultaDeudaClienteWS.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://limdeseaiv25.tim.com.pe:8903/ConsultaDeudaClienteWS/ebsConsultaDeudaClienteSB11?xsd=2" filename="ebsConsultaDeudaClienteSB11.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://limdeseaiv25.tim.com.pe:8903/ConsultaDeudaClienteWS/ebsConsultaDeudaClienteSB11?xsd=1" filename="ebsConsultaDeudaClienteSB110.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

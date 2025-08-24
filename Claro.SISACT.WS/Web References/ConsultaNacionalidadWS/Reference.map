@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:8088/mockDAT_ConsultaNacionalidadSOAP11Binding?WSDL&amp;interface=DAT_ConsultaNacionalidadSOAP11Binding&amp;part=opcionales_v1.xsd" filename="mockDAT_ConsultaNacionalidadSOAP11Binding.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:8088/mockDAT_ConsultaNacionalidadSOAP11Binding?WSDL&amp;interface=DAT_ConsultaNacionalidadSOAP11Binding&amp;part=responseStatus_v1.xsd" filename="mockDAT_ConsultaNacionalidadSOAP11Binding0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:8088/mockDAT_ConsultaNacionalidadSOAP11Binding?WSDL&amp;interface=DAT_ConsultaNacionalidadSOAP11Binding&amp;part=CommonsException.xsd" filename="mockDAT_ConsultaNacionalidadSOAP11Binding1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:8088/mockDAT_ConsultaNacionalidadSOAP11Binding?WSDL&amp;interface=DAT_ConsultaNacionalidadSOAP11Binding&amp;part=HeaderGeneric_v1.0.xsd" filename="mockDAT_ConsultaNacionalidadSOAP11Binding2.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://localhost:8088/mockDAT_ConsultaNacionalidadSOAP11Binding?WSDL" filename="DAT_ConsultaNacionalidad_v1.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:8088/mockDAT_ConsultaNacionalidadSOAP11Binding?WSDL&amp;interface=DAT_ConsultaNacionalidadSOAP11Binding&amp;part=consultarNacionalidad_v1.xsd" filename="mockDAT_ConsultaNacionalidadSOAP11Binding3.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:8088/mockDAT_ConsultaNacionalidadSOAP11Binding?WSDL&amp;interface=DAT_ConsultaNacionalidadSOAP11Binding&amp;part=claroGenericHeaders_v2.xsd" filename="mockDAT_ConsultaNacionalidadSOAP11Binding4.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns="http://claro.com.pe/eai/ws/ventas/configuraciontopeconsumows/types" xmlns:base="http://claro.com.pe/eai/ws/baseschema" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/ws/ventas/configuraciontopeconsumows/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="http://172.19.74.189:7903/ConfiguracionTopeConsumoWS/configuracionTopeConsumoSB11?xsd=1" namespace="http://claro.com.pe/eai/ws/baseschema" />
+  <xsd:element name="listarConfiguracionTopeConsumoRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditRequest" type="base:auditRequestType" />
+        <xsd:element name="codigoProducto" type="xsd:string" />
+        <xsd:element name="codigoPlan" type="xsd:string" />
+        <xsd:element name="codigoServicio" type="xsd:string" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="listarConfiguracionTopeConsumoResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditResponse" type="base:auditResponseType" />
+        <xsd:element minOccurs="1" maxOccurs="unbounded" name="listaConfiguracionTopeConsumo" type="listaConfiguracionTopeConsumoResponseType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:complexType name="listaConfiguracionTopeConsumoResponseType">
+    <xsd:sequence>
+      <xsd:element name="servvCodigo" type="xsd:string" />
+      <xsd:element name="servvDescripcion" type="xsd:string" />
+      <xsd:element name="tpmvCodigo" type="xsd:integer" />
+      <xsd:element name="tpmvMonto" type="xsd:double" />
+      <xsd:element name="tpmvMinuto" type="xsd:integer" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="listarConfiguracionTopeConsumoSIACRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditRequest" type="base:auditRequestType" />
+        <xsd:element name="codigoServicio" type="xsd:string" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="listarConfiguracionTopeConsumoSIACResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditResponse" type="base:auditResponseType" />
+        <xsd:element minOccurs="1" maxOccurs="unbounded" name="listaConfiguracionTopeConsumoSIAC" type="listaConfiguracionTopeConsumoSIACResponseType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:complexType name="listaConfiguracionTopeConsumoSIACResponseType">
+    <xsd:sequence>
+      <xsd:element name="serviCoSer" type="xsd:integer" />
+      <xsd:element name="servvDescripcion" type="xsd:string" />
+      <xsd:element name="tpmvCodigo" type="xsd:integer" />
+      <xsd:element name="tpmvMonto" type="xsd:double" />
+      <xsd:element name="tpmvMinuto" type="xsd:integer" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

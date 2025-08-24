@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s0:definitions xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s1="http://pe/com/claro/esb/services/datoscliente/ws" xmlns="" name="ebsDatosClienteServiceDefinitions" targetNamespace="http://pe/com/claro/esb/services/datoscliente/ws" xmlns:s0="http://schemas.xmlsoap.org/wsdl/">
+  <s0:types>
+    <xsd:schema xmlns:tns="http://pe/com/claro/esb/services/schemas/datosCliente.xsd" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://pe/com/claro/esb/services/schemas/datosCliente.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:simpleType name="TypeBaseStr">
+        <xsd:restriction base="xsd:string" />
+      </xsd:simpleType>
+      <xsd:complexType name="autenticacionType">
+        <xsd:sequence>
+          <xsd:element name="ipCliente" type="xsd:string" />
+          <xsd:element name="usuario" type="xsd:string" />
+          <xsd:element name="clave" type="xsd:string" />
+          <xsd:element name="codigoServicioEAI" type="xsd:string" />
+          <xsd:element name="capacidadServicioEAI" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Imeis">
+        <xsd:sequence>
+          <xsd:element name="numero" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DatosPrepago">
+        <xsd:sequence>
+          <xsd:element name="customerID" type="xsd:string" />
+          <xsd:element name="msisdn" type="xsd:string" />
+          <xsd:element name="providerID" type="xsd:string" />
+          <xsd:element name="contract" type="xsd:string" />
+          <xsd:element name="useTestEnvironment" type="xsd:string" />
+          <xsd:element name="activeFnFOption" type="xsd:string" />
+          <xsd:element name="isLocked" type="xsd:string" />
+          <xsd:element name="isLockedForPeriodicRecharge" type="xsd:string" />
+          <xsd:element name="planGroupID" type="xsd:string" />
+          <xsd:element name="isFirstCallPassed" type="xsd:string" />
+          <xsd:element name="lastKnowPeriod" type="xsd:string" />
+          <xsd:element name="firstCallDate" type="xsd:string" />
+          <xsd:element name="rechargingPeriod" type="xsd:string" />
+          <xsd:element name="activeEndDate" type="xsd:string" />
+          <xsd:element name="graceEndDate" type="xsd:string" />
+          <xsd:element name="isFnFPossible" type="xsd:string" />
+          <xsd:element name="userGroups" type="xsd:string" />
+          <xsd:element name="fnFNumbers" type="xsd:string" />
+          <xsd:element name="tariffModelNumber" type="xsd:string" />
+          <xsd:element name="postpaid" type="xsd:string" />
+          <xsd:element name="subscriberStatus" type="xsd:string" />
+          <xsd:element name="subscriberLastStatus" type="xsd:string" />
+          <xsd:element name="statusChangeDate" type="xsd:string" />
+          <xsd:element name="onPeakAccountIDBalance" type="xsd:string" />
+          <xsd:element name="onPeakAccountIDExpiryDate" type="xsd:string" />
+          <xsd:element name="sMSLoyaltyAccountBalance" type="xsd:string" />
+          <xsd:element name="sMSLoyaltyAccountExpiryDate" type="xsd:string" />
+          <xsd:element name="voiceLoyaltyAccountBalance" type="xsd:string" />
+          <xsd:element name="voiceLoyaltyAccountExpiryDate" type="xsd:string" />
+          <xsd:element name="bonus1PromotionalAccountBalance" type="xsd:string" />
+          <xsd:element name="bonus1PromotionalAccountExpiryDate" type="xsd:string" />
+          <xsd:element name="sMSPromotionalAccountBalance" type="xsd:string" />
+          <xsd:element name="sMSPromotionalAccountExpiryDate" type="xsd:string" />
+          <xsd:element name="voice1PromotionalAccountBalance" type="xsd:string" />
+          <xsd:element name="voice1PromotionalAccountExpiryDate" type="xsd:string" />
+          <xsd:element name="voice2PromotionalAccountBalance" type="xsd:string" />
+          <xsd:element name="voice2PromotionalAccountExpiryDate" type="xsd:string" />
+          <xsd:element name="gPRSPromotionalAccountBalance" type="xsd:string" />
+          <xsd:element name="gPRSPromotionalAccountExpiryDate" type="xsd:string" />
+          <xsd:element name="bonusPromotionalAccountBalance" type="xsd:string" />
+          <xsd:element name="bonusPromotionalAccountExpiryDate" type="xsd:string" />
+          <xsd:element name="bonus2PromotionalAccountBalance" type="xsd:string" />
+          <xsd:element name="bonus2PromotionalAccountExpiryDate" type="xsd:string" />
+          <xsd:element name="mMSPromotionalAccountBalance" type="xsd:string" />
+          <xsd:element name="mMSPromotionalAccountExpiryDate" type="xsd:string" />
+          <xsd:element name="voucherRchFraudCounter" type="xsd:string" />
+          <xsd:element name="counterChangeFnFnoForFree" type="xsd:string" />
+          <xsd:element name="counterChangeFAnoForFree" type="xsd:string" />
+          <xsd:element name="counterChangeHZInoForFree" type="xsd:string" />
+          <xsd:element name="counterSubscribeFAForFree" type="xsd:string" />
+          <xsd:element name="counterSubscribeFnFForFree" type="xsd:string" />
+          <xsd:element name="counterSubscribeHZIForFree" type="xsd:string" />
+          <xsd:element name="counterSubscribeMLCForFree" type="xsd:string" />
+          <xsd:element name="counterChangeTariffForFree" type="xsd:string" />
+          <xsd:element name="fnfNumbers7" type="xsd:string" />
+          <xsd:element name="isCNTPossible" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DatosHLR">
+        <xsd:sequence>
+          <xsd:element name="routingCategory" type="xsd:string" />
+          <xsd:element name="hlr" type="xsd:string" />
+          <xsd:element name="scpVoz" type="xsd:string" />
+          <xsd:element name="imsi" type="xsd:string" />
+          <xsd:element name="msisdn" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DatosPostpago">
+        <xsd:sequence>
+          <xsd:element name="customerId" type="xsd:int" />
+          <xsd:element name="cuenta" type="xsd:string" />
+          <xsd:element name="nombre" type="xsd:string" />
+          <xsd:element name="apellidos" type="xsd:string" />
+          <xsd:element name="razonSocial" type="xsd:string" />
+          <xsd:element name="tip_doc" type="xsd:string" />
+          <xsd:element name="num_doc" type="xsd:string" />
+          <xsd:element name="titulo" type="xsd:string" />
+          <xsd:element name="telef_principal" type="xsd:string" />
+          <xsd:element name="estado_civil" type="xsd:string" />
+          <xsd:element name="fecha_nac" type="xsd:date" />
+          <xsd:element name="lug_nac" type="xsd:string" />
+          <xsd:element name="ruc_dni" type="xsd:string" />
+          <xsd:element name="nomb_comercial" type="xsd:string" />
+          <xsd:element name="contacto_cliente" type="xsd:string" />
+          <xsd:element name="rep_legal" type="xsd:string" />
+          <xsd:element name="telef_contacto" type="xsd:string" />
+          <xsd:element name="fax" type="xsd:string" />
+          <xsd:element name="email" type="xsd:string" />
+          <xsd:element name="cargo" type="xsd:string" />
+          <xsd:element name="consultor" type="xsd:string" />
+          <xsd:element name="asesor" type="xsd:string" />
+          <xsd:element name="direccion_fac" type="xsd:string" />
+          <xsd:element name="urbanizacion_fac" type="xsd:string" />
+          <xsd:element name="distrito_fac" type="xsd:string" />
+          <xsd:element name="provincia_fac" type="xsd:string" />
+          <xsd:element name="cod_postal_fac" type="xsd:string" />
+          <xsd:element name="departamento_fac" type="xsd:string" />
+          <xsd:element name="pais_fac" type="xsd:string" />
+          <xsd:element name="direccion_leg" type="xsd:string" />
+          <xsd:element name="urbanizacion_leg" type="xsd:string" />
+          <xsd:element name="distrito_leg" type="xsd:string" />
+          <xsd:element name="provincia_leg" type="xsd:string" />
+          <xsd:element name="cod_postal_leg" type="xsd:string" />
+          <xsd:element name="departamento_leg" type="xsd:string" />
+          <xsd:element name="pais_leg" type="xsd:string" />
+          <xsd:element name="co_id" type="xsd:int" />
+          <xsd:element name="nicho_id" type="xsd:string" />
+          <xsd:element name="num_cuentas" type="xsd:int" />
+          <xsd:element name="num_lineas" type="xsd:int" />
+          <xsd:element name="ciclo_fac" type="xsd:string" />
+          <xsd:element name="status_cuenta" type="xsd:string" />
+          <xsd:element name="modalidad" type="xsd:string" />
+          <xsd:element name="tipo_cliente" type="xsd:string" />
+          <xsd:element name="fecha_act" type="xsd:string" />
+          <xsd:element name="limite_credito" type="xsd:float" />
+          <xsd:element name="segmento" type="xsd:string" />
+          <xsd:element name="respon_pago" type="xsd:string" />
+          <xsd:element name="credit_score" type="xsd:string" />
+          <xsd:element name="forma_pago" type="xsd:string" />
+          <xsd:element name="codigo_tipo_cliente" type="xsd:string" />
+          <xsd:element name="sexo" type="xsd:string" />
+          <xsd:element name="nacionalidad" type="xsd:int" />
+          <xsd:element name="estado_civil_id" type="xsd:int" />
+          <xsd:element name="codigo_plan_tarifario" type="xsd:string" />
+          <xsd:element name="des_plan_tarifario" type="xsd:string" />
+          <xsd:element name="tramaBillingGateway" type="xsd:string" />
+          <xsd:element name="estado" type="xsd:string" />
+          <xsd:element name="motivo" type="xsd:string" />
+          <xsd:element name="fec_estado" type="xsd:string" />
+          <xsd:element name="plazo_contrato" type="xsd:string" />
+          <xsd:element name="iccid" type="xsd:string" />
+          <xsd:element name="campania" type="xsd:string" />
+          <xsd:element name="venta" type="xsd:string" />
+          <xsd:element name="vendedor" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DatosRICE">
+        <xsd:sequence>
+          <xsd:element name="amountSaldo" type="xsd:string" />
+          <xsd:element name="amountConsumo" type="xsd:string" />
+          <xsd:element name="status" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="DatosClientexMSISDNRequest">
+        <xsd:annotation>
+          <xsd:documentation>Datos requeridos para leer los datos del cliente IN/BSCS/HLR</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="autenticacion" type="tns:autenticacionType" />
+            <xsd:element name="aplicacionConsumidora" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation>Identificador de aplicación para consultas de datos en RICE </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="idTransaccionConsumidora" type="tns:TypeBaseStr" />
+            <xsd:element name="msisdn" type="tns:TypeBaseStr" />
+            <xsd:element name="Hlrflag" type="xsd:int">
+              <xsd:annotation>
+                <xsd:documentation>Identifica si realiza la consulta al HLR[0=F,1=V]</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="codigoExternalOrigen" type="tns:TypeBaseStr">
+              <xsd:annotation>
+                <xsd:documentation>Codigo para consultar datos en Rice</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="external_origen" type="tns:TypeBaseStr">
+              <xsd:annotation>
+                <xsd:documentation>Codigo para consultar datos en Rice</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DatosClientexIMSIRequest">
+        <xsd:annotation>
+          <xsd:documentation>Datos requeridos para leer los datos del cliente IN/BSCS/HLR</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="autenticacion" type="tns:autenticacionType" />
+            <xsd:element name="aplicacionConsumidora" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation>Identificador de aplicación para consultas de datos en RICE </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="idTransaccionConsumidora" type="xsd:string" />
+            <xsd:element name="imsi" type="xsd:string" />
+            <xsd:element name="codigoExternalOrigen" type="tns:TypeBaseStr">
+              <xsd:annotation>
+                <xsd:documentation>Codigo para consultar datos en Rice</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="external_origen" type="tns:TypeBaseStr">
+              <xsd:annotation>
+                <xsd:documentation>Codigo para consultar datos en Rice</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DatosPrepagoxMSISDNRequest">
+        <xsd:annotation>
+          <xsd:documentation>Datos requeridos para leer los datos del cliente IN/BSCS/HLR</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="autenticacion" type="tns:autenticacionType" />
+            <xsd:element name="aplicacionConsumidora" type="tns:TypeBaseStr" />
+            <xsd:element name="idTransaccionConsumidora" type="tns:TypeBaseStr" />
+            <xsd:element name="msisdn" type="tns:TypeBaseStr" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DatosPostPagoxMSISDNRequest">
+        <xsd:annotation>
+          <xsd:documentation>Datos requeridos para leer los datos del cliente IN/BSCS/HLR</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="autenticacion" type="tns:autenticacionType" />
+            <xsd:element name="aplicacionConsumidora" type="tns:TypeBaseStr" />
+            <xsd:element name="idTransaccionConsumidora" type="tns:TypeBaseStr" />
+            <xsd:element name="msisdn" type="tns:TypeBaseStr" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DatosClientexMSISDNResponse">
+        <xsd:annotation>
+          <xsd:documentation>Datos de salida por cliente</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="resultado" type="xsd:string" />
+            <xsd:element name="mensaje" type="xsd:string" />
+            <xsd:element name="idTransaccion" type="xsd:string" />
+            <xsd:element name="aplicacionProveedora" type="xsd:string" />
+            <xsd:element name="fechaProcesoTransaccion" type="xsd:string" />
+            <xsd:element name="idTipoProducto" type="xsd:string" />
+            <xsd:element name="tipoProducto" type="xsd:string" />
+            <xsd:element name="bloqueado" type="xsd:string" />
+            <xsd:element name="isbandaancha" type="xsd:string" />
+            <xsd:element name="datosPrepago" type="tns:DatosPrepago" />
+            <xsd:element name="datosHLR" type="tns:DatosHLR" />
+            <xsd:element name="datosPostpago" type="tns:DatosPostpago" />
+            <xsd:element name="datosRice" type="tns:DatosRICE" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DatosClientexIMSIResponse">
+        <xsd:annotation>
+          <xsd:documentation>Datos de salida por cliente</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="resultado" type="xsd:string" />
+            <xsd:element name="mensaje" type="xsd:string" />
+            <xsd:element name="idTransaccion" type="xsd:string" />
+            <xsd:element name="aplicacionProveedora" type="xsd:string" />
+            <xsd:element name="fechaProcesoTransaccion" type="xsd:string" />
+            <xsd:element name="idTipoProducto" type="xsd:string" />
+            <xsd:element name="tipoProducto" type="xsd:string" />
+            <xsd:element name="bloqueado" type="xsd:string" />
+            <xsd:element name="isbandaancha" type="xsd:string" />
+            <xsd:element name="datosPrepago" type="tns:DatosPrepago" />
+            <xsd:element name="datosHLR" type="tns:DatosHLR" />
+            <xsd:element name="datosPostpago" type="tns:DatosPostpago" />
+            <xsd:element name="datosRice" type="tns:DatosRICE" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="INDatosPrepagoResponse">
+        <xsd:annotation>
+          <xsd:documentation>Datos de salida de los rangos IN por telefono</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="resultado" type="xsd:string" />
+            <xsd:element name="mensaje" type="xsd:string" />
+            <xsd:element name="idTransaccion" type="xsd:string" />
+            <xsd:element name="aplicacionProveedora" type="xsd:string" />
+            <xsd:element name="fechaProcesoTransaccion" type="xsd:string" />
+            <xsd:element name="datosPrepago" type="tns:DatosPrepago" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DatosPostPagoResponse">
+        <xsd:annotation>
+          <xsd:documentation>Datos de salida de los rangos IN por telefono</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="resultado" type="xsd:string" />
+            <xsd:element name="mensaje" type="xsd:string" />
+            <xsd:element name="idTransaccion" type="xsd:string" />
+            <xsd:element name="aplicacionProveedora" type="xsd:string" />
+            <xsd:element name="fechaProcesoTransaccion" type="xsd:string" />
+            <xsd:element name="datosPostpago" type="tns:DatosPostpago" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://pe/com/claro/esb/services/datoscliente/ws" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://pe/com/claro/esb/services/schemas/datosCliente.xsd" />
+      <xs:element name="leerDatosPrepagoXMSISDN">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:dat="http://pe/com/claro/esb/services/schemas/datosCliente.xsd" ref="dat:DatosPrepagoxMSISDNRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="leerDatosPrepagoXMSISDNResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:dat="http://pe/com/claro/esb/services/schemas/datosCliente.xsd" ref="dat:INDatosPrepagoResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaClienteXMSISDN">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:dat="http://pe/com/claro/esb/services/schemas/datosCliente.xsd" ref="dat:DatosClientexMSISDNRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaClienteXMSISDNResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:dat="http://pe/com/claro/esb/services/schemas/datosCliente.xsd" ref="dat:DatosClientexMSISDNResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaClienteXIMSI">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:dat="http://pe/com/claro/esb/services/schemas/datosCliente.xsd" ref="dat:DatosClientexIMSIRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaClienteXIMSIResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:dat="http://pe/com/claro/esb/services/schemas/datosCliente.xsd" ref="dat:DatosClientexIMSIResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="leerDatosPostPagoXMSISDN">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:dat="http://pe/com/claro/esb/services/schemas/datosCliente.xsd" ref="dat:DatosPostPagoxMSISDNRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="leerDatosPostPagoXMSISDNResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:dat="http://pe/com/claro/esb/services/schemas/datosCliente.xsd" ref="dat:DatosPostPagoResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </s0:types>
+  <s0:message name="leerDatosPrepagoXMSISDN">
+    <s0:part name="parameters" element="s1:leerDatosPrepagoXMSISDN" />
+  </s0:message>
+  <s0:message name="leerDatosPrepagoXMSISDNResponse">
+    <s0:part name="parameters" element="s1:leerDatosPrepagoXMSISDNResponse" />
+  </s0:message>
+  <s0:message name="consultaClienteXMSISDN">
+    <s0:part name="parameters" element="s1:consultaClienteXMSISDN" />
+  </s0:message>
+  <s0:message name="consultaClienteXMSISDNResponse">
+    <s0:part name="parameters" element="s1:consultaClienteXMSISDNResponse" />
+  </s0:message>
+  <s0:message name="consultaClienteXIMSI">
+    <s0:part name="parameters" element="s1:consultaClienteXIMSI" />
+  </s0:message>
+  <s0:message name="consultaClienteXIMSIResponse">
+    <s0:part name="parameters" element="s1:consultaClienteXIMSIResponse" />
+  </s0:message>
+  <s0:message name="leerDatosPostPagoXMSISDN">
+    <s0:part name="parameters" element="s1:leerDatosPostPagoXMSISDN" />
+  </s0:message>
+  <s0:message name="leerDatosPostPagoXMSISDNResponse">
+    <s0:part name="parameters" element="s1:leerDatosPostPagoXMSISDNResponse" />
+  </s0:message>
+  <s0:portType name="ebsDatosCliente">
+    <s0:operation name="leerDatosPrepagoXMSISDN" parameterOrder="parameters">
+      <s0:input message="s1:leerDatosPrepagoXMSISDN" />
+      <s0:output message="s1:leerDatosPrepagoXMSISDNResponse" />
+    </s0:operation>
+    <s0:operation name="consultaClienteXMSISDN" parameterOrder="parameters">
+      <s0:input message="s1:consultaClienteXMSISDN" />
+      <s0:output message="s1:consultaClienteXMSISDNResponse" />
+    </s0:operation>
+    <s0:operation name="consultaClienteXIMSI" parameterOrder="parameters">
+      <s0:input message="s1:consultaClienteXIMSI" />
+      <s0:output message="s1:consultaClienteXIMSIResponse" />
+    </s0:operation>
+    <s0:operation name="leerDatosPostPagoXMSISDN" parameterOrder="parameters">
+      <s0:input message="s1:leerDatosPostPagoXMSISDN" />
+      <s0:output message="s1:leerDatosPostPagoXMSISDNResponse" />
+    </s0:operation>
+  </s0:portType>
+  <s0:binding name="ebsDatosClienteServiceSoapBinding" type="s1:ebsDatosCliente">
+    <s2:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <s0:operation name="leerDatosPrepagoXMSISDN">
+      <s2:operation soapAction="" style="document" />
+      <s0:input>
+        <s2:body use="literal" parts="parameters" />
+      </s0:input>
+      <s0:output>
+        <s2:body use="literal" parts="parameters" />
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="consultaClienteXMSISDN">
+      <s2:operation soapAction="" style="document" />
+      <s0:input>
+        <s2:body use="literal" parts="parameters" />
+      </s0:input>
+      <s0:output>
+        <s2:body use="literal" parts="parameters" />
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="consultaClienteXIMSI">
+      <s2:operation soapAction="" style="document" />
+      <s0:input>
+        <s2:body use="literal" parts="parameters" />
+      </s0:input>
+      <s0:output>
+        <s2:body use="literal" parts="parameters" />
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="leerDatosPostPagoXMSISDN">
+      <s2:operation soapAction="" style="document" />
+      <s0:input>
+        <s2:body use="literal" parts="parameters" />
+      </s0:input>
+      <s0:output>
+        <s2:body use="literal" parts="parameters" />
+      </s0:output>
+    </s0:operation>
+  </s0:binding>
+  <s0:service name="ebsDatosClienteService">
+    <s0:port name="ebsDatosClienteSoapPort" binding="s1:ebsDatosClienteServiceSoapBinding">
+      <s2:address location="http://limdeseaiv22.tim.com.pe:8909/DatosClienteWS/ebsDatosCliente" />
+    </s0:port>
+  </s0:service>
+</s0:definitions>

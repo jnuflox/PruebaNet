@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.17.26.51:21000/DAT_ConsultaDatosOACWS/SRV_ConsultaDatosOACWS/Resources/WSDL/DAT_ConsultaDatosOACWS?SCHEMA/DAT_ConsultaDatosOACWS/SRV_ConsultaDatosOACWS/Resources/XSD/baseSchema_v1" filename="baseSchema_v1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.17.26.51:21000/DAT_ConsultaDatosOACWS/SRV_ConsultaDatosOACWS/Resources/WSDL/DAT_ConsultaDatosOACWS?SCHEMA/DAT_ConsultaDatosOACWS/SRV_ConsultaDatosOACWS/Resources/XSD/consultarDeudaCuenta" filename="consultarDeudaCuenta.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://172.17.26.51:21000/DAT_ConsultaDatosOACWS/SRV_ConsultaDatosOACWS/Resources/WSDL/DAT_ConsultaDatosOACWS?wsdl" filename="ConsultaDatosOACWS.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.17.26.51:21000/DAT_ConsultaDatosOACWS/SRV_ConsultaDatosOACWS/Resources/WSDL/DAT_ConsultaDatosOACWS?SCHEMA/DAT_ConsultaDatosOACWS/SRV_ConsultaDatosOACWS/Resources/XSD/headers" filename="headers.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.17.26.51:21000/DAT_ConsultaDatosOACWS/SRV_ConsultaDatosOACWS/Resources/WSDL/DAT_ConsultaDatosOACWS?SCHEMA/DAT_ConsultaDatosOACWS/SRV_ConsultaDatosOACWS/Resources/XSD/claroFault" filename="claroFault.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.17.26.51:21000/DAT_ConsultaDatosOACWS/SRV_ConsultaDatosOACWS/Resources/WSDL/DAT_ConsultaDatosOACWS?SCHEMA/DAT_ConsultaDatosOACWS/SRV_ConsultaDatosOACWS/Resources/XSD/responseDataConsultarDeudaCuenta" filename="responseDataConsultarDeudaCuenta.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

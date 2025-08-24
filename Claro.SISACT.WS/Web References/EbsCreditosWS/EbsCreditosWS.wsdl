@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://claro.com.pe/eai/ebs/ventas/ebscreditosws/ws" xmlns:types="http://claro.com.pe/eai/ebs/ventas/ebscreditosws/ws/types" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="EbsCreditosWS" targetNamespace="http://claro.com.pe/eai/ebs/ventas/ebscreditosws/ws" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://172.19.74.189:7903/EbsCreditosWS/ebsCreditosSB12?xsd=1" namespace="http://claro.com.pe/eai/ebs/ventas/ebscreditosws/ws/types" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="consultarDatosDCRequestMsg">
+    <wsdl:part name="request" element="types:consultarDatosDCRequest" />
+  </wsdl:message>
+  <wsdl:message name="consultarDatosDCResponseMsg">
+    <wsdl:part name="response" element="types:consultarDatosDCResponse" />
+  </wsdl:message>
+  <wsdl:portType name="EbsCreditosWSPortType">
+    <wsdl:operation name="evaluarCredito">
+      <wsdl:input message="tns:consultarDatosDCRequestMsg" />
+      <wsdl:output message="tns:consultarDatosDCResponseMsg" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EbsCreditosWSPortTypeSOAP11Binding" type="tns:EbsCreditosWSPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="evaluarCredito">
+      <soap:operation soapAction="http://claro.com.pe/eai/ebs/ventas/ebscreditosws/evaluarCredito" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EbsCreditosWSPortTypeSOAP12Binding" type="tns:EbsCreditosWSPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="evaluarCredito">
+      <soap12:operation soapAction="http://claro.com.pe/eai/ebs/ventas/ebscreditosws/evaluarCredito" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" parts="request" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" parts="response" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EbsCreditosWSService">
+    <wsdl:port name="ebsCreditosSB11" binding="tns:EbsCreditosWSPortTypeSOAP11Binding">
+      <soap:address location="http://172.19.74.189:7903/EbsCreditosWS/ebsCreditosSB11" />
+    </wsdl:port>
+    <wsdl:port name="ebsCreditosSB12" binding="tns:EbsCreditosWSPortTypeSOAP12Binding">
+      <soap12:address location="http://172.19.74.189:7903/EbsCreditosWS/ebsCreditosSB12" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

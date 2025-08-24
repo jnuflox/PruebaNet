@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:intf="http://172.19.72.43:8080/axis/services/Push" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns1="urn:MASService" xmlns:impl="http://172.19.72.43:8080/axis/services/Push" targetNamespace="http://172.19.72.43:8080/axis/services/Push" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:MASService">
+      <xsd:import namespace="http://172.19.72.43:8080/axis/services/Push" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:complexType name="MMSAttachment">
+        <xsd:sequence>
+          <xsd:element name="content" nillable="true" type="xsd:base64Binary" />
+          <xsd:element name="contentType" nillable="true" type="xsd:string" />
+          <xsd:element name="fileName" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="SlideElement">
+        <xsd:sequence>
+          <xsd:element name="region" nillable="true" type="xsd:string" />
+          <xsd:element name="source" nillable="true" type="xsd:string" />
+          <xsd:element name="type" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Slide">
+        <xsd:sequence>
+          <xsd:element name="duration" nillable="true" type="xsd:string" />
+          <xsd:element name="elements" nillable="true" type="impl:ArrayOf_tns1_SlideElement" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Body">
+        <xsd:sequence>
+          <xsd:element name="slides" nillable="true" type="impl:ArrayOf_tns1_Slide" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LayoutElement">
+        <xsd:sequence>
+          <xsd:element name="height" nillable="true" type="xsd:string" />
+          <xsd:element name="left" nillable="true" type="xsd:string" />
+          <xsd:element name="top" nillable="true" type="xsd:string" />
+          <xsd:element name="width" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Region">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="tns1:LayoutElement">
+            <xsd:sequence>
+              <xsd:element name="id" nillable="true" type="xsd:string" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="Layout">
+        <xsd:sequence>
+          <xsd:element name="regions" nillable="true" type="impl:ArrayOf_tns1_Region" />
+          <xsd:element name="rootLayout" nillable="true" type="tns1:LayoutElement" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Head">
+        <xsd:sequence>
+          <xsd:element name="layout" nillable="true" type="tns1:Layout" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="SMILDoc">
+        <xsd:sequence>
+          <xsd:element name="body" nillable="true" type="tns1:Body" />
+          <xsd:element name="head" nillable="true" type="tns1:Head" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="MMSData">
+        <xsd:sequence>
+          <xsd:element name="attachments" nillable="true" type="impl:ArrayOf_tns1_MMSAttachment" />
+          <xsd:element name="msisdn" nillable="true" type="xsd:string" />
+          <xsd:element name="smilDoc" nillable="true" type="tns1:SMILDoc" />
+          <xsd:element name="subject" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://172.19.72.43:8080/axis/services/Push">
+      <xsd:import namespace="urn:MASService" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:complexType name="ArrayOf_tns1_MMSAttachment">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="tns1:MMSAttachment[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOf_tns1_SlideElement">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="tns1:SlideElement[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOf_tns1_Slide">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="tns1:Slide[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOf_tns1_Region">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="tns1:Region[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="sendSMSPushResponse">
+    <wsdl:part name="sendSMSPushReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="sendSMSPushRequest">
+    <wsdl:part name="applicationCode" type="xsd:string" />
+    <wsdl:part name="from" type="xsd:string" />
+    <wsdl:part name="msisdn" type="xsd:string" />
+    <wsdl:part name="messageText" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="sendWAPPushResponse">
+    <wsdl:part name="sendWAPPushReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="sendMMSPushRequest">
+    <wsdl:part name="applicationCode" type="xsd:string" />
+    <wsdl:part name="from" type="xsd:string" />
+    <wsdl:part name="mmsData" type="tns1:MMSData" />
+  </wsdl:message>
+  <wsdl:message name="sendWAPPushRequest">
+    <wsdl:part name="applicationCode" type="xsd:string" />
+    <wsdl:part name="from" type="xsd:string" />
+    <wsdl:part name="msisdn" type="xsd:string" />
+    <wsdl:part name="messageText" type="xsd:string" />
+    <wsdl:part name="url" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="sendSATPushMessageResponse">
+    <wsdl:part name="sendSATPushMessageReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="sendMMSPushResponse">
+    <wsdl:part name="sendMMSPushReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="sendSATPushMessageRequest">
+    <wsdl:part name="applicationCode" type="xsd:string" />
+    <wsdl:part name="from" type="xsd:string" />
+    <wsdl:part name="msisdn" type="xsd:string" />
+    <wsdl:part name="satPageUrl" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="MASService">
+    <wsdl:operation name="sendWAPPush" parameterOrder="applicationCode from msisdn messageText url">
+      <wsdl:input name="sendWAPPushRequest" message="impl:sendWAPPushRequest" />
+      <wsdl:output name="sendWAPPushResponse" message="impl:sendWAPPushResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="sendSMSPush" parameterOrder="applicationCode from msisdn messageText">
+      <wsdl:input name="sendSMSPushRequest" message="impl:sendSMSPushRequest" />
+      <wsdl:output name="sendSMSPushResponse" message="impl:sendSMSPushResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="sendSATPushMessage" parameterOrder="applicationCode from msisdn satPageUrl">
+      <wsdl:input name="sendSATPushMessageRequest" message="impl:sendSATPushMessageRequest" />
+      <wsdl:output name="sendSATPushMessageResponse" message="impl:sendSATPushMessageResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMMSPush" parameterOrder="applicationCode from mmsData">
+      <wsdl:input name="sendMMSPushRequest" message="impl:sendMMSPushRequest" />
+      <wsdl:output name="sendMMSPushResponse" message="impl:sendMMSPushResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PushSoapBinding" type="impl:MASService">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="sendWAPPush">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="sendWAPPushRequest">
+        <wsdlsoap:body use="encoded" namespace="http://mas.claro.com.pe" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="sendWAPPushResponse">
+        <wsdlsoap:body use="encoded" namespace="http://172.19.72.43:8080/axis/services/Push" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendSMSPush">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="sendSMSPushRequest">
+        <wsdlsoap:body use="encoded" namespace="http://mas.claro.com.pe" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="sendSMSPushResponse">
+        <wsdlsoap:body use="encoded" namespace="http://172.19.72.43:8080/axis/services/Push" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendSATPushMessage">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="sendSATPushMessageRequest">
+        <wsdlsoap:body use="encoded" namespace="http://mas.claro.com.pe" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="sendSATPushMessageResponse">
+        <wsdlsoap:body use="encoded" namespace="http://172.19.72.43:8080/axis/services/Push" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMMSPush">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="sendMMSPushRequest">
+        <wsdlsoap:body use="encoded" namespace="http://mas.claro.com.pe" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="sendMMSPushResponse">
+        <wsdlsoap:body use="encoded" namespace="http://172.19.72.43:8080/axis/services/Push" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MASServiceService">
+    <wsdl:port name="Push" binding="impl:PushSoapBinding">
+      <wsdlsoap:address location="http://172.19.72.43:8080/axis/services/Push" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

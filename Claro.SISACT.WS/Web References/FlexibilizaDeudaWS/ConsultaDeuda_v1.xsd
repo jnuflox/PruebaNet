@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:data="http://claro.com.pe/esb/data/venta/responseDataConsultaDeuda/v1/" xmlns:status="http://claro.com.pe/esb/data/generico/responseStatus/v1/" xmlns:base="http://claro.com.pe/esb/data/venta/consultaDeuda/v1/" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/esb/data/venta/consultaDeuda/v1/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://172.17.26.51:21000/BSS_FlexibilizaDeuda/SRV_FlexibilizaDeuda/Service/Mediation/MED_FlexibilizaDeudaPipeline?SCHEMA%2FBSS_FlexibilizaDeuda%2FSRV_FlexibilizaDeuda%2FResources%2FXSD%2FresponseDataConsultaDeuda_v1" namespace="http://claro.com.pe/esb/data/venta/responseDataConsultaDeuda/v1/" />
+  <xs:element name="ConsultaDeudaRequest" type="base:ConsultaDeudaRequestType" />
+  <xs:element name="ConsultaDeudaResponse" type="base:ConsultaDeudaResponseType" />
+  <xs:complexType name="ConsultaDeudaRequestType">
+    <xs:sequence>
+      <xs:element name="tipoDocumento" type="xs:string" />
+      <xs:element name="numDocumento" type="xs:string" />
+      <xs:element name="cantAnios" type="xs:string" />
+      <xs:element name="fecActivacion" type="xs:string" />
+      <xs:element name="tipoOper" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="listaRequestOpcional" type="base:RequestOpcionalType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RequestOpcionalType">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="requestOpcional">
+        <xs:complexType>
+          <xs:attribute name="campo" type="xs:string" />
+          <xs:attribute name="valor" type="xs:string" />
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ConsultaDeudaResponseType">
+    <xs:sequence>
+      <xs:element name="responseStatus" type="base:responseStatus" />
+      <xs:element name="responseDataConsultaDeuda" type="data:ResponseDataConsultaDeuda" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="responseStatus">
+    <xs:sequence>
+      <xs:element name="estado" type="xs:integer" />
+      <xs:element name="codigoRespuesta" type="xs:string" />
+      <xs:element name="descripcionRespuesta" type="xs:string" />
+      <xs:element name="ubicacionError" type="xs:string" />
+      <xs:element name="fecha" type="xs:dateTime" />
+      <xs:element name="origen" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

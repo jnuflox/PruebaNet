@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd2="http://claro.com.pe/esb/data/generico/opcionales/v1/" xmlns:tns="http://claro.com.pe/esb/data/ventas/consultaNacionalidad/sec/v1/consultarNacionalidad/" xmlns:xsd1="http://claro.com.pe/esb/data/generico/responseStatus/v1/" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/esb/data/ventas/consultaNacionalidad/sec/v1/consultarNacionalidad/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="mockDAT_ConsultaNacionalidadSOAP11Binding?WSDL&amp;interface=DAT_ConsultaNacionalidadSOAP11Binding&amp;part=responseStatus_v1.xsd" namespace="http://claro.com.pe/esb/data/generico/responseStatus/v1/" />
+  <xsd:import schemaLocation="mockDAT_ConsultaNacionalidadSOAP11Binding?WSDL&amp;interface=DAT_ConsultaNacionalidadSOAP11Binding&amp;part=opcionales_v1.xsd" namespace="http://claro.com.pe/esb/data/generico/opcionales/v1/" />
+  <xsd:element name="consultarNacionalidadRequest" type="tns:consultarNacionalidadRequest" />
+  <xsd:element name="consultarNacionalidadResponse" type="tns:consultarNacionalidadResponse" />
+  <xsd:complexType name="consultarNacionalidadRequest">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="listaResquestOpcional" type="xsd2:RequestOpcionalType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="consultarNacionalidadResponse">
+    <xsd:sequence>
+      <xsd:element name="responseStatus" type="xsd1:ResponseStatus" />
+      <xsd:element name="responseData" type="tns:ResponseDataConsultarNacionalidad" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ResponseDataConsultarNacionalidad">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="result" type="tns:Result" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="listaResponseOpcional" type="xsd2:ResponseOpcionalType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Result">
+    <xsd:sequence>
+      <xsd:element name="nacionalidad" type="xsd:string" />
+      <xsd:element name="codigo" type="xsd:int" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

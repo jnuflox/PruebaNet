@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://claro.com.pe/eai/ebs/venta/burocrediticio" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://claro.com.pe/eai/ebs/venta/burocrediticio" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/ebs/venta/burocrediticio">
+      <xsd:element name="evaluarCreditoRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="auditoria" type="tns:auditoria" />
+            <xsd:element name="objEvaluarCreditoReq" type="tns:objEvaluarCreditoReq" />
+            <xsd:element name="listaOpcionalRequest" type="tns:ListaRequestOpcional" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="evaluarCreditoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="idTransaccion" type="xsd:string" />
+            <xsd:element name="codigoRespuesta" type="xsd:string" />
+            <xsd:element name="mensajeRespuesta" type="xsd:string" />
+            <xsd:element name="objEvaluarCreditoResp" type="tns:objEvaluarCreditoResp" />
+            <xsd:element name="listaOpcionalResponse" type="tns:ListaResponseOpcional" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="auditoria">
+        <xsd:sequence>
+          <xsd:element name="idTransaccion" type="xsd:string" />
+          <xsd:element name="ipAplicacion" type="xsd:string" />
+          <xsd:element name="nombreAplicacion" type="xsd:string" />
+          <xsd:element name="usuarioAplicacion" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ListaRequestOpcional">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="RequestOpcional" type="tns:RequestOpcionalComplexType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ListaResponseOpcional">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="ResponseOpcional" type="tns:ResponseOpcionalComplexType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RequestOpcionalComplexType">
+        <xsd:sequence>
+          <xsd:element name="clave" type="xsd:string" />
+          <xsd:element name="valor" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ResponseOpcionalComplexType">
+        <xsd:sequence>
+          <xsd:element name="clave" type="xsd:string" />
+          <xsd:element name="valor" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="objEvaluarCreditoReq">
+        <xsd:sequence>
+          <xsd:element name="istrSecuencia" type="xsd:string" />
+          <xsd:element name="istrTipoDocumento" type="xsd:string" />
+          <xsd:element name="istrNumeroDocumento" type="xsd:string" />
+          <xsd:element name="istrAPELLIDOPATERNO" type="xsd:string" />
+          <xsd:element name="istrAPELLIDOMATERNO" type="xsd:string" />
+          <xsd:element name="istrNOMBRES" type="xsd:string" />
+          <xsd:element name="istrDatoEntrada" type="xsd:int" />
+          <xsd:element name="istrDatoComplemento" type="xsd:string" />
+          <xsd:element name="istrTIPOPRODUCTO" type="xsd:string" />
+          <xsd:element name="istrTIPOCLIENTE" type="xsd:string" />
+          <xsd:element name="istrEDAD" type="xsd:string" />
+          <xsd:element name="istrIngresoOLineaCredito" type="xsd:string" />
+          <xsd:element name="istrTIPOTARJETA" type="xsd:string" />
+          <xsd:element name="istrRUC" type="xsd:string" />
+          <xsd:element name="istrANTIGUEDADLABORAL" type="xsd:string" />
+          <xsd:element name="istrNumOperaPVU" type="xsd:string" />
+          <xsd:element name="istrRegion" type="xsd:string" />
+          <xsd:element name="istrArea" type="xsd:string" />
+          <xsd:element name="istrCanal" type="xsd:string" />
+          <xsd:element name="istrPuntoVenta" type="xsd:string" />
+          <xsd:element name="istrIDCanal" type="xsd:string" />
+          <xsd:element name="istrIDTerminal" type="xsd:string" />
+          <xsd:element name="istrUsuarioACC" type="xsd:string" />
+          <xsd:element name="istrNumOperaEFT" type="xsd:string" />
+          <xsd:element name="istrNUMCUENTAS" type="xsd:string" />
+          <xsd:element name="istrEstadoCivil" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="objEvaluarCreditoResp">
+        <xsd:sequence>
+          <xsd:element name="numeroOperacion" type="xsd:string" />
+          <xsd:element name="codigoModelo" type="xsd:string" />
+          <xsd:element name="regsCalificacion" type="xsd:string" />
+          <xsd:element name="accion" type="xsd:string" />
+          <xsd:element name="direcciones" type="xsd:string" />
+          <xsd:element name="claseDeCliente" type="xsd:string" />
+          <xsd:element name="nombres" type="xsd:string" />
+          <xsd:element name="apellidoMaterno" type="xsd:string" />
+          <xsd:element name="apellidoPaterno" type="xsd:string" />
+          <xsd:element name="limiteDeCredito" type="xsd:string" />
+          <xsd:element name="lcDisponible" type="xsd:string" />
+          <xsd:element name="nvLCMaximo" type="xsd:string" />
+          <xsd:element name="nvTotalCargosFijos" type="xsd:string" />
+          <xsd:element name="explicacion" type="xsd:string" />
+          <xsd:element name="score" type="xsd:string" />
+          <xsd:element name="creditScore" type="xsd:string" />
+          <xsd:element name="tipoDeProducto" type="xsd:string" />
+          <xsd:element name="lineaDeCreditoEnElSistema" type="xsd:string" />
+          <xsd:element name="edad" type="xsd:string" />
+          <xsd:element name="ingresoOLC" type="xsd:string" />
+          <xsd:element name="tipoDeCliente" type="xsd:string" />
+          <xsd:element name="tipoDeTarjeta" type="xsd:string" />
+          <xsd:element name="top10000" type="xsd:string" />
+          <xsd:element name="antiguedadLaboral" type="xsd:string" />
+          <xsd:element name="numeroDocumento" type="xsd:string" />
+          <xsd:element name="razones" type="xsd:string" />
+          <xsd:element name="analisis" type="xsd:string" />
+          <xsd:element name="scoreRankinOperativo" type="xsd:string" />
+          <xsd:element name="numeroEntidadesRankinOperativo" type="xsd:string" />
+          <xsd:element name="puntaje" type="xsd:string" />
+          <xsd:element name="limiteCreditoClaro" type="xsd:double" />
+          <xsd:element name="limiteCreditoBaseExterna" type="xsd:double" />
+          <xsd:element name="limiteCreditoDataCredito" type="xsd:double" />
+          <xsd:element name="respuesta" type="xsd:string" />
+          <xsd:element name="fechaNacimiento" type="xsd:string" />
+          <xsd:element name="fechaConsulta" type="xsd:string" />
+          <xsd:element name="urlEjecutado" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </types>
+  <message name="evaluarCreditoRequestMsg">
+    <part name="parameters" element="tns:evaluarCreditoRequest" />
+  </message>
+  <message name="evaluarCreditoResponseMsg">
+    <part name="parameters" element="tns:evaluarCreditoResponse" />
+  </message>
+  <portType name="ebsBuroCrediticioPortType">
+    <operation name="evaluarCredito">
+      <input message="tns:evaluarCreditoRequestMsg" />
+      <output message="tns:evaluarCreditoResponseMsg" />
+    </operation>
+  </portType>
+  <binding name="ebsBuroCrediticioPortTypeSOAP11Binding" type="tns:ebsBuroCrediticioPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="evaluarCredito">
+      <soap:operation soapAction="http://claro.com.pe/eai/ebs/venta/burocrediticio/evaluarCredito" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="ebsBuroCrediticioPortTypeSOAP12Binding" type="tns:ebsBuroCrediticioPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="evaluarCredito">
+      <soap12:operation soapAction="http://claro.com.pe/eai/ebs/venta/burocrediticio/evaluarCredito" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ebsBuroCrediticioService">
+    <port name="ebsBuroCrediticioSB11" binding="tns:ebsBuroCrediticioPortTypeSOAP11Binding">
+      <soap:address location="http://limdesosbv05.tim.com.pe:8909/BuroCrediticioApp/ebsBuroCrediticioSB11" />
+    </port>
+    <port name="ebsBuroCrediticioSB12" binding="tns:ebsBuroCrediticioPortTypeSOAP12Binding">
+      <soap12:address location="http://limdesosbv05.tim.com.pe:8909/BuroCrediticioApp/ebsBuroCrediticioSB12" />
+    </port>
+  </service>
+</definitions>

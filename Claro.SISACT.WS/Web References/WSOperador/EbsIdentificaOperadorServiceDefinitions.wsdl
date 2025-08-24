@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s0:definitions xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s1="http://pe/com/claro/esb/services/identificaoperador/ws" xmlns="" name="EbsIdentificaOperadorServiceDefinitions" targetNamespace="http://pe/com/claro/esb/services/identificaoperador/ws" xmlns:s0="http://schemas.xmlsoap.org/wsdl/">
+  <s0:types>
+    <xsd:schema xmlns="http://pe/com/claro/identificaOperador/schemas/operador" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://pe/com/claro/identificaOperador/schemas/operador" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:annotation>
+        <xsd:documentation xml:lang="es">
+			XML Schema para Identificador Operador
+		</xsd:documentation>
+      </xsd:annotation>
+      <xsd:element name="IdentificadorOperadorRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="TelefonoUsuario" type="xsd:string" />
+            <xsd:element name="TelefonoTriado" type="xsd:string" />
+            <xsd:element name="Login" type="xsd:string" />
+            <xsd:element name="Sistema" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="IdentificadorOperadorResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" name="Linea" type="linea" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="linea">
+        <xsd:sequence>
+          <xsd:element name="TelefonoTriado" type="xsd:string" />
+          <xsd:element name="RN" type="xsd:string" />
+          <xsd:element name="Operador" type="xsd:string" />
+          <xsd:element name="CodTipoDestino" type="xsd:string" />
+          <xsd:element name="CodRpta" type="xsd:string" />
+          <xsd:element name="DesRpta" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://pe/com/claro/esb/services/identificaoperador/ws" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://pe/com/claro/identificaOperador/schemas/operador" />
+      <xs:element name="buscarOperadorLineas">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:oper="http://pe/com/claro/identificaOperador/schemas/operador" ref="oper:IdentificadorOperadorRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="buscarOperadorLineasResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:oper="http://pe/com/claro/identificaOperador/schemas/operador" ref="oper:IdentificadorOperadorResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </s0:types>
+  <s0:message name="buscarOperadorLineas">
+    <s0:part name="parameters" element="s1:buscarOperadorLineas" />
+  </s0:message>
+  <s0:message name="buscarOperadorLineasResponse">
+    <s0:part name="parameters" element="s1:buscarOperadorLineasResponse" />
+  </s0:message>
+  <s0:portType name="EbsIdentificaOperador">
+    <s0:operation name="buscarOperadorLineas" parameterOrder="parameters">
+      <s0:input message="s1:buscarOperadorLineas" />
+      <s0:output message="s1:buscarOperadorLineasResponse" />
+    </s0:operation>
+  </s0:portType>
+  <s0:binding name="EbsIdentificaOperadorServiceSoapBinding" type="s1:EbsIdentificaOperador">
+    <s2:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <s0:operation name="buscarOperadorLineas">
+      <s2:operation soapAction="" style="document" />
+      <s0:input>
+        <s2:body use="literal" parts="parameters" />
+      </s0:input>
+      <s0:output>
+        <s2:body use="literal" parts="parameters" />
+      </s0:output>
+    </s0:operation>
+  </s0:binding>
+  <s0:service name="EbsIdentificaOperadorService">
+    <s0:port name="EbsIdentificaOperadorSoapPort" binding="s1:EbsIdentificaOperadorServiceSoapBinding">
+      <s2:address location="http://limdeseaiv22.tim.com.pe:8909/IdentificaOperadorWS/EbsIdentificaOperador" />
+    </s0:port>
+  </s0:service>
+</s0:definitions>

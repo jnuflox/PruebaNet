@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>inicio</title>
+	<script language="JavaScript" type="text/JavaScript">
+		top.window.moveTo(0,0);
+		if (document.all) {
+			top.window.resizeTo(screen.availWidth,screen.availHeight);
+		}else if (document.layers||document.getElementById) {
+			if (top.window.outerHeight<screen.availHeight||top.window.outerWidth<screen.availWidth){
+				top.window.outerHeight = screen.availHeight;
+				top.window.outerWidth = screen.availWidth;
+			}
+		}
+		function abriVentana() {
+			var opciones = '';
+			opciones = "status=yes,scrollbars=no,menubar=no,resizable=yes,toolbar=no,top=0,left=0";
+			ventanaSiac = window.open("Sisact_Login.aspx", "", opciones);
+			ventanaSiac.focus();
+		}
+		
+		function cerrarVentana(){
+		    window.open('', '_parent', '');
+		    window.close();
+		}		
+		function inicio(){
+			abriVentana();
+			cerrarVentana();
+		}
+
+					
+	</script>
+</head>
+<body onload = "inicio();">
+
+
+
+</body>
+</html>
+ 
+ 

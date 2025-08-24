@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WL5G3N0:definitions xmlns:WL5G3N1="http://pe/com/claro/esb/services/validacion/ws" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="" name="EbsValidacionServiceDefinitions" targetNamespace="http://pe/com/claro/esb/services/validacion/ws" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/">
+  <WL5G3N0:types>
+    <schema xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:port="http://pe/com/claro/esb/services/schemas/validacion" xmlns:s1="http://pe/com/claro/esb/services/validacion/ws" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" elementFormDefault="qualified" targetNamespace="http://pe/com/claro/esb/services/schemas/validacion" xmlns="http://www.w3.org/2001/XMLSchema">
+      <element name="ValidacionRequest">
+        <complexType>
+          <sequence>
+            <element name="telefono" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ValidacionResponse">
+        <complexType>
+          <sequence>
+            <element name="codigo" type="int" />
+            <element name="descripcion" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+    </schema>
+    <xs:schema xmlns:s1="http://pe/com/claro/esb/services/validacion/ws" xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://pe/com/claro/esb/services/validacion/ws" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://pe/com/claro/esb/services/schemas/validacion" />
+      <xs:element name="validarEstado">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:val="http://pe/com/claro/esb/services/schemas/validacion" ref="val:ValidacionRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="validarEstadoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:val="http://pe/com/claro/esb/services/schemas/validacion" ref="val:ValidacionResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="validarEstado">
+    <WL5G3N0:part name="parameters" element="WL5G3N1:validarEstado" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validarEstadoResponse">
+    <WL5G3N0:part name="parameters" element="WL5G3N1:validarEstadoResponse" />
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="EbsValidacion">
+    <WL5G3N0:operation name="validarEstado" parameterOrder="parameters">
+      <WL5G3N0:input message="WL5G3N1:validarEstado" />
+      <WL5G3N0:output message="WL5G3N1:validarEstadoResponse" />
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="EbsValidacionServiceSoapBinding" type="WL5G3N1:EbsValidacion">
+    <WL5G3N2:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <WL5G3N0:operation name="validarEstado">
+      <WL5G3N2:operation soapAction="" style="document" />
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal" parts="parameters" />
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal" parts="parameters" />
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="EbsValidacionService">
+    <WL5G3N0:port name="EbsValidacionSoapPort" binding="WL5G3N1:EbsValidacionServiceSoapBinding">
+      <WL5G3N2:address location="http://172.19.74.68:8909/ValidacionWS/EbsValidacion" />
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

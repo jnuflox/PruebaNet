@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Runtime.Serialization;
+
+namespace Claro.SISACT.Entity.VentasCuotas.RegistrarVtaAccCuotas.Request
+{
+    [DataContract]
+    [Serializable]
+    public class RegistrarVentaAccCuotasMessageRequest
+    {
+        [DataMember(Name = "Header")]
+        public DataPowerRest.Generic.HeadersRequest Header { get; set; }
+
+        [DataMember(Name = "Body")]
+        public RegistrarVentaAccCuotasBodyRequest Body { get; set; }
+
+        public RegistrarVentaAccCuotasMessageRequest()
+        {
+            Header = new DataPowerRest.Generic.HeadersRequest();
+            Body = new RegistrarVentaAccCuotasBodyRequest();
+        }
+
+    }
+}

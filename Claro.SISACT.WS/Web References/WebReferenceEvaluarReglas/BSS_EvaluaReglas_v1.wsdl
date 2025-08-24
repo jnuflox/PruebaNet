@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WL5G3N0:definitions xmlns:WL5G3N9="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:WL5G3N3="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/consultarServiciosPlan/" xmlns:WL5G3N5="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/obtenerControlesDeConsumo/" xmlns:WL5G3N8="http://claro.com.pe/esb/ventas/BSS_EvaluaReglas/v1/" xmlns:WL5G3N6="http://claro.com.pe/esb/data/generico/claroFault/v1/" xmlns:WL5G3N7="http://claro.com.pe/esb/data/generico/claroGenericHeader/v1/" xmlns:WL5G3N1="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/consultarDatosPlan/" xmlns:WL5G3N2="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/obtenerEvaluacionProactiva/" xmlns:WL5G3N4="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/obtenerCostoXMaterial/" name="BSS_EvaluaReglas_v1" targetNamespace="http://claro.com.pe/esb/ventas/BSS_EvaluaReglas/v1/" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/">
+  <WL5G3N0:types>
+    <xsd:schema xmlns:ns2="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/obtenerEvaluacionProactiva/" xmlns:he="http://claro.com.pe/esb/data/generico/claroGenericHeader/v1/" xmlns:ns6="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/consultarCoutaIniComercial/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns3="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/consultarServiciosPlan/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ef="http://claro.com.pe/esb/data/generico/claroFault/v1/" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:client="http://claro.com.pe/esb/ventas/BSS_EvaluaReglas/v1/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:ns5="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/obtenerControlesDeConsumo/" xmlns:ns4="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/obtenerCostoXMaterial/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:WL5G3N10="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:ns1="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/consultarDatosPlan/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import schemaLocation="http://172.17.26.51:21000/BSS_EvaluaReglas/SRV_EvaluaReglas/Service/Composition/COM_EvaluaReglasProxyService?SCHEMA%2FBSS_EvaluaReglas%2FSRV_EvaluaReglas%2FResources%2FXSD%2FobtenerCostoXMaterial_v1" namespace="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/obtenerCostoXMaterial/" />
+      <xsd:import schemaLocation="http://172.17.26.51:21000/BSS_EvaluaReglas/SRV_EvaluaReglas/Service/Composition/COM_EvaluaReglasProxyService?SCHEMA%2FBSS_EvaluaReglas%2FSRV_EvaluaReglas%2FResources%2FXSD%2FconsultarServiciosPlan_v1" namespace="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/consultarServiciosPlan/" />
+      <xsd:import schemaLocation="http://172.17.26.51:21000/BSS_EvaluaReglas/SRV_EvaluaReglas/Service/Composition/COM_EvaluaReglasProxyService?SCHEMA%2FBSS_EvaluaReglas%2FSRV_EvaluaReglas%2FResources%2FXSD%2FconsultarDatosPlan_v1" namespace="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/consultarDatosPlan/" />
+      <xsd:import schemaLocation="http://172.17.26.51:21000/BSS_EvaluaReglas/SRV_EvaluaReglas/Service/Composition/COM_EvaluaReglasProxyService?SCHEMA%2FBSS_EvaluaReglas%2FSRV_EvaluaReglas%2FResources%2FXSD%2FobtenerEvaluacionProactiva_v1" namespace="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/obtenerEvaluacionProactiva/" />
+      <xsd:import schemaLocation="http://172.17.26.51:21000/BSS_EvaluaReglas/SRV_EvaluaReglas/Service/Composition/COM_EvaluaReglasProxyService?SCHEMA%2FBSS_EvaluaReglas%2FSRV_EvaluaReglas%2FResources%2FXSD%2FobtenerControlesDeConsumo_v1" namespace="http://claro.com.pe/esb/data/ventas/evaluaReglas/sec/v1/obtenerControlesDeConsumo/" />
+      <xsd:import schemaLocation="http://172.17.26.51:21000/BSS_EvaluaReglas/SRV_EvaluaReglas/Service/Composition/COM_EvaluaReglasProxyService?SCHEMA%2FBSS_EvaluaReglas%2FSRV_EvaluaReglas%2FResources%2FXSD%2FClaroFault_v1" namespace="http://claro.com.pe/esb/data/generico/claroFault/v1/" />
+      <xsd:import schemaLocation="http://172.17.26.51:21000/BSS_EvaluaReglas/SRV_EvaluaReglas/Service/Composition/COM_EvaluaReglasProxyService?SCHEMA%2FBSS_EvaluaReglas%2FSRV_EvaluaReglas%2FResources%2FXSD%2FClaroGenericHeaders_v1" namespace="http://claro.com.pe/esb/data/generico/claroGenericHeader/v1/" />
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="consultarDatosPlanRequestMessage">
+    <WL5G3N0:part name="consultarDatosPlanReq" element="WL5G3N1:consultarDatosPlanRequest" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="consultarDatosPlanResponseMessage">
+    <WL5G3N0:part name="consultarDatosPlanRes" element="WL5G3N1:consultarDatosPlanResponse" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="obtenerEvaluacionProactivaRequestMessage">
+    <WL5G3N0:part name="obtenerEvaluacionProactivaReq" element="WL5G3N2:obtenerEvaluacionProactivaRequest" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="obtenerEvaluacionProactivaResponseMessage">
+    <WL5G3N0:part name="obtenerEvaluacionProactivaRes" element="WL5G3N2:obtenerEvaluacionProactivaResponse" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="consultarServiciosPlanRequestMessage">
+    <WL5G3N0:part name="consultarServiciosPlanReq" element="WL5G3N3:consultarServiciosPlanRequest" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="consultarServiciosPlanResponseMessage">
+    <WL5G3N0:part name="consultarServiciosPlanRes" element="WL5G3N3:consultarServiciosPlanResponse" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="obtenerCostoXMaterialRequestMessage">
+    <WL5G3N0:part name="obtenerCostoXMaterialReq" element="WL5G3N4:obtenerCostoXMaterialRequest" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="obtenerCostoXMaterialResponseMessage">
+    <WL5G3N0:part name="obtenerCostoXMaterialRes" element="WL5G3N4:obtenerCostoXMaterialResponse" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="obtenerControlesDeConsumoRequestMessage">
+    <WL5G3N0:part name="obtenerControlesDeConsumoReq" element="WL5G3N5:obtenerControlesDeConsumoRequest" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="obtenerControlesDeConsumoResponseMessage">
+    <WL5G3N0:part name="obtenerControlesDeConsumoRes" element="WL5G3N5:obtenerControlesDeConsumoResponse" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="claroFault">
+    <WL5G3N0:part name="claroFault" element="WL5G3N6:claroFault" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="headerRequest">
+    <WL5G3N0:part name="headerRequest" element="WL5G3N7:headerRequest" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="headerResponse">
+    <WL5G3N0:part name="headerResponse" element="WL5G3N7:headerResponse" />
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="BSS_EvaluaReglasPort">
+    <WL5G3N0:operation name="obtenerCostoXMaterial">
+      <WL5G3N0:input message="WL5G3N8:obtenerCostoXMaterialRequestMessage" />
+      <WL5G3N0:output message="WL5G3N8:obtenerCostoXMaterialResponseMessage" />
+      <WL5G3N0:fault name="claroFault" message="WL5G3N8:claroFault" />
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="consultarServiciosPlan">
+      <WL5G3N0:input message="WL5G3N8:consultarServiciosPlanRequestMessage" />
+      <WL5G3N0:output message="WL5G3N8:consultarServiciosPlanResponseMessage" />
+      <WL5G3N0:fault name="claroFault" message="WL5G3N8:claroFault" />
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="consultarDatosPlan">
+      <WL5G3N0:input message="WL5G3N8:consultarDatosPlanRequestMessage" />
+      <WL5G3N0:output message="WL5G3N8:consultarDatosPlanResponseMessage" />
+      <WL5G3N0:fault name="claroFault" message="WL5G3N8:claroFault" />
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="obtenerEvaluacionProactiva">
+      <WL5G3N0:input message="WL5G3N8:obtenerEvaluacionProactivaRequestMessage" />
+      <WL5G3N0:output message="WL5G3N8:obtenerEvaluacionProactivaResponseMessage" />
+      <WL5G3N0:fault name="claroFault" message="WL5G3N8:claroFault" />
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="obtenerControlesDeConsumo">
+      <WL5G3N0:input message="WL5G3N8:obtenerControlesDeConsumoRequestMessage" />
+      <WL5G3N0:output message="WL5G3N8:obtenerControlesDeConsumoResponseMessage" />
+      <WL5G3N0:fault name="claroFault" message="WL5G3N8:claroFault" />
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="BSS_EvaluaReglasSOAP11Binding" type="WL5G3N8:BSS_EvaluaReglasPort">
+    <WL5G3N9:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <WL5G3N0:operation name="obtenerCostoXMaterial">
+      <WL5G3N9:operation soapAction="http://claro.com.pe/esb/ventas/BSS_EvaluaReglas/v1/obtenerCostoXMaterial" style="document" />
+      <WL5G3N0:input>
+        <WL5G3N9:body use="literal" parts="obtenerCostoXMaterialReq" />
+        <WL5G3N9:header message="WL5G3N8:headerRequest" part="headerRequest" use="literal" />
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N9:body use="literal" parts="obtenerCostoXMaterialRes" />
+        <WL5G3N9:header message="WL5G3N8:headerResponse" part="headerResponse" use="literal" />
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="claroFault">
+        <WL5G3N9:fault use="literal" name="claroFault" namespace="" />
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="consultarServiciosPlan">
+      <WL5G3N9:operation soapAction="http://claro.com.pe/esb/ventas/BSS_EvaluaReglas/v1/consultarServiciosPlan" style="document" />
+      <WL5G3N0:input>
+        <WL5G3N9:body use="literal" parts="consultarServiciosPlanReq" />
+        <WL5G3N9:header message="WL5G3N8:headerRequest" part="headerRequest" use="literal" />
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N9:body use="literal" parts="consultarServiciosPlanRes" />
+        <WL5G3N9:header message="WL5G3N8:headerResponse" part="headerResponse" use="literal" />
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="claroFault">
+        <WL5G3N9:fault use="literal" name="claroFault" namespace="" />
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="consultarDatosPlan">
+      <WL5G3N9:operation soapAction="http://claro.com.pe/esb/ventas/BSS_EvaluaReglas/v1/consultarDatosPlan" style="document" />
+      <WL5G3N0:input>
+        <WL5G3N9:body use="literal" parts="consultarDatosPlanReq" />
+        <WL5G3N9:header message="WL5G3N8:headerRequest" part="headerRequest" use="literal" />
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N9:body use="literal" parts="consultarDatosPlanRes" />
+        <WL5G3N9:header message="WL5G3N8:headerResponse" part="headerResponse" use="literal" />
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="claroFault">
+        <WL5G3N9:fault use="literal" name="claroFault" namespace="" />
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="obtenerEvaluacionProactiva">
+      <WL5G3N9:operation soapAction="http://claro.com.pe/esb/ventas/BSS_EvaluaReglas/v1/obtenerEvaluacionProactiva" style="document" />
+      <WL5G3N0:input>
+        <WL5G3N9:body use="literal" parts="obtenerEvaluacionProactivaReq" />
+        <WL5G3N9:header message="WL5G3N8:headerRequest" part="headerRequest" use="literal" />
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N9:body use="literal" parts="obtenerEvaluacionProactivaRes" />
+        <WL5G3N9:header message="WL5G3N8:headerResponse" part="headerResponse" use="literal" />
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="claroFault">
+        <WL5G3N9:fault use="literal" name="claroFault" namespace="" />
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="obtenerControlesDeConsumo">
+      <WL5G3N9:operation soapAction="http://claro.com.pe/esb/ventas/BSS_EvaluaReglas/v1/obtenerControlesDeConsumo" style="document" />
+      <WL5G3N0:input>
+        <WL5G3N9:body use="literal" parts="obtenerControlesDeConsumoReq" />
+        <WL5G3N9:header message="WL5G3N8:headerRequest" part="headerRequest" use="literal" />
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N9:body use="literal" parts="obtenerControlesDeConsumoRes" />
+        <WL5G3N9:header message="WL5G3N8:headerResponse" part="headerResponse" use="literal" />
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="claroFault">
+        <WL5G3N9:fault use="literal" name="claroFault" namespace="" />
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="BSS_EvaluaReglasSOAP11BindingQSService">
+    <WL5G3N0:documentation>OSB Service</WL5G3N0:documentation>
+    <WL5G3N0:port name="BSS_EvaluaReglasSOAP11BindingQSPort" binding="WL5G3N8:BSS_EvaluaReglasSOAP11Binding">
+      <WL5G3N9:address location="http://172.17.26.51:21000/BSS_EvaluaReglas/SRV_EvaluaReglas/Service/Composition/COM_EvaluaReglasProxyService" />
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

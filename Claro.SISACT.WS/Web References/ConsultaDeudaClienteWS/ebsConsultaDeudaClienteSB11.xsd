@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns="http://claro.com.pe/eai/ws/operacionales/consultadeudaclientews/types" xmlns:base="http://claro.com.pe/eai/ws/baseschema" xmlns:tns="http://claro.com.pe/eai/ws/operacionales/consultadeudaclientews/types" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/ws/operacionales/consultadeudaclientews/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="http://limdeseaiv25.tim.com.pe:8903/ConsultaDeudaClienteWS/ebsConsultaDeudaClienteSB11?xsd=1" namespace="http://claro.com.pe/eai/ws/baseschema" />
+  <xsd:complexType name="CabeceraType">
+    <xsd:sequence>
+      <xsd:element name="tipoDocId" type="xsd:string" />
+      <xsd:element name="nroDocId" type="xsd:string" />
+      <xsd:element name="totDeudaVencidaSoles" type="xsd:string" />
+      <xsd:element name="totDeudaPorVencerSoles" type="xsd:string" />
+      <xsd:element name="totDeudaVencidaDolares" type="xsd:string" />
+      <xsd:element name="totDeudaPorVencerDolares" type="xsd:string" />
+      <xsd:element name="totalCuentas" type="xsd:string" />
+      <xsd:element name="flagDetalle" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DetalleType">
+    <xsd:sequence>
+      <xsd:element name="cantidadRecibos" type="xsd:string" />
+      <xsd:element name="customerId" type="xsd:string" />
+      <xsd:element name="ctaBloqueo" type="xsd:string" />
+      <xsd:element minOccurs="1" name="listaRecibos" type="tns:ListaRecibosType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="FiltroType">
+    <xsd:sequence>
+      <xsd:element name="filtroXTipoCuenta" type="xsd:string" />
+      <xsd:element name="filtroXBloqueo" type="xsd:string" />
+      <xsd:element name="filtroXCantidad" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ReciboType">
+    <xsd:sequence>
+      <xsd:element name="numeroServicio" type="xsd:string" />
+      <xsd:element name="codigoCuenta" type="xsd:string" />
+      <xsd:element name="numeroRecibo" type="xsd:string" />
+      <xsd:element name="fechaEmision" type="xsd:string" />
+      <xsd:element name="montoPendientePago" type="xsd:string" />
+      <xsd:element name="fechaVencimiento" type="xsd:string" />
+      <xsd:element name="deudaTotal" type="xsd:string" />
+      <xsd:element name="codigoPago" type="xsd:string" />
+      <xsd:element name="estadoCuenta" type="xsd:string" />
+      <xsd:element name="plataforma" type="xsd:string" />
+      <xsd:element name="productoTipo" type="xsd:string" />
+      <xsd:element name="flagServTelef" type="xsd:string" />
+      <xsd:element name="flagLdi" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="FechaDetalleType">
+    <xsd:sequence>
+      <xsd:element name="codigoCuenta" type="xsd:string" />
+      <xsd:element name="fechaVencimiento" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="FechaType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="fechaDetalle" type="tns:FechaDetalleType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ListaDetalleType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="detalle" type="tns:DetalleType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ListaRecibosType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="recibo" type="tns:ReciboType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="consultaDeudaRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditRequest" type="base:auditRequestType" />
+        <xsd:element name="codigoAplicacion" type="xsd:string" />
+        <xsd:element name="usuarioAplicacion" type="xsd:string" />
+        <xsd:element name="tipoDocumentoId" type="xsd:string" />
+        <xsd:element name="numeroDocumentoId" type="xsd:string" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaAdicionalRequest" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="consultaDeudaResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditResponse" type="base:auditResponseType" />
+        <xsd:element name="cantidadCuenta" type="xsd:string" />
+        <xsd:element name="totalMonto" type="xsd:string" />
+        <xsd:element name="totalDeuda" type="xsd:string" />
+        <xsd:element minOccurs="1" name="listaDetalle" type="tns:ListaDetalleType" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaAdicionalResponse" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="consultaDeudaFecVencRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditRequest" type="base:auditRequestType" />
+        <xsd:element name="codigoAplicacion" type="xsd:string" />
+        <xsd:element name="usuarioAplicacion" type="xsd:string" />
+        <xsd:element name="tipoConsulta" type="xsd:string" />
+        <xsd:element name="llaveConsulta" type="xsd:string" />
+        <xsd:element name="tipoDocumentoId" type="xsd:string" />
+        <xsd:element name="numeroDocumentoId" type="xsd:string" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaAdicionalRequest" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="consultaDeudaFecVencResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditResponse" type="base:auditResponseType" />
+        <xsd:element name="cabecera" type="tns:CabeceraType" />
+        <xsd:element name="fechasDistintas" type="xsd:string" />
+        <xsd:element name="listaFecha" type="tns:FechaType" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaAdicionalResponse" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

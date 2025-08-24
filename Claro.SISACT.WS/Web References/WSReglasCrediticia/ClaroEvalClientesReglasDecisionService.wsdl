@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:dstns="http://www.ibm.com/rules/decisionservice/ClaroEvalClienteApp/ClaroEvalClientesReglas" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ClaroEvalClientesReglasDecisionService" targetNamespace="http://www.ibm.com/rules/decisionservice/ClaroEvalClienteApp/ClaroEvalClientesReglas" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns:xom1="http://www.ibm.com/rules/decisionservice/ClaroEvalClienteApp/ClaroEvalClientesReglas" targetNamespace="http://www.ibm.com/rules/decisionservice/ClaroEvalClienteApp/ClaroEvalClientesReglas/param">
+      <xsd:import namespace="http://www.ibm.com/rules/decisionservice/ClaroEvalClienteApp/ClaroEvalClientesReglas" />
+      <xsd:element name="solicitud">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="solicitud" type="xom1:solicitud" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ofrecimiento">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ofrecimiento" type="xom1:ofrecimiento" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+    <xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.ibm.com/rules/decisionservice/ClaroEvalClienteApp/ClaroEvalClientesReglas" xmlns:param="http://www.ibm.com/rules/decisionservice/ClaroEvalClienteApp/ClaroEvalClientesReglas/param" targetNamespace="http://www.ibm.com/rules/decisionservice/ClaroEvalClienteApp/ClaroEvalClientesReglas" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://www.ibm.com/rules/decisionservice/ClaroEvalClienteApp/ClaroEvalClientesReglas/param" />
+      <xs:complexType name="ofrecimiento">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="autonomia" type="tns:autonomia" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="campaniasConRestriccion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="cantidadCuotasCi" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="controlDeConsumo" type="xs:string" />
+          <xs:element name="costoDeInstalacion" type="xs:double" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="cuota" nillable="true" type="tns:cuota" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="formaPagoCi" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="garantia" type="tns:garantia" />
+          <xs:element name="limiteDeCreditoCobranza" type="xs:double" />
+          <xs:element name="montoTopeAutomatico" type="xs:double" />
+          <xs:element minOccurs="0" name="mostrarMotivoDeRestriccion" type="tns:tipoSiNo" />
+          <xs:element minOccurs="0" name="motivoDeRestriccion" type="xs:string" />
+          <xs:element minOccurs="0" name="opcionDeCuotas" type="tns:opcionDeCuotas" />
+          <xs:element minOccurs="0" name="prioridadPublicar" type="tns:tipoSiNo" />
+          <xs:element minOccurs="0" name="procesoDeExoneracionDeRentas" type="tns:tipoSiNo" />
+          <xs:element minOccurs="0" name="procesoIDValidator" type="xs:string" />
+          <xs:element minOccurs="0" name="procesoValidacionInternaClaro" type="xs:string" />
+          <xs:element minOccurs="0" name="publicar" type="tns:tipoSiNo" />
+          <xs:element minOccurs="0" name="restriccion" type="tns:tipoSiNo" />
+          <xs:element minOccurs="0" name="resultadoEvaluacionCuotas" type="xs:string" />
+          <xs:element minOccurs="0" name="resultadosAdicionales" type="tns:resultadosAdicionales" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="v_LISTA_PLAN" nillable="true" type="tns:respuestaProactiva" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="autonomia">
+        <xs:sequence>
+          <xs:element name="cantidadDeLineasAdicionalesRUC" type="xs:int" />
+          <xs:element name="cantidadDeLineasMaximas" type="xs:int" />
+          <xs:element minOccurs="0" name="cantidadDeLineasRenovaciones" type="xs:string" />
+          <xs:element name="montoCFParaRUC" type="xs:double" />
+          <xs:element minOccurs="0" name="tipoDeAutonomiaCargoFijo" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="cuota">
+        <xs:sequence>
+          <xs:element name="cantidad" type="xs:int" />
+          <xs:element name="porcentajeInicial" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="garantia">
+        <xs:sequence>
+          <xs:element name="cantidadDeAplicacionesRenta" type="xs:int" />
+          <xs:element name="frecuenciaDeAplicacionMensual" type="xs:int" />
+          <xs:element name="mesInicioRentas" type="xs:int" />
+          <xs:element name="montoDeGarantia" type="xs:double" />
+          <xs:element minOccurs="0" name="tipoDeGarantia" type="xs:string" />
+          <xs:element minOccurs="0" name="tipodecobro" type="tns:tipoDeCobro" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="opcionDeCuotas">
+        <xs:sequence>
+          <xs:element name="cuotaMaxima" type="xs:int" />
+          <xs:element minOccurs="0" name="mostrarRespuesta" type="xs:string" />
+          <xs:element name="topeMaximo" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="resultadosAdicionales">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="capacidadDePago" type="xs:string" />
+          <xs:element name="comportamientoConsolidado" type="xs:int" />
+          <xs:element name="comportamientoDePagoC1" type="xs:int" />
+          <xs:element name="costoTotalEquipos" type="xs:double" />
+          <xs:element name="factorDeEndeudamientoCliente" type="xs:double" />
+          <xs:element name="factorDeRenovacionCliente" type="xs:double" />
+          <xs:element name="precioDeVentaTotalEquipos" type="xs:double" />
+          <xs:element minOccurs="0" name="riesgoEnClaro" type="xs:string" />
+          <xs:element minOccurs="0" name="riesgoOferta" type="xs:string" />
+          <xs:element name="riesgoTotalEquipo" type="xs:int" />
+          <xs:element minOccurs="0" name="riesgoTotalRepLegales" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="respuestaProactiva">
+        <xs:sequence>
+          <xs:element name="cantidadDeLineasAdicionalesRUC" type="xs:int" />
+          <xs:element name="cantidadDeLineasMaximas" type="xs:int" />
+          <xs:element minOccurs="0" name="cantidadDeLineasRenovaciones" type="xs:string" />
+          <xs:element minOccurs="0" name="capacidadDePago" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="cuota" nillable="true" type="tns:cuota" />
+          <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+          <xs:element name="factorDeEndeudamientoCliente" type="xs:double" />
+          <xs:element name="factorDeRenovacionCliente" type="xs:double" />
+          <xs:element name="montoCFParaRUC" type="xs:double" />
+          <xs:element name="montoDeGarantia" type="xs:double" />
+          <xs:element name="precioDeVentaTotalEquipos" type="xs:double" />
+          <xs:element minOccurs="0" name="procesoIDValidator" type="xs:string" />
+          <xs:element minOccurs="0" name="restriccion" type="tns:tipoSiNo" />
+          <xs:element minOccurs="0" name="riesgoOferta" type="xs:string" />
+          <xs:element name="riesgoTotalEquipo" type="xs:int" />
+          <xs:element minOccurs="0" name="tipoDeAutonomiaCargoFijo" type="xs:string" />
+          <xs:element minOccurs="0" name="tipodecobro" type="tns:tipoDeCobro" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="solicitud">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="buroConsultado" type="xs:string" />
+          <xs:element name="cargoFijoDeBolsa" type="xs:double" />
+          <xs:element minOccurs="0" name="cliente" type="tns:cliente" />
+          <xs:element name="costoTotalDeEquipos" type="xs:double" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="equipo" nillable="true" type="tns:equipo" />
+          <xs:element minOccurs="0" name="fechaEjecucion" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="flagDeLicitacion" type="tns:tipoSiNo" />
+          <xs:element name="horaEjecucion" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="l_cargoFijo" nillable="true" type="tns:planProactivo" />
+          <xs:element minOccurs="0" name="oferta" type="tns:oferta" />
+          <xs:element name="precioTotalVentaDeEquipos" type="xs:double" />
+          <xs:element minOccurs="0" name="puntodeVenta" type="tns:puntodeVenta" />
+          <xs:element name="riesgoTotalEquipo" type="xs:int" />
+          <xs:element minOccurs="0" name="tipoDeBolsa" type="xs:string" />
+          <xs:element minOccurs="0" name="tipoDeDespacho" type="xs:string" />
+          <xs:element minOccurs="0" name="tipoDeOperacion" type="xs:string" />
+          <xs:element name="totalPlanes" type="xs:int" />
+          <xs:element minOccurs="0" name="transaccion" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="cliente">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="antiguedadDeuda" type="xs:int" />
+          <xs:element minOccurs="0" name="antiguedadMontoDisputa" type="xs:int" />
+          <xs:element name="cantidadDeLineasActivas" type="xs:int" />
+          <xs:element name="cantidadDePlanesPorProducto" type="xs:int" />
+          <xs:element name="cantidadDeRepresentantesLegales" type="xs:int" />
+          <xs:element name="cantidadMaximaCuotasPendientes" type="xs:int" />
+          <xs:element name="cantidadMaximaCuotasPendientesSistema" type="xs:int" />
+          <xs:element name="cantidadMaximaCuotasPendientesUltimasVentas" type="xs:int" />
+          <xs:element minOccurs="0" name="cantidadMontoDisputa" type="xs:int" />
+          <xs:element name="cantidadPlanesCuotasPendientesSistema" type="xs:int" />
+          <xs:element name="cantidadPlanesCuotasPendientesUltimasVentas" type="xs:int" />
+          <xs:element name="cantidadTotalPlanesCuotasPendientes" type="xs:int" />
+          <xs:element minOccurs="0" name="capacidadDePago" type="xs:string" />
+          <xs:element name="comportamientoConsolidado" type="xs:int" />
+          <xs:element name="comportamientoDePago" type="xs:int" />
+          <xs:element name="comportamientoDePagoC1" type="xs:int" />
+          <xs:element minOccurs="0" name="contribuyente" type="tns:contribuyente" />
+          <xs:element name="creditScore" type="xs:double" />
+          <xs:element name="creditScoreEntero" type="xs:int" />
+          <xs:element minOccurs="0" name="deuda" type="xs:string" />
+          <xs:element minOccurs="0" name="direccion" type="tns:direccion" />
+          <xs:element minOccurs="0" name="documento" type="tns:documento" />
+          <xs:element name="edad" type="xs:int" />
+          <xs:element name="factorDeEndeudamiento" type="xs:double" />
+          <xs:element name="factorDeRenovacion" type="xs:double" />
+          <xs:element name="facturacionPromedioClaro" type="xs:double" />
+          <xs:element name="facturacionPromedioProducto" type="xs:double" />
+          <xs:element minOccurs="0" name="flagWhitelist" type="tns:tipoSiNo" />
+          <xs:element name="limiteDeCreditoDisponible" type="xs:double" />
+          <xs:element minOccurs="0" name="montoDeudaCastigada" type="xs:double" />
+          <xs:element minOccurs="0" name="montoDeudaVencida" type="xs:double" />
+          <xs:element minOccurs="0" name="montoDisputa" type="xs:double" />
+          <xs:element name="montoPendienteCuotasSistema" type="xs:double" />
+          <xs:element name="montoPendienteCuotasUltimasVentas" type="xs:double" />
+          <xs:element minOccurs="0" name="montoTotalDeuda" type="xs:double" />
+          <xs:element name="montoTotalPendienteCuotas" type="xs:double" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="representanteLegal" nillable="true" type="tns:representanteLegal" />
+          <xs:element minOccurs="0" name="riesgo" type="xs:string" />
+          <xs:element minOccurs="0" name="riesgoClaro" type="xs:string" />
+          <xs:element minOccurs="0" name="riesgoTotalRepresentantesLegales" type="xs:string" />
+          <xs:element minOccurs="0" name="segmento" type="xs:string" />
+          <xs:element minOccurs="0" name="sexo" type="xs:string" />
+          <xs:element name="tiempoDePermanencia" type="xs:int" />
+          <xs:element minOccurs="0" name="tipo" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="contribuyente">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="autorizacionImpresion" type="xs:string" />
+          <xs:element minOccurs="0" name="CIU" type="xs:string" />
+          <xs:element minOccurs="0" name="cantidadMesesInicioActividades" type="xs:int" />
+          <xs:element minOccurs="0" name="cantidadTrabajadores" type="xs:int" />
+          <xs:element minOccurs="0" name="condicion" type="xs:string" />
+          <xs:element minOccurs="0" name="estado" type="xs:string" />
+          <xs:element minOccurs="0" name="fechaInicioActividades" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="nombreComercial" type="xs:string" />
+          <xs:element minOccurs="0" name="sistemaEmisionElectronica" type="xs:string" />
+          <xs:element minOccurs="0" name="tipo" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="direccion">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="codigoDePlano" type="xs:string" />
+          <xs:element minOccurs="0" name="departamento" type="xs:string" />
+          <xs:element minOccurs="0" name="distrito" type="xs:string" />
+          <xs:element minOccurs="0" name="provincia" type="xs:string" />
+          <xs:element minOccurs="0" name="region" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="documento">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="descripcion" type="tns:tipoDeDocumento" />
+          <xs:element minOccurs="0" name="numero" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="representanteLegal">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="cantidadMesesNombramiento" type="xs:int" />
+          <xs:element minOccurs="0" name="cargo" type="xs:string" />
+          <xs:element minOccurs="0" name="documento" type="tns:documento" />
+          <xs:element minOccurs="0" name="fechaNombramiento" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="riesgo" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="equipo">
+        <xs:sequence>
+          <xs:element name="costo" type="xs:double" />
+          <xs:element name="cuotas" type="xs:int" />
+          <xs:element name="factorDePagoInicial" type="xs:double" />
+          <xs:element name="factorDeSubsidio" type="xs:double" />
+          <xs:element minOccurs="0" name="formaDePago" type="xs:string" />
+          <xs:element minOccurs="0" name="gama" type="xs:string" />
+          <xs:element minOccurs="0" name="grupo" type="xs:string" />
+          <xs:element minOccurs="0" name="modelo" type="xs:string" />
+          <xs:element name="montoDeCuota" type="xs:double" />
+          <xs:element name="montoDeCuotaComercial" type="xs:double" />
+          <xs:element name="montoDeCuotaInicialComercial" type="xs:double" />
+          <xs:element name="porcentajecuotaInicial" type="xs:double" />
+          <xs:element name="precioDeVenta" type="xs:double" />
+          <xs:element name="riesgo" type="xs:int" />
+          <xs:element minOccurs="0" name="tipoDeDeco" type="xs:string" />
+          <xs:element minOccurs="0" name="tipoOperacionKit" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="planProactivo">
+        <xs:sequence>
+          <xs:element name="cargoFijo" type="xs:double" />
+          <xs:element minOccurs="0" name="controlDeConsumo" type="xs:string" />
+          <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+          <xs:element name="montoCFSEC" type="xs:double" />
+          <xs:element name="montoDeCuota" type="xs:double" />
+          <xs:element name="montoDeCuotaComercial" type="xs:double" />
+          <xs:element name="montoDeCuotaInicialComercial" type="xs:double" />
+          <xs:element name="porcentajecuotaInicial" type="xs:double" />
+          <xs:element name="precioDeVenta" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="oferta">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="campana" type="tns:campana" />
+          <xs:element name="cantidadDeDecos" type="xs:int" />
+          <xs:element name="cantidadLineasSEC" type="xs:int" />
+          <xs:element minOccurs="0" name="casoEpecial" type="xs:string" />
+          <xs:element minOccurs="0" name="combo" type="xs:string" />
+          <xs:element minOccurs="0" name="controlDeConsumo" type="xs:string" />
+          <xs:element minOccurs="0" name="kitDeInstalacion" type="xs:string" />
+          <xs:element name="mesOperadorCedente" type="xs:int" />
+          <xs:element minOccurs="0" name="modalidadCedente" type="xs:string" />
+          <xs:element name="montoCFSEC" type="xs:double" />
+          <xs:element minOccurs="0" name="operadorCedente" type="xs:string" />
+          <xs:element minOccurs="0" name="planActual" type="tns:planActual" />
+          <xs:element minOccurs="0" name="planSolicitado" type="tns:planSolicitado" />
+          <xs:element minOccurs="0" name="plazoDeAcuerdo" type="xs:string" />
+          <xs:element minOccurs="0" name="productoComercial" type="xs:string" />
+          <xs:element minOccurs="0" name="proteccionMovil" type="tns:tipoSiNo" />
+          <xs:element minOccurs="0" name="riesgo" type="xs:string" />
+          <xs:element minOccurs="0" name="segmentoDeOferta" type="xs:string" />
+          <xs:element minOccurs="0" name="tipoDeOperacionEmpresa" type="xs:string" />
+          <xs:element minOccurs="0" name="tipoDeProducto" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="campana">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="grupo" type="xs:string" />
+          <xs:element minOccurs="0" name="tipo" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="planActual">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:plan">
+            <xs:sequence>
+              <xs:element name="cantidadCuotasPendientes" type="xs:int" />
+              <xs:element name="mesesParaCubrirApadece" type="xs:int" />
+              <xs:element minOccurs="0" name="modalidadCedenteLineaRenovar" type="xs:string" />
+              <xs:element name="montoCuotaActualRenovacion" type="xs:double" />
+              <xs:element name="montoPendienteCuotas" type="xs:double" />
+              <xs:element minOccurs="0" name="motivoActivacionLineaRenovar" type="xs:string" />
+              <xs:element name="plazoDeAcuerdo" type="xs:double" />
+              <xs:element name="tiempoPermanencia" type="xs:int" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="plan">
+        <xs:sequence>
+          <xs:element name="cargoFijo" type="xs:double" />
+          <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="grupos" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="planSolicitado">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:plan">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="paquete" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="servicio" nillable="true" type="tns:servicio" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="servicio">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="grupo" type="xs:string" />
+          <xs:element minOccurs="0" name="nombre" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="puntodeVenta">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="calidadDeVendedor" type="xs:string" />
+          <xs:element minOccurs="0" name="canal" type="xs:string" />
+          <xs:element minOccurs="0" name="codigo" type="xs:string" />
+          <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+          <xs:element minOccurs="0" name="direccion" type="tns:direccion" />
+          <xs:element minOccurs="0" name="grupo" type="xs:string" />
+          <xs:element name="riesgoso" type="xs:boolean" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:simpleType name="tipoDeCobro">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="ABSOLUTO" />
+          <xs:enumeration value="REFERENCIAL" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType name="tipoSiNo">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="SI" />
+          <xs:enumeration value="NO" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType name="tipoDeDocumento">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="DNI" />
+          <xs:enumeration value="RUC10" />
+          <xs:enumeration value="RUC20" />
+          <xs:enumeration value="CE" />
+          <xs:enumeration value="PASAPORTE" />
+          <xs:enumeration value="CIRE" />
+          <xs:enumeration value="CIE" />
+          <xs:enumeration value="CPP" />
+          <xs:enumeration value="CTM" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="ClaroEvalClientesReglasRequest">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" form="qualified" name="DecisionID" type="xs:string" />
+            <xs:element ref="param:solicitud" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ClaroEvalClientesReglasResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element form="qualified" name="DecisionID" type="xs:string" />
+            <xs:element ref="param:ofrecimiento" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ClaroEvalClientesReglasException">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" name="exception" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="ClaroEvalClientesReglasResponse">
+    <wsdl:part name="ClaroEvalClientesReglasResponse" element="dstns:ClaroEvalClientesReglasResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClaroEvalClientesReglasRequest">
+    <wsdl:part name="ClaroEvalClientesReglasRequest" element="dstns:ClaroEvalClientesReglasRequest" />
+  </wsdl:message>
+  <wsdl:message name="ClaroEvalClientesReglasSoapFault">
+    <wsdl:part name="fault" element="dstns:ClaroEvalClientesReglasException" />
+  </wsdl:message>
+  <wsdl:portType name="ClaroEvalClientesReglasDecisionService">
+    <wsdl:operation name="ClaroEvalClientesReglas">
+      <wsdl:input name="ClaroEvalClientesReglasRequest" message="dstns:ClaroEvalClientesReglasRequest" />
+      <wsdl:output name="ClaroEvalClientesReglasResponse" message="dstns:ClaroEvalClientesReglasResponse" />
+      <wsdl:fault name="ClaroEvalClientesReglasSoapFault" message="dstns:ClaroEvalClientesReglasSoapFault" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ClaroEvalClienteAppClaroEvalClientesReglasBinding" type="dstns:ClaroEvalClientesReglasDecisionService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ClaroEvalClientesReglas">
+      <soap:operation soapAction="ClaroEvalClientesReglas" style="document" />
+      <wsdl:input name="ClaroEvalClientesReglasRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ClaroEvalClientesReglasResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ClaroEvalClientesReglasSoapFault">
+        <soap:fault use="literal" name="ClaroEvalClientesReglasSoapFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ClaroEvalClientesReglasDecisionService">
+    <wsdl:port name="ClaroEvalClienteAppClaroEvalClientesReglasPort" binding="dstns:ClaroEvalClienteAppClaroEvalClientesReglasBinding">
+      <soap:address location="http://172.19.74.231/DecisionService/ws/ClaroEvalClienteApp/ClaroEvalClientesReglas/v75" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

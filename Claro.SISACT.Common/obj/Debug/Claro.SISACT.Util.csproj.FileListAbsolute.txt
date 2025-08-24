@@ -1,0 +1,7 @@
+D:\_Eduardo\Plantilla\SISACT\Claro.SISACT.Util\bin\Debug\Claro.SISACT.Util.dll
+D:\_Eduardo\Plantilla\SISACT\Claro.SISACT.Util\bin\Debug\Claro.SISACT.Util.pdb
+D:\_Eduardo\Plantilla\SISACT\Claro.SISACT.Util\bin\Debug\Claro.SISACT.Entity.dll
+D:\_Eduardo\Plantilla\SISACT\Claro.SISACT.Util\bin\Debug\Claro.SISACT.Entity.pdb
+D:\_Eduardo\Plantilla\SISACT\Claro.SISACT.Util\obj\Debug\ResolveAssemblyReference.cache
+D:\_Eduardo\Plantilla\SISACT\Claro.SISACT.Util\obj\Debug\Claro.SISACT.Util.dll
+D:\_Eduardo\Plantilla\SISACT\Claro.SISACT.Util\obj\Debug\Claro.SISACT.Util.pdb

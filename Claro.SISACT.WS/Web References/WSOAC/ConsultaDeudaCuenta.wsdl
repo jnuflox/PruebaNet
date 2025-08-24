@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WL5G3N0:definitions xmlns:WL5G3N1="http://claro.com.pe/eai/oac/consultadeudacuenta/" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/" name="ConsultaDeudaCuenta" targetNamespace="http://claro.com.pe/eai/oac/consultadeudacuenta/" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/">
+  <WL5G3N0:types>
+    <xsd:schema xmlns:Q1="http://claro.com.pe/eai/servicecommons/" xmlns:tns="http://claro.com.pe/eai/oac/consultadeudacuenta/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/oac/consultadeudacuenta/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import schemaLocation="http://limdesosbv05.tim.com.pe:8909/OAC_Services/Inquiry/ConsultaDeudaCuenta?SCHEMA%2FUtilities%2Fxsd%2FAudit" namespace="http://claro.com.pe/eai/servicecommons/" />
+      <xsd:element name="consultaDeuda">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="txId" type="xsd:string" />
+            <xsd:element name="pCodAplicacion" type="xsd:string" />
+            <xsd:element name="pUsuarioAplic" type="xsd:string" />
+            <xsd:element name="pCliTipoDocIdent" type="xsd:string" />
+            <xsd:element name="pCliNroDocIdent" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="consultaDeudaResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="audit" type="Q1:AuditType" />
+            <xsd:element name="xDeuda" type="tns:ClienteType" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="ClienteType">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="xDetalleCliente" type="tns:DetalleClienteType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DetalleClienteType">
+        <xsd:sequence>
+          <xsd:element name="xNombreCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="xApePatCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="xApeMatCliente" nillable="true" type="xsd:string" />
+          <xsd:element name="xDeudaMovil" nillable="true" type="xsd:decimal" />
+          <xsd:element name="xDeudaFija" nillable="true" type="xsd:decimal" />
+          <xsd:element name="xDeudaVencidaMovil" nillable="true" type="xsd:decimal" />
+          <xsd:element name="xDeudaVencidaFija" nillable="true" type="xsd:decimal" />
+          <xsd:element name="xDeudaCastigadaMovil" nillable="true" type="xsd:decimal" />
+          <xsd:element name="xDeudaCastigadaFija" nillable="true" type="xsd:decimal" />
+          <xsd:element name="xDniAsociado" nillable="true" type="xsd:string" />
+          <xsd:element name="xAntiguedadDeuda" nillable="true" type="xsd:decimal" />
+          <xsd:element name="xTotalServicios" nillable="true" type="xsd:decimal" />
+          <xsd:element name="xCuentas" nillable="true" type="tns:CuentaType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CuentaType">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="xDetalleCuenta" type="tns:DetalleCuentaType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DetalleCuentaType">
+        <xsd:sequence>
+          <xsd:element name="xTipoServicio" nillable="true" type="xsd:string" />
+          <xsd:element name="xCodCuenta" nillable="true" type="xsd:string" />
+          <xsd:element name="xEstadoCuenta" nillable="true" type="xsd:string" />
+          <xsd:element name="xPromedioFact" nillable="true" type="xsd:decimal" />
+          <xsd:element name="xDeudaCorriente" nillable="true" type="xsd:decimal" />
+          <xsd:element name="xDeudaVencida" nillable="true" type="xsd:decimal" />
+          <xsd:element name="xDeudaCastigada" nillable="true" type="xsd:decimal" />
+          <xsd:element name="xCantServicios" nillable="true" type="xsd:decimal" />
+          <xsd:element name="xIndCentralRiesgo" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="consultaDeudaRequest">
+    <WL5G3N0:part name="parameters" element="WL5G3N1:consultaDeuda" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="consultaDeudaResponse">
+    <WL5G3N0:part name="parameters" element="WL5G3N1:consultaDeudaResponse" />
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="ConsultaDeudaCuenta">
+    <WL5G3N0:operation name="consultaDeuda">
+      <WL5G3N0:input message="WL5G3N1:consultaDeudaRequest" />
+      <WL5G3N0:output message="WL5G3N1:consultaDeudaResponse" />
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="ConsultaDeudaCuentaSOAP" type="WL5G3N1:ConsultaDeudaCuenta">
+    <WL5G3N2:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <WL5G3N0:operation name="consultaDeuda">
+      <WL5G3N2:operation soapAction="http://claro.com.pe/eai/oac/consultadeudacuenta/consultaDeuda" />
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal" />
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal" />
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="ConsultaDeudaCuenta">
+    <WL5G3N0:port name="ConsultaDeudaCuentaSOAP" binding="WL5G3N1:ConsultaDeudaCuentaSOAP">
+      <WL5G3N2:address location="http://limdesosbv05.tim.com.pe:8909/OAC_Services/Inquiry/ConsultaDeudaCuenta" />
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

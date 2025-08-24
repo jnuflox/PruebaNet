@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns="http://claro.com.pe/eai/ws/postventa/consultaclienteunificadows/types" xmlns:base="http://claro.com.pe/eai/ws/baseschema" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/ws/postventa/consultaclienteunificadows/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="http://limdeseaiv28.tim.com.pe:8909/ConsultaClienteUnificadoWS/ebsConsultaClienteUnificadoSB11?xsd=1" namespace="http://claro.com.pe/eai/ws/baseschema" />
+  <xsd:element name="ConsultarClienteUnificadoRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditRequest" type="base:auditRequestType" />
+        <xsd:element name="tipoBusqueda" type="xsd:string" />
+        <xsd:element name="valorBusqueda" type="xsd:string" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaRequestOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="ConsultarClienteUnificadoResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditResponse" type="base:auditResponseType" />
+        <xsd:element name="listaClientesResponse" type="listaClientesResponseType" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaResponseOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="RegistrarPersonaRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditRequest" type="base:auditRequestType" />
+        <xsd:element name="basePersona" type="basePersonaType" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaRequestOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="RegistrarPersonaResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditResponse" type="base:auditResponseType" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaResponseOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:complexType name="listaClientesResponseType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" name="cliente" type="clienteType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="clienteType">
+    <xsd:sequence>
+      <xsd:element name="tipoDocIdentidad" type="xsd:string" />
+      <xsd:element name="docIdentidad" type="xsd:string" />
+      <xsd:element name="descripcion" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="basePersonaType">
+    <xsd:sequence>
+      <xsd:element name="modo" type="xsd:string" />
+      <xsd:element name="tipoDocumento" type="xsd:string" />
+      <xsd:element name="nroDocumento" type="xsd:string" />
+      <xsd:element name="nombres" type="xsd:string" />
+      <xsd:element name="apellidoPaterno" type="xsd:string" />
+      <xsd:element name="apellidoMaterno" type="xsd:string" />
+      <xsd:element name="razonSocial" type="xsd:string" />
+      <xsd:element name="fechaNacimiento" type="xsd:string" />
+      <xsd:element name="genero" type="xsd:string" />
+      <xsd:element name="fechaCaducidad" type="xsd:string" />
+      <xsd:element name="email" type="xsd:string" />
+      <xsd:element name="campo1" type="xsd:string" />
+      <xsd:element name="campo2" type="xsd:string" />
+      <xsd:element name="origen" type="xsd:string" />
+      <xsd:element name="sistema" type="xsd:string" />
+      <xsd:element name="servicio" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

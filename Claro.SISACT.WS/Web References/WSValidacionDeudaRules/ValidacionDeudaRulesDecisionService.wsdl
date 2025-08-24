@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:dstns="http://www.ibm.com/rules/decisionservice/ValidacionDeudaRuleApp/ValidacionDeudaRules" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ValidacionDeudaRulesDecisionService" targetNamespace="http://www.ibm.com/rules/decisionservice/ValidacionDeudaRuleApp/ValidacionDeudaRules" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns:xom1="http://www.ibm.com/rules/decisionservice/ValidacionDeudaRuleApp/ValidacionDeudaRules" targetNamespace="http://www.ibm.com/rules/decisionservice/ValidacionDeudaRuleApp/ValidacionDeudaRules/param">
+      <xsd:import namespace="http://www.ibm.com/rules/decisionservice/ValidacionDeudaRuleApp/ValidacionDeudaRules" />
+      <xsd:element name="solicitud">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="solicitud" type="xom1:solicitud" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="respuesta">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="respuesta" type="xom1:respuesta" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+    <xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.ibm.com/rules/decisionservice/ValidacionDeudaRuleApp/ValidacionDeudaRules" xmlns:param="http://www.ibm.com/rules/decisionservice/ValidacionDeudaRuleApp/ValidacionDeudaRules/param" targetNamespace="http://www.ibm.com/rules/decisionservice/ValidacionDeudaRuleApp/ValidacionDeudaRules" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://www.ibm.com/rules/decisionservice/ValidacionDeudaRuleApp/ValidacionDeudaRules/param" />
+      <xs:complexType name="solicitud">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="cliente" type="tns:cliente" />
+          <xs:element minOccurs="0" name="lineaARenovar" type="tns:lineaARenovar" />
+          <xs:element minOccurs="0" name="puntoDeVenta" type="tns:puntoDeVenta" />
+          <xs:element minOccurs="0" name="sistemaEvaluacion" type="xs:string" />
+          <xs:element minOccurs="0" name="tipoOperacion" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="cliente">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="antiguedadDeuda" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="bloqueos" nillable="true" type="tns:bloqueo" />
+          <xs:element minOccurs="0" name="cantidadDocumentosDeuda" type="xs:int" />
+          <xs:element minOccurs="0" name="comportamientoPago" type="xs:string" />
+          <xs:element minOccurs="0" name="disputa" type="tns:disputa" />
+          <xs:element minOccurs="0" name="documento" type="tns:documento" />
+          <xs:element minOccurs="0" name="flagBloqueos" type="tns:tipoSiNo" />
+          <xs:element minOccurs="0" name="flagSuspensiones" type="tns:tipoSiNo" />
+          <xs:element minOccurs="0" name="montoDeuda" type="xs:double" />
+          <xs:element minOccurs="0" name="montoDeudaCastigada" type="xs:double" />
+          <xs:element minOccurs="0" name="montoDeudaVencida" type="xs:double" />
+          <xs:element minOccurs="0" name="montoTotalPago" type="xs:double" />
+          <xs:element minOccurs="0" name="promedioFacturadoSoles" type="xs:double" />
+          <xs:element minOccurs="0" name="segmento" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="suspensiones" nillable="true" type="tns:suspension" />
+          <xs:element minOccurs="0" name="tiempoPermanencia" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="tiposFraude" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="bloqueo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="tipo" type="xs:string" />
+          <xs:element minOccurs="0" name="tipoLinea" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="disputa">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="antiguedad" type="xs:int" />
+          <xs:element minOccurs="0" name="cantidad" type="xs:int" />
+          <xs:element minOccurs="0" name="monto" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="documento">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="numero" type="xs:string" />
+          <xs:element minOccurs="0" name="tipo" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="suspension">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="tipo" type="xs:string" />
+          <xs:element minOccurs="0" name="tipoLinea" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="lineaARenovar">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="antiguedad" type="xs:int" />
+          <xs:element minOccurs="0" name="fechaActivacion" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="puntoDeVenta">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="canal" type="xs:string" />
+          <xs:element minOccurs="0" name="codigo" type="xs:string" />
+          <xs:element minOccurs="0" name="departamento" type="xs:string" />
+          <xs:element minOccurs="0" name="nombre" type="xs:string" />
+          <xs:element minOccurs="0" name="region" type="xs:string" />
+          <xs:element minOccurs="0" name="segmento" type="xs:string" />
+          <xs:element minOccurs="0" name="vendedor" type="tns:vendedor" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="vendedor">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="codigo" type="xs:string" />
+          <xs:element minOccurs="0" name="nombre" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="respuesta">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="mensajeAsesor" type="xs:string" />
+          <xs:element minOccurs="0" name="mensajeValidacionCliente" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="restriccionProducto" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="restriccionProductoComercial" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="restriccionTipoOperacion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="validacionCliente" type="tns:tipoSiNo" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:simpleType name="tipoSiNo">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="SI" />
+          <xs:enumeration value="NO" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="ValidacionDeudaRulesRequest">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" form="qualified" name="DecisionID" type="xs:string" />
+            <xs:element ref="param:solicitud" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ValidacionDeudaRulesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element form="qualified" name="DecisionID" type="xs:string" />
+            <xs:element ref="param:respuesta" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ValidacionDeudaRulesException">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" name="exception" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="ValidacionDeudaRulesSoapFault">
+    <wsdl:part name="fault" element="dstns:ValidacionDeudaRulesException" />
+  </wsdl:message>
+  <wsdl:message name="ValidacionDeudaRulesRequest">
+    <wsdl:part name="ValidacionDeudaRulesRequest" element="dstns:ValidacionDeudaRulesRequest" />
+  </wsdl:message>
+  <wsdl:message name="ValidacionDeudaRulesResponse">
+    <wsdl:part name="ValidacionDeudaRulesResponse" element="dstns:ValidacionDeudaRulesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ValidacionDeudaRulesDecisionService">
+    <wsdl:operation name="ValidacionDeudaRules">
+      <wsdl:input name="ValidacionDeudaRulesRequest" message="dstns:ValidacionDeudaRulesRequest" />
+      <wsdl:output name="ValidacionDeudaRulesResponse" message="dstns:ValidacionDeudaRulesResponse" />
+      <wsdl:fault name="ValidacionDeudaRulesSoapFault" message="dstns:ValidacionDeudaRulesSoapFault" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ValidacionDeudaRuleAppValidacionDeudaRulesBinding" type="dstns:ValidacionDeudaRulesDecisionService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidacionDeudaRules">
+      <soap:operation soapAction="ValidacionDeudaRules" style="document" />
+      <wsdl:input name="ValidacionDeudaRulesRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ValidacionDeudaRulesResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ValidacionDeudaRulesSoapFault">
+        <soap:fault use="literal" name="ValidacionDeudaRulesSoapFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ValidacionDeudaRulesDecisionService">
+    <wsdl:port name="ValidacionDeudaRuleAppValidacionDeudaRulesPort" binding="dstns:ValidacionDeudaRuleAppValidacionDeudaRulesBinding">
+      <soap:address location="http://172.19.74.231/DecisionService/ws/ValidacionDeudaRuleApp/ValidacionDeudaRules/v75" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

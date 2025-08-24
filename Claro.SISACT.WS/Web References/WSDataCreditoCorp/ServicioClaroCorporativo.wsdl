@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.datacredito.com.co/services/ServicioClaroCorporativo" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://www.datacredito.com.co/services/ServicioClaroCorporativo" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types />
+  <message name="metodo53Request">
+    <part name="usuario" type="soapenc:string" />
+    <part name="clave" type="soapenc:string" />
+    <part name="modelo" type="soapenc:string" />
+    <part name="tipoServicio" type="soapenc:string" />
+    <part name="numeroOperacion" type="soapenc:string" />
+  </message>
+  <message name="metodo50Request">
+    <part name="usuario" type="soapenc:string" />
+    <part name="clave" type="soapenc:string" />
+    <part name="modelo" type="soapenc:string" />
+    <part name="tipoServicio" type="soapenc:string" />
+    <part name="numeroOperacion" type="soapenc:string" />
+  </message>
+  <message name="metodosReturnResponse">
+    <part name="metodosReturnReturn" type="soapenc:string" />
+  </message>
+  <message name="metodo12Request">
+    <part name="tipoDocumento" type="soapenc:string" />
+    <part name="numeroDocumento" type="soapenc:string" />
+    <part name="apellidoPaterno" type="soapenc:string" />
+    <part name="apellidoMaterno" type="soapenc:string" />
+    <part name="nombres" type="soapenc:string" />
+    <part name="tipoPersona" type="soapenc:string" />
+    <part name="usuario" type="soapenc:string" />
+    <part name="clave" type="soapenc:string" />
+    <part name="modelo" type="soapenc:string" />
+    <part name="tipoServicio" type="soapenc:string" />
+  </message>
+  <message name="metodo12Response">
+    <part name="metodo12Return" type="soapenc:string" />
+  </message>
+  <message name="metodo50Response">
+    <part name="metodo50Return" type="soapenc:string" />
+  </message>
+  <message name="metodo53Response">
+    <part name="metodo53Return" type="soapenc:string" />
+  </message>
+  <message name="metodosReturnRequest">
+    <part name="tipoDocumento" type="soapenc:string" />
+    <part name="numeroDocumento" type="soapenc:string" />
+    <part name="apellidoPaterno" type="soapenc:string" />
+    <part name="apellidoMaterno" type="soapenc:string" />
+    <part name="nombres" type="soapenc:string" />
+    <part name="tipoPersona" type="soapenc:string" />
+    <part name="usuario" type="soapenc:string" />
+    <part name="clave" type="soapenc:string" />
+    <part name="modelo" type="soapenc:string" />
+  </message>
+  <portType name="ClaroCorporativoImpl">
+    <operation name="metodo12" parameterOrder="tipoDocumento numeroDocumento apellidoPaterno apellidoMaterno nombres tipoPersona usuario clave modelo tipoServicio">
+      <input name="metodo12Request" message="tns:metodo12Request" />
+      <output name="metodo12Response" message="tns:metodo12Response" />
+    </operation>
+    <operation name="metodo50" parameterOrder="usuario clave modelo tipoServicio numeroOperacion">
+      <input name="metodo50Request" message="tns:metodo50Request" />
+      <output name="metodo50Response" message="tns:metodo50Response" />
+    </operation>
+    <operation name="metodo53" parameterOrder="usuario clave modelo tipoServicio numeroOperacion">
+      <input name="metodo53Request" message="tns:metodo53Request" />
+      <output name="metodo53Response" message="tns:metodo53Response" />
+    </operation>
+    <operation name="metodosReturn" parameterOrder="tipoDocumento numeroDocumento apellidoPaterno apellidoMaterno nombres tipoPersona usuario clave modelo">
+      <input name="metodosReturnRequest" message="tns:metodosReturnRequest" />
+      <output name="metodosReturnResponse" message="tns:metodosReturnResponse" />
+    </operation>
+  </portType>
+  <binding name="ServicioClaroCorporativoSoapBinding" type="tns:ClaroCorporativoImpl">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <operation name="metodo12">
+      <soap:operation soapAction="" />
+      <input name="metodo12Request">
+        <soap:body use="encoded" namespace="http://impl.ws.interschemes.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output name="metodo12Response">
+        <soap:body use="encoded" namespace="http://www.datacredito.com.co/services/ServicioClaroCorporativo" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="metodo50">
+      <soap:operation soapAction="" />
+      <input name="metodo50Request">
+        <soap:body use="encoded" namespace="http://impl.ws.interschemes.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output name="metodo50Response">
+        <soap:body use="encoded" namespace="http://www.datacredito.com.co/services/ServicioClaroCorporativo" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="metodo53">
+      <soap:operation soapAction="" />
+      <input name="metodo53Request">
+        <soap:body use="encoded" namespace="http://impl.ws.interschemes.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output name="metodo53Response">
+        <soap:body use="encoded" namespace="http://www.datacredito.com.co/services/ServicioClaroCorporativo" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="metodosReturn">
+      <soap:operation soapAction="" />
+      <input name="metodosReturnRequest">
+        <soap:body use="encoded" namespace="http://impl.ws.interschemes.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output name="metodosReturnResponse">
+        <soap:body use="encoded" namespace="http://www.datacredito.com.co/services/ServicioClaroCorporativo" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ServicioClaroCorporativo">
+    <port name="ServicioClaroCorporativo" binding="tns:ServicioClaroCorporativoSoapBinding">
+      <soap:address location="http://172.24.14.206:8080/ClaroCorporativoWs.demo/services/ServicioClaroCorporativo" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns="http://claro.com.pe/eai/ws/gestionaproteccionmovilws/types" xmlns:base="http://claro.com.pe/eai/ws/baseschema" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/ws/gestionaproteccionmovilws/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="http://limdeseaiv28.tim.com.pe:8909/GestionaProteccionMovilWS/GestionaProteccionMovilWSSB11?xsd=1" namespace="http://claro.com.pe/eai/ws/baseschema" />
+  <xsd:complexType name="ObjetoPrimaType">
+    <xsd:sequence>
+      <xsd:element name="codEval" nillable="true" type="xsd:string" />
+      <xsd:element name="nroSec" nillable="true" type="xsd:string" />
+      <xsd:element name="tipoOperacion" nillable="true" type="xsd:string" />
+      <xsd:element name="codPlanSolicitud" nillable="true" type="xsd:string" />
+      <xsd:element name="fechaEvaluacion" nillable="true" type="xsd:string" />
+      <xsd:element name="tipoCliente" nillable="true" type="xsd:string" />
+      <xsd:element name="tipoDoc" nillable="true" type="xsd:string" />
+      <xsd:element name="nroDoc" nillable="true" type="xsd:string" />
+      <xsd:element name="descProt" nillable="true" type="xsd:string" />
+      <xsd:element name="codMaterial" nillable="true" type="xsd:string" />
+      <xsd:element name="nroCertif" nillable="true" type="xsd:string" />
+      <xsd:element name="montoPrima" nillable="true" type="xsd:string" />
+      <xsd:element name="incidenciaTipoDanio" nillable="true" type="xsd:string" />
+      <xsd:element name="incidenciaTipoRobo" nillable="true" type="xsd:string" />
+      <xsd:element name="deducibleDanio" nillable="true" type="xsd:string" />
+      <xsd:element name="deducibleRobo" nillable="true" type="xsd:string" />
+      <xsd:element name="resultado" nillable="true" type="xsd:string" />
+      <xsd:element name="nombreProd" nillable="true" type="xsd:string" />
+      <xsd:element name="descProd" nillable="true" type="xsd:string" />
+      <xsd:element name="flagEstado" nillable="true" type="xsd:string" />
+      <xsd:element name="usrAplicacion" nillable="true" type="xsd:string" />
+      <xsd:element name="ip" nillable="true" type="xsd:string" />
+      <xsd:element name="fechaCreacion" nillable="true" type="xsd:string" />
+      <xsd:element name="fechaModif" nillable="true" type="xsd:string" />
+      <xsd:element name="usrModif" nillable="true" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="PrimasType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="ObjetoPrimaResponseType" type="ObjetoPrimaType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ObjetoAltaType">
+    <xsd:sequence>
+      <xsd:element name="nroSec" nillable="true" type="xsd:string" />
+      <xsd:element name="nroContrato" nillable="true" type="xsd:string" />
+      <xsd:element name="nroPedido" nillable="true" type="xsd:string" />
+      <xsd:element name="codVendedor" nillable="true" type="xsd:string" />
+      <xsd:element name="codPuntoVenta" nillable="true" type="xsd:string" />
+      <xsd:element name="tipoDoc" nillable="true" type="xsd:string" />
+      <xsd:element name="nroDoc" nillable="true" type="xsd:string" />
+      <xsd:element name="codMaterial" nillable="true" type="xsd:string" />
+      <xsd:element name="desMaterial" nillable="true" type="xsd:string" />
+      <xsd:element name="imei" nillable="true" type="xsd:string" />
+      <xsd:element name="estadoSeguro" nillable="true" type="xsd:string" />
+      <xsd:element name="nroCertificado" nillable="true" type="xsd:string" />
+      <xsd:element name="fechaAct" nillable="true" type="xsd:string" />
+      <xsd:element name="usrApp" nillable="true" type="xsd:string" />
+      <xsd:element name="ip" nillable="true" type="xsd:string" />
+      <xsd:element name="nroCuenta" nillable="true" type="xsd:string" />
+      <xsd:element name="fechaActLinea" nillable="true" type="xsd:string" />
+      <xsd:element name="primerNombre" nillable="true" type="xsd:string" />
+      <xsd:element name="segNombre" nillable="true" type="xsd:string" />
+      <xsd:element name="apellidos" nillable="true" type="xsd:string" />
+      <xsd:element name="correo" nillable="true" type="xsd:string" />
+      <xsd:element name="direccion1" nillable="true" type="xsd:string" />
+      <xsd:element name="direccion2" nillable="true" type="xsd:string" />
+      <xsd:element name="distrito" nillable="true" type="xsd:string" />
+      <xsd:element name="provincia" nillable="true" type="xsd:string" />
+      <xsd:element name="departamento" nillable="true" type="xsd:string" />
+      <xsd:element name="pais" nillable="true" type="xsd:string" />
+      <xsd:element name="precioEquipo" nillable="true" type="xsd:string" />
+      <xsd:element name="numTransac" nillable="true" type="xsd:string" />
+      <xsd:element name="fechaActServ" nillable="true" type="xsd:string" />
+      <xsd:element name="msisdn" nillable="true" type="xsd:string" />
+      <xsd:element name="tipoOperacion" nillable="true" type="xsd:string" />
+      <xsd:element name="montoPrima" nillable="true" type="xsd:string" />
+      <xsd:element name="incidenciaDanio" nillable="true" type="xsd:string" />
+      <xsd:element name="incidenciaRobo" nillable="true" type="xsd:string" />
+      <xsd:element name="deducibleDanio" nillable="true" type="xsd:string" />
+      <xsd:element name="deducibleRobo" nillable="true" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="AltasType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="ObjetoAltaResponseType" type="ObjetoAltaType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DatosClienteSeguroType">
+    <xsd:sequence>
+      <xsd:element name="nroSec" nillable="true" type="xsd:string" />
+      <xsd:element name="contrato" nillable="true" type="xsd:string" />
+      <xsd:element name="pedido" nillable="true" type="xsd:string" />
+      <xsd:element name="codVendedor" nillable="true" type="xsd:string" />
+      <xsd:element name="codPuntoVenta" nillable="true" type="xsd:string" />
+      <xsd:element name="tipoDocumento" nillable="true" type="xsd:string" />
+      <xsd:element name="nroDocumento" nillable="true" type="xsd:string" />
+      <xsd:element name="codMaterial" nillable="true" type="xsd:string" />
+      <xsd:element name="desMaterial" nillable="true" type="xsd:string" />
+      <xsd:element name="imei" nillable="true" type="xsd:string" />
+      <xsd:element name="estadoSeguro" nillable="true" type="xsd:string" />
+      <xsd:element name="motivoBaja" nillable="true" type="xsd:string" />
+      <xsd:element name="estadoServicio" nillable="true" type="xsd:string" />
+      <xsd:element name="nroCertifReq" nillable="true" type="xsd:string" />
+      <xsd:element name="fechaActivServ" nillable="true" type="xsd:string" />
+      <xsd:element name="fechaVentaEquipo" nillable="true" type="xsd:string" />
+      <xsd:element name="msisdn" nillable="true" type="xsd:string" />
+      <xsd:element name="nroCertifRpta" nillable="true" type="xsd:string" />
+      <xsd:element name="estadoActivo" nillable="true" type="xsd:string" />
+      <xsd:element name="usrApp" nillable="true" type="xsd:string" />
+      <xsd:element name="ip" nillable="true" type="xsd:string" />
+      <xsd:element name="fechaCrea" nillable="true" type="xsd:string" />
+      <xsd:element name="usrCrea" nillable="true" type="xsd:string" />
+      <xsd:element name="fechaModif" nillable="true" type="xsd:string" />
+      <xsd:element name="usrModif" nillable="true" type="xsd:string" />
+      <xsd:element name="cuenta" nillable="true" type="xsd:string" />
+      <xsd:element name="fechaActivLinea" nillable="true" type="xsd:string" />
+      <xsd:element name="primerNombre" nillable="true" type="xsd:string" />
+      <xsd:element name="segNombre" nillable="true" type="xsd:string" />
+      <xsd:element name="apellidos" nillable="true" type="xsd:string" />
+      <xsd:element name="correo" nillable="true" type="xsd:string" />
+      <xsd:element name="direccion1" nillable="true" type="xsd:string" />
+      <xsd:element name="direccion2" nillable="true" type="xsd:string" />
+      <xsd:element name="distrito" nillable="true" type="xsd:string" />
+      <xsd:element name="provincia" nillable="true" type="xsd:string" />
+      <xsd:element name="departamento" nillable="true" type="xsd:string" />
+      <xsd:element name="pais" nillable="true" type="xsd:string" />
+      <xsd:element name="precioEquipo" nillable="true" type="xsd:string" />
+      <xsd:element name="transaccion" nillable="true" type="xsd:string" />
+      <xsd:element name="tipoOperacion" nillable="true" type="xsd:string" />
+      <xsd:element name="montoPrima" nillable="true" type="xsd:string" />
+      <xsd:element name="incidenciaDanio" nillable="true" type="xsd:string" />
+      <xsd:element name="incidenciaRobo" nillable="true" type="xsd:string" />
+      <xsd:element name="deducibleDanio" nillable="true" type="xsd:string" />
+      <xsd:element name="deducibleRobo" nillable="true" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ClienteSeguroType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="DatosClienteSeguroResponseType" type="DatosClienteSeguroType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="guardarPrimaRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditRequest" type="base:auditRequestType" />
+        <xsd:element name="nroSec" type="xsd:string" />
+        <xsd:element name="tipoOperacion" type="xsd:string" />
+        <xsd:element name="soplnCodigo" type="xsd:string" />
+        <xsd:element name="fechaEvaluacion" type="xsd:string" />
+        <xsd:element name="tipoClienteReq" type="xsd:string" />
+        <xsd:element name="tipoDocReq" type="xsd:string" />
+        <xsd:element name="nroDocReq" type="xsd:string" />
+        <xsd:element name="descProtReq" type="xsd:string" />
+        <xsd:element name="codMaterialReq" type="xsd:string" />
+        <xsd:element name="nroCertifRpta" type="xsd:string" />
+        <xsd:element name="montoPrimaRpta" type="xsd:string" />
+        <xsd:element name="incidenciaTipoDanio" type="xsd:string" />
+        <xsd:element name="incidenciaTipoRobo" type="xsd:string" />
+        <xsd:element name="deducibleDanio" type="xsd:string" />
+        <xsd:element name="deducibleRobo" type="xsd:string" />
+        <xsd:element name="resultadoRpta" type="xsd:string" />
+        <xsd:element name="nombreProdRpta" type="xsd:string" />
+        <xsd:element name="descProdRpta" type="xsd:string" />
+        <xsd:element name="flagEstado" type="xsd:string" />
+        <xsd:element name="fechaModif" type="xsd:string" />
+        <xsd:element name="usrMod" type="xsd:string" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaRequestOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="guardarPrimaResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditResponse" type="base:auditResponseType" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaResponseOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="buscarPrimaRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditRequest" type="base:auditRequestType" />
+        <xsd:element name="certificado" type="xsd:string" />
+        <xsd:element name="sec" type="xsd:string" />
+        <xsd:element name="solicitud" type="xsd:string" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaRequestOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="buscarPrimaResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditResponse" type="base:auditResponseType" />
+        <xsd:element minOccurs="0" maxOccurs="1" name="listaDatosPrima" type="PrimasType" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaResponseOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="eliminarPrimaRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditRequest" type="base:auditRequestType" />
+        <xsd:element name="certifTemp" type="xsd:string" />
+        <xsd:element name="nroSec" type="xsd:string" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaRequestOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="eliminarPrimaResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditResponse" type="base:auditResponseType" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaResponseOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="guardarPreInscripcionRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditRequest" type="base:auditRequestType" />
+        <xsd:element name="nroSec" type="xsd:string" />
+        <xsd:element name="nroTelefono" type="xsd:string" />
+        <xsd:element name="nroCertificado" type="xsd:string" />
+        <xsd:element name="estadoRpta" type="xsd:string" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaRequestOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="guardarPreInscripcionResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditResponse" type="base:auditResponseType" />
+        <xsd:element minOccurs="0" maxOccurs="1" name="listaDatosAlta" type="AltasType" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaResponseOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="guardarInscripcionRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditRequest" type="base:auditRequestType" />
+        <xsd:element name="nroSec" type="xsd:string" />
+        <xsd:element name="nroCertificado" type="xsd:string" />
+        <xsd:element name="flagEstadoAlta" type="xsd:string" />
+        <xsd:element name="estadoRpta" type="xsd:string" />
+        <xsd:element name="msisdnRpta" type="xsd:string" />
+        <xsd:element name="nroCertifRpta" type="xsd:string" />
+        <xsd:element name="estActivRpta" type="xsd:string" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaRequestOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="guardarInscripcionResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditResponse" type="base:auditResponseType" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaResponseOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="renovarProteccionMovilRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditRequest" type="base:auditRequestType" />
+        <xsd:element name="nroSec" type="xsd:string" />
+        <xsd:element name="telefono" type="xsd:string" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaRequestOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="renovarProteccionMovilResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditResponse" type="base:auditResponseType" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaResponseOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="validarExistenciaProteccionMovilRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditRequest" type="base:auditRequestType" />
+        <xsd:element name="nroSec" type="xsd:string" />
+        <xsd:element name="nroTelefono" type="xsd:string" />
+        <xsd:element name="nroCertificado" type="xsd:string" />
+        <xsd:element name="estadoSeguro" type="xsd:string" />
+        <xsd:element name="estadoRpta" type="xsd:string" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaRequestOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="validarExistenciaProteccionMovilResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditResponse" type="base:auditResponseType" />
+        <xsd:element minOccurs="0" maxOccurs="1" name="listaClienteSeguro" type="ClienteSeguroType" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaResponseOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="procesarPagoPMRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditRequest" type="base:auditRequestType" />
+        <xsd:element name="nroSec" type="xsd:string" />
+        <xsd:element name="nroTelefono" type="xsd:string" />
+        <xsd:element name="nroCertificado" type="xsd:string" />
+        <xsd:element name="estadoRpta" type="xsd:string" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaRequestOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="procesarPagoPMResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="auditResponse" type="base:auditResponseType" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="listaResponseOpcional" type="base:parametrosType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:rpst="http://claro.com.pe/esb/data/commonBusinessEntities/responseStatus/v2/" xmlns:mesejt="http://claro.com.pe/esb/message/test/consultarDeudaCuentaBRMS_db/v1/" targetNamespace="http://claro.com.pe/esb/message/test/consultarDeudaCuentaBRMS_db/v1/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="http://172.17.26.54:21000/DAT_ConsultaDatosBRMSOAC/SRV_Consulta/Service/Mediation/MED_DAT_ConsultarDatosBRMSOACPipelineProxyService?SCHEMA%2FDAT_ConsultaDatosBRMSOAC%2FSRV_Consulta%2FResources%2FXSD%2FResponseStatus_v2" namespace="http://claro.com.pe/esb/data/commonBusinessEntities/responseStatus/v2/" />
+  <xsd:complexType name="ConsultarDeudaCuentaBRMS_dbRequestType">
+    <xsd:sequence>
+      <xsd:element name="PV_TRX_ID_WS" type="xsd:string" />
+      <xsd:element name="PV_COD_APLICACION" type="xsd:string" />
+      <xsd:element name="PV_USUARIO_APLIC" type="xsd:string" />
+      <xsd:element name="PV_CLI_TIPO_DOC_IDENT" type="xsd:string" />
+      <xsd:element name="PV_CLI_NRO_DOC_IDENT" type="xsd:string" />
+      <xsd:element name="PN_NRO_MESES_DISPUTA" type="xsd:string" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="listaRequestOpcional" type="mesejt:ListaCamposOpcionalesType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ConsultarDeudaCuentaBRMS_dbResponseType">
+    <xsd:sequence>
+      <xsd:element name="responseStatus" type="rpst:ResponseStatus" />
+      <xsd:element name="responseData" type="mesejt:listaConsultarType" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="listaResponseOpcional" type="mesejt:ListaCamposOpcionalesType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ListaCamposOpcionalesType">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="unbounded" name="objetoOpcional">
+        <xsd:complexType>
+          <xsd:attribute name="clave" type="xsd:string" />
+          <xsd:attribute name="valor" type="xsd:string" />
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="consultarDeudaCuentaBRMS_dbRequest" type="mesejt:ConsultarDeudaCuentaBRMS_dbRequestType" />
+  <xsd:element name="consultarDeudaCuentaBRMS_dbResponse" type="mesejt:ConsultarDeudaCuentaBRMS_dbResponseType" />
+  <xsd:complexType name="ConsultarType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" name="XT_ESTADO_CUENTA" type="mesejt:XT_ESTADO_CUENTA_Row" />
+      <xsd:element name="XV_STATUS" type="xsd:string" />
+      <xsd:element name="XV_MESSAGE" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="listaConsultarType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" name="consultar" type="mesejt:ConsultarType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="XT_ESTADO_CUENTA_Row">
+    <xsd:sequence>
+      <xsd:element name="DEUDA_VENCIDA" type="xsd:string" />
+      <xsd:element name="DEUDA_CASTIGADA" type="xsd:string" />
+      <xsd:element name="DEUDA_TOTAL" type="xsd:string" />
+      <xsd:element name="ANT_DEUDA" type="xsd:string" />
+      <xsd:element name="MONTO_PAG_TOTAL" type="xsd:string" />
+      <xsd:element name="MONTO_DISPUTA" type="xsd:string" />
+      <xsd:element name="CANTIDAD_DISPUTA" type="xsd:string" />
+      <xsd:element name="ANT_DISPUTA" type="xsd:string" />
+      <xsd:element name="CANT_DOCUMENTOS" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
