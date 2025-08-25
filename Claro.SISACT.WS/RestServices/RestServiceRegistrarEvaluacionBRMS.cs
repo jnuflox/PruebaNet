@@ -1,4 +1,4 @@
-﻿//INI PROY-140579 NN
+//INI PROY-140579 NN
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,6 @@ using System.Net;
 using System.Collections;
 using Claro.SISACT.Common;
 using System.Configuration;
-using System.Web.Script.Serialization;
 using System.IO;
 using Newtonsoft.Json;
 using Claro.SISACT.Entity.RegistrarEvaluacionBRMSDP.Request;
@@ -96,7 +95,6 @@ namespace Claro.SISACT.WS.RestServices
             request.Headers = GetHeaders(objHeader);
             request.Accept = "application/json";
 
-            JavaScriptSerializer Serializer = new JavaScriptSerializer();
             string data = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
             objLog.CrearArchivolog("PROY-BRMS Cadena data  -->" + data.ToString(), "", null);
             byte[] byteArray = Encoding.UTF8.GetBytes(data);

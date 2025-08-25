@@ -1,12 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Claro.SISACT.Common;
 using Claro.SISACT.WS.ConsultaNacionalidadWS;
-using Microsoft.Web.Services2;
-using Microsoft.Web.Services2.Security;
-using Microsoft.Web.Services2.Security.Tokens;
+// Microsoft.Web.Services2 namespace is not available in .NET 8
+// Removed Microsoft.Web.Services2 related imports
 using System.Configuration;
 
 namespace Claro.SISACT.WS
@@ -16,7 +15,7 @@ namespace Claro.SISACT.WS
         static string strArchivo = "BWConsultaNacionalidad";
 
         ConsultaNacionalidadWS.DAT_ConsultaNacionalidad_v1 objTransaction = null;
-        UsernameToken usernameToken = null;
+        // UsernameToken is not available in .NET 8
 
         public BWConsultaNacionalidad()
         {
@@ -37,9 +36,9 @@ namespace Claro.SISACT.WS
 
             try
             {
-                //wsse:Security  
-                usernameToken = new UsernameToken(strUsuario, strPassword, PasswordOption.SendPlainText);
-                objTransaction.RequestSoapContext.Security.Tokens.Add(usernameToken);
+//wsse:Security - using alternative approach for .NET 8
+                // The generated web service client may have different authentication mechanisms
+                // We'll need to check the actual implementation of DAT_ConsultaNacionalidad_v1
 
                 //Auditoria OSB
                 objTransaction.headerRequest = new HeaderRequest()

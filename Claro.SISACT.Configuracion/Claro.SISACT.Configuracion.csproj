@@ -1,98 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{87EC7497-AB32-428A-BD9D-D0605DEAF907}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Claro.SISACT.Configuracion</RootNamespace>
     <AssemblyName>Claro.SISACT.Configuracion</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Claro.SISACT.Configuracion</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.configuration" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="*" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClaroBDConfiguration.cs" />
-    <Compile Include="ClaroConfiguracionBase.cs" />
-    <Compile Include="ConfigConexionCLARIFY.cs" />
-    <Compile Include="ConfigConexionDC.cs" />
-    <Compile Include="ConfigConexionFTP.cs" />
-    <Compile Include="ConfigConexionODS.cs" />
-    <Compile Include="ConfigConexionPEL.cs" />
-    <Compile Include="ConfigConexionPUNTOSCC.cs" />
-    <Compile Include="ConfigConexionSAP.cs" />
-    <Compile Include="ConfigConexionSEGURIDAD.cs" />
-    <Compile Include="ConfigConexionSincronizaSap.cs" />
-    <Compile Include="ConfigConexionSISACT.cs" />
-    <Compile Include="ConfigConexionSISCAD.cs" />
-    <Compile Include="ConfigConexionPEL2.cs" />
-    <Compile Include="ConfigConexionSIAC.cs" />
-    <Compile Include="ConfigConexionBSCS.cs" />
-    <Compile Include="ConfigConexionSGA.cs" />
-    <Compile Include="ConfigConexionDWH.cs" />
-    <Compile Include="IClaroBDConfiguracion.cs" />
-    <Compile Include="IConfiguracionBase.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Claro.Base\Claro.Base.csproj">
-      <Project>{0EED2C7D-9F7B-4628-945B-06FCF28C27A3}</Project>
-      <Name>Claro.Base</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Claro.SISACT.Common\Claro.SISACT.Common.csproj">
-      <Project>{64D5394B-C4A5-482A-8908-B1C84974AB9F}</Project>
-      <Name>Claro.SISACT.Common</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="bin\Debug\Claro.SISACT.Common.dll" />
-    <Content Include="bin\Debug\Claro.SISACT.Common.pdb" />
-    <Content Include="bin\Debug\Claro.SISACT.Configuracion.dll" />
-    <Content Include="bin\Debug\Claro.SISACT.Configuracion.pdb" />
-    <Content Include="bin\Debug\Claro.SISACT.Entity.dll" />
-    <Content Include="bin\Debug\Claro.SISACT.Entity.pdb" />
-    <Content Include="bin\Release\Claro.SISACT.Common.dll" />
-    <Content Include="bin\Release\Claro.SISACT.Common.pdb" />
-    <Content Include="bin\Release\Claro.SISACT.Configuracion.dll" />
-    <Content Include="bin\Release\Claro.SISACT.Configuracion.pdb" />
-    <Content Include="bin\Release\Claro.SISACT.Entity.dll" />
-    <Content Include="bin\Release\Claro.SISACT.Entity.pdb" />
-    <Content Include="bin\Release\Claro.SISACT.SapGeneral.dll" />
-    <Content Include="obj\Debug\Claro.SISACT.Configuracion.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\Claro.SISACT.Configuracion.dll" />
-    <Content Include="obj\Debug\Claro.SISACT.Configuracion.pdb" />
-    <Content Include="obj\Release\Claro.SISACT.Configuracion.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Release\Claro.SISACT.Configuracion.dll" />
-    <Content Include="obj\Release\Claro.SISACT.Configuracion.pdb" />
+    <ProjectReference Include="../Claro.SISACT.Common/Claro.SISACT.Common.csproj" />
+    <ProjectReference Include="../Claro.Base/Claro.Base.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Include="obj\Debug\Claro.SISACT.Configuracion.csprojResolveAssemblyReference.cache" />
@@ -104,12 +22,4 @@
   <ItemGroup>
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

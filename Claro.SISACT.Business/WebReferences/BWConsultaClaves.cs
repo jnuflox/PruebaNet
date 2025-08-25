@@ -1,4 +1,4 @@
-﻿//PROY-140546
+//PROY-140546
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,8 +15,44 @@ namespace Claro.SISACT.WebReferences
         public BWConsultaClaves()
         {
             consultaClaves.Url = ConfigurationManager.AppSettings["consRutaWSConsultaClaves"];
-            consultaClaves.Credentials = System.Net.CredentialCache.DefaultCredentials;
-            consultaClaves.Timeout = Convert.ToInt32(ConfigurationManager.AppSettings["TimeoutWS"]);
+// Setting client credentials using ClientCredentials property if available, or using appropriate credential method
+            if (consultaClaves.GetType().GetProperty("ClientCredentials") != null)
+            {
+                var clientCredentialsProperty = consultaClaves.GetType().GetProperty("ClientCredentials");
+                clientCredentialsProperty?.SetValue(consultaClaves, System.Net.CredentialCache.DefaultCredentials);
+            }
+            else if (consultaClaves.GetType().GetProperty("UseDefaultCredentials") != null)
+            {
+                var useDefaultCredentialsProperty = consultaClaves.GetType().GetProperty("UseDefaultCredentials");
+                useDefaultCredentialsProperty?.SetValue(consultaClaves, true);
+            }
+
+            // Handle timeout setting - try different approaches for compatibility with .NET 8
+            int timeoutValue = Convert.ToInt32(ConfigurationManager.AppSettings["TimeoutWS"]);
+            var timeoutProperty = consultaClaves.GetType().GetProperty("Timeout");
+            if (timeoutProperty != null)
+            {
+                timeoutProperty.SetValue(consultaClaves, timeoutValue);
+            }
+            else
+            {
+                // Try setting timeout through endpoint behavior if available
+                var endpointProperty = consultaClaves.GetType().GetProperty("Endpoint");
+                if (endpointProperty != null)
+                {
+                    var endpoint = endpointProperty.GetValue(consultaClaves);
+                    var bindingProperty = endpoint?.GetType().GetProperty("Binding");
+                    if (bindingProperty != null)
+                    {
+                        var binding = bindingProperty.GetValue(endpoint);
+                        var sendTimeoutProperty = binding?.GetType().GetProperty("SendTimeout");
+                        if (sendTimeoutProperty != null)
+                        {
+                            sendTimeoutProperty.SetValue(binding, TimeSpan.FromMilliseconds(timeoutValue));
+                        }
+                    }
+                }
+            }
         }
 
         public string ConsultaClavesWS(string idTransaccion,

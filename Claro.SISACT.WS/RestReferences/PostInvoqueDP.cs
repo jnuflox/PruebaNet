@@ -1,11 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Collections;
 using Claro.SISACT.Common;
 using System.Net;
-using System.Web.Script.Serialization;
 using System.IO;
 using Newtonsoft.Json;
 using System.Configuration;
@@ -25,7 +24,6 @@ namespace Claro.SISACT.WS.RestReferences
             request.Accept = "application/json";
 
             objLog.CrearArchivolog(String.Format("{0} : {1}", "Valor de WS", Funciones.CheckStr(System.Configuration.ConfigurationManager.AppSettings[name])), null, null);
-            JavaScriptSerializer Serializer = new JavaScriptSerializer();
             string data = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
             objLog.CrearArchivolog(String.Format("{0} : {1}","Cadena data",data.ToString()), null, null);
             byte[] byteArray = Encoding.UTF8.GetBytes(data);

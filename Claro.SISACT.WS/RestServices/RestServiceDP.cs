@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +11,6 @@ using System.Web;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using Claro.SISACT.Common;
-using System.Web.Script.Serialization;
 using System.Configuration;
 
 namespace Claro.SISACT.WS.RestServices
@@ -99,8 +98,7 @@ namespace Claro.SISACT.WS.RestServices
             request.Method = "POST";
             request.Headers = GetHeaders(objHeader);
             request.Accept = "application/json";
-            
-            JavaScriptSerializer Serializer = new JavaScriptSerializer();
+
             string data = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
             objLog.CrearArchivolog("PROY-140245 Cadena data  -->" + data.ToString(), "", null);
             byte[] byteArray = Encoding.UTF8.GetBytes(data);

@@ -1,12 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Claro.SISACT.Common;
 using Claro.SISACT.WS.WSConsultarPlanPorta;
-using Microsoft.Web.Services2;
-using Microsoft.Web.Services2.Security;
-using Microsoft.Web.Services2.Security.Tokens;
 using System.Configuration;
 using System.Data;
 namespace Claro.SISACT.WS
@@ -16,7 +13,6 @@ namespace Claro.SISACT.WS
         WSConsultarPlanPorta.BSS_ConsultasSEC_v1 _objTransaccionPlan = null;//segund variable para el metood plan porta
 
         GeneradorLog _objLog = null;
-        UsernameToken usernameToken = null;
         private string nameLog = "Log_BWConsultaSECPlanPorta";
         public BWConsultaSECPlanPorta()
         {

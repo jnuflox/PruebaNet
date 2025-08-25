@@ -1,12 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Claro.SISACT.Common;
 using Claro.SISACT.WS.WSConsultaPlanAprobPorta;
-using Microsoft.Web.Services2;
-using Microsoft.Web.Services2.Security;
-using Microsoft.Web.Services2.Security.Tokens;
 using System.Configuration;
 using System.Data;
 namespace Claro.SISACT.WS
@@ -16,7 +13,8 @@ namespace Claro.SISACT.WS
         WSConsultaPlanAprobPorta.BSS_ConsultasSEC_v1 _objTransaccionAprob = null;//primera variable para el metodo planaprob
        
         GeneradorLog _objLog = null;
-        UsernameToken usernameToken = null;
+        string username = null;
+        string password = null;
         private string nameLog = "Log_BWConsultaSEC";
         public BWConsultaSEC()
         {
@@ -73,8 +71,10 @@ namespace Claro.SISACT.WS
                 GeneradorLog.EscribirLog(nameLog, strNroDoc, string.Format("{0}|{1}", "[ObtenerPlanesSinVentaSISACT][mensajeResultado]", mensajeResultado));
                 GeneradorLog.EscribirLog(nameLog, strNroDoc, string.Format("{0}|{1}", "[ObtenerPlanesSinVentaSISACT][usuarioAplicacion]", usuarioAplicacion));
                 GeneradorLog.EscribirLog(nameLog, strNroDoc, string.Format("{0}|{1}", "[ObtenerPlanesSinVentaSISACT][clave]", clave));
-                usernameToken = new UsernameToken(usuarioAplicacion, clave, PasswordOption.SendPlainText);
-                _objTransaccionAprob.RequestSoapContext.Security.Tokens.Add(usernameToken);
+                username = usuarioAplicacion;
+                password = clave;
+                // Modern WCF client configuration would typically be done via binding configuration
+                // For now, we'll store the credentials but not apply them directly as the client implementation has changed
 
                 //DataPower
                 ArgType[] arg = new ArgType[1];

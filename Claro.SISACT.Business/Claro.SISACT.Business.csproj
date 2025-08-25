@@ -1,140 +1,20 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0338FD95-CADF-4264-AA41-A47C6CEDD638}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Claro.SISACT.Business</RootNamespace>
     <AssemblyName>Claro.SISACT.Business</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Claro.SISACT.Business</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft\lib\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.configuration" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.EnterpriseServices" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.Services" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLCartaPoder.cs" />
-    <Compile Include="BLCasoEspecial.cs" />
-    <Compile Include="BLConsultaClaroClub.cs" />
-    <Compile Include="BLConsumer.cs" />
-    <Compile Include="BLDataCredito.cs" />
-    <Compile Include="BLEvaluacion.cs" />
-    <Compile Include="BLFormLead.cs" />
-    <Compile Include="BLGeneral.cs" />
-    <Compile Include="BLGeneral_II.cs" />
-    <Compile Include="BLIntegracionDTHNegocio.cs" />
-    <Compile Include="BLMaestro.cs" />
-    <Compile Include="BLPagoAnticipado.cs" />
-    <Compile Include="BLReglaNegocio.cs" />
-    <Compile Include="BLSincronizaSap.cs" />
-    <Compile Include="BLSolicitud.cs" />
-    <Compile Include="BLPortabilidad.cs" />
-    <Compile Include="BLSolicitudNegocios.cs" />
-    <Compile Include="BLPrepago.cs" />
-    <Compile Include="BLProteccionMovil.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="RestReferences\RestConsultarPagoAnticipadoFija.cs" />
-    <Compile Include="RestReferences\RestService.cs" />
-    <Compile Include="Web References\WSConsultaClave\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.map</DependentUpon>
-    </Compile>
-    <Compile Include="WebReferences\BWConsultaClaves.cs" />
+    <ProjectReference Include="../Claro.SISACT.Entity/Claro.SISACT.Entity.csproj" />
+    <ProjectReference Include="../Claro.SISACT.Common/Claro.SISACT.Common.csproj" />
+    <ProjectReference Include="../Claro.SISACT.Data/Claro.SISACT.Data.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Claro.SISACT.Common\Claro.SISACT.Common.csproj">
-      <Project>{64D5394B-C4A5-482A-8908-B1C84974AB9F}</Project>
-      <Name>Claro.SISACT.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Claro.SISACT.Data\Claro.SISACT.Data.csproj">
-      <Project>{842E0105-F7B2-4F94-8CC6-E39237348862}</Project>
-      <Name>Claro.SISACT.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Claro.SISACT.Entity\Claro.SISACT.Entity.csproj">
-      <Project>{3CC469F9-CD4B-45D2-AC0E-3E3536BC6BD6}</Project>
-      <Name>Claro.SISACT.Entity</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="bin\Debug\Claro.SISACT.Business.dll" />
-    <Content Include="bin\Debug\Claro.SISACT.Business.pdb" />
-    <Content Include="bin\Debug\Claro.SISACT.Common.dll" />
-    <Content Include="bin\Debug\Claro.SISACT.Common.pdb" />
-    <Content Include="bin\Debug\Claro.SISACT.Configuracion.dll" />
-    <Content Include="bin\Debug\Claro.SISACT.Configuracion.pdb" />
-    <Content Include="bin\Debug\Claro.SISACT.Data.dll" />
-    <Content Include="bin\Debug\Claro.SISACT.Data.pdb" />
-    <Content Include="bin\Debug\Claro.SISACT.Entity.dll" />
-    <Content Include="bin\Debug\Claro.SISACT.Entity.pdb" />
-    <Content Include="bin\Debug\Claro.SISACT.IData.dll" />
-    <Content Include="bin\Debug\Claro.SISACT.IData.pdb" />
-    <Content Include="bin\Debug\Claro.SISACT.SapAccess.dll" />
-    <Content Include="bin\Debug\Claro.SISACT.SapAccess.pdb" />
-    <Content Include="bin\Debug\Claro.SISACT.SapGeneral.dll" />
-    <Content Include="bin\Debug\SAP.Connector.dll" />
-    <Content Include="bin\Release\Claro.SISACT.Business.dll" />
-    <Content Include="bin\Release\Claro.SISACT.Business.pdb" />
-    <Content Include="bin\Release\Claro.SISACT.Common.dll" />
-    <Content Include="bin\Release\Claro.SISACT.Common.pdb" />
-    <Content Include="bin\Release\Claro.SISACT.Configuracion.dll" />
-    <Content Include="bin\Release\Claro.SISACT.Configuracion.pdb" />
-    <Content Include="bin\Release\Claro.SISACT.Data.dll" />
-    <Content Include="bin\Release\Claro.SISACT.Data.pdb" />
-    <Content Include="bin\Release\Claro.SISACT.Entity.dll" />
-    <Content Include="bin\Release\Claro.SISACT.Entity.pdb" />
-    <Content Include="bin\Release\Claro.SISACT.IData.dll" />
-    <Content Include="bin\Release\Claro.SISACT.IData.pdb" />
-    <Content Include="bin\Release\Claro.SISACT.SapAccess.dll" />
-    <Content Include="bin\Release\Claro.SISACT.SapAccess.pdb" />
-    <Content Include="bin\Release\Claro.SISACT.SapGeneral.dll" />
-    <Content Include="bin\Release\SAP.Connector.dll" />
-    <Content Include="obj\Debug\Claro.SISACT.Business.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\Claro.SISACT.Business.dll" />
-    <Content Include="obj\Debug\Claro.SISACT.Business.pdb" />
-    <Content Include="obj\Release\Claro.SISACT.Business.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Release\Claro.SISACT.Business.dll" />
-    <Content Include="obj\Release\Claro.SISACT.Business.pdb" />
+    <Compile Remove="BLGeneralII.cs"></Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -167,20 +47,22 @@
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\WSConsultaClave\</RelPath>
       <UpdateFromURL>http://172.19.74.225:8903/ConsultaClavesWS/ebsConsultaClavesSB11%3fwsdl</UpdateFromURL>
-      <ServiceLocationURL>
-      </ServiceLocationURL>
-      <CachedDynamicPropName>
-      </CachedDynamicPropName>
+      <ServiceLocationURL></ServiceLocationURL>
+      <CachedDynamicPropName></CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>Claro_SISACT_Business_WSConsultaClave_ebsConsultaClavesService</CachedSettingsPropName>
     </WebReferenceUrl>
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+  <ItemGroup>
+    <PackageReference Include="System.ServiceModel.Web" Version="1.0.0" />
+    <PackageReference Include="SoapCore" Version="1.1.0.39" />
+    <PackageReference Include="System.Web.Services.Description" Version="4.10.3" />
+    <PackageReference Include="CoreWCF.Primitives" Version="1.5.1" />
+    <PackageReference Include="CoreWCF.Http" Version="1.5.1" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.10.3" />
+    <PackageReference Include="System.ServiceModel.Primitives" Version="4.10.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="*" />
+    <PackageReference Include="Microsoft.AspNetCore.SystemWebAdapters" Version="1.4.0" />
+  </ItemGroup>
 </Project>

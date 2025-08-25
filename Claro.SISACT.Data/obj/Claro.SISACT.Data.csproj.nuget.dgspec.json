@@ -1,0 +1,547 @@
+{
+  "format": 1,
+  "restore": {
+    "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Data/Claro.SISACT.Data.csproj": {}
+  },
+  "projects": {
+    "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.Base/Claro.Base.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.Base/Claro.Base.csproj",
+        "projectName": "Claro.Base",
+        "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.Base/Claro.Base.csproj",
+        "packagesPath": "/tmp/tempfspartition/QnetTransformArtifacts/packages",
+        "outputPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.Base/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/tmp/tempfspartition/QnetTransformArtifacts/mde-local-nuget-source": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.Seguridad.Criptografia/Claro.Seguridad.Criptografia.csproj": {
+                "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.Seguridad.Criptografia/Claro.Seguridad.Criptografia.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "noWarn": [
+            "NU1101",
+            "NU1605",
+            "NU1608",
+            "NU1701",
+            "NU1903"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/root/.dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Common/Claro.SISACT.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Common/Claro.SISACT.Common.csproj",
+        "projectName": "Claro.SISACT.Common",
+        "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Common/Claro.SISACT.Common.csproj",
+        "packagesPath": "/tmp/tempfspartition/QnetTransformArtifacts/packages",
+        "outputPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Common/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/tmp/tempfspartition/QnetTransformArtifacts/mde-local-nuget-source": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Entity/Claro.SISACT.Entity.csproj": {
+                "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Entity/Claro.SISACT.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1101",
+            "NU1605",
+            "NU1608",
+            "NU1701",
+            "NU1903"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.SystemWebAdapters": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/root/.dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Configuracion/Claro.SISACT.Configuracion.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Configuracion/Claro.SISACT.Configuracion.csproj",
+        "projectName": "Claro.SISACT.Configuracion",
+        "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Configuracion/Claro.SISACT.Configuracion.csproj",
+        "packagesPath": "/tmp/tempfspartition/QnetTransformArtifacts/packages",
+        "outputPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Configuracion/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/tmp/tempfspartition/QnetTransformArtifacts/mde-local-nuget-source": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.Base/Claro.Base.csproj": {
+                "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.Base/Claro.Base.csproj"
+              },
+              "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Common/Claro.SISACT.Common.csproj": {
+                "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Common/Claro.SISACT.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1101",
+            "NU1605",
+            "NU1608",
+            "NU1701",
+            "NU1903"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/root/.dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Data/Claro.SISACT.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Data/Claro.SISACT.Data.csproj",
+        "projectName": "Claro.SISACT.Data",
+        "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Data/Claro.SISACT.Data.csproj",
+        "packagesPath": "/tmp/tempfspartition/QnetTransformArtifacts/packages",
+        "outputPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/tmp/tempfspartition/QnetTransformArtifacts/mde-local-nuget-source": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Common/Claro.SISACT.Common.csproj": {
+                "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Common/Claro.SISACT.Common.csproj"
+              },
+              "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Configuracion/Claro.SISACT.Configuracion.csproj": {
+                "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Configuracion/Claro.SISACT.Configuracion.csproj"
+              },
+              "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Entity/Claro.SISACT.Entity.csproj": {
+                "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Entity/Claro.SISACT.Entity.csproj"
+              },
+              "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.IData/Claro.SISACT.IData.csproj": {
+                "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.IData/Claro.SISACT.IData.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1101",
+            "NU1605",
+            "NU1608",
+            "NU1701",
+            "NU1903"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/root/.dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Entity/Claro.SISACT.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Entity/Claro.SISACT.Entity.csproj",
+        "projectName": "Claro.SISACT.Entity",
+        "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Entity/Claro.SISACT.Entity.csproj",
+        "packagesPath": "/tmp/tempfspartition/QnetTransformArtifacts/packages",
+        "outputPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Entity/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/tmp/tempfspartition/QnetTransformArtifacts/mde-local-nuget-source": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1101",
+            "NU1605",
+            "NU1608",
+            "NU1701",
+            "NU1903"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/root/.dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.IData/Claro.SISACT.IData.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.IData/Claro.SISACT.IData.csproj",
+        "projectName": "Claro.SISACT.IData",
+        "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.IData/Claro.SISACT.IData.csproj",
+        "packagesPath": "/tmp/tempfspartition/QnetTransformArtifacts/packages",
+        "outputPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.IData/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/tmp/tempfspartition/QnetTransformArtifacts/mde-local-nuget-source": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Common/Claro.SISACT.Common.csproj": {
+                "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Common/Claro.SISACT.Common.csproj"
+              },
+              "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Entity/Claro.SISACT.Entity.csproj": {
+                "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.SISACT.Entity/Claro.SISACT.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1101",
+            "NU1605",
+            "NU1608",
+            "NU1701",
+            "NU1903"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[3.21.130, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/root/.dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.Seguridad.Criptografia/Claro.Seguridad.Criptografia.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.Seguridad.Criptografia/Claro.Seguridad.Criptografia.csproj",
+        "projectName": "Claro.Seguridad.Criptografia",
+        "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.Seguridad.Criptografia/Claro.Seguridad.Criptografia.csproj",
+        "packagesPath": "/tmp/tempfspartition/QnetTransformArtifacts/packages",
+        "outputPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/Claro.Seguridad.Criptografia/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/tmp/tempfspartition/QnetTransformArtifacts/mde-local-nuget-source": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1101",
+            "NU1605",
+            "NU1608",
+            "NU1701",
+            "NU1903"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/root/.dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

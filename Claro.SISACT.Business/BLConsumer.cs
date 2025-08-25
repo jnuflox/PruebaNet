@@ -19,8 +19,8 @@ using PAGOANTICIPADO_ENTITY = Claro.SISACT.Entity.ClientePagoAnticipadoFijaRest;
 using Claro.SISACT.Entity.ClientePagoAnticipadoFijaRest.DataPower.ActualizaPA;
 using Claro.SISACT.Entity.ClientePagoAnticipadoFijaRest.DataPower.RegistraHistorial;
 using System.Net.Mail;
-//FIN PROY-140546 FASE 2
-using System.Web.Script.Serialization; //[INC000004091065] INC000003467242
+using System.Text.Json;
+
 
 namespace Claro.SISACT.Business
 {
@@ -183,16 +183,16 @@ namespace Claro.SISACT.Business
             objLog.CrearArchivolog(null, string.Format("{0}-->{1}", "[PROY-140546][GrabarPlanDetalle INICIO", ""), null);
             //FIN PROY-140546
 
-            objLog.CrearArchivolog("[INC000004091065][INC000003467242]", string.Format("{0}:{1}", "[BLConsumer][GrabarPlanDetalle] objEvaluacion:", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objEvaluacion))), null);
+            objLog.CrearArchivolog("[INC000004091065][INC000003467242]", string.Format("{0}:{1}", "[BLConsumer][GrabarPlanDetalle] objEvaluacion:", Funciones.CheckStr(JsonSerializer.Serialize(objEvaluacion))), null);
 
             Int64 idSol = 0;
             bool salida = false;
-            int contador = 0; //Contador que permitirá insertar secuencialmente desde el valor 1 los planes en el campo SOPLN_ORDEN
+            int contador = 0; //Contador que permitirï¿½ insertar secuencialmente desde el valor 1 los planes en el campo SOPLN_ORDEN
             int ant_sopln_orden; //Guardamos el valor del sopln_orden original para compararlo con tras variables ya almacenadas;
 
             foreach (BEPlanDetalleVenta objPlanDetalle in listaPlanDetalle)
             {
-                objLog.CrearArchivolog("[INC000004091065][INC000003467242]", string.Format("{0}:{1}", "[BLConsumer][GrabarPlanDetalle] objPlanDetalle:", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objPlanDetalle))), null);
+                objLog.CrearArchivolog("[INC000004091065][INC000003467242]", string.Format("{0}:{1}", "[BLConsumer][GrabarPlanDetalle] objPlanDetalle:", Funciones.CheckStr(JsonSerializer.Serialize(objPlanDetalle))), null);
 
                 objPlanDetalle.SOLIN_CODIGO = nroSEC;
 
@@ -287,7 +287,7 @@ namespace Claro.SISACT.Business
 
                             objLog.CrearArchivolog("[INC000004091065][INC000003467242]", string.Format("{0}:{1}", "[BLConsumer][GrabarPlanDetalle] param in nroSEC", Funciones.CheckStr(nroSEC.ToString())), null);
                             objLog.CrearArchivolog("[INC000004091065][INC000003467242]", string.Format("{0}:{1}", "[BLConsumer][GrabarPlanDetalle] param in idSol", Funciones.CheckStr(idSol)), null);
-                            objLog.CrearArchivolog("[INC000004091065][INC000003467242]", string.Format("{0}:{1}", "[BLConsumer][GrabarPlanDetalle] param in obj", Funciones.CheckStr(new JavaScriptSerializer().Serialize(obj))), null);
+                            objLog.CrearArchivolog("[INC000004091065][INC000003467242]", string.Format("{0}:{1}", "[BLConsumer][GrabarPlanDetalle] param in obj", Funciones.CheckStr(JsonSerializer.Serialize(obj))), null);
 
                             new BLEvaluacion().InsertarDatosBRMS(nroSEC, idSol, obj);
                         //PROY-32439 MAS INI Grabar tabla nuevo BRMS

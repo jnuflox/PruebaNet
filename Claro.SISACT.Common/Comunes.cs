@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Web.UI.WebControls;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Claro.SISACT.Entity;
 using System.Configuration;
 using System.Collections;
@@ -9,33 +9,37 @@ namespace Claro.SISACT.Common
     public static class Comunes
     {
 
-        public static void LlenaCombo(List<BEItemGenerico > datos, DropDownList  ddlCombo, bool blnInsertarSeleccionar = false)
+        public static List<SelectListItem> LlenaCombo(List<BEItemGenerico > datos, bool blnInsertarSeleccionar = false)
         {
-            if (datos == null) { return; } 
-            if (ddlCombo == null) { return; }
-            if (blnInsertarSeleccionar )
+            if (datos == null) { return null; }
+
+            List<SelectListItem> items = new List<SelectListItem>();
+
+            if (blnInsertarSeleccionar)
             {
                 string seleccionar = ConfigurationManager.AppSettings["Seleccionar"];
                 BEItemGenerico item = new BEItemGenerico() { Codigo = "00", Descripcion = seleccionar, Descripcion2 = seleccionar };
                 datos.Insert(0, item);
-                
-                ddlCombo.DataSource = datos;
-                ddlCombo.DataValueField = "Codigo";
-                ddlCombo.DataTextField = "Descripcion";
-                ddlCombo.DataBind();
             }
+
+            foreach (var item in datos)
+            {
+                items.Add(new SelectListItem { Value = item.Codigo, Text = item.Descripcion });
+            }
+
+            return items;
         }
 
-        public static void LlenaCombo(ArrayList source,
-                      System.Web.UI.WebControls.ListControl ddlCombo,
+        public static List<SelectListItem> LlenaCombo(ArrayList source,
                       string campoValue,
                       string campoText,
                       bool blnInsertarTodos = false,
                       bool blnInsertarSeleccionar = false,
                       string seleccionar = "")
         {
-            if (source == null) return;
-            if (ddlCombo == null) return;
+            if (source == null) return null;
+
+            List<SelectListItem> items = new List<SelectListItem>();
             BEItemGenerico item = new BEItemGenerico();
 
             if (blnInsertarSeleccionar)
@@ -53,10 +57,16 @@ namespace Claro.SISACT.Common
                 source.Insert(0, item);
             }
 
-            ddlCombo.DataSource = source;
-            ddlCombo.DataValueField = campoValue;
-            ddlCombo.DataTextField = campoText;
-            ddlCombo.DataBind();
+            foreach (BEItemGenerico obj in source)
+            {
+                items.Add(new SelectListItem
+                {
+                    Value = obj.GetType().GetProperty(campoValue)?.GetValue(obj)?.ToString(),
+                    Text = obj.GetType().GetProperty(campoText)?.GetValue(obj)?.ToString()
+                });
+            }
+
+            return items;
         }
 
         public static  string GetUrlByCodigoPortal(string id_portal)

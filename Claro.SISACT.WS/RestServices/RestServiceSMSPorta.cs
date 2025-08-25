@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +11,6 @@ using System.Web;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using Claro.SISACT.Common;
-using System.Web.Script.Serialization;
 using System.Configuration;
 using System.Xml.Serialization;
 
@@ -101,8 +100,7 @@ namespace Claro.SISACT.WS.RestServices
             request.Method = "POST";
             request.Headers = GetHeaders(objHeader, usuario,ipServidor);
             request.Accept = "application/json";
-            
-            JavaScriptSerializer Serializer = new JavaScriptSerializer();
+
             string data = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
             objLog.CrearArchivolog(String.Format("{0} --> {1}", "PROY-SMS PORTABILIDAD Cadena data", data.ToString()), string.Empty, null); //INC-SMS_PORTA
             byte[] byteArray = Encoding.UTF8.GetBytes(data);

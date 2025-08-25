@@ -1,4 +1,4 @@
-﻿//PROY-140546
+//PROY-140546
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,6 @@ using System.Collections;
 using Claro.SISACT.Common;
 using System.Net;
 using System.Configuration;
-using System.Web.Script.Serialization;
 using System.IO;
 using Newtonsoft.Json;
 
@@ -29,7 +28,6 @@ namespace Claro.SISACT.WS.RestServices
             request.Headers = GetHeaders(objHeader, ipServidor);
             request.Accept = "application/json";
 
-            JavaScriptSerializer Serializer = new JavaScriptSerializer();
             string data = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
             objLog.CrearArchivolog(String.Format("{0} --> {1}", "PROY-140546 Cadena data", data.ToString()), null, null);
             byte[] byteArray = Encoding.UTF8.GetBytes(data);

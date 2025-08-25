@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Configuration;
 using System.Text.RegularExpressions;
 using System.Data;
-using System.Web.Mail;
 using System.Globalization;
 using System.Net.Mail;
 using System.Text;
 using System.Collections.Generic;
+using System.Web;
 
 namespace Claro.SISACT.Common
 {
@@ -490,7 +490,7 @@ namespace Claro.SISACT.Common
             oMail.CC.Add(vCC);
             oMail.Bcc.Add(vBCC);
             oMail.Subject = vAsunto;
-            oMail.Body = System.Web.HttpContext.Current.Server.HtmlDecode(vMensaje);
+            oMail.Body = HttpUtility.HtmlDecode(vMensaje);
 
             oMail.IsBodyHtml = true;
 

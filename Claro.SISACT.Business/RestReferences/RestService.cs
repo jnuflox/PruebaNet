@@ -1,5 +1,4 @@
-﻿//PROY-140546
-using Newtonsoft;
+//PROY-140546
 using Newtonsoft.Json;
 using System;
 using System.Collections;
@@ -10,7 +9,6 @@ using System.Net;
 using System.Reflection;
 using System.Text;
 using System.Web;
-using System.Web.Script.Serialization;
 using System.Configuration;
 using Claro.SISACT.Common;
 using Claro.SISACT.WebReferences;
@@ -29,7 +27,6 @@ namespace Claro.SISACT.Business.RestServices
             request.Accept = "application/json";
             try
             {
-                JavaScriptSerializer Serializer = new JavaScriptSerializer();
                 string data = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
                 objLog.CrearArchivolog(String.Format("{0} : {1}", "Cadena req", data.ToString()),null,null);
                 byte[] byteArray = Encoding.UTF8.GetBytes(data);

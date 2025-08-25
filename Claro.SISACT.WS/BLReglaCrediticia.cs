@@ -16,10 +16,10 @@ using System.Web;
 //PROY-32439 INI MAS
 using Claro.SISACT.WS.WSValidacionDeudaRules;
 using Claro.SISACT.WS.WSConsultaDatosOAC;
-//PROY-32439 FIN MAS
-using System.Web.Script.Serialization;
 using Claro.SISACT.Entity.VentasCuotas.ObtenerVariablesBRMS.Response;
 using Claro.SISACT.WS.RestReferences; //INC000004091065
+using System.Text.Json;
+
 
 namespace Claro.SISACT.WS
 {
@@ -151,11 +151,11 @@ namespace Claro.SISACT.WS
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.isTop", objCliente.isTop), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.soloBloqueoRoboPerdida", objCliente.soloBloqueoRoboPerdida), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.mensajeDeudaBloqueo", Funciones.CheckStr(objCliente.mensajeDeudaBloqueo)), null);
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.lineaSGA", Funciones.CheckStr(new JavaScriptSerializer().Serialize(Funciones.ConvertirDataTableAListaDictionary(objCliente.lineaSGA)))), null);
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.lineaBSCS", Funciones.CheckStr(new JavaScriptSerializer().Serialize(Funciones.ConvertirDataTableAListaDictionary(objCliente.lineaBSCS)))), null);
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.lineaSISACT", Funciones.CheckStr(new JavaScriptSerializer().Serialize(Funciones.ConvertirDataTableAListaDictionary(objCliente.lineaSISACT)))), null);
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.lineaPrepago", Funciones.CheckStr(new JavaScriptSerializer().Serialize(Funciones.ConvertirDataTableAListaDictionary(objCliente.lineaPrepago)))), null);
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.lineaOAC", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objCliente.lineaOAC))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.lineaSGA", Funciones.CheckStr(JsonSerializer.Serialize(Funciones.ConvertirDataTableAListaDictionary(objCliente.lineaSGA)))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.lineaBSCS", Funciones.CheckStr(JsonSerializer.Serialize(Funciones.ConvertirDataTableAListaDictionary(objCliente.lineaBSCS)))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.lineaSISACT", Funciones.CheckStr(JsonSerializer.Serialize(Funciones.ConvertirDataTableAListaDictionary(objCliente.lineaSISACT)))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.lineaPrepago", Funciones.CheckStr(JsonSerializer.Serialize(Funciones.ConvertirDataTableAListaDictionary(objCliente.lineaPrepago)))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.lineaOAC", Funciones.CheckStr(JsonSerializer.Serialize(objCliente.lineaOAC))), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.nroRangoDiasBSCS", Funciones.CheckStr(objCliente.nroRangoDiasBSCS)), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.nroPlanesActivos", Funciones.CheckStr(objCliente.nroPlanesActivos)), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.nroLineasBSCS", Funciones.CheckStr(objCliente.nroLineasBSCS)), null);
@@ -174,24 +174,24 @@ namespace Claro.SISACT.WS
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.montoNoFacturadoTotal", Funciones.CheckStr(objCliente.montoNoFacturadoTotal)), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oficina", Funciones.CheckStr(objCliente.oficina)), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.nroOperacionBuro", Funciones.CheckStr(objCliente.nroOperacionBuro)), null);
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oPlanesActivosxBilletera", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objCliente.oPlanesActivosxBilletera))), null);
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oPlanesActivosCorporativo", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objCliente.oPlanesActivosCorporativo))), null);
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oLCBuroxBilletera", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objCliente.oLCBuroxBilletera))), null);
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oMontoFacturadoxBilletera", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objCliente.oMontoFacturadoxBilletera))), null);
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oMontoNoFacturadoxBilletera", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objCliente.oMontoNoFacturadoxBilletera))), null);
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oLCDisponiblexBilletera", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objCliente.oLCDisponiblexBilletera))), null);
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oGarantiaxProducto", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objCliente.oGarantiaxProducto))), null);
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oOAC", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objCliente.oOAC))), null);
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oVistaEvaluacion", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objCliente.oVistaEvaluacion))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oPlanesActivosxBilletera", Funciones.CheckStr(JsonSerializer.Serialize(objCliente.oPlanesActivosxBilletera))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oPlanesActivosCorporativo", Funciones.CheckStr(JsonSerializer.Serialize(objCliente.oPlanesActivosCorporativo))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oLCBuroxBilletera", Funciones.CheckStr(JsonSerializer.Serialize(objCliente.oLCBuroxBilletera))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oMontoFacturadoxBilletera", Funciones.CheckStr(JsonSerializer.Serialize(objCliente.oMontoFacturadoxBilletera))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oMontoNoFacturadoxBilletera", Funciones.CheckStr(JsonSerializer.Serialize(objCliente.oMontoNoFacturadoxBilletera))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oLCDisponiblexBilletera", Funciones.CheckStr(JsonSerializer.Serialize(objCliente.oLCDisponiblexBilletera))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oGarantiaxProducto", Funciones.CheckStr(JsonSerializer.Serialize(objCliente.oGarantiaxProducto))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oOAC", Funciones.CheckStr(JsonSerializer.Serialize(objCliente.oOAC))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oVistaEvaluacion", Funciones.CheckStr(JsonSerializer.Serialize(objCliente.oVistaEvaluacion))), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.buroConsultado", Funciones.CheckStr(objCliente.buroConsultado)), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.deudaCliente", Funciones.CheckStr(objCliente.deudaCliente)), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.cumpleReglaA", Funciones.CheckStr(objCliente.cumpleReglaA)), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.totalplanes", Funciones.CheckStr(objCliente.totalplanes)), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.Deuda", Funciones.CheckStr(objCliente.Deuda)), null);
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.ListaMontoFactura", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objCliente.ListaMontoFactura))), null);
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.ListaPlanesActivos", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objCliente.ListaPlanesActivos))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.ListaMontoFactura", Funciones.CheckStr(JsonSerializer.Serialize(objCliente.ListaMontoFactura))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.ListaPlanesActivos", Funciones.CheckStr(JsonSerializer.Serialize(objCliente.ListaPlanesActivos))), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.errorBrms", Funciones.CheckStr(objCliente.errorBrms)), null);
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oRepresentanteLegal", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objCliente.oRepresentanteLegal))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.oRepresentanteLegal", Funciones.CheckStr(JsonSerializer.Serialize(objCliente.oRepresentanteLegal))), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.TipContribuyente", Funciones.CheckStr(objCliente.TipContribuyente)), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.NomComercial", Funciones.CheckStr(objCliente.NomComercial)), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.FecIniActividades", Funciones.CheckStr(objCliente.FecIniActividades)), null);
@@ -205,15 +205,15 @@ namespace Claro.SISACT.WS
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCliente.clienteCBIO", objCliente.clienteCBIO), null);
                 
             //INC000004091065 - Fin objCliente
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objDireccion", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objDireccion))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objDireccion", Funciones.CheckStr(JsonSerializer.Serialize(objDireccion))), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "strDatosGeneral", Funciones.CheckStr(strDatosGeneral)), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "strPlanesDetalle", Funciones.CheckStr(strPlanesDetalle)), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "strServiciosDetalle", Funciones.CheckStr(strServiciosDetalle)), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "strEquiposDetalle", Funciones.CheckStr(strEquiposDetalle)), null);
             _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "strTieneProteccionMovil", Funciones.CheckStr(strTieneProteccionMovil)), null);
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCuotaOAC", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objCuotaOAC))), null);
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCuotaPVU", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objCuotaPVU))), null);
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "oRequestReglasCrediticia", Funciones.CheckStr(new JavaScriptSerializer().Serialize(oRequestReglasCrediticia))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCuotaOAC", Funciones.CheckStr(JsonSerializer.Serialize(objCuotaOAC))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "objCuotaPVU", Funciones.CheckStr(JsonSerializer.Serialize(objCuotaPVU))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0} {1}:{2}", logDesc, "oRequestReglasCrediticia", Funciones.CheckStr(JsonSerializer.Serialize(oRequestReglasCrediticia))), null);
             _objLog.CrearArchivolog(string.Format("[{0}]", "====> FIN Parametro Evaluar <===="), null, null);
 
              
@@ -231,9 +231,9 @@ namespace Claro.SISACT.WS
             ConsultarReglasCreditos(objCliente, objDireccion, strDatosGeneral, strPlanesDetalle, strServiciosDetalle, strEquiposDetalle, "N", ref objListaOfrecimiento, ref objListaBilleteraEvaluado, strTieneProteccionMovil, objCuotaOAC, objCuotaPVU,Funciones.CheckStr(prodFacturar), ref oRequestReglasCrediticia); //PROY-24724-IDEA-28174 //PROY-30748//PROY-31948//PROY-140743
 
                 
-                _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[Out BLReglaCrediticia.ConsultarReglasCreditos() objListaOfrecimiento]", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objListaOfrecimiento))), null);
-                _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[Out BLReglaCrediticia.ConsultarReglasCreditos() objListaBilleteraEvaluado]", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objListaBilleteraEvaluado))), null);
-                _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[Out BLReglaCrediticia.ConsultarReglasCreditos() oRequestReglasCrediticia]", Funciones.CheckStr(new JavaScriptSerializer().Serialize(oRequestReglasCrediticia))), null);
+                _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[Out BLReglaCrediticia.ConsultarReglasCreditos() objListaOfrecimiento]", Funciones.CheckStr(JsonSerializer.Serialize(objListaOfrecimiento))), null);
+                _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[Out BLReglaCrediticia.ConsultarReglasCreditos() objListaBilleteraEvaluado]", Funciones.CheckStr(JsonSerializer.Serialize(objListaBilleteraEvaluado))), null);
+                _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[Out BLReglaCrediticia.ConsultarReglasCreditos() oRequestReglasCrediticia]", Funciones.CheckStr(JsonSerializer.Serialize(oRequestReglasCrediticia))), null);
 
             objVistaEvaluacion = ResultadoOfrecimiento(objListaOfrecimiento);
 
@@ -424,7 +424,7 @@ namespace Claro.SISACT.WS
                 // Productos de Planes Evaluados
                 List<BEPlanBilletera> objProductoPlanesEval = ObtenerProductosPlanesEval(objListaOferta);
 
-                _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLReglaCrediticia][ConsultarReglasCreditos] objProductoPlanesEval", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objProductoPlanesEval))), null);
+                _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLReglaCrediticia][ConsultarReglasCreditos] objProductoPlanesEval", Funciones.CheckStr(JsonSerializer.Serialize(objProductoPlanesEval))), null);
 
                 List<BEPlanBilletera> objBilleteraPlanesActivo = null;
                 BLEvaluacion objEvaluacion = new BLEvaluacion();
@@ -461,11 +461,11 @@ namespace Claro.SISACT.WS
                 if (!string.IsNullOrEmpty(strCombo))
                     lstDescuentoProducto = new BLGeneral_II().ListarComboDescuento(strCombo);
 
-                // Consulta Datos Evaluación BRMS
+                // Consulta Datos Evaluaciï¿½n BRMS
                 //WS.WSReglasCrediticia.ClaroEvalClientesReglasRequest oEvaluacionCliente = datosGeneralEvaluacion(objCliente);
                 oEvaluacionCliente = datosGeneralEvaluacion(objCliente); //PROY-30748
 
-                _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLReglaCrediticia][ConsultarReglasCreditos] oEvaluacionCliente", Funciones.CheckStr(new JavaScriptSerializer().Serialize(oEvaluacionCliente))), null);
+                _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLReglaCrediticia][ConsultarReglasCreditos] oEvaluacionCliente", Funciones.CheckStr(JsonSerializer.Serialize(oEvaluacionCliente))), null);
 
                 WS.WSReglasCrediticia.oferta oOferta;
                 WS.WSReglasCrediticia.solicitud1 oSolicitud1;
@@ -481,7 +481,7 @@ namespace Claro.SISACT.WS
                 //PROY-140335 - FIN EJRC
 
                 oSolicitud1.totalPlanes = objCliente.totalplanes; //PROY-30748
-                // Flujo Reglas Evaluación / Reglas Cuotas
+                // Flujo Reglas Evaluaciï¿½n / Reglas Cuotas
                 oSolicitud1.transaccion = ConfigurationManager.AppSettings["constTrxEvaluacion"].ToString();
                 if (strFlgCuota == "S")
                     oSolicitud1.transaccion = ConfigurationManager.AppSettings["constTrxVentaCuotas"].ToString();
@@ -751,7 +751,7 @@ namespace Claro.SISACT.WS
                     // Productos Plan [Tipos de Productos que componen al Plan]
                     List<BEBilletera> objBilleteraPlan = objProductoPlanesEval.Find(delegate(BEPlanBilletera obj) { return obj.plan == idPlan; }).oBilletera;
 
-                    // Descripción Producto [Texto de Tipos de Productos que componen al Plan]
+                    // Descripciï¿½n Producto [Texto de Tipos de Productos que componen al Plan]
                     foreach (BEBilletera obj in objBilleteraPlan)
                     {
                         if (oOferta.tipoDeProducto == null) oOferta.tipoDeProducto = obj.billetera;
@@ -777,8 +777,8 @@ namespace Claro.SISACT.WS
                     double dblMontoFacturado = CalcularMontoxProducto(objCliente.oMontoFacturadoxBilletera, objBilleteraPlan);
                     double dblMontoNoFacturado = CalcularMontoxProducto(objCliente.oMontoNoFacturadoxBilletera, objBilleteraPlan);
 
-                    _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLReglaCrediticia][ConsultarReglasCreditos] objBilleteraPlanesActivo", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objBilleteraPlanesActivo))), null);
-                    _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLReglaCrediticia][ConsultarReglasCreditos] objBilleteraPlan", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objBilleteraPlan))), null);                    
+                    _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLReglaCrediticia][ConsultarReglasCreditos] objBilleteraPlanesActivo", Funciones.CheckStr(JsonSerializer.Serialize(objBilleteraPlanesActivo))), null);
+                    _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLReglaCrediticia][ConsultarReglasCreditos] objBilleteraPlan", Funciones.CheckStr(JsonSerializer.Serialize(objBilleteraPlan))), null);                    
                     
                     _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLReglaCrediticia][ConsultarReglasCreditos] dblMontoFacturado", Funciones.CheckStr(dblMontoFacturado)), null);
                     _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLReglaCrediticia][ConsultarReglasCreditos] dblMontoNoFacturado", Funciones.CheckStr(dblMontoNoFacturado)), null);
@@ -877,12 +877,12 @@ namespace Claro.SISACT.WS
                     oEvaluacionCliente.solicitud.solicitud1 = oSolicitud1;
                     //FIN PROY-31948 
 
-                    _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLReglaCrediticia][ConsultarReglasCreditos] oEvaluacionCliente antes BWReglasCreditica().ConsultaReglaCrediticia", Funciones.CheckStr(new JavaScriptSerializer().Serialize(oEvaluacionCliente))), null);
+                    _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLReglaCrediticia][ConsultarReglasCreditos] oEvaluacionCliente antes BWReglasCreditica().ConsultaReglaCrediticia", Funciones.CheckStr(JsonSerializer.Serialize(oEvaluacionCliente))), null);
 
                     // Consulta BRMS
                     objOfrecimiento = (new WS.BWReglasCreditica()).ConsultaReglaCrediticia(nroDocumento, Funciones.CheckStr(prodFacturar), oEvaluacionCliente, ref objMensaje);//PROY-140743
 
-                    _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLReglaCrediticia][ConsultarReglasCreditos] oEvaluacionCliente despues BWReglasCreditica().ConsultaReglaCrediticia", Funciones.CheckStr(new JavaScriptSerializer().Serialize(oEvaluacionCliente))), null);
+                    _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLReglaCrediticia][ConsultarReglasCreditos] oEvaluacionCliente despues BWReglasCreditica().ConsultaReglaCrediticia", Funciones.CheckStr(JsonSerializer.Serialize(oEvaluacionCliente))), null);
 
 
                     objOfrecimiento.IdFila = objOferta.idFila;
@@ -901,7 +901,7 @@ namespace Claro.SISACT.WS
                     else
                         objOfrecimiento.TieneAutonomia = ResultadoAutonomia(objOfrecimiento, strTipoDoc, intPlanesTotal, dblCF, dblMontoFacturado);
 
-                    _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLReglaCrediticia][ConsultarReglasCreditos] objOfrecimiento antes de grabarLog", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objOfrecimiento))), null);
+                    _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLReglaCrediticia][ConsultarReglasCreditos] objOfrecimiento antes de grabarLog", Funciones.CheckStr(JsonSerializer.Serialize(objOfrecimiento))), null);
 
                     // LOG
                     grabarLog(oEvaluacionCliente, ref objOfrecimiento);
@@ -954,7 +954,7 @@ namespace Claro.SISACT.WS
                    
                     //FIN: PROY-140335 RF1
 
-                    _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLReglaCrediticia][ConsultarReglasCreditos] objOfrecimiento", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objOfrecimiento))), null);
+                    _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLReglaCrediticia][ConsultarReglasCreditos] objOfrecimiento", Funciones.CheckStr(JsonSerializer.Serialize(objOfrecimiento))), null);
 
                     objListaOfrecimiento.Add(objOfrecimiento);
 
@@ -999,7 +999,7 @@ namespace Claro.SISACT.WS
                 BEOfrecimiento objOfrecimiento = null;
                 objListaOfrecimiento = new List<BEOfrecimiento>();
 
-                // Consulta Datos Evaluación BRMS
+                // Consulta Datos Evaluaciï¿½n BRMS
                 WS.WSReglasCrediticia.ClaroEvalClientesReglasRequest oEvaluacionCliente = datosGeneralEvaluacion(objCliente);
                 WS.WSReglasCrediticia.oferta oOferta;
                 WS.WSReglasCrediticia.solicitud1 oSolicitud1;
@@ -1016,7 +1016,7 @@ namespace Claro.SISACT.WS
                 oSolicitud1.oferta = oOferta;
                 oSolicitud1.fechaEjecucion = DateTime.Now.Date;//PROY-140579 NN
                 oEvaluacionCliente.solicitud.solicitud1 = oSolicitud1;
-                // Flujo Reglas Evaluación / Reglas Cuotas
+                // Flujo Reglas Evaluaciï¿½n / Reglas Cuotas
                 oSolicitud1.transaccion = ConfigurationManager.AppSettings["constTrxEvaluacion"].ToString();
                 if (strFlgCuota == "S")
                     oSolicitud1.transaccion = ConfigurationManager.AppSettings["constTrxVentaCuotas"].ToString();
@@ -1112,7 +1112,7 @@ namespace Claro.SISACT.WS
             List<BEOfertaBRMS> objPlanDetalle = new List<BEOfertaBRMS>();
             objPlanDetalle = ObtenerDetallePlanesEval(strPlanesDetalle);
 
-            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLReglaCrediticia][ObtenerDetalleEvaluacion] objPlanDetalle", Funciones.CheckStr(new JavaScriptSerializer().Serialize(objPlanDetalle))), null);
+            _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLReglaCrediticia][ObtenerDetalleEvaluacion] objPlanDetalle", Funciones.CheckStr(JsonSerializer.Serialize(objPlanDetalle))), null);
 
             objDetalleEval = ObtenerDetallePlanEquipoEval(objPlanDetalle, strServiciosDetalle, strEquiposDetalle);
             return objDetalleEval;
@@ -1337,13 +1337,13 @@ namespace Claro.SISACT.WS
                 WS.WSReglasCrediticia.puntodeVenta oOficina = new WS.WSReglasCrediticia.puntodeVenta();
                 WS.WSReglasCrediticia.direccion oDireccionOficina = new WS.WSReglasCrediticia.direccion();
 
-                // Información Punto de Venta
+                // Informaciï¿½n Punto de Venta
                 oOficina.codigo = Funciones.CheckStr(dtOficina.Rows[0]["CODIGO"]);
                 oOficina.descripcion = Funciones.CheckStr(dtOficina.Rows[0]["PDV"]);
                 oOficina.calidadDeVendedor = String.Empty;
                 oOficina.canal = Funciones.CheckStr(dtOficina.Rows[0]["CANAL"]);
 
-                // Información Direccion Punto de Venta
+                // Informaciï¿½n Direccion Punto de Venta
                 oDireccionOficina.codigoDePlano = String.Empty;
                 oDireccionOficina.departamento = Funciones.CheckStr(dtOficina.Rows[0]["DEPARTAMENTO"]);
                 oDireccionOficina.distrito = Funciones.CheckStr(dtOficina.Rows[0]["DISTRITO"]);
@@ -1353,7 +1353,7 @@ namespace Claro.SISACT.WS
                 WS.WSReglasCrediticia.cliente oCliente = new WS.WSReglasCrediticia.cliente();
                 WS.WSReglasCrediticia.documento oDocumentoCliente = new WS.WSReglasCrediticia.documento();
 
-                // Información Cliente
+                // Informaciï¿½n Cliente
                 oDocumentoCliente.numero = Funciones.CheckStr(dtCliente.Rows[0]["NRO_DOCUMENTO"]);
                 oDocumentoCliente.descripcion = ObtenerTipoDocumento(strCodTipoDoc, strNroDocumento);
                 oDocumentoCliente.descripcionSpecified = true;
@@ -1374,7 +1374,7 @@ namespace Claro.SISACT.WS
                 _objLog.CrearArchivolog(string.Format("{0}{1}", "[PROY-140230 - SEGMENTO DEL CLIENTE][PARAMETROS DE ENTRADA][INI]", ""), null, null);
                 //PROY-140230-MAS-FIN
 
-                // Información Lista de Representantes Legales
+                // Informaciï¿½n Lista de Representantes Legales
                 if (strCodTipoDoc == consTipoDocRUC)
                 {
                     WS.WSReglasCrediticia.representanteLegal oRRLL;
@@ -1443,7 +1443,7 @@ namespace Claro.SISACT.WS
                     /*PROY-32438 FIN*/
                 }
 
-                // Información Solicitud
+                // Informaciï¿½n Solicitud
                 oSolicitud.solicitud1 = new WS.WSReglasCrediticia.solicitud1();
                 oSolicitud.solicitud1.flagDeLicitacion = WS.WSReglasCrediticia.tipoSiNo.NO;
                 oSolicitud.solicitud1.flagDeLicitacionSpecified = true;
@@ -1805,7 +1805,7 @@ namespace Claro.SISACT.WS
             string strServicio = String.Empty;
             string strEquipo = String.Empty;
             string strOfrecimiento = String.Empty;
-            string strCampanaOfrecimiento = String.Empty; //PROY-140439 BRMS CAMPAÑA NAVIDEÑA
+            string strCampanaOfrecimiento = String.Empty; //PROY-140439 BRMS CAMPAï¿½A NAVIDEï¿½A
 
             WS.WSReglasCrediticia.solicitud1 oSolicitud;
             WS.WSReglasCrediticia.cliente oCliente;
@@ -1815,7 +1815,7 @@ namespace Claro.SISACT.WS
             oCliente = oEvaluacion.solicitud.solicitud1.cliente;
             oOferta = oEvaluacion.solicitud.solicitud1.oferta;
 
-            // Información Solicitud --------------------------------------------
+            // Informaciï¿½n Solicitud --------------------------------------------
             strSolicitud += oSolicitud.cargoFijoDeBolsa + "|";
             strSolicitud += oSolicitud.flagDeLicitacion.ToString() + "|";
             strSolicitud += oSolicitud.tipoDeBolsa + "|";
@@ -1827,7 +1827,7 @@ namespace Claro.SISACT.WS
 //gaa20170215
             strSolicitud += "|" + Funciones.CheckStr(oSolicitud.buroConsultado);
 //gaa20170215
-            // Información Cliente ----------------------------------------------
+            // Informaciï¿½n Cliente ----------------------------------------------
             strCliente += oCliente.cantidadDeLineasActivas + "|";
             strCliente += oCliente.cantidadDePlanesPorProducto + "|";
             strCliente += oCliente.comportamientoDePago + "|";
@@ -1863,10 +1863,10 @@ namespace Claro.SISACT.WS
             //PROY-31948 INI
             strCliente += oCliente.montoPendienteCuotasSistema + "|";//Monto pendiente en cuotas en sistema
             strCliente += oCliente.cantidadPlanesCuotasPendientesSistema + "|";//Cantidad de planes con cuotas pendientes en sistema
-            strCliente += oCliente.cantidadMaximaCuotasPendientesSistema + "|";//Cantidad máxima de cuotas pendientes en sistema
-            strCliente += oCliente.montoPendienteCuotasUltimasVentas + "|";//Monto pendiente en cuotas últimas ventas
-            strCliente += oCliente.cantidadPlanesCuotasPendientesUltimasVentas + "|";//Cantidad de planes con cuotas pendientes últimas ventas
-            strCliente += oCliente.cantidadMaximaCuotasPendientesUltimasVentas;//cantidad máxima de cuotas pendientes           
+            strCliente += oCliente.cantidadMaximaCuotasPendientesSistema + "|";//Cantidad mï¿½xima de cuotas pendientes en sistema
+            strCliente += oCliente.montoPendienteCuotasUltimasVentas + "|";//Monto pendiente en cuotas ï¿½ltimas ventas
+            strCliente += oCliente.cantidadPlanesCuotasPendientesUltimasVentas + "|";//Cantidad de planes con cuotas pendientes ï¿½ltimas ventas
+            strCliente += oCliente.cantidadMaximaCuotasPendientesUltimasVentas;//cantidad mï¿½xima de cuotas pendientes           
             
             //PROY-31948 FIN
             /*PROY 32438-AGREGAR NUEVAS VARIABLES DEL BURO-BRMS*/
@@ -1928,9 +1928,9 @@ namespace Claro.SISACT.WS
             ////PROY-140579 0412 NN FIN
             _objLog.CrearArchivolog("- FIN: PARAMETROS DE SALIDA PROY-32438" + null, null, null);
             /*FIN 32438-AGREGAR NUEVAS VARIABLES DEL BURO-BRMS*/
-            // Información Dirección Cliente ---------------------------------------
+            // Informaciï¿½n Direcciï¿½n Cliente ---------------------------------------
 
-            #region [PROY-140743 - IDEA-141192 - Venta en cuotas accesorios con cargo al recibo fijo móvil] | [Grabar variables en los log's]
+            #region [PROY-140743 - IDEA-141192 - Venta en cuotas accesorios con cargo al recibo fijo mï¿½vil] | [Grabar variables en los log's]
             _objLog.CrearArchivolog(string.Format("{0}{1}", "[PROY-140743 - Venta en cuotas accesorios - SEGMENTO DEL CLIENTE][grabarLog][INI]", ""), null, null);
             bool strMensajeBrms = (bool)HttpContext.Current.Session["strRespuestaBRMS"];
             if (strMensajeBrms)
@@ -1964,11 +1964,11 @@ namespace Claro.SISACT.WS
                 strDirCliente += oCliente.direccion.region;
             }
 
-            // Información Documento Cliente ---------------------------------------
+            // Informaciï¿½n Documento Cliente ---------------------------------------
             strDocCliente += oCliente.documento.descripcion.ToString() + "|";
             strDocCliente += oCliente.documento.numero;
 
-            // Información Representante Cliente -----------------------------------
+            // Informaciï¿½n Representante Cliente -----------------------------------
             if (oSolicitud.cliente.representanteLegal != null)
             {
                 int _rrll = oSolicitud.cliente.representanteLegal.Count();
@@ -2003,7 +2003,7 @@ namespace Claro.SISACT.WS
                 }
             }
 
-            // Información Servicios Cliente --------------------------------------
+            // Informaciï¿½n Servicios Cliente --------------------------------------
             if (oOferta.planSolicitado.servicio != null)
             {
                 foreach (WS.WSReglasCrediticia.servicio oServicio in oOferta.planSolicitado.servicio)
@@ -2012,7 +2012,7 @@ namespace Claro.SISACT.WS
                 }
             }
 
-            // Información Equipos Cliente ----------------------------------------
+            // Informaciï¿½n Equipos Cliente ----------------------------------------
             if (oSolicitud.equipo != null)
             {
                 foreach (WS.WSReglasCrediticia.equipo oEquipo in oSolicitud.equipo)
@@ -2034,7 +2034,7 @@ namespace Claro.SISACT.WS
                 }
             }
 
-            // Información Oferta --------------------------------------------------
+            // Informaciï¿½n Oferta --------------------------------------------------
             strOferta += oOferta.cantidadDeDecos + "|";
             strOferta += oOferta.casoEpecial + "|";
             strOferta += oOferta.controlDeConsumo + "|";
@@ -2064,7 +2064,7 @@ namespace Claro.SISACT.WS
             strOferta += Funciones.CheckStr(flagConsultaPrevia);
             //PROY-140335 RF1 FIN
 //gaa20170215
-            #region [PROY-140743 - IDEA-141192 - Venta en cuotas accesorios con cargo al recibo fijo móvil] | [Grabar variables en los log's]
+            #region [PROY-140743 - IDEA-141192 - Venta en cuotas accesorios con cargo al recibo fijo mï¿½vil] | [Grabar variables en los log's]
             bool strMensajeBrms2 = (bool)HttpContext.Current.Session["strRespuestaBRMS"];
             if (strMensajeBrms2)
             {
@@ -2077,34 +2077,34 @@ namespace Claro.SISACT.WS
                 strOferta += string.Format("{0}", "");
             }
             #endregion
-            // Información Plan Solicitado -------------------------------------------
+            // Informaciï¿½n Plan Solicitado -------------------------------------------
             strPlan += oOferta.planSolicitado.cargoFijo + "|";
             strPlan += oOferta.planSolicitado.descripcion + "|";
             strPlan += oOferta.planSolicitado.paquete + "|";
 
-            // Información Campaña ---------------------------------------------------
-            //PROY-140439 BRMS CAMPAÑA NAVIDEÑA::INI
+            // Informaciï¿½n Campaï¿½a ---------------------------------------------------
+            //PROY-140439 BRMS CAMPAï¿½A NAVIDEï¿½A::INI
             if (!string.IsNullOrEmpty(oOferta.campana.tipo)) {
             strCampana += oOferta.campana.grupo + "|";
             strCampana += oOferta.campana.tipo;
             }
-            //PROY-140439 BRMS CAMPAÑA NAVIDEÑA::FIN
+            //PROY-140439 BRMS CAMPAï¿½A NAVIDEï¿½A::FIN
 
-            // Información Punto de Venta --------------------------------------------
+            // Informaciï¿½n Punto de Venta --------------------------------------------
             strOficina += oSolicitud.puntodeVenta.calidadDeVendedor + "|";
             strOficina += oSolicitud.puntodeVenta.canal + "|";
             strOficina += oSolicitud.puntodeVenta.codigo + "|";
             strOficina += oSolicitud.puntodeVenta.descripcion + "|";
 
-            // Información Dirección Punto de Venta ----------------------------------
+            // Informaciï¿½n Direcciï¿½n Punto de Venta ----------------------------------
             strDirOficina += oSolicitud.puntodeVenta.direccion.codigoDePlano + "|";
             strDirOficina += oSolicitud.puntodeVenta.direccion.departamento + "|";
             strDirOficina += oSolicitud.puntodeVenta.direccion.distrito + "|";
             strDirOficina += oSolicitud.puntodeVenta.direccion.provincia + "|";
             strDirOficina += oSolicitud.puntodeVenta.direccion.region;
 
-            // PROY-140439 BRMS CAMPAÑA NAVIDEÑA::INI
-            // Lista de Campañas ofrecimiento ---------------------------------------------------
+            // PROY-140439 BRMS CAMPAï¿½A NAVIDEï¿½A::INI
+            // Lista de Campaï¿½as ofrecimiento ---------------------------------------------------
             if (oOfrecimiento.CampanasNavidad != null)
             {
                 if (oOfrecimiento.CampanasNavidad.Length > 0)
@@ -2119,7 +2119,7 @@ namespace Claro.SISACT.WS
                     strCampanaOfrecimiento = Funciones.CheckStr(campanas2);
                 }
             }
-            // PROY-140439 BRMS CAMPAÑA NAVIDEÑA::FIN
+            // PROY-140439 BRMS CAMPAï¿½A NAVIDEï¿½A::FIN
 
             oOfrecimiento.In_solicitud = strSolicitud;
             oOfrecimiento.In_cliente = strCliente;
@@ -2134,10 +2134,10 @@ namespace Claro.SISACT.WS
             oOfrecimiento.In_servicio = strServicio;
             oOfrecimiento.In_pdv = strOficina;
             oOfrecimiento.In_direccion_pdv = strDirOficina;
-            oOfrecimiento.Lista_ofrecimientocampanas = strCampanaOfrecimiento; //PROY-140439 BRMS CAMPAÑA NAVIDEÑA
+            oOfrecimiento.Lista_ofrecimientocampanas = strCampanaOfrecimiento; //PROY-140439 BRMS CAMPAï¿½A NAVIDEï¿½A
         }
 
-        //PROY-140439 BRMS CAMPAÑA NAVIDEÑA::INI
+        //PROY-140439 BRMS CAMPAï¿½A NAVIDEï¿½A::INI
         public BEVistaEvaluacion ValidacionCampana(BEClienteCuenta objCliente, List<BEDireccionCliente> objDireccion, string strDatos, string strTieneProteccionMovil, string CodTipoProductoActual, BECuota objCuotaOAC, BECuota objCuotaPVU, string prodFacturar) //PROY-140743
         {
             BEVistaEvaluacion objVistaEvaluacion = null;
@@ -2184,7 +2184,7 @@ namespace Claro.SISACT.WS
 
                 _objLog.CrearArchivolog("[ConsultarReglasCampana][Inicio Obtener datosGeneralEvaluacion]", null, null);
 
-                //Consulta Datos Evaluación BRMS
+                //Consulta Datos Evaluaciï¿½n BRMS
                 WS.WSReglasCrediticia.ClaroEvalClientesReglasRequest oEvaluacionCliente = datosGeneralEvaluacion(objCliente);
                 WS.WSReglasCrediticia.oferta oOferta;
                 WS.WSReglasCrediticia.solicitud1 oSolicitud1;
@@ -2423,9 +2423,9 @@ namespace Claro.SISACT.WS
                 throw ex;
             }
         }
-        //PROY-140439 BRMS CAMPAÑA NAVIDEÑA::FIN
+        //PROY-140439 BRMS CAMPAï¿½A NAVIDEï¿½A::FIN
 
-        #region [PROY-140743 - IDEA-141192 - Venta en cuotas accesorios con cargo al recibo fijo móvil]
+        #region [PROY-140743 - IDEA-141192 - Venta en cuotas accesorios con cargo al recibo fijo mï¿½vil]
         public bool ObtenerVariablesBRMS(string nroDocumento, string tipoDeOperacion, ref double montoCuotasPendientesAcc, ref int cantidadLineaCuotasPendientesAcc, ref int cantidadMaximaCuotasPendientesAcc, ref double montoCuotasPendientesAccUltiVenta, ref int cantidadLineaCuotasPendientesAccUltiVenta, ref int cantidadMaximaCuotasPendientesAccUltiVenta)
         {
             bool respuesta = false;

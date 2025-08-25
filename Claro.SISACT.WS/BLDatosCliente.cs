@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
@@ -18,13 +18,13 @@ using Claro.SISACT.Entity.claro_int_consultacliente.consultarDatos; //INICIATIVA
 using Claro.SISACT.Entity.claro_inte_cuparticipante.consultarParticipante; //INICIATIVA-219
 using Claro.SISACT.Entity.DataPowerRest; //INICIATIVA-219
 using Claro.SISACT.WS.BWServicesCBIO; //INICIATIVA-219
-//PROY-32439 FIN MAS
-using System.Web.Script.Serialization; //INC000004091065
 using Claro.SISACT.WS.RestReferences; // PROY - 140743
 using Claro.SISACT.Entity.VentasCuotas.ValidarCuoAccPendXLinea.Response;
 using Claro.SISACT.Entity.VentasCuotas.ValidarCuoAccPendXLinea.Request;
 using Claro.SISACT.Entity.VentasCuotas.ObtenerVariablesBRMS.Response;
 using Claro.SISACT.Entity.VentasCuotas.ObtenerDatosPedidoAccCuotas.Response;
+using System.Text.Json;
+
 //PROY-140743 FIN
 
 namespace Claro.SISACT.WS
@@ -331,7 +331,7 @@ namespace Claro.SISACT.WS
                 }
                 //FIN INC000003910770
 
-                _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLDatosCliente][ConsultarDatosCliente] dsListaBSCS", Funciones.CheckStr(new JavaScriptSerializer().Serialize(Funciones.ConvertirDataSetAListaDictionary(dsListaBSCS)))), null);
+                _objLog.CrearArchivolog("[INC000004091065]", string.Format("{0}:{1}", "[BLDatosCliente][ConsultarDatosCliente] dsListaBSCS", Funciones.CheckStr(JsonSerializer.Serialize(Funciones.ConvertirDataSetAListaDictionary(dsListaBSCS)))), null);
 
                 //DataSet dsListaBSCS = objConsumer.ListarDetalleLineaBSCS(objDocumento.ID_BSCS, nroDocumento); INC000003910770
                 if (dsListaBSCS != null && dsListaBSCS.Tables[0].Rows.Count > 0 || blDetalleLineaCBIO)

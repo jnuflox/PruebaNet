@@ -1,8 +1,9 @@
-﻿using System.Data;
-using System.Data.SqlClient;
+using System.Data;
 using System.Xml;
 using System.Collections;
 using System;
+using Microsoft.Data.SqlClient;
+
 namespace Claro.SISACT.IData
 {
 

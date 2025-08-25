@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +12,6 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using Claro.SISACT.Common;
 using Claro.SISACT.Entity;
-using System.Web.Script.Serialization;
 using System.Configuration;
 using Newtonsoft.Json.Linq;
 
@@ -33,7 +32,6 @@ namespace Claro.SISACT.WS.RestServices
                 request.Headers = GetHeaders(oAuditoria);
                 request.Accept = "application/json";
 
-                JavaScriptSerializer Serializer = new JavaScriptSerializer();
                 string data = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
                 objLog.CrearArchivolog(string.Format("{0}-->{1}", "[PostInvoque<T>][CadenaData]", Funciones.CheckStr(data)), null, null);
                 byte[] byteArray = Encoding.UTF8.GetBytes(data);

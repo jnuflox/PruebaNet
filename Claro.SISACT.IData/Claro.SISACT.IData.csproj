@@ -1,89 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{CDE2BF05-ED35-42E4-A80D-8605C904519E}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Claro.SISACT.IData</RootNamespace>
     <AssemblyName>Claro.SISACT.IData</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <OutputType>Library</OutputType>
     <PlatformTarget>AnyCPU</PlatformTarget>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <RootNamespace>Claro.SISACT.IData</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
-      <HintPath>..\packages\Oracle.ManagedDataAccess.12.1.24160419\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="DAABAbstracFactory.cs" />
-    <Compile Include="DAABDataReader.cs" />
-    <Compile Include="DAABOracleDataReader.cs" />
-    <Compile Include="DAABOracleFactory.cs" />
-    <Compile Include="DAABRequest.cs" />
-    <Compile Include="DAABSQLDataReader.cs" />
-    <Compile Include="DAABSQLFactory.cs" />
-    <Compile Include="IInterfaz.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Claro.SISACT.Common\Claro.SISACT.Common.csproj">
-      <Project>{64D5394B-C4A5-482A-8908-B1C84974AB9F}</Project>
-      <Name>Claro.SISACT.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Claro.SISACT.Entity\Claro.SISACT.Entity.csproj">
-      <Project>{3CC469F9-CD4B-45D2-AC0E-3E3536BC6BD6}</Project>
-      <Name>Claro.SISACT.Entity</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="bin\Debug\Claro.SISACT.Common.dll" />
-    <Content Include="bin\Debug\Claro.SISACT.Common.pdb" />
-    <Content Include="bin\Debug\Claro.SISACT.Entity.dll" />
-    <Content Include="bin\Debug\Claro.SISACT.Entity.pdb" />
-    <Content Include="bin\Debug\Claro.SISACT.IData.dll" />
-    <Content Include="bin\Debug\Claro.SISACT.IData.pdb" />
-    <Content Include="bin\Release\Claro.SISACT.Common.dll" />
-    <Content Include="bin\Release\Claro.SISACT.Common.pdb" />
-    <Content Include="bin\Release\Claro.SISACT.Entity.dll" />
-    <Content Include="bin\Release\Claro.SISACT.Entity.pdb" />
-    <Content Include="bin\Release\Claro.SISACT.IData.dll" />
-    <Content Include="bin\Release\Claro.SISACT.IData.pdb" />
-    <Content Include="obj\Debug\Claro.SISACT.IData.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\Claro.SISACT.IData.dll" />
-    <Content Include="obj\Debug\Claro.SISACT.IData.pdb" />
-    <Content Include="obj\Release\Claro.SISACT.IData.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Release\Claro.SISACT.IData.dll" />
-    <Content Include="obj\Release\Claro.SISACT.IData.pdb" />
+    <ProjectReference Include="../Claro.SISACT.Entity/Claro.SISACT.Entity.csproj" />
+    <ProjectReference Include="../Claro.SISACT.Common/Claro.SISACT.Common.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Include="obj\Debug\Claro.SISACT.IData.csprojResolveAssemblyReference.cache" />
@@ -93,12 +18,8 @@
   <ItemGroup>
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+  <ItemGroup>
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="3.21.130" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
+  </ItemGroup>
 </Project>
